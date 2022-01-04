@@ -55,7 +55,6 @@ const Home: NextPage = () => {
                 Verkaufserfolg ist trainierbar.
                 <br />
                 <span
-                  className
                   style={{
                     fontFamily: '"Frank Ruhl Libre", serif',
                     background:
@@ -247,7 +246,6 @@ const Home: NextPage = () => {
             }}
           >
             <span
-              className
               style={{
                 background:
                   "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
@@ -366,7 +364,6 @@ const Home: NextPage = () => {
                   }}
                 >
                   <span
-                    className
                     style={{
                       background:
                         "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
@@ -480,7 +477,6 @@ const Home: NextPage = () => {
               >
                 Eindrücke aus unserem{" "}
                 <span
-                  className
                   style={{
                     fontFamily: '"Frank Ruhl Libre", serif',
                     background:
@@ -582,7 +578,6 @@ const Home: NextPage = () => {
                 >
                   So unterstützt das Vertriebstraining Ihren Verkäufern{" "}
                   <span
-                    className
                     style={{
                       fontFamily: '"Frank Ruhl Libre", serif',
                       background:
@@ -833,7 +828,6 @@ const Home: NextPage = () => {
               >
                 Ich{" "}
                 <span
-                  className
                   style={{
                     fontFamily: '"Frank Ruhl Libre", serif',
                     background:
