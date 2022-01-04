@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           <div className="flex flex-col items-center justify-center flex-grow mx-auto space-y-5 text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 md:pb-28 xl:p-40 xl:text-left">
             <div className="w-full text-gray-700 transition duration-500 ease-in-out transform">
               <div className="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
-                <a href="/" className="focus:outline-none" />
+                <a href="#" className="focus:outline-none" />
                 <div className="inline-flex items-center mx-auto md:mx-0">
                   <img
                     className="w-40"
@@ -99,7 +99,6 @@ const Home: NextPage = () => {
                 </p>
               </div>
               <a
-                target="_blank"
                 href="https://calendly.com/krauss-friends/kennenlerngespraech"
                 style={{ color: "white !important" }}
                 className="items-center self-start px-12 py-4 mr-2 text-lg font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:flex hiddenNon primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
@@ -107,7 +106,6 @@ const Home: NextPage = () => {
                 Erstgespräch reservieren
                 <svg
                   className="w-5 h-5 ml-2 fill-current color-white"
-                  clasversion="1.1"
                   id="Layer_1"
                   x="0px"
                   y="0px"
@@ -123,12 +121,8 @@ const Home: NextPage = () => {
                 In nur 60 Sekunden online einen freien Termin suchen
               </p>
             </div>
-            <div
-              target="_blank"
-              className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end"
-            >
+            <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end">
               <a
-                target="_blank"
                 href="https://calendly.com/krauss-friends/kennenlerngespraech"
                 style={{ color: "white !important" }}
                 className="flex items-center px-12 py-4 text-xs font-medium text-white text-teal-500 uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
@@ -280,9 +274,9 @@ const Home: NextPage = () => {
                         className="font-medium text-gray-400 title-font text-md"
                         style={{ textTransform: "none" }}
                       >
-                        Die Kunden sagen "
-                        <strong>Wir haben keinen Bedarf</strong>" oder "Kein
-                        Interesse"
+                        Die Kunden sagen &quot;
+                        <strong>Wir haben keinen Bedarf</strong>&quot; oder
+                        &quot;Kein Interesse&quot;
                       </p>
                     </div>
                   </div>
@@ -338,8 +332,8 @@ const Home: NextPage = () => {
                         className="font-medium text-gray-400 title-font"
                         style={{ textTransform: "none" }}
                       >
-                        Kunde behauptet "Das Produkt ist{" "}
-                        <strong>zu teuer</strong>"
+                        Kunde behauptet &quot;Das Produkt ist{" "}
+                        <strong>zu teuer</strong>&quot;
                       </p>
                     </div>
                   </div>
@@ -374,8 +368,6 @@ const Home: NextPage = () => {
                   mit unserem Vertriebstraining.
                 </h1>
                 <a
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/krauss-friends/kennenlerngespraech?hide_gdpr_banner=1&primary_color=0ba1e2'});return false;"
-                  target="_blank"
                   href="https://calendly.com/krauss-friends/kennenlerngespraech"
                   style={{ color: "white !important" }}
                   className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
@@ -383,7 +375,6 @@ const Home: NextPage = () => {
                   Erstgespräch reservieren
                   <svg
                     className="w-5 h-5 ml-2 fill-current color-white"
-                    clasversion="1.1"
                     id="Layer_1"
                     x="0px"
                     y="0px"
@@ -395,10 +386,7 @@ const Home: NextPage = () => {
                     ></path>
                   </svg>
                 </a>
-                <p
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/krauss-friends/kennenlerngespraech?hide_gdpr_banner=1&primary_color=0ba1e2'});return false;"
-                  className="self-start pt-3 text-sm text-gray-400 cursor-pointer"
-                >
+                <p className="self-start pt-3 text-sm text-gray-400 cursor-pointer">
                   In nur 60 Sekunden online einen freien Termin suchen
                 </p>
               </div>
@@ -443,7 +431,7 @@ const Home: NextPage = () => {
             </div>
             <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">
               <p className="mb-12 text-base font-medium leading-relaxed text-gray-400">
-                "Das Vertriebstraining war{" "}
+                &quot;Das Vertriebstraining war{" "}
                 <i>
                   sehr kurzweilig, abwechslungsreich und vor allem praxisbezogen
                 </i>
@@ -454,7 +442,7 @@ const Home: NextPage = () => {
                 <strong>
                   behalte so die Gesprächsführung und bin erfolgreicher
                 </strong>
-                ."
+                .&quot;
               </p>
               <h2 className="mb-8 text-xs font-semibold tracking-widest text-black text-gray-400 uppercase title-font">
                 Artur Polak
@@ -588,8 +576,6 @@ const Home: NextPage = () => {
                   </span>
                 </h1>
                 <a
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/krauss-friends/kennenlerngespraech?hide_gdpr_banner=1&primary_color=0ba1e2'});return false;"
-                  target="_blank"
                   href="https://calendly.com/krauss-friends/kennenlerngespraech"
                   style={{ color: "white !important" }}
                   className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
@@ -597,7 +583,6 @@ const Home: NextPage = () => {
                   Erstgespräch reservieren
                   <svg
                     className="w-5 h-5 ml-2 fill-current color-white"
-                    clasversion="1.1"
                     id="Layer_1"
                     x="0px"
                     y="0px"
@@ -609,10 +594,7 @@ const Home: NextPage = () => {
                     ></path>
                   </svg>
                 </a>
-                <p
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/krauss-friends/kennenlerngespraech?hide_gdpr_banner=1&primary_color=0ba1e2'});return false;"
-                  className="self-start pt-3 text-sm text-gray-400 cursor-pointer"
-                >
+                <p className="self-start pt-3 text-sm text-gray-400 cursor-pointer">
                   In nur 60 Sekunden online einen freien Termin suchen
                 </p>
               </div>
@@ -807,10 +789,7 @@ const Home: NextPage = () => {
         </section>
         <div className="w-screen h-70" style={{ backgroundColor: "#F5F6FA" }}>
           <section className="flex flex-col-reverse items-center justify-center flex-grow h-full mx-auto text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-10 md:space-y-0 xl:py-0 py-28 xl:p-40 md:w-5/6 xl:text-left">
-            <div
-              target="_blank"
-              className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 xl:h-5/6"
-            >
+            <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 xl:h-5/6">
               <img
                 src="https://www.krauss-friends.com/app/download/8104229161/johannes-krauss-1+%281%29.png?t=1625479308"
                 alt="Johannes Krauss - Vertriebstrainer"
@@ -874,8 +853,6 @@ const Home: NextPage = () => {
             <div className="flex mb-8 lg:mt-6 lg:mb-0">
               <div className="inline-flex mx-auto">
                 <a
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/krauss-friends/kennenlerngespraech?hide_gdpr_banner=1&primary_color=0ba1e2'});return false;"
-                  target="_blank"
                   href="https://calendly.com/krauss-friends/kennenlerngespraech"
                   style={{ color: "white !important", background: "#ff0021" }}
                   className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
@@ -883,7 +860,6 @@ const Home: NextPage = () => {
                   Erstgespräch reservieren
                   <svg
                     className="w-5 h-5 ml-2 fill-current color-white"
-                    clasversion="1.1"
                     id="Layer_1"
                     x="0px"
                     y="0px"
@@ -897,10 +873,7 @@ const Home: NextPage = () => {
                 </a>
               </div>
             </div>
-            <p
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/krauss-friends/kennenlerngespraech?hide_gdpr_banner=1&primary_color=0ba1e2'});return false;"
-              className="self-start pt-3 text-sm text-gray-600 cursor-pointer"
-            >
+            <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
               In nur 60 Sekunden online einen freien Termin suchen
             </p>
           </div>
@@ -909,7 +882,7 @@ const Home: NextPage = () => {
           <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="sm:col-span-2">
               <a
-                href="/"
+                href="#"
                 aria-label="Zur Startseite"
                 title="KRAUSS and Friends"
                 className="inline-flex items-center"
@@ -946,15 +919,11 @@ const Home: NextPage = () => {
                   style={{
                     color: "rgba(0,0,238,1.0)",
                     backgroundColor: "rgba(255,255,0,1)",
-                    BorderRadius: "3px",
+                    borderRadius: "3px",
                     cursor: "pointer",
                   }}
                   title="Use as phone number"
-                  className="telified"
-                  tld="com"
-                  nr={+4981919375900}
                   href="tel:+4981919375900"
-                  id="idfbf61c55"
                 >
                   +49 8191 93759-00
                 </a>
@@ -1031,7 +1000,6 @@ const Home: NextPage = () => {
                   id="cookie-policy"
                   href="javascript:window.CookieControl.showCookieSettings();"
                   className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-                  name="cookie-policy"
                 >
                   Cookie-Richtlinie
                 </a>
