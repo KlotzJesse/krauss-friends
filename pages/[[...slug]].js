@@ -39,7 +39,7 @@ export async function getStaticProps(props) {
     props: {
       story: data ? data.story : null,
     },
-    revalidate: 3600, // revalidate every hour
+    revalidate: 10, // revalidate every hour
   };
 }
 
