@@ -1,7 +1,15 @@
+import Column from "./Column";
+import Container from "./Container";
+import Heading from "./Heading";
 import Page from "./Page";
 import Placeholder from "./Placeholder";
 
-const Components = { page: Page };
+const Components = {
+  heading: Heading,
+  column: Column,
+  container: Container,
+  page: Page,
+};
 
 const DynamicComponent = ({ blok }) => {
   if (typeof Components[blok.component] !== "undefined") {

@@ -9,13 +9,13 @@ export default function Page({ story, preview }) {
   story = useStoryblok(story, enableBridge);
 
   return (
-    <div>
+    <>
       <Head>
         <title>{story ? story.name : "My Site"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DynamicComponent blok={story.content} />
-    </div>
+    </>
   );
 }
 
@@ -24,7 +24,7 @@ export async function getStaticProps(props) {
   let slug = params.slug ? params.slug.join("/") : "home";
   let sbParams = {
     // change to `published` to load the published version
-    version: "published", // or published
+    version: "draft", // or published
   };
 
   if (preview) {
