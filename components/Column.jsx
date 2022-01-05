@@ -28,12 +28,12 @@ const horizontalSpaceBetween = {
 };
 
 export const Column = ({ blok }) => {
-  console.log(" space-x-" + blok.horizontalSpaceBetween);
-  const horizontalSpacing = `flex justify-start ${
-    horizontalSpaceBetween[blok.horizontalSpaceBetween]
-  }`;
   return (
-    <div className={horizontalSpacing}>
+    <div
+      className={`${horizontalAlignment[blok.horizontalSpacing]} ${
+        horizontalSpaceBetween[blok.horizontalSpaceBetween]
+      }`}
+    >
       {blok.columns.map((container) => {
         return (
           <div
