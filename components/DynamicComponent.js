@@ -3,11 +3,13 @@ import Container from "./Container";
 import Heading from "./Heading";
 import Page from "./Page";
 import Placeholder from "./Placeholder";
+import Section from "./Section";
 
 const Components = {
   heading: Heading,
   column: Column,
   container: Container,
+  section: Section,
   page: Page,
 };
 
