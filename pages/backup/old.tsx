@@ -981,7 +981,7 @@ const Home: NextPage = () => {
             <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
               <li>
                 <a
-                  href="/about"
+                  href="#"
                   className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Impressum
@@ -989,7 +989,7 @@ const Home: NextPage = () => {
               </li>
               <li>
                 <a
-                  href="/j/privacy"
+                  href="#"
                   className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
                 >
                   Datenschutzerklärung
