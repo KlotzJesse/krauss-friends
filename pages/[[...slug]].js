@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React from "react";
 import DynamicComponent from "../components/DynamicComponent";
 import Storyblok, { useStoryblok } from "../lib/storyblok";
@@ -8,15 +7,7 @@ export default function Page({ story, preview }) {
   // const enableBridge = preview; // enable bridge only in prevew mode
   story = useStoryblok(story, enableBridge);
 
-  return (
-    <>
-      <Head>
-        <title>{story ? story.name : "My Site"}</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <DynamicComponent blok={story.content} />
-    </>
-  );
+  return <DynamicComponent blok={story.content} />;
 }
 
 export async function getStaticProps(props) {
