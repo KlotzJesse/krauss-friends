@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/[[...index]].jss",
-    "components/Heading.jsx"
+    "components/Heading.jsx",
+    "pages/_middleware.js"
   ],
   "exclude": ["node_modules"]
 }
