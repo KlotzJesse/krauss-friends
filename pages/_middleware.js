@@ -5,13 +5,15 @@ const trackingId = "UA-216631308-1";
 export default async function middleware(request, event) {
   const res = NextResponse.next();
 
+  console.log(request.url);
+
   if (request.url.includes(".")) {
     return res;
   }
 
-  const lang = request.headers.get("accept-language")
-    ? request.headers.get("accept-language").split(",")[0]
-    : null;
+  // const lang = request.headers.get("accept-language")
+  //   ? request.headers.get("accept-language").split(",")[0]
+  //   : null;
 
   let uaData = {
     v: 1,
@@ -22,7 +24,7 @@ export default async function middleware(request, event) {
     dr: request.headers.get("referer"),
     ds: "web",
     // //geoid: request.headers.get("cf-ipcountry"),
-    ul: lang,
+    //ul: lang,
     ua: request.headers.get("user-agent"),
     cid: "35009a79-1a05-49d7-b876-2b884d0f825b",
     z: Math.random(),
