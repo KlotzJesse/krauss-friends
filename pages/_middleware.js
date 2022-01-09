@@ -4,6 +4,11 @@ const trackingId = "UA-216631308-1";
 
 export default async function middleware(request, event) {
   const res = NextResponse.next();
+
+  if (request.url.contains(".")) {
+    return res;
+  }
+
   const lang = request.headers.get("accept-language")
     ? request.headers.get("accept-language").split(",")[0]
     : null;
