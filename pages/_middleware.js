@@ -4,30 +4,24 @@ const trackingId = "UA-216631308-1";
 
 export default async function middleware(request, event) {
   const res = NextResponse.next();
-  console.log(res);
-  console.log(request);
-  console.log(event);
+  const lang = request.headers.get("accept-language")
+    ? request.headers.get("accept-language").split(",")[0]
+    : null;
 
   let uaData = {
     v: 1,
     tid: trackingId,
     ni: 1,
-    t: "event",
-    ec: "cf_worker",
-    ea: "request",
-    el: res.status + ": " + request.url,
+    t: "pageview",
     dl: request.url,
     dr: request.headers.get("referer"),
-    //geoid: request.headers.get("cf-ipcountry"),
-    //ul: lang,
+    ds: "web",
+    // //geoid: request.headers.get("cf-ipcountry"),
+    ul: lang,
     ua: request.headers.get("user-agent"),
-    cd2: request.url,
-    cd1: request.headers.get("user-agent"),
-    cd4: "cf_worker",
+    cid: "35009a79-1a05-49d7-b876-2b884d0f825b",
     z: Math.random(),
-  }; // Object with data for GA Universal Analytics
-
-  // ... here we'll combine all the data we need into our uaData object
+  };
 
   const payload = Object.keys(uaData)
     .map((k) => {
