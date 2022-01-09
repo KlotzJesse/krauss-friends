@@ -31,7 +31,6 @@ export default async function middleware(request, event) {
     dl: request.url,
     dr: request.headers.get("referer"),
     ds: "web",
-    // //geoid: request.headers.get("cf-ipcountry"),
     ul: lang,
     ua: request.ua.ua,
     cid: id,
