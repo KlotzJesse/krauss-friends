@@ -13,6 +13,16 @@ export default async function middleware(request, event) {
     ? request.headers.get("accept-language").split(",")[0]
     : null;
 
+  var id;
+
+  const gaCookie = request.cookies["_rId"];
+  if (gaCookie) {
+    id = gaCookie;
+  } else {
+    id = crypto.randomUUID();
+    res.cookie("_rId", id);
+  }
+
   let uaData = {
     v: 1,
     tid: trackingId,
@@ -24,7 +34,7 @@ export default async function middleware(request, event) {
     // //geoid: request.headers.get("cf-ipcountry"),
     ul: lang,
     ua: request.ua.ua,
-    cid: "35009a79-1a05-49d7-b876-2b884d0f825b",
+    cid: id,
     z: Math.random(),
   };
 
@@ -38,7 +48,5 @@ export default async function middleware(request, event) {
     "https://www.google-analytics.com/collect?" + payload
   );
 
-  console.log(result);
-
-  return NextResponse.next();
+  return res;
 }
