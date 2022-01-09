@@ -5,7 +5,7 @@ const trackingId = "UA-216631308-1";
 export default async function middleware(request, event) {
   const res = NextResponse.next();
 
-  if (request.url.contains(".")) {
+  if (request.url.includes(".")) {
     return res;
   }
 
