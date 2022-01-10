@@ -9,6 +9,7 @@ const Hero = (props) => {
           <div className="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
             <div className="inline-flex items-center mx-auto md:mx-0">
               <Image
+                priority
                 alt="Test"
                 width="160"
                 height="54"
@@ -108,7 +109,6 @@ const Hero = (props) => {
         <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end">
           <a
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
-            style={{ color: "white !important" }}
             className="flex items-center px-12 py-4 text-xs font-medium text-white bg-orange-400 uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Erstgespräch reservieren
