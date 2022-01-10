@@ -116,17 +116,8 @@ const Hero = (props) => {
           <p className="pt-3 text-sm text-gray-500 cursor-pointer xl:hidden">
             In nur 60 Sekunden online einen freien Termin suchen
           </p>
-          <div className="w-full pt-10 md:hidden md:pt-0">
-            <Image
-              src="https://i.ibb.co/mDbxPWv/johannes-krauss-1-1.png"
-              alt="Johannes Krauss"
-              width="313"
-              height="468"
-              priority
-              layout="responsive"
-            />
-          </div>{" "}
-          <div className="w-full pt-10 hidden md:block md:pt-0">
+
+          <div className="w-full pt-10 md:pt-0">
             <Image
               src="https://i.ibb.co/SB421rq/Johannes-Krauss.png"
               alt="Johannes Krauss"
