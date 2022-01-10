@@ -3,6 +3,7 @@ module.exports = {
   //swcMinify: true,
   reactStrictMode: true,
   images: {
-    domains: ["www.krauss-friends.com", "i.ibb.co"],
+    formats: ["image/avif", "image/webp"],
+    domains: ["www.krauss-friends.com", "i.ibb.co", "image.jimcdn.com"],
   },
 };

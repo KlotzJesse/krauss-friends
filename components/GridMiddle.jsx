@@ -1,3 +1,11 @@
+import {
+  AnnotationIcon,
+  BookOpenIcon,
+  CashIcon,
+  CurrencyEuroIcon,
+  PhoneOutgoingIcon,
+  TrendingUpIcon,
+} from "@heroicons/react/solid";
 import React from "react";
 
 const GridMiddle = (props) => {
@@ -7,7 +15,7 @@ const GridMiddle = (props) => {
         <div className="flex flex-wrap">
           <div className="w-full p-2 cursor-pointer md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
-              <div className="flex-shrink-0 w-12 h-12 mr-4 fa fa-trophy fa-3x r"></div>
+              <TrendingUpIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
                   Motivieren durch mehr Erfolg in der Neukundengewinnung
@@ -17,7 +25,7 @@ const GridMiddle = (props) => {
           </div>
           <div className="w-full p-2 cursor-pointer md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
-              <div className="flex-shrink-0 w-12 h-12 mr-4 fas fa-funnel-dollar fa-3x r"></div>
+              <CurrencyEuroIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
                   Mit der Einwandbehandlung den Abschluss vorbereiten
@@ -27,7 +35,7 @@ const GridMiddle = (props) => {
           </div>
           <div className="w-full p-2 cursor-pointer md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
-              <div className="flex-shrink-0 w-12 h-12 mr-4 far fa-smile-beam fa-3x r"></div>
+              <BookOpenIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
                   Kunden begeistern durch Storytelling
@@ -37,7 +45,7 @@ const GridMiddle = (props) => {
           </div>
           <div className="w-full p-2 cursor-pointer md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
-              <div className="flex-shrink-0 w-12 h-12 mr-4 fas fa-hands-helping fa-3x r"></div>
+              <CashIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
                   Erfolgreiches Verkaufsgespräch führen
@@ -47,7 +55,7 @@ const GridMiddle = (props) => {
           </div>
           <div className="w-full p-2 cursor-pointer md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
-              <div className="flex-shrink-0 w-12 h-12 mr-4 fas fa-comment-dots fa-3x r"></div>
+              <AnnotationIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
                   Im Kopf des Kunden argumentieren
@@ -57,7 +65,7 @@ const GridMiddle = (props) => {
           </div>
           <div className="w-full p-2 cursor-pointer md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
-              <div className="flex-shrink-0 w-12 h-12 mr-4 fas fa-seedling fa-3x r"></div>
+              <PhoneOutgoingIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
                   Bedarf wecken - seinen eigenen Markt machen

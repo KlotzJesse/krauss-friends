@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = (props) => {
@@ -11,9 +12,11 @@ const Footer = (props) => {
             title="KRAUSS and Friends"
             className="inline-flex items-center"
           >
-            <img
+            <Image
               src="https://i.ibb.co/1Xn3thH/Krauss-Logo-gen-HKS-47-K-RGB-2000px-72dpi.png"
-              className="w-32"
+              width="128"
+              alt="Logo"
+              height="43"
             />
           </a>
           <div className="mt-6 lg:max-w-sm">
@@ -38,18 +41,7 @@ const Footer = (props) => {
               title="Unser Telefon"
               className="transition-colors duration-300 text-purple-accent-400 hover:text-purple-800"
             />
-            <a
-              style={{
-                color: "rgba(0,0,238,1.0)",
-                backgroundColor: "rgba(255,255,0,1)",
-                borderRadius: "3px",
-                cursor: "pointer",
-              }}
-              title="Use as phone number"
-              href="tel:+4981919375900"
-            >
-              +49 8191 93759-00
-            </a>
+            <a href="tel:+4981919375900">+49 8191 93759-00</a>
           </div>
           <div className="flex">
             <p className="mr-1 text-gray-800">E-Mail:</p>

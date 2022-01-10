@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Testimonial = (props) => {
@@ -5,10 +6,12 @@ const Testimonial = (props) => {
     <section className="container px-5 mx-auto text-gray-400 2xl:w-3/5">
       <div className="container flex flex-col px-5 py-16 mx-auto lg:items-center md:flex-row">
         <div className="w-full mb-10 lg:w-5/6 lg:max-w-lg md:w-1/2">
-          <img
+          <Image
             className="object-cover object-center rounded"
             alt="Artur Polak - Gebietsverkaufsleiter"
-            loading="lazy"
+            width="512"
+            height="427"
+            layout="responsive"
             src="https://www.krauss-friends.com/app/download/8105062461/8693ac.png?t=1625738080"
           />
         </div>

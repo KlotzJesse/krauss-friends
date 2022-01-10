@@ -9,17 +9,10 @@ const Targets = (props) => {
             <p className="font-semibold text-gray-400 uppercase tracking-loose">
               Was Sie erwartet
             </p>
-            <h1
-              className="mb-16 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight"
-              style={{
-                fontFamily: '"Frank Ruhl Libre", serif',
-                textTransform: "none",
-              }}
-            >
+            <h1 className="mb-16 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
               So unterstützt das Vertriebstraining Ihren Verkäufern{" "}
               <span
                 style={{
-                  fontFamily: '"Frank Ruhl Libre", serif',
                   background:
                     "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
                 }}
@@ -29,7 +22,6 @@ const Targets = (props) => {
             </h1>
             <a
               href="https://calendly.com/krauss-friends/kennenlerngespraech"
-              style={{ color: "white !important" }}
               className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Erstgespräch reservieren
@@ -63,10 +55,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/42-business-professional-services/interview.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Erstgespräch &amp; Kennenlernen
                   </h2>
                 </div>
@@ -85,10 +74,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/42-business-professional-services/interview.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Briefing &amp; Klare Zielsetzung
                   </h2>
                 </div>
@@ -107,10 +93,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/12-peoples-avatars/positive-thoughts.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Verhaltensänderung Ihrer Mitarbeiter
                   </h2>
                 </div>
@@ -129,10 +112,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/44-hand-gestures/freedom.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Langfristige Verbesserung
                   </h2>
                 </div>
@@ -150,10 +130,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/42-business-professional-services/meeting.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Sofortige Anwendung
                   </h2>
                 </div>
@@ -173,10 +150,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/12-peoples-avatars/motivation.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Mehr Motivation und Freude
                   </h2>
                 </div>
@@ -195,10 +169,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/42-business-professional-services/analysis.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Maximale Vertriebsperformance
                   </h2>
                 </div>
@@ -217,10 +188,7 @@ const Targets = (props) => {
                   src="https://uxwing.com/wp-content/themes/uxwing/download/42-business-professional-services/analysis.svg"
                 />
                 <div className="flex-grow">
-                  <h2
-                    className="font-medium text-gray-900 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <h2 className="font-medium text-gray-900 title-font">
                     Intervalltrainings für zeitnahe Erfolge bei sich und Ihren
                     Mitarbeitern
                   </h2>

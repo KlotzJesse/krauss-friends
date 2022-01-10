@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = (props) => {
   return (
-    <div className="bg-slate-100 overflow-hidden h-screen">
+    <div className="bg-slate-100 overflow-hidden md:max-h-screen">
       <div className="flex flex-col items-center justify-center flex-grow mx-auto space-y-5 text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 md:pb-28 xl:p-40 xl:text-left">
         <div className="w-full text-gray-700 transition duration-500 ease-in-out transform">
           <div className="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
@@ -86,7 +86,7 @@ const Hero = (props) => {
           </div>
           <a
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
-            className="items-center self-start px-12 py-4 mr-2 text-lg font-medium text-white bg-orange-400 uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:flex hiddenNon primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
+            className="items-center self-start px-12 py-4 mr-2 text-lg font-medium text-white bg-orange-400 uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:flex hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Erstgespräch reservieren
             <svg
@@ -102,7 +102,7 @@ const Hero = (props) => {
               ></path>
             </svg>
           </a>
-          <p className="self-start pt-3 text-sm text-gray-500 cursor-pointer hiddenNon md:block">
+          <p className="self-start pt-3 text-sm text-gray-500 cursor-pointer hidden md:block">
             In nur 60 Sekunden online einen freien Termin suchen
           </p>
         </div>
@@ -116,16 +116,27 @@ const Hero = (props) => {
           <p className="pt-3 text-sm text-gray-500 cursor-pointer xl:hidden">
             In nur 60 Sekunden online einen freien Termin suchen
           </p>
-          <img
-            src="https://i.ibb.co/mDbxPWv/johannes-krauss-1-1.png"
-            alt="Johannes Krauss"
-            className="w-full pt-10 md:hidden md:pt-0"
-          />{" "}
-          <img
-            src="https://i.ibb.co/SB421rq/Johannes-Krauss.png"
-            alt="Johannes Krauss"
-            className="w-full pt-10 hiddenNon md:block md:pt-0"
-          />
+          <div className="w-full pt-10 md:hidden md:pt-0">
+            <Image
+              src="https://i.ibb.co/mDbxPWv/johannes-krauss-1-1.png"
+              alt="Johannes Krauss"
+              width="313"
+              height="468"
+              priority
+              layout="responsive"
+            />
+          </div>{" "}
+          <div className="w-full pt-10 hidden md:block md:pt-0">
+            <Image
+              src="https://i.ibb.co/SB421rq/Johannes-Krauss.png"
+              alt="Johannes Krauss"
+              width="624"
+              height="745"
+              priority
+              quality={100}
+              layout="responsive"
+            />
+          </div>
         </div>
       </section>
     </div>

@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 
 const GridText = (props) => {
@@ -19,7 +20,7 @@ const GridText = (props) => {
           <div className="flex flex-wrap">
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
-                <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
+                <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
                   <p className="font-medium text-gray-400 title-font text-md">
                     <strong>Zu wenig Abschlüsse</strong> aus der
@@ -30,7 +31,7 @@ const GridText = (props) => {
             </div>
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
-                <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
+                <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
                   <p className="font-medium text-gray-400 title-font text-md">
                     Die Kunden sagen &quot;
@@ -42,7 +43,7 @@ const GridText = (props) => {
             </div>
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
-                <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
+                <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
                   <p className="font-medium text-gray-400 title-font">
                     Entscheider können nicht mehr besucht werden, weil Sie im
@@ -53,7 +54,7 @@ const GridText = (props) => {
             </div>
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
-                <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
+                <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
                   <p className="font-medium text-gray-400 title-font">
                     Es bleibt <strong>keine Zeit für Neukundengewinnung</strong>
@@ -63,7 +64,7 @@ const GridText = (props) => {
             </div>
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
-                <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
+                <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
                   <p className="font-medium text-gray-400 title-font">
                     <strong>Termine vor Ort</strong> nicht mehr möglich
@@ -74,7 +75,7 @@ const GridText = (props) => {
             </div>
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
-                <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
+                <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
                   <p className="font-medium text-gray-400 title-font">
                     Kunde behauptet &quot;Das Produkt ist{" "}
