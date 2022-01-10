@@ -1,0 +1,43 @@
+import React from "react";
+
+const Testimonial = (props) => {
+  return (
+    <section className="container px-5 mx-auto text-gray-400 2xl:w-3/5">
+      <div className="container flex flex-col px-5 py-16 mx-auto lg:items-center md:flex-row">
+        <div className="w-full mb-10 lg:w-5/6 lg:max-w-lg md:w-1/2">
+          <img
+            className="object-cover object-center rounded"
+            alt="Artur Polak - Gebietsverkaufsleiter"
+            loading="lazy"
+            src="https://www.krauss-friends.com/app/download/8105062461/8693ac.png?t=1625738080"
+          />
+        </div>
+        <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">
+          <p className="mb-12 text-base font-medium leading-relaxed text-gray-400">
+            &quot;Das Vertriebstraining war{" "}
+            <i>
+              sehr kurzweilig, abwechslungsreich und vor allem praxisbezogen
+            </i>
+            . Den größten Aha-Effekt löste bei mir die Übung aus, andere
+            Verkäufer aus der Kundenrolle zu erleben und zu analysieren. Seitdem
+            nehme ich auch in meinem Arbeitsalltag gedanklich immer wieder die
+            Perspektive des Kunden ein,{" "}
+            <strong>
+              behalte so die Gesprächsführung und bin erfolgreicher
+            </strong>
+            .&quot;
+          </p>
+          <h2 className="mb-8 text-xs font-semibold tracking-widest text-black text-gray-400 uppercase title-font">
+            Artur Polak
+            <br />
+            Gebietsverkaufsleiter Gebiet Süd/Ost
+          </h2>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+Testimonial.propTypes = {};
+
+export default Testimonial;

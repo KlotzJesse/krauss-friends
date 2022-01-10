@@ -1,0 +1,106 @@
+import React from "react";
+
+const TestimonialGrid = (props) => {
+  return (
+    <section className="container mx-auto text-gray-600 body-font md:px-5 2xl:w-3/5">
+      <div className="container flex flex-col px-5 mx-auto md:py-20 md:flex-wrap">
+        <div className="flex flex-wrap w-full mb-20">
+          <h1
+            className="mb-4 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight lg:w-1/3 lg:mb-0"
+            style={{
+              fontFamily: '"Frank Ruhl Libre", serif',
+              textTransform: "none",
+            }}
+          >
+            Eindrücke aus unserem{" "}
+            <span
+              style={{
+                fontFamily: '"Frank Ruhl Libre", serif',
+                background:
+                  "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
+              }}
+            >
+              Vertriebstraining
+            </span>
+          </h1>
+          <p className="mx-auto text-base font-medium leading-relaxed text-gray-400 lg:pl-6 lg:w-2/3">
+            Unsere Trainingsmethoden gewährleisten Wissensaufbau durch
+            systemische Arbeitssequenzen. Der Wissenstransfer reduziert sich auf
+            das Wesentliche und ist sofort für die Praxis nutzbar. Ihr Vertrieb
+            hat die Möglichkeit sofort seine Leistung zu verdoppeln. Wir
+            trainieren nach Ihren Anforderungen sowohl online als auch offline.
+            Wirksam und Praxisnah.
+          </p>
+        </div>
+        <div className="flex flex-wrap -m-1 md:-m-2">
+          <div className="flex flex-wrap w-1/2">
+            <div className="w-1/2 p-1 md:p-2">
+              <img
+                alt="Training Gruppenarbeit"
+                className="block object-cover object-center w-full h-full rounded"
+                src="https://image.jimcdn.com/app/cms/image/transf/dimension=660x10000:format=png/path/s136c472730450c10/image/ib3ff735be07090b9/version/1621596236/training-gruppenarbeit.png"
+              />
+            </div>
+            <div className="w-1/2 p-1 md:p-2">
+              <img
+                alt="Golf Analogieübung beim Vertriebstraining"
+                className="block object-cover object-center w-full h-full rounded"
+                src="https://www.krauss-friends.com/app/download/8105144261/_DSC4647-min.png?t=1625756283"
+              />
+            </div>
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="Flipchart bearbeiten im Team"
+                className="block object-cover object-center w-full h-full rounded"
+                src="https://www.krauss-friends.com/app/download/8105144061/_DSC4662-min.png?t=1625756102"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap w-1/2 mx-auto">
+            <div className="w-full p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block object-cover object-center w-full h-full rounded"
+                src="https://www.krauss-friends.com/app/download/8105114861/Mitarbeiter+Interview+Krauss+GmbH+2-19+screenshot.png?t=1625750993"
+              />
+            </div>
+            <div className="w-1/2 p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block object-cover object-center w-full h-full rounded"
+                src="https://www.krauss-friends.com/app/download/8111814061/20210729_112121.jpeg?t=1629117333"
+              />
+            </div>
+            <div className="w-1/2 p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block object-cover object-center w-full h-full rounded"
+                src="https://www.krauss-friends.com/app/download/8105144761/_DSC4611-min.png?t=1625756542"
+              />
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full mx-auto">
+            <div className="w-1/2 p-1 md:p-2">
+              <p className="text-left text-gray-400">
+                Präsenz Vertriebstraining mit erlebnisreicher Golf
+                Analogieübung, um das eigene Verhalten zu reflektieren, für mehr
+                Erfolg im nächsten Verkaufsgespräch.
+              </p>
+            </div>
+            <div className="w-1/2 p-1 md:p-2">
+              <p className="text-right text-gray-400">
+                Online Vertriebstraining mit interaktiven Whiteboard für
+                motivierte Übung um das nächste Verkaufsgespräch direkt zu
+                gewinnen und mehr Umsatz zu erzielen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+TestimonialGrid.propTypes = {};
+
+export default TestimonialGrid;
