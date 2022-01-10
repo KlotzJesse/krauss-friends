@@ -9,13 +9,7 @@ const CTASection = (props) => {
             <p className="font-semibold text-gray-400 uppercase tracking-loose">
               So kann ich Ihnen helfen
             </p>
-            <h1
-              className="mb-12 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight"
-              style={{
-                fontFamily: '"Frank Ruhl Libre", serif',
-                textTransform: "none",
-              }}
-            >
+            <h1 className="mb-12 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
               <span
                 style={{
                   background:
@@ -29,7 +23,7 @@ const CTASection = (props) => {
             <a
               href="https://calendly.com/krauss-friends/kennenlerngespraech"
               style={{ color: "white !important" }}
-              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+              className="flex items-center self-start px-12 py-4 mr-2 bg-orange-400 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Erstgespräch reservieren
               <svg
@@ -52,21 +46,22 @@ const CTASection = (props) => {
           <div className="sticky pt-10 ml-0 md:ml-12 lg:w-1/2 md:pt-0">
             <div className="w-full h-full mx-auto sm:container">
               <p className="text-lg font-medium text-gray-400">
-                {/*<u>Wenn Ihre Antwort auf die vorige Frage <strong>“ja”</strong> lautet</u>, kann ich Ihnen helfen.<br />
-                        <br />*/}
-                Für namhafte Marken{" "}
+                <u>
+                  Wenn Ihre Antwort auf die vorige Frage <strong>“ja”</strong>{" "}
+                  lautet
+                </u>
+                , kann ich Ihnen helfen.
+                <br />
+                <br />
+                Für namhafte Marken betreiben wir seit vielen Jahren{" "}
                 <span className="underline">
-                  betreiben wir seit vielen Jahren in unserem Vertriebsteam die
-                  tägliche Terminvereinbarung in der Neukundenakquise
-                </span>
-                . Und deshalb glauben wir zu wissen was die Herausforderungen
-                jetzt und zukünftig sein werden -{" "}
+                  in unserem Vertriebsteam die tägliche Terminvereinbarung
+                </span>{" "}
+                in der Neukundenakquise. Und deshalb glauben wir zu wissen was
+                die Herausforderungen jetzt und zukünftig sein werden -{" "}
                 <strong>Wir leben Vertrieb.</strong>
                 <br />
                 <br />
-                {/*Wir verstehen, dass Ihr Vertrieb damit beschäftigt ist Kunden zu betreuen. Um so wichtiger ist es deshalb Ihren Vertrieb ständig bei Ihrer Neukundengewinnung zu unterstützen, um Ihr
-                        Geschäft wachsen zu lassen.<br />
-                        <br/>*/}
                 Wir <strong>motivieren &amp; trainieren</strong> Ihr Team in
                 echten Praxis Situationen auch außerhalb des Seminarraums und
                 machen Erfolg erlebbar. Die gewonnen Erkenntnisse aus der Übung

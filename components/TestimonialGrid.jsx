@@ -5,17 +5,10 @@ const TestimonialGrid = (props) => {
     <section className="container mx-auto text-gray-600 body-font md:px-5 2xl:w-3/5">
       <div className="container flex flex-col px-5 mx-auto md:py-20 md:flex-wrap">
         <div className="flex flex-wrap w-full mb-20">
-          <h1
-            className="mb-4 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight lg:w-1/3 lg:mb-0"
-            style={{
-              fontFamily: '"Frank Ruhl Libre", serif',
-              textTransform: "none",
-            }}
-          >
+          <h1 className="mb-4 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight lg:w-1/3 lg:mb-0">
             Eindrücke aus unserem{" "}
             <span
               style={{
-                fontFamily: '"Frank Ruhl Libre", serif',
                 background:
                   "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
               }}

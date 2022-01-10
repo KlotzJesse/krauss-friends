@@ -3,13 +3,7 @@ import React from "react";
 const GridText = (props) => {
   return (
     <div className="py-5">
-      <h1
-        className="px-5 mb-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight"
-        style={{
-          fontFamily: '"Frank Ruhl Libre", serif',
-          textTransform: "none",
-        }}
-      >
+      <h1 className="px-5 mb-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
         <span
           style={{
             background:
@@ -27,10 +21,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
                 <div className="flex-grow">
-                  <p
-                    className="font-medium text-gray-400 title-font text-md"
-                    style={{ textTransform: "none" }}
-                  >
+                  <p className="font-medium text-gray-400 title-font text-md">
                     <strong>Zu wenig Abschlüsse</strong> aus der
                     Angebotsnachbearbeitung
                   </p>
@@ -41,10 +32,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
                 <div className="flex-grow">
-                  <p
-                    className="font-medium text-gray-400 title-font text-md"
-                    style={{ textTransform: "none" }}
-                  >
+                  <p className="font-medium text-gray-400 title-font text-md">
                     Die Kunden sagen &quot;
                     <strong>Wir haben keinen Bedarf</strong>&quot; oder
                     &quot;Kein Interesse&quot;
@@ -56,10 +44,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
                 <div className="flex-grow">
-                  <p
-                    className="font-medium text-gray-400 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <p className="font-medium text-gray-400 title-font">
                     Entscheider können nicht mehr besucht werden, weil Sie im
                     Home-Office sind oder <strong>nur selten vor Ort</strong>
                   </p>
@@ -70,10 +55,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
                 <div className="flex-grow">
-                  <p
-                    className="font-medium text-gray-400 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <p className="font-medium text-gray-400 title-font">
                     Es bleibt <strong>keine Zeit für Neukundengewinnung</strong>
                   </p>
                 </div>
@@ -83,10 +65,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
                 <div className="flex-grow">
-                  <p
-                    className="font-medium text-gray-400 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <p className="font-medium text-gray-400 title-font">
                     <strong>Termine vor Ort</strong> nicht mehr möglich
                     (Abstandsregeln, Kettengeschäft...)
                   </p>
@@ -97,10 +76,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <div className="flex-shrink-0 w-4 h-4 mr-4 fas fa-long-arrow-alt-right"></div>
                 <div className="flex-grow">
-                  <p
-                    className="font-medium text-gray-400 title-font"
-                    style={{ textTransform: "none" }}
-                  >
+                  <p className="font-medium text-gray-400 title-font">
                     Kunde behauptet &quot;Das Produkt ist{" "}
                     <strong>zu teuer</strong>&quot;
                   </p>

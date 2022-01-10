@@ -13,17 +13,10 @@ const PersonalStatement = (props) => {
         </div>
         <div className="flex flex-col justify-center px-5 text-left md:flex-initial md:w-2/3">
           <p className="font-semibold text-gray-800 uppercase">Über mich</p>
-          <h1
-            className="mb-8 text-2xl font-semibold leading-tight text-gray-800 dark:text-white xl:text-5xl xl:leading-tight"
-            style={{
-              fontFamily: '"Frank Ruhl Libre", serif',
-              textTransform: "none",
-            }}
-          >
+          <h1 className="mb-8 text-2xl font-semibold leading-tight text-gray-800 dark:text-white xl:text-5xl xl:leading-tight">
             Ich{" "}
             <span
               style={{
-                fontFamily: '"Frank Ruhl Libre", serif',
                 background:
                   "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
               }}

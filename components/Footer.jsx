@@ -121,7 +121,6 @@ const Footer = (props) => {
           <li>
             <a
               id="cookie-policy"
-              href="javascript:window.CookieControl.showCookieSettings();"
               className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               Cookie-Richtlinie

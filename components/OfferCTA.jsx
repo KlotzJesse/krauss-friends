@@ -4,13 +4,7 @@ const OfferCTA = (props) => {
   return (
     <div className="flex items-center justify-center -mb-10 bg-white">
       <div className="relative flex flex-col items-center w-full max-w-6xl p-10 mx-auto text-center transform rounded-lg shadow-2xl md:p-16 lg:block bg-gradient-to-br from-yellow-300 via-yellow-300 to-yellow-200 -translate-y-28">
-        <h2
-          className="my-4 text-3xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl lg:my-0 xl:text-4xl sm:leading-tight"
-          style={{
-            fontFamily: '"Frank Ruhl Libre", serif',
-            textTransform: "none",
-          }}
-        >
+        <h2 className="my-4 text-3xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl lg:my-0 xl:text-4xl sm:leading-tight">
           Kostenloses Erstgespräch
         </h2>
         <p className="mt-1 mb-10 text-sm font-medium text-black xl:text-base xl:tracking-wider">
@@ -24,8 +18,7 @@ const OfferCTA = (props) => {
           <div className="inline-flex mx-auto">
             <a
               href="https://calendly.com/krauss-friends/kennenlerngespraech"
-              style={{ color: "white !important", background: "#ff0021" }}
-              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+              className="flex items-center bg-orange-500 self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Erstgespräch reservieren
               <svg
