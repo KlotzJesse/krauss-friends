@@ -34,6 +34,7 @@ export default async function middleware(request, event) {
     ul: lang,
     ua: request.ua.ua,
     cid: id,
+    ni: 1,
     z: Math.random(),
   };
 
