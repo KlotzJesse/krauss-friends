@@ -1,6 +1,7 @@
 import Column from "./Column";
 import Container from "./Container";
 import CTASection from "./CTASection";
+import DiagonalImageHero from "./DiagonalImageHero";
 import Footer from "./Footer";
 import GridMiddle from "./GridMiddle";
 import GridText from "./GridText";
@@ -10,10 +11,16 @@ import OfferCTA from "./OfferCTA";
 import Page from "./Page";
 import PersonalStatement from "./PersonalStatement";
 import Placeholder from "./Placeholder";
+import ScrollySnap from "./ScrollySnap";
 import Section from "./Section";
+import SimpleFooter from "./SimpleFooter";
+import SingleTestimonial from "./SingleTestimonial";
 import Targets from "./Targets";
 import Testimonial from "./Testimonial";
 import TestimonialGrid from "./TestimonialGrid";
+import VideoHero from "./VideoHero";
+import HeroSignUp from "./VideoSignUpHero";
+import WavyHero from "./WavyHero";
 
 const Components = {
   heading: Heading,
@@ -29,7 +36,14 @@ const Components = {
   personalStatement: PersonalStatement,
   footer: Footer,
   offerCTA: OfferCTA,
+  scrollySnap: ScrollySnap,
+  diagonalImageHero: DiagonalImageHero,
+  wavyHero: WavyHero,
+  videoHero: VideoHero,
+  heroSignUp: HeroSignUp,
   targets: Targets,
+  simpleFooter: SimpleFooter,
+  singleTestimonial: SingleTestimonial,
   page: Page,
 };
 
