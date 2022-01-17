@@ -3,10 +3,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
+  { name: "Termin anfragen", href: "#" },
+  /*{ name: "Features", href: "#" },
   { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Company", href: "#" },*/
 ];
 
 export default function HeroSignUp({ blok }) {
@@ -149,7 +149,7 @@ export default function HeroSignUp({ blok }) {
                   href="#"
                   className="block w-full px-5 py-3 font-medium text-center text-secondary-600 bg-gray-50 hover:bg-gray-100"
                 >
-                  Log in
+                  Unverbindlichen Termin vereinbaren
                 </a>
               </div>
             </Popover.Panel>
@@ -171,11 +171,11 @@ export default function HeroSignUp({ blok }) {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                {blok.description}
+                {blok.description} Werden Sie zum Königsmacher!
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">
-                  Sign up to get notified when it&apos;s ready.
+                  Unverbindliches Beratungsgespräch vereinbaren
                 </p>
                 <form action="#" method="POST" className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
@@ -186,19 +186,20 @@ export default function HeroSignUp({ blok }) {
                     name="email"
                     id="email"
                     className="block w-full py-3 text-base placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:flex-1"
-                    placeholder="Enter your email"
+                    placeholder="Gebe hier deine E-Mail ein"
                   />
                   <button
                     type="submit"
                     className="w-full px-6 py-3 mt-3 text-base font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Notify me
+                    Termin Anfragen
                   </button>
                 </form>
                 <p className="mt-3 text-sm text-gray-500">
-                  We care about the protection of your data. Read our{" "}
+                  Vereinbaren Sie unverbindlich ein Kennenlerngespräch innerhalb
+                  der nächsten Tage.{" "}
                   <a href="#" className="font-medium text-gray-900 underline">
-                    Privacy Policy
+                    Datenschutz
                   </a>
                   .
                 </p>
@@ -252,11 +253,7 @@ export default function HeroSignUp({ blok }) {
                   className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500"
                 >
                   <span className="sr-only">Watch our video to learn more</span>
-                  <img
-                    className="w-full"
-                    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    alt=""
-                  />
+                  <img className="w-full" src="/Krauss Interview.jpg" alt="" />
                   <div
                     className="absolute inset-0 flex items-center justify-center w-full h-full"
                     aria-hidden="true"

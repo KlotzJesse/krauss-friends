@@ -12,6 +12,7 @@ import Page from "./Page";
 import PersonalStatement from "./PersonalStatement";
 import Placeholder from "./Placeholder";
 import ScrollySnap from "./ScrollySnap";
+import ScrollyTellings from "./ScrollyTelling";
 import Section from "./Section";
 import SimpleFooter from "./SimpleFooter";
 import SingleTestimonial from "./SingleTestimonial";
@@ -44,6 +45,7 @@ const Components = {
   targets: Targets,
   simpleFooter: SimpleFooter,
   singleTestimonial: SingleTestimonial,
+  scrollyTelling: ScrollyTellings,
   page: Page,
 };
 

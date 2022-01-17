@@ -9,8 +9,8 @@ const stats = [
 
 const logos = [
   {
-    name: "Transistor",
-    url: "https://tailwindui.com/img/logos/transistor-logo-gray-400.svg",
+    name: "Wiley-VCH",
+    url: "/Wiley-VCH-Logo.svg",
   },
   {
     name: "Mirage",
@@ -84,7 +84,7 @@ const SingleTestimonial = (props) => {
               <div className="relative pt-64 pb-10 overflow-hidden shadow-xl rounded-2xl">
                 <img
                   className="absolute inset-0 object-cover w-full h-full"
-                  src="https://images.unsplash.com/photo-1521510895919-46920266ddb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&fp-x=0.5&fp-y=0.6&fp-z=3&width=1440&height=1440&sat=-100"
+                  src="/Vanessa Winde.jpg"
                   alt=""
                 />
                 <div className="absolute inset-0 bg-primary-500 mix-blend-multiply" />
@@ -93,8 +93,8 @@ const SingleTestimonial = (props) => {
                   <div>
                     <img
                       className="h-12"
-                      src="https://tailwindui.com/img/logos/workcation.svg?color=white"
-                      alt="Workcation"
+                      src="/Wiley-VCH-Logo.svg"
+                      alt="Wiley-VCH"
                     />
                   </div>
                   <blockquote className="mt-8">
@@ -108,15 +108,17 @@ const SingleTestimonial = (props) => {
                         <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                       </svg>
                       <p className="relative">
-                        Tincidunt integer commodo, cursus etiam aliquam neque,
-                        et. Consectetur pretium in volutpat, diam. Montes, magna
-                        cursus nulla feugiat dignissim id lobortis amet.
+                        Durch das praktische Erleben im Training „begreift“ man
+                        Teamführung im wahrsten Sinne des Wortes. Eigene
+                        Verhaltensweisen und Denkmuster werden einem bewusst.
+                        Letztlich hilft das Training aus der Komfortzone
+                        herauszukommen und das zahlt sich aus.
                       </p>
                     </div>
 
                     <footer className="mt-4">
                       <p className="text-base font-semibold text-primary-200">
-                        Sarah Williams, CEO at Workcation
+                        Vanessa Winde, Commercial Manager bei Wiley-VCH
                       </p>
                     </footer>
                   </blockquote>
@@ -129,7 +131,7 @@ const SingleTestimonial = (props) => {
             {/* Content area */}
             <div className="pt-12 sm:pt-16 lg:pt-20">
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                On a mission to empower teams
+                Mit dem Ziel, Teams zu stärken
               </h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="text-lg">
@@ -215,7 +217,7 @@ const SingleTestimonial = (props) => {
               {logos.map((logo) => (
                 <div
                   key={logo.name}
-                  className="flex justify-center col-span-1 px-8 py-8 bg-gray-50"
+                  className="flex justify-center col-span-1 px-8 py-8 bg-gray-50 text-gray-600"
                 >
                   <img className="max-h-12" src={logo.url} alt={logo.name} />
                 </div>
@@ -290,23 +292,23 @@ const SingleTestimonial = (props) => {
             <div className="relative">
               <div className="sm:text-center">
                 <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                  Get notified when we&rsquo;re launching.
+                  Vereinbare jetzt ein unverbindliches Strategiegespräch
                 </h2>
                 <p className="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
-                  Sagittis scelerisque nulla cursus in enim consectetur quam.
-                  Dictum urna sed consectetur neque tristique pellentesque.
+                  Hinterlass uns deine Kontaktdaten und wir melden uns mit einem
+                  Terminvorschlag so schnell wie möglich zurück.
                 </p>
               </div>
               <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
                 <div className="flex-1 min-w-0">
                   <label htmlFor="cta-email" className="sr-only">
-                    Email address
+                    Email Adresse
                   </label>
                   <input
                     id="cta-email"
                     type="email"
                     className="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
-                    placeholder="Enter your email"
+                    placeholder="Gebe hier deine E-Mail ein"
                   />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-3">
@@ -314,7 +316,7 @@ const SingleTestimonial = (props) => {
                     type="submit"
                     className="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10"
                   >
-                    Notify me
+                    Termin anfragen
                   </button>
                 </div>
               </form>
