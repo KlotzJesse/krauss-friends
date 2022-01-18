@@ -22,7 +22,8 @@
     "react-dom": "17.0.2",
     "sharp": "^0.29.3",
     "storyblok-js-client": "^4.1.6",
-    "use-lax": "^4.0.3"
+    "use-lax": "^4.0.3",
+    "vanilla-cookieconsent": "^2.8.0"
   },
   "devDependencies": {
     "@types/node": "17.0.7",
