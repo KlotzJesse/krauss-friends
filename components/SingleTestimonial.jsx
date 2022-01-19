@@ -266,7 +266,6 @@ const logos = [
     name: "Electrolux Professional",
     img: (props) => (
       <svg viewBox="0 0 617.32 141.73" fill="currentColor" {...props}>
-        <title>Electrolux_Professional_logo_master_blue_RGB</title>
         <path
           d="M133.39,301c32,0,63.09,26.4,63.09,58.48a71.53,71.53,0,0,1-13.35,1.43c-33.72,0-61.88-27.13-63.15-59.9Zm49.73-66.62a71,71,0,0,1,13.36,1.4c0,32.11-31.05,58.53-63.1,58.53l-13.4,0c2.2-32.92,29.43-59.92,63.15-59.92m20,3.21a63.17,63.17,0,0,1,43.22,60c.07,27.6-17.67,51.29-43.22,60ZM112.28,368.5H254V226.77H112.28Z"
           transform="translate(-112.28 -226.77)"
