@@ -53,7 +53,7 @@ const ScrollyTellings = (props) => {
   }, []);
 
   return (
-    <div className="h-[3500px] lg:mx-auto lg:max-w-7xl lg:px-8">
+    <div className="h-[3000px] lg:mx-auto lg:max-w-7xl lg:px-8">
       <div className="sticky top-0 bottom-0 left-0 right-0 flex items-center justify-center h-screen text-center ">
         <h1 className="absolute font-serif text-6xl spinMe">
           Sie sind Geschäftsführer, Team- oder Abteilungsleiter und möchten

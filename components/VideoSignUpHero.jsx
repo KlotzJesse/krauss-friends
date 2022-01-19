@@ -2,12 +2,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment } from "react";
 
-const navigation = [
-  { name: "Termin anfragen", href: "#" },
-  /*{ name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },*/
-];
+const navigation = [{ name: "Termin anfragen", href: "#" }];
 
 export default function HeroSignUp({ blok }) {
   return (
@@ -97,7 +92,7 @@ export default function HeroSignUp({ blok }) {
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <a
                   href="#"
-                  className="inline-flex items-center px-4 py-2 text-base font-medium bg-white border border-transparent rounded-md text-secondary-600 hover:bg-gray-50"
+                  className="inline-flex items-center px-4 py-2 text-base font-medium bg-white border border-transparent rounded-md text-primary-600 hover:bg-gray-50"
                 >
                   Unverbindlichen Termin vereinbaren
                 </a>
@@ -147,7 +142,7 @@ export default function HeroSignUp({ blok }) {
                 </div>
                 <a
                   href="#"
-                  className="block w-full px-5 py-3 font-medium text-center text-secondary-600 bg-gray-50 hover:bg-gray-100"
+                  className="block w-full px-5 py-3 font-medium text-center text-primary-500 bg-gray-50 hover:bg-gray-100"
                 >
                   Unverbindlichen Termin vereinbaren
                 </a>
