@@ -15,6 +15,7 @@ import Placeholder from "./Placeholder";
 import ScrollySnap from "./ScrollySnap";
 import ScrollyTellings from "./ScrollyTelling";
 import Section from "./Section";
+import SideBySideFunctions from "./sidebysideFuntions";
 import SimpleFooter from "./SimpleFooter";
 import SingleTestimonial from "./SingleTestimonial";
 import Targets from "./Targets";
@@ -48,6 +49,7 @@ const Components = {
   singleTestimonial: SingleTestimonial,
   scrollyTelling: ScrollyTellings,
   imageTextFull: ImageTextFull,
+  sidebysideFuntions: SideBySideFunctions,
   page: Page,
 };
 

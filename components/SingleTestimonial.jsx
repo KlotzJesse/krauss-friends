@@ -135,11 +135,10 @@ const SingleTestimonial = (props) => {
               </h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="text-lg">
-                  Mit dem Führungsverhalten als Coach erzeugen Sie mehr
-                  Eigenständigkeit und Eigenverantwortlichkeit Ihrer Mitarbeiter
-                  im Sinne der Zielerreichung. In diesem Führungstraining
-                  erfahren Sie in jedem Baustein, was es heißt, Training
-                  erfolgreich zu erleben.
+                  Der Schlüssel zu mehr Produktivität ist die Identifikation mit
+                  der Aufgabe und dem Unternehmen. Zusammen mit der Motivation
+                  sind sie die treibenden Kräfte, die über die Intensität des
+                  freigesetzten Engagements entscheiden.
                 </p>
                 <p className="text-base leading-7">
                   Die Trainingsinhalte sind so praxisnah, dass es Ihnen sofort
@@ -175,7 +174,8 @@ const SingleTestimonial = (props) => {
                   href="#"
                   className="text-base font-medium text-secondary-500"
                 >
-                  Learn more about how we&apos;re changing the world&nbsp;&rarr;
+                  Erfahren Sie mehr darüber, wie Sie als Führungskraft wachsen
+                  können&nbsp;&rarr;
                 </a>
               </div>
             </div>
@@ -189,21 +189,29 @@ const SingleTestimonial = (props) => {
           <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
             <div>
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Backed by world-renowned investors
+                Das Vertrauen renommierter Erfolgsstories
               </h2>
               <p className="max-w-3xl mt-6 text-lg leading-7 text-gray-500">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc
-                nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-                senectus vitae.
+                Die erfolgreichsten Führungskräfte wissen, dass man nicht
+                einfach nur ein Seminar durchläuft und plötzlich keine
+                Führungsfehler mehr macht.
+              </p>
+              <p className="max-w-3xl mt-6 text-base leading-7 text-gray-500">
+                Führen ist ein Marathon und nur wer sich ständig damit
+                beschäftigt motiviert seine Mitarbeiter Ihm und dem Unternehmen
+                zu folgen.
+              </p>
+              <p className="max-w-3xl mt-6 text-base leading-7 text-gray-500">
+                Dauerhaftes Training schafft die besten Bedingungen Weltmeister
+                zu werden und Könige zu entwickeln, die Ihnen selbst zu
+                Bestleistungen verhelfen.
               </p>
               <div className="mt-6">
                 <a
                   href="#"
                   className="text-base font-medium text-secondary-500"
                 >
-                  Meet our investors and advisors&nbsp;&rarr;
+                  Werden Sie zu Ihrer eigenen Erfolgsstory&nbsp;&rarr;
                 </a>
               </div>
             </div>

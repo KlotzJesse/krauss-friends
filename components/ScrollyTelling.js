@@ -37,10 +37,23 @@ const ScrollyTellings = (props) => {
       },
       []
     );
+
+    lax.addElements(
+      ".spinMeX",
+      {
+        scrollY: {
+          opacity: [
+            [2700, 3200, 3800],
+            [0, 1, 0],
+          ],
+        },
+      },
+      []
+    );
   }, []);
 
   return (
-    <div className="h-[2500px] lg:mx-auto lg:max-w-7xl lg:px-8">
+    <div className="h-[3500px] lg:mx-auto lg:max-w-7xl lg:px-8">
       <div className="sticky top-0 bottom-0 left-0 right-0 flex items-center justify-center h-screen text-center ">
         <h1 className="absolute font-serif text-6xl spinMe">
           Sie sind Geschäftsführer, Team- oder Abteilungsleiter und möchten
@@ -52,6 +65,11 @@ const ScrollyTellings = (props) => {
           lösen, steigt das Vertrauen in die eigenen Fähigkeiten. Auch in der
           Zukunft wird er nun Probleme eher als Aufgaben oder Herausforderungen
           sehen und sich ihnen mit Selbstvertrauen stellen.
+        </h1>
+        <h1 className="absolute font-serif text-6xl spinMeX">
+          Ihre Aufgabe ist es, das Verhalten Ihrer Mitarbeiter so zu entwickeln,
+          dass die vereinbarten Ziele mit hoher Eigenmotivation und somit hohem
+          Engagement realisiert werden.
         </h1>
       </div>
     </div>
