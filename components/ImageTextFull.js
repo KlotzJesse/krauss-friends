@@ -27,7 +27,7 @@ const ImageTextFull = (props) => {
           </p>
           <a
             className="px-8 py-3 mx-auto mt-2 font-semibold text-white text-blue-900 transition-colors duration-500 ease-in-out transform rounded-md hover:bg-blue-800 hover:text-white focus:shadow-outline focus:outline-none focus:ring-2 ring-0 ring-offset-current ring-offset-2 md:mt-8 md:ml-0 md:mr-auto"
-            href="/shop"
+            href="#"
           >
             Besuchs oder Web Termine gewinnen
           </a>
