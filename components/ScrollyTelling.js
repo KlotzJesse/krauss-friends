@@ -40,17 +40,18 @@ const ScrollyTellings = (props) => {
   }, []);
 
   return (
-    <div className="h-[2000px] lg:mx-auto lg:max-w-7xl lg:px-8">
-      <div className="sticky top-0 bottom-0 left-0 right-0 h-screen flex justify-center items-center text-center ">
-        <h1 className="spinMe absolute text-6xl font-serif">
-          Probleme, die jede Führungskraft kennt
-        </h1>
-        <h1 className="spinMeT text-6xl absolute font-serif">
-          Kennen Sie das?
-          <br />
+    <div className="h-[2500px] lg:mx-auto lg:max-w-7xl lg:px-8">
+      <div className="sticky top-0 bottom-0 left-0 right-0 flex items-center justify-center h-screen text-center ">
+        <h1 className="absolute font-serif text-6xl spinMe">
           Sie sind Geschäftsführer, Team- oder Abteilungsleiter und möchten
           erfolgreich mit Ihrem Team sein… aber irgendwie kommt es doch wieder
-          zu Situationen, die nicht entstehen sollten?
+          zu Situationen, in denen Ihre Mitarbeiter nicht weiter wissen
+        </h1>
+        <h1 className="absolute font-serif text-6xl spinMeT">
+          Es geht jedem Menschen so: Gelingt es, seine Probleme selbstständig zu
+          lösen, steigt das Vertrauen in die eigenen Fähigkeiten. Auch in der
+          Zukunft wird er nun Probleme eher als Aufgaben oder Herausforderungen
+          sehen und sich ihnen mit Selbstvertrauen stellen.
         </h1>
       </div>
     </div>

@@ -3,7 +3,6 @@ import { useEffect } from "react";
 export default function CookieConsent() {
   useEffect(() => {
     const cc = window.initCookieConsent();
-    console.log(cc);
 
     cc.run({
       // your config

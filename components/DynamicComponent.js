@@ -7,6 +7,7 @@ import GridMiddle from "./GridMiddle";
 import GridText from "./GridText";
 import Heading from "./Heading";
 import Hero from "./Hero";
+import ImageTextFull from "./ImageTextFull";
 import OfferCTA from "./OfferCTA";
 import Page from "./Page";
 import PersonalStatement from "./PersonalStatement";
@@ -46,6 +47,7 @@ const Components = {
   simpleFooter: SimpleFooter,
   singleTestimonial: SingleTestimonial,
   scrollyTelling: ScrollyTellings,
+  imageTextFull: ImageTextFull,
   page: Page,
 };
 
