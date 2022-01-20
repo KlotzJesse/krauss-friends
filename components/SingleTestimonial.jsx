@@ -1,9 +1,12 @@
 import React from "react";
 
 const stats = [
-  { label: "Gegründet", value: "2021" },
-  { label: "Eigene Erfahrung", value: "365 Tage im Jahr" },
-  { label: "Zufriedene Teilnehmer", value: "über 1000" },
+  { label: "Gegründet", value: "2015" },
+  { label: "Geschäftsführer & Coach", value: "seit über 25 Jahren" },
+  {
+    label: "Zufriedene Teilnehmer",
+    value: "über 1000",
+  },
   {
     label: "Individuelle Einzelcoachings",
     value: "Ja",
@@ -495,6 +498,49 @@ const SingleTestimonial = (props) => {
     <div>
       {/* Testimonial/stats section */}
       <div className="relative mt-20">
+        <div className="w-full flex md:flex-col flex-col-reverse items-center justify-center  py-12">
+          <img
+            src="https://i.ibb.co/KFN84NL/bgImg.png"
+            className="w-full object-center object-fill md:mt-0 mt-6 xl:block hidden"
+            alt="background image"
+          />
+          <img
+            src="https://i.ibb.co/Lxn1MTX/tabley.png"
+            className="w-full object-center object-fill md:mt-0 mt-6 xl:hidden"
+            alt="background image"
+          />
+          <div className="md:absolute flex flex-col items-center justify-center px-4">
+            <h1 className="lg:text-5xl text-center text-3xl font-bold text-gray-800">
+              Legen Sie den{" "}
+              <span
+                className="bg-gradient-to-r from-primary-200 to-primary-200
+      bg-no-repeat [background-position:0_88%]
+      [background-size:100%_100%]
+      motion-safe:transition-all motion-safe:duration-200
+      hover:[background-size:100%_0.2em]
+      focus:[background-size:100%_0.2em]"
+              >
+                Ich-kann-alles-besser-Umhang
+              </span>{" "}
+              ab
+            </h1>
+            <p className="text-base sm:text-xl leading-6 text-center text-gray-600 mt-4 lg:w-8/12 sm:w-10/12">
+              Es geht darum, wie wir als Führungskräfte es schaffen, durch
+              Coaching die einzelnen Teammitglieder besser zu machen, als sie
+              sind, damit wir nicht immer das Gefühl haben, selber eingreifen zu
+              müssen.
+            </p>
+            <div>
+              <button
+                role="button"
+                aria-label="view all"
+                className="text-base font-medium leading-4 py-4 px-7 text-white bg-secondary-700 rounded mt-12 hover:bg-secondary-600 focus:ring-2 focus:ring-offset-2 focus:ring-secondary-700"
+              >
+                Strategiegesspräch vereinbaren
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">
           <div className="relative sm:py-16 lg:py-0">
             <div
@@ -591,19 +637,18 @@ const SingleTestimonial = (props) => {
               </h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="text-lg">
-                  Der Schlüssel zu mehr Produktivität ist die Identifikation mit
-                  der Aufgabe und dem Unternehmen. Zusammen mit der Motivation
-                  sind sie die treibenden Kräfte, die über die Intensität des
-                  freigesetzten Engagements entscheiden.
+                  Ein Großteil der Arbeitnehmer wünscht sich vom Chef weniger
+                  Anweisungen — und dafür mehr Unterstützung bei der Suche nach
+                  eigenen Lösungen.
                 </p>
                 <p className="text-base leading-7">
-                  Die Trainingsinhalte sind so praxisnah, dass es Ihnen sofort
-                  gelingt, das Erlernte unmittelbar in Ihrem Führungsalltag
-                  anzuwenden.
+                  Die Trainingsinhalte sind so praxisnah, so dass es Ihnen
+                  sofort gelingt, Ihre Mitarbeiter im Führungsalltag zu
+                  verstehen und aufzubauen.
                 </p>
                 <p className="text-base leading-7">
-                  Fördern Sie das Wachstum Ihrer Mitarbeiter und sichern Sie
-                  sich somit Ihren persönlichen Erfolg
+                  Unterstützen Sie das Wachstum Ihrer Mitarbeiter und sichern
+                  Sie sich somit Ihren persönlichen Erfolg
                 </p>
               </div>
             </div>
@@ -645,7 +690,7 @@ const SingleTestimonial = (props) => {
           <div className="lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
             <div>
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Das Vertrauen renommierter Erfolgsstories
+                Das Vertrauen unserer Erfolgsstories
               </h2>
               <p className="max-w-3xl mt-6 text-lg leading-7 text-gray-500">
                 Die erfolgreichsten Führungskräfte wissen, dass man nicht

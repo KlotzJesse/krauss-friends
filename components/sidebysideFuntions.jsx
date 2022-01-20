@@ -1,33 +1,32 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {
   AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
+  FlagIcon,
   MailIcon,
-  ScaleIcon,
+  MapIcon,
+  PencilIcon,
 } from "@heroicons/react/outline";
 
 const transferFeatures = [
   {
     id: 1,
     name: "Erlebnisorientiert",
-    description:
-      "Sie erleben die Bedingungen und Voraussetzungen für Ihr eigenes Verhalten.",
-    icon: GlobeAltIcon,
+    description: "Sie erleben die Auswirkungen für Ihr eigenes Verhalten.",
+    icon: MapIcon,
   },
   {
     id: 2,
     name: "Praxisnah aufbereitet",
     description:
-      "Die Vielzahl an führungsrelevanten Themen, praxisnah aufbereitet und vermittelt, erlaubt die sofortige, übersetzungsfreie Anwendung in Ihrem Führungsalltag.",
-    icon: ScaleIcon,
+      "Die Vielzahl an führungsrelevanten Themen, praxisnah aufbereitet und vermittelt, erlaubt die sofortige Anwendung in Ihrem neuem Führungsalltag als Coach.",
+    icon: PencilIcon,
   },
   {
     id: 3,
     name: "Persönlicher Leitfaden",
     description:
       "Sie erhalten und trainieren Gesprächsstrukturen und Checklisten zur Steigerung Ihres persönlichen Erfolges.",
-    icon: LightningBoltIcon,
+    icon: FlagIcon,
   },
 ];
 const communicationFeatures = [
@@ -90,17 +89,19 @@ export default function SideBySideFunctions() {
             Werden Sie ein Königsmacher
           </h2>
           <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500">
-            Erfolgreiche Führungskräfte – die dies auch morgen noch sein wollen
-            – wissen, dass die reine Weitergabe von Verhaltensanweisungen und
-            Anordnungen bei zunehmender Spezialisierung und Wettbewerbsdruck
-            nicht mehr ausreicht, um anspruchsvolle Ziele zu realisieren.
+            Erfolgreiche Führungskräfte – die Ihren Erfolg ausbauen wollen –
+            wissen, dass die reine Weitergabe von Verhaltensanweisungen und
+            Anordnungen nicht ausreicht, um Herausforderungen von morgen zu
+            lösen.
           </p>
+          <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500"></p>
         </div>
 
         <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
-            <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-              Werden Sie zum Vorbild, dem andere gerne folgen
+            <h3 className="text-2xl font-extrabold tracking-normal text-gray-900 sm:text-3xl">
+              Werden Sie das Vorbild,
+              <br /> dem andere gerne folgen
             </h3>
             <p className="mt-3 text-lg text-gray-500">
               Die Trainingsinhalte sind so praxisnah, dass es Ihnen sofort
@@ -108,8 +109,8 @@ export default function SideBySideFunctions() {
               anzuwenden.
             </p>
             <p className="mt-3 text-lg text-gray-500">
-              Fördern Sie das Wachstum Ihrer Mitarbeiter und sichern Sie sich
-              somit Ihren persönlichen Erfolg
+              Fördern Sie das Wachstum und die Bindung Ihrer Mitarbeiter und
+              sichern Sie sich somit Ihren persönlichen Erfolg.
             </p>
 
             <dl className="mt-10 space-y-10">
@@ -211,12 +212,14 @@ export default function SideBySideFunctions() {
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
               <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                Besondere Vorteile für Sie
+                ... und geben Sie Ihren Mitarbeitern die Unterstützung die sie
+                brauchen.
               </h3>
               <p className="mt-3 text-lg text-gray-500">
-                Unsere Trainer geben Ihren Führungskräften neue Impulse und
-                zeigen Ihnen den Best-Practice Erfolgsweg für erfahrene und
-                zukünftige Führungskräfte.
+                Wenn man zur Deadline als Führungskraft das Gefühl hat, da geht
+                noch was, oder man der Meinung ist, der Mitarbeiter macht nicht,
+                was er soll, dann fehlt dem Mitarbeiter ein Mentor der ihn
+                stützt.
               </p>
 
               <dl className="mt-10 space-y-10">
