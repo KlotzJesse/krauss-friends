@@ -3,7 +3,12 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment, useRef } from "react";
 import { openPopupWidget } from "react-calendly";
 
-const navigation = [{ name: "Termin anfragen", href: "#" }];
+const navigation = [{ name: "Termin anfragen", href: "/appointment" }];
+
+export const onClick = () =>
+  openPopupWidget({
+    url: "https://calendly.com/krauss-friends/kennenlerngesprach-coach-ausbildung",
+  });
 
 export default function HeroSignUp({ blok }) {
   const videoFrame = useRef(null);
@@ -93,12 +98,12 @@ export default function HeroSignUp({ blok }) {
             </div>
             <div className="hidden text-right md:block">
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
-                <a
-                  href="#"
+                <button
+                  onClick={onClick}
                   className="inline-flex items-center px-4 py-2 text-base font-medium bg-white border border-transparent rounded-md text-primary-600 hover:bg-gray-50"
                 >
                   Unverbindlichen Termin vereinbaren
-                </a>
+                </button>
               </span>
             </div>
           </nav>
@@ -187,15 +192,10 @@ export default function HeroSignUp({ blok }) {
                     placeholder="Gebe hier deine E-Mail ein"
                   />
                   <button
-                    onClick={() => {
-                      openPopupWidget({
-                        url: "https://calendly.com/krauss-friends/kennenlerngesprach-coach-ausbildung",
-                      });
-                      return false;
-                    }}
+                    onClick={onClick}
                     className="w-full px-6 py-3 mt-3 text-base font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
-                    Termin Anfragen
+                    Termin anfragen
                   </button>
                 </div>
                 <p className="mt-3 text-sm text-gray-500">

@@ -1,13 +1,16 @@
 const navigation = {
   main: [
-    { name: "Termin vereinbaren", href: "#" },
-    { name: "Impressum", href: "#" },
-    { name: "Datenschutzerklärung", href: "#" },
+    { name: "Termin vereinbaren", href: "/appointment" },
+    { name: "Impressum", href: "https://www.krauss-friends.com/about" },
+    {
+      name: "Datenschutzerklärung",
+      href: "https://www.krauss-friends.com/j/privacy",
+    },
   ],
   social: [
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/krauss-and-friends-gmbh",
       icon: (props) => (
         <svg
           fill="currentColor"

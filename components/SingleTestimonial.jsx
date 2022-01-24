@@ -1,4 +1,5 @@
 import React from "react";
+import { onClick } from "./VideoSignUpHero";
 
 const stats = [
   { label: "Gegründet", value: "2012" },
@@ -498,19 +499,19 @@ const SingleTestimonial = (props) => {
     <div>
       {/* Testimonial/stats section */}
       <div className="relative mt-20">
-        <div className="w-full flex md:flex-col flex-col-reverse items-center justify-center  py-12">
+        <div className="flex flex-col-reverse items-center justify-center w-full py-12 md:flex-col">
           <img
             src="https://i.ibb.co/KFN84NL/bgImg.png"
-            className="w-full object-center object-fill md:mt-0 mt-6 xl:block hidden"
+            className="hidden object-fill object-center w-full mt-6 md:mt-0 xl:block"
             alt="background image"
           />
           <img
             src="https://i.ibb.co/Lxn1MTX/tabley.png"
-            className="w-full object-center object-fill md:mt-0 mt-6 xl:hidden"
+            className="object-fill object-center w-full mt-6 md:mt-0 xl:hidden"
             alt="background image"
           />
-          <div className="md:absolute flex flex-col items-center justify-center px-4">
-            <h1 className="lg:text-5xl text-center text-3xl font-bold text-gray-800">
+          <div className="flex flex-col items-center justify-center px-4 md:absolute">
+            <h1 className="text-3xl font-bold text-center text-gray-800 lg:text-5xl">
               Legen Sie den{" "}
               <span
                 className="bg-gradient-to-r from-primary-200 to-primary-200
@@ -524,7 +525,7 @@ const SingleTestimonial = (props) => {
               </span>{" "}
               ab
             </h1>
-            <p className="text-base sm:text-xl leading-6 text-center text-gray-600 mt-4 lg:w-8/12 sm:w-10/12">
+            <p className="mt-4 text-base leading-6 text-center text-gray-600 sm:text-xl lg:w-8/12 sm:w-10/12">
               {/*Es geht darum, wie wir als Führungskräfte es schaffen, durch
               Coaching die einzelnen Teammitglieder besser zu machen, als sie
               sind, damit wir nicht immer das Gefühl haben, selber eingreifen zu
@@ -535,11 +536,12 @@ const SingleTestimonial = (props) => {
             </p>
             <div>
               <button
+                onClick={onClick}
                 role="button"
                 aria-label="view all"
-                className="text-base font-medium leading-4 py-4 px-7 text-white bg-secondary-700 rounded mt-12 hover:bg-secondary-600 focus:ring-2 focus:ring-offset-2 focus:ring-secondary-700"
+                className="py-4 mt-12 text-base font-medium leading-4 text-white rounded px-7 bg-secondary-700 hover:bg-secondary-600 focus:ring-2 focus:ring-offset-2 focus:ring-secondary-700"
               >
-                Strategiegesspräch vereinbaren
+                Kennenlerngespräch vereinbaren
               </button>
             </div>
           </div>
@@ -674,13 +676,13 @@ const SingleTestimonial = (props) => {
                 ))}
               </dl>
               <div className="mt-10">
-                <a
-                  href="#"
+                <button
+                  onClick={onClick}
                   className="text-base font-medium text-secondary-500"
                 >
                   Erfahren Sie mehr darüber, wie Sie als Führungskraft wachsen
                   können&nbsp;&rarr;
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -711,12 +713,12 @@ const SingleTestimonial = (props) => {
                 Bestleistungen verhelfen.
               </p>
               <div className="mt-6">
-                <a
-                  href="#"
+                <button
+                  onClick={onClick}
                   className="text-base font-medium text-secondary-500"
                 >
                   Werden Sie zu Ihrer eigenen Erfolgsstory&nbsp;&rarr;
-                </a>
+                </button>
               </div>
             </div>
             <div className="mt-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
@@ -798,14 +800,14 @@ const SingleTestimonial = (props) => {
             <div className="relative">
               <div className="sm:text-center">
                 <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                  Vereinbare jetzt ein unverbindliches Strategiegespräch
+                  Vereinbare jetzt ein unverbindliches Kennenlerngespräch
                 </h2>
                 <p className="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
                   Hinterlass uns deine Kontaktdaten und wir melden uns mit einem
                   Terminvorschlag so schnell wie möglich zurück.
                 </p>
               </div>
-              <form action="#" className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
+              <div className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
                 <div className="flex-1 min-w-0">
                   <label htmlFor="cta-email" className="sr-only">
                     Email Adresse
@@ -819,13 +821,13 @@ const SingleTestimonial = (props) => {
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-3">
                   <button
-                    type="submit"
+                    onClick={onClick}
                     className="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10"
                   >
                     Termin anfragen
                   </button>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
