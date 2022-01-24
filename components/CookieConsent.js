@@ -68,14 +68,20 @@ export default function CookieConsent() {
                     col1: "^_ga", // match all cookies starting with "_ga"
                     col2: "google.com",
                     col3: "2 years",
-                    col4: "description ...",
+                    col4: "Enthält eine zufallsgenerierte User-ID. Anhand dieser ID kann Google Analytics wiederkehrende User auf dieser Website wiedererkennen und die Daten von früheren Besuchen zusammenführen.",
                     is_regex: true,
                   },
                   {
                     col1: "_gid",
                     col2: "google.com",
                     col3: "1 day",
-                    col4: "description ...",
+                    col4: "Enthält eine zufallsgenerierte User-ID. Anhand dieser ID kann Google Analytics wiederkehrende User auf dieser Website wiedererkennen und die Daten von früheren Besuchen zusammenführen.",
+                  },
+                  {
+                    col1: "_gat",
+                    col2: "google.com",
+                    col3: "1 minute",
+                    col4: "Bestimmte Daten werden nur maximal einmal pro Minute an Google Analytics gesendet. Das Cookie hat eine Lebensdauer von einer Minute. Solange es gesetzt ist, werden bestimmte Datenübertragungen unterbunden.",
                   },
                 ],
               },
