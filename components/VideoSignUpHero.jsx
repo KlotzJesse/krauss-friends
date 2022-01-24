@@ -1,6 +1,7 @@
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Fragment, useRef } from "react";
+import { openPopupWidget } from "react-calendly";
 
 const navigation = [{ name: "Termin anfragen", href: "#" }];
 
@@ -174,7 +175,7 @@ export default function HeroSignUp({ blok }) {
                 <p className="text-base font-medium text-gray-900">
                   Unverbindliches Beratungsgespräch vereinbaren
                 </p>
-                <form action="#" method="POST" className="mt-3 sm:flex">
+                <div className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">
                     Email
                   </label>
@@ -186,12 +187,17 @@ export default function HeroSignUp({ blok }) {
                     placeholder="Gebe hier deine E-Mail ein"
                   />
                   <button
-                    type="submit"
+                    onClick={() => {
+                      openPopupWidget({
+                        url: "https://calendly.com/krauss-friends/kennenlerngesprach-coach-ausbildung",
+                      });
+                      return false;
+                    }}
                     className="w-full px-6 py-3 mt-3 text-base font-medium text-white bg-gray-800 border border-transparent rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
                   >
                     Termin Anfragen
                   </button>
-                </form>
+                </div>
                 <p className="mt-3 text-sm text-gray-500">
                   Vereinbaren Sie unverbindlich ein Kennenlerngespräch innerhalb
                   der nächsten Tage.{" "}
