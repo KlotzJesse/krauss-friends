@@ -23,9 +23,9 @@ const transferFeatures = [
   },
   {
     id: 3,
-    name: "Persönlicher Leitfaden",
+    name: "Persönliche Checkliste",
     description:
-      "Sie erhalten und trainieren Gesprächsstrukturen und Checklisten zur Steigerung Ihres persönlichen Erfolges.",
+      "Sie erhalten das Know-How für Motivations-, Klärungs-, Problemlösungs-, Kritik- & Konfliktgespräch und trainieren dafür Gesprächssituationen zur Steigerung Ihres persönlichen Erfolges.",
     icon: FlagIcon,
   },
 ];
@@ -216,10 +216,10 @@ export default function SideBySideFunctions() {
                 brauchen.
               </h3>
               <p className="mt-3 text-lg text-gray-500">
-                Wenn man zur Deadline als Führungskraft das Gefühl hat, da geht
-                noch was, oder man der Meinung ist, der Mitarbeiter macht nicht,
-                was er soll, dann fehlt dem Mitarbeiter ein Mentor der ihn
-                stützt.
+                Wenn man als Führungskraft das Gefühl hat, da geht noch was,
+                oder man der Meinung ist, der Mitarbeiter macht nicht was die
+                Zielerreichung verlangt, dann fehlt dem Mitarbeiter ein Coach
+                der ihm hilft selbstständig Aufgaben zu lösen.
               </p>
 
               <dl className="mt-10 space-y-10">

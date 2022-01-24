@@ -1,7 +1,7 @@
 import React from "react";
 
 const stats = [
-  { label: "Gegründet", value: "2015" },
+  { label: "Gegründet", value: "2012" },
   { label: "Geschäftsführer & Coach", value: "seit über 25 Jahren" },
   {
     label: "Zufriedene Teilnehmer",
@@ -525,10 +525,13 @@ const SingleTestimonial = (props) => {
               ab
             </h1>
             <p className="text-base sm:text-xl leading-6 text-center text-gray-600 mt-4 lg:w-8/12 sm:w-10/12">
-              Es geht darum, wie wir als Führungskräfte es schaffen, durch
+              {/*Es geht darum, wie wir als Führungskräfte es schaffen, durch
               Coaching die einzelnen Teammitglieder besser zu machen, als sie
               sind, damit wir nicht immer das Gefühl haben, selber eingreifen zu
-              müssen.
+             müssen.*/}
+              Es geht darum, wie wir als Führungskräfte die Mitarbeiter
+              befähigen, um nicht immer das Gefühl zu haben, selbst eingreifen
+              zu müssen.
             </p>
             <div>
               <button
@@ -637,7 +640,7 @@ const SingleTestimonial = (props) => {
               </h2>
               <div className="mt-6 space-y-6 text-gray-500">
                 <p className="text-lg">
-                  Ein Großteil der Arbeitnehmer wünscht sich vom Chef weniger
+                  Ein Großteil der Mitarbeiter wünscht sich vom Chef weniger
                   Anweisungen — und dafür mehr Unterstützung bei der Suche nach
                   eigenen Lösungen.
                 </p>
