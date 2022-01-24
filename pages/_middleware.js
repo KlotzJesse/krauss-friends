@@ -1,9 +1,7 @@
-import { NextResponse } from "next/server";
-
 const trackingId = process.env.TRACKING_ID;
 
 export default async function middleware(request, event) {
-  const res = NextResponse.next();
+  /*const res = NextResponse.next();
 
   if (request.url.includes("favicon")) {
     return res;
@@ -46,7 +44,7 @@ export default async function middleware(request, event) {
 
   const result = await fetch(
     "https://www.google-analytics.com/collect?" + payload
-  );
+  );*/
 
   return res;
 }
