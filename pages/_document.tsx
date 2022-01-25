@@ -13,7 +13,7 @@ class MyDocument extends Document {
             type="text/plain"
             data-cookiecategory="analytics"
             async
-            src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-216631308-1"
           ></script>
           <script
             type="text/plain"
