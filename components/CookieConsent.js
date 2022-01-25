@@ -52,6 +52,14 @@ export default function CookieConsent() {
                   enabled: true,
                   readonly: true, // cookie categories with readonly=true are all treated as "necessary cookies"
                 },
+                cookie_table: [
+                  {
+                    col1: "cc_cookie",
+                    col2: "First Party",
+                    col3: "182 days",
+                    col4: "Enhält ein Objekt welches die Einstellungen und Freigabe der Cookie Einstellungen enthält.",
+                  },
+                ],
               },
               {
                 title: "Leistungs- und Analyse-Cookies",
@@ -78,7 +86,7 @@ export default function CookieConsent() {
                     col4: "Enthält eine zufallsgenerierte User-ID. Anhand dieser ID kann Google Analytics wiederkehrende User auf dieser Website wiedererkennen und die Daten von früheren Besuchen zusammenführen.",
                   },
                   {
-                    col1: "_gat",
+                    col1: "_gat_gtag_xxx",
                     col2: "google.com",
                     col3: "1 minute",
                     col4: "Bestimmte Daten werden nur maximal einmal pro Minute an Google Analytics gesendet. Das Cookie hat eine Lebensdauer von einer Minute. Solange es gesetzt ist, werden bestimmte Datenübertragungen unterbunden.",
