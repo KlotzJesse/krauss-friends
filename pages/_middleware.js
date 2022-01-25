@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 const trackingId = process.env.TRACKING_ID;
 
 export default async function middleware(request, event) {
