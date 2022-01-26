@@ -1,11 +1,19 @@
 import { useEffect } from "react";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "GTM-NR8JX5P",
+};
 
 export default function CookieConsent() {
   useEffect(() => {
     const cc = window.initCookieConsent();
 
+    TagManager.initialize(tagManagerArgs);
+
     cc.run({
       // your config
+
       current_lang: "de",
 
       autoclear_cookies: true,
