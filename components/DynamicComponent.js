@@ -21,6 +21,7 @@ import SingleTestimonial from "./SingleTestimonial";
 import Targets from "./Targets";
 import Testimonial from "./Testimonial";
 import TestimonialGrid from "./TestimonialGrid";
+import TwoColumnsWithTestimonial from "./TwoColumnsWithTestimonial";
 import VideoHero from "./VideoHero";
 import HeroSignUp from "./VideoSignUpHero";
 import WavyHero from "./WavyHero";
@@ -50,6 +51,7 @@ const Components = {
   scrollyTelling: ScrollyTellings,
   imageTextFull: ImageTextFull,
   sidebysideFuntions: SideBySideFunctions,
+  twoColumnsWithTestimonial: TwoColumnsWithTestimonial,
   page: Page,
 };
 
