@@ -5,6 +5,10 @@ const tagManagerArgs = {
   gtmId: "GTM-NR8JX5P",
 };
 
+const eventArgs = {
+  dataLayer: { event: "analytics_cookie_accept" },
+};
+
 export default function CookieConsent() {
   useEffect(() => {
     const cc = window.initCookieConsent();
@@ -15,6 +19,12 @@ export default function CookieConsent() {
       // your config
 
       current_lang: "de",
+
+      onFirstAction: function (user_preferences, cookie) {
+        if (user_preferences.accepted_categories.includes("analytics")) {
+          TagManager.dataLayer(eventArgs);
+        }
+      },
 
       autoclear_cookies: true,
       page_scripts: true,
