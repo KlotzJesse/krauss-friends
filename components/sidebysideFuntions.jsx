@@ -278,7 +278,7 @@ export default function SideBySideFunctions() {
               <img
                 className="relative mx-auto"
                 width={490}
-                src="https://i.ibb.co/6gV9XPv/feature-example-2-1.png"
+                src="/features.png"
                 alt=""
               />
             </div>
