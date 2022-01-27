@@ -1,5 +1,6 @@
 import * as Fathom from "fathom-client";
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 import "../styles/globals.css";
 import CookieConsent from "./../components/CookieConsent";
