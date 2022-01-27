@@ -800,11 +800,11 @@ const SingleTestimonial = (props) => {
             <div className="relative">
               <div className="sm:text-center">
                 <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                  Vereinbare jetzt ein unverbindliches Kennenlerngespräch
+                  Vereinbaren Sie jetzt ein unverbindliches Kennenlerngespräch
                 </h2>
                 <p className="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
-                  Hinterlass uns deine Kontaktdaten und wir melden uns mit einem
-                  Terminvorschlag so schnell wie möglich zurück.
+                  Hinterlassen Sie uns Ihre Kontaktdaten und wir melden uns mit
+                  einem Terminvorschlag so schnell wie möglich zurück.
                 </p>
               </div>
               <div className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
@@ -816,7 +816,7 @@ const SingleTestimonial = (props) => {
                     id="cta-email"
                     type="email"
                     className="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
-                    placeholder="Gebe hier deine E-Mail ein"
+                    placeholder="Geben Sie hier Ihre E-Mail ein"
                   />
                 </div>
                 <div className="mt-4 sm:mt-0 sm:ml-3">

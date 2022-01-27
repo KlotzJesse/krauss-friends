@@ -189,7 +189,7 @@ export default function HeroSignUp({ blok }) {
                     name="email"
                     id="email"
                     className="block w-full py-3 text-base placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:flex-1"
-                    placeholder="Gebe hier deine E-Mail ein"
+                    placeholder="Geben Sie hier Ihre E-Mail ein"
                   />
                   <button
                     onClick={onClick}
