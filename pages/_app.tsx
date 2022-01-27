@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         "www.krauss-training.com",
         "krauss-training.com",
       ],
+      url: "https://cheeky-pleasurable.krauss-training.de/script.js",
     });
 
     function onRouteChangeComplete() {
