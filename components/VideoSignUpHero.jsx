@@ -254,14 +254,18 @@ export default function HeroSignUp({ blok }) {
                 <button
                   type="button"
                   onClick={() => {
-                    videoFrame.current.src =
-                      "https://www.youtube.com/embed/Yp6r7IDkbxg?autoplay=1";
+                    videoFrame.current.src = blok.video.url;
+                    console.log(blok.placeholder);
                     videoFrame.current.classList.toggle("hidden");
                   }}
                   className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500"
                 >
                   <span className="sr-only">Watch our video to learn more</span>
-                  <img className="w-full" src="/Krauss Interview.jpg" alt="" />
+                  <img
+                    className="w-full"
+                    src={blok.placeholder.filename}
+                    alt=""
+                  />
 
                   <div
                     className="absolute inset-0 flex items-center justify-center w-full h-full"
