@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = (props) => {
   return (
-    <div className="bg-slate-100 overflow-hidden md:max-h-screen">
+    <div className="overflow-hidden bg-slate-100 md:max-h-screen">
       <div className="flex flex-col items-center justify-center flex-grow mx-auto space-y-5 text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 md:pb-28 xl:p-40 xl:text-left">
         <div className="w-full text-gray-700 transition duration-500 ease-in-out transform">
           <div className="flex flex-col flex-wrap p-5 mx-auto md:items-center md:flex-row">
@@ -60,21 +60,21 @@ const Hero = (props) => {
                 alt="Stephan Kotterer"
                 width="32px"
                 height="32px"
-                className="inline-block rounded-full ring-2 ring-white z-10"
+                className="z-10 inline-block rounded-full ring-2 ring-white"
                 src="https://i.ibb.co/bd3kKfB/Stephan-Kotterer.png"
               />{" "}
               <Image
                 alt="Jan Hauschildt"
                 width="32px"
                 height="32px"
-                className="inline-block rounded-full ring-2 ring-white z-20"
+                className="z-20 inline-block rounded-full ring-2 ring-white"
                 src="https://i.ibb.co/Js04MG9/Jan-Hauschildt.png"
               />{" "}
               <Image
                 alt="Michael Schwab"
                 width="32px"
                 height="32px"
-                className="inline-block rounded-full ring-2 ring-white z-30"
+                className="z-30 inline-block rounded-full ring-2 ring-white"
                 src="https://i.ibb.co/yVPhbgQ/Michael-Schwab.png"
               />{" "}
             </div>
@@ -86,7 +86,7 @@ const Hero = (props) => {
           </div>
           <a
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
-            className="items-center self-start px-12 py-4 mr-2 text-lg font-medium text-white bg-orange-400 uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:flex hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
+            className="items-center self-start hidden px-12 py-4 mr-2 text-lg font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:flex primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Erstgespräch reservieren
             <svg
@@ -102,14 +102,14 @@ const Hero = (props) => {
               ></path>
             </svg>
           </a>
-          <p className="self-start pt-3 text-sm text-gray-500 cursor-pointer hidden md:block">
+          <p className="self-start hidden pt-3 text-sm text-gray-500 cursor-pointer md:block">
             In nur 60 Sekunden online einen freien Termin suchen
           </p>
         </div>
         <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end">
           <a
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
-            className="flex items-center px-12 py-4 text-xs font-medium text-white bg-orange-400 uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
+            className="flex items-center px-12 py-4 text-xs font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Erstgespräch reservieren
           </a>
@@ -117,7 +117,7 @@ const Hero = (props) => {
             In nur 60 Sekunden online einen freien Termin suchen
           </p>
 
-          <div className="w-full pt-10 md:pt-0">
+          <div className="w-full h-full pt-10 md:pt-0">
             <Image
               src="https://i.ibb.co/SB421rq/Johannes-Krauss.png"
               alt="Johannes Krauss"
