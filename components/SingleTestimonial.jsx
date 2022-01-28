@@ -678,7 +678,7 @@ const SingleTestimonial = (props) => {
               <div className="mt-10">
                 <button
                   onClick={onClick}
-                  className="text-base font-medium text-secondary-500"
+                  className="text-base font-medium text-left text-secondary-500"
                 >
                   Erfahren Sie mehr darüber, wie Sie als Führungskraft wachsen
                   können&nbsp;&rarr;
@@ -715,7 +715,7 @@ const SingleTestimonial = (props) => {
               <div className="mt-6">
                 <button
                   onClick={onClick}
-                  className="text-base font-medium text-secondary-500"
+                  className="text-base font-medium text-left text-secondary-500"
                 >
                   Werden Sie zu Ihrer eigenen Erfolgsstory&nbsp;&rarr;
                 </button>
@@ -799,7 +799,7 @@ const SingleTestimonial = (props) => {
             </div>
             <div className="relative">
               <div className="sm:text-center">
-                <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <h2 className="text-2xl font-extrabold tracking-tight text-white md:text-4xl">
                   Vereinbaren Sie jetzt ein unverbindliches Kennenlerngespräch
                 </h2>
                 <p className="max-w-2xl mx-auto mt-6 text-lg text-primary-100">
@@ -808,18 +808,20 @@ const SingleTestimonial = (props) => {
                 </p>
               </div>
               <div className="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
-                <div className="flex-1 min-w-0">
+                {/*<div className="flex-1 min-w-0">
                   <label htmlFor="cta-email" className="sr-only">
-                    Email Adresse
+                    E-Mail Adresse
                   </label>
                   <input
                     id="cta-email"
                     type="email"
                     className="block w-full px-5 py-3 text-base text-gray-900 placeholder-gray-500 border border-transparent rounded-md shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
-                    placeholder="Geben Sie hier Ihre E-Mail ein"
+                    placeholder="E-Mail Adresse"
                   />
                 </div>
-                <div className="mt-4 sm:mt-0 sm:ml-3">
+                
+                darunter mx-auto mt-4 sm:mt-0 sm:ml-3*/}
+                <div className="mx-auto">
                   <button
                     onClick={onClick}
                     className="block w-full px-5 py-3 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500 sm:px-10"

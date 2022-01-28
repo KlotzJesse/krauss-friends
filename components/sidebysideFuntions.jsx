@@ -85,10 +85,10 @@ export default function SideBySideFunctions() {
         </svg>
 
         <div className="relative">
-          <h2 className="text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-6xl">
+          <h2 className="text-3xl font-extrabold leading-8 tracking-tight text-gray-900 md:text-center sm:text-6xl">
             Werden Sie ein Königsmacher
           </h2>
-          <p className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500">
+          <p className="max-w-3xl mx-auto mt-4 text-xl text-gray-500 md:text-center">
             Erfolgreiche Führungskräfte – die Ihren Erfolg ausbauen wollen –
             wissen, dass die reine Weitergabe von Verhaltensanweisungen und
             Anordnungen nicht ausreicht, um Herausforderungen von morgen zu
