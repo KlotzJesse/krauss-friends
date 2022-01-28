@@ -4,6 +4,17 @@ import React from "react";
 const Testimonial = (props) => {
   return (
     <section className="container px-5 mx-auto text-gray-400 2xl:w-3/5">
+      <h1 className="px-5 my-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
+        Das sagen{" "}
+        <span
+          style={{
+            background:
+              "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
+          }}
+        >
+          unsere Kunden
+        </span>
+      </h1>
       <div className="container flex flex-col px-5 py-16 mx-auto lg:items-center md:flex-row">
         <div className="w-full mb-10 lg:w-5/6 lg:max-w-lg md:w-1/2">
           <Image
