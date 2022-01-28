@@ -6,7 +6,7 @@ const Targets = (props) => {
       <div className="py-3">
         <div className="flex flex-col items-start mx-auto my-12 sm:container md:flex-row md:my-24">
           <div className="sticky flex flex-col w-full mt-2 md:top-36 lg:w-1/2 md:mt-12 md:px-8">
-            <p className="font-semibold text-gray-400 uppercase tracking-loose">
+            <p className="font-semibold text-gray-600 uppercase tracking-loose">
               Was Sie erwartet
             </p>
             <h1 className="mb-16 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
@@ -34,7 +34,7 @@ const Targets = (props) => {
                 <path d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0 l115.5-115.5C460.366,409.989,463,403.63,463,397s-2.634-12.989-7.322-17.678l-115.5-115.5c-9.763-9.762-25.593-9.763-35.355,0 c-9.763,9.763-9.763,25.592,0,35.355l72.822,72.822H-24c-13.808,0-25,11.193-25,25S-37.808,422-24,422z"></path>
               </svg>
             </a>
-            <p className="self-start pt-3 text-sm text-gray-400 cursor-pointer">
+            <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
               In nur 60 Sekunden online einen freien Termin suchen
             </p>
           </div>

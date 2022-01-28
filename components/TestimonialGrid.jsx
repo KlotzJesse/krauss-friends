@@ -17,7 +17,7 @@ const TestimonialGrid = (props) => {
               Vertriebstraining
             </span>
           </h1>
-          <p className="mx-auto text-base font-medium leading-relaxed text-gray-400 lg:pl-6 lg:w-2/3">
+          <p className="mx-auto text-base font-medium leading-relaxed text-gray-600 lg:pl-6 lg:w-2/3">
             Unsere Trainingsmethoden gewährleisten Wissensaufbau durch
             systemische Arbeitssequenzen. Der Wissenstransfer reduziert sich auf
             das Wesentliche und ist sofort für die Praxis nutzbar. Ihr Vertrieb
@@ -93,14 +93,14 @@ const TestimonialGrid = (props) => {
           </div>
           <div className="flex flex-wrap w-full mx-auto">
             <div className="w-1/2 p-1 md:p-2">
-              <p className="text-left text-gray-400">
+              <p className="text-left text-gray-600">
                 Präsenz Vertriebstraining mit erlebnisreicher Golf
                 Analogieübung, um das eigene Verhalten zu reflektieren, für mehr
                 Erfolg im nächsten Verkaufsgespräch.
               </p>
             </div>
             <div className="w-1/2 p-1 md:p-2">
-              <p className="text-right text-gray-400">
+              <p className="text-right text-gray-600">
                 Online Vertriebstraining mit interaktiven Whiteboard für
                 motivierte Übung um das nächste Verkaufsgespräch direkt zu
                 gewinnen und mehr Umsatz zu erzielen.

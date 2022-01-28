@@ -15,14 +15,14 @@ const GridText = (props) => {
         </span>{" "}
         Ihren Vertrieb hier wieder?
       </h1>
-      <section className="text-gray-400 body-font">
+      <section className="text-gray-600 body-font">
         <div className="container mx-auto md:px-5 2xl:w-3/5">
           <div className="flex flex-wrap">
             <div className="w-full p-2 cursor-pointer md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
-                  <p className="font-medium text-gray-400 title-font text-md">
+                  <p className="font-medium text-gray-600 title-font text-md">
                     <strong>Zu wenig Abschlüsse</strong> aus der
                     Angebotsnachbearbeitung
                   </p>
@@ -33,7 +33,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
-                  <p className="font-medium text-gray-400 title-font text-md">
+                  <p className="font-medium text-gray-600 title-font text-md">
                     Die Kunden sagen &quot;
                     <strong>Wir haben keinen Bedarf</strong>&quot; oder
                     &quot;Kein Interesse&quot;
@@ -45,7 +45,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
-                  <p className="font-medium text-gray-400 title-font">
+                  <p className="font-medium text-gray-600 title-font">
                     Entscheider können nicht mehr besucht werden, weil Sie im
                     Home-Office sind oder <strong>nur selten vor Ort</strong>
                   </p>
@@ -56,7 +56,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
-                  <p className="font-medium text-gray-400 title-font">
+                  <p className="font-medium text-gray-600 title-font">
                     Es bleibt <strong>keine Zeit für Neukundengewinnung</strong>
                   </p>
                 </div>
@@ -66,7 +66,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
-                  <p className="font-medium text-gray-400 title-font">
+                  <p className="font-medium text-gray-600 title-font">
                     <strong>Termine vor Ort</strong> nicht mehr möglich
                     (Abstandsregeln, Kettengeschäft...)
                   </p>
@@ -77,7 +77,7 @@ const GridText = (props) => {
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
-                  <p className="font-medium text-gray-400 title-font">
+                  <p className="font-medium text-gray-600 title-font">
                     Kunde behauptet &quot;Das Produkt ist{" "}
                     <strong>zu teuer</strong>&quot;
                   </p>

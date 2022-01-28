@@ -6,7 +6,7 @@ const CTASection = (props) => {
       <div className="py-3">
         <div className="flex flex-col items-start mx-auto my-12 sm:container md:flex-row">
           <div className="sticky flex flex-col w-full mt-2 md:top-36 lg:w-1/2 md:px-8">
-            <p className="font-semibold text-gray-400 uppercase tracking-loose">
+            <p className="font-semibold text-gray-600 uppercase tracking-loose">
               So kann ich Ihnen helfen
             </p>
             <h1 className="mb-12 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
@@ -39,13 +39,13 @@ const CTASection = (props) => {
                 ></path>
               </svg>
             </a>
-            <p className="self-start pt-3 text-sm text-gray-400 cursor-pointer">
+            <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
               In nur 60 Sekunden online einen freien Termin suchen
             </p>
           </div>
           <div className="sticky pt-10 ml-0 md:ml-12 lg:w-1/2 md:pt-0">
             <div className="w-full h-full mx-auto sm:container">
-              <p className="text-lg font-medium text-gray-400">
+              <p className="text-lg font-medium text-gray-600">
                 <u>
                   Wenn Ihre Antwort auf die vorige Frage <strong>“ja”</strong>{" "}
                   lautet

@@ -3,7 +3,7 @@ import React from "react";
 
 const Testimonial = (props) => {
   return (
-    <section className="container px-5 mx-auto text-gray-400 2xl:w-3/5">
+    <section className="container px-5 mx-auto text-gray-600 2xl:w-3/5">
       <h1 className="px-5 my-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
         Das sagen{" "}
         <span
@@ -27,7 +27,7 @@ const Testimonial = (props) => {
           />
         </div>
         <div className="flex flex-col items-start text-left lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16">
-          <p className="mb-12 text-base font-medium leading-relaxed text-gray-400">
+          <p className="mb-12 text-base font-medium leading-relaxed text-gray-600">
             &quot;Das Vertriebstraining war{" "}
             <i>
               sehr kurzweilig, abwechslungsreich und vor allem praxisbezogen
@@ -41,7 +41,7 @@ const Testimonial = (props) => {
             </strong>
             .&quot;
           </p>
-          <h2 className="mb-8 text-xs font-semibold tracking-widest text-black text-gray-400 uppercase title-font">
+          <h2 className="mb-8 text-xs font-semibold tracking-widest text-black text-gray-600 uppercase title-font">
             Artur Polak
             <br />
             Gebietsverkaufsleiter Gebiet Süd/Ost
