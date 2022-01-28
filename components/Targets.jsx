@@ -10,7 +10,7 @@ const Targets = (props) => {
               Was Sie erwartet
             </p>
             <h1 className="mb-16 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
-              So unterstützt das Vertriebstraining Ihren Verkäufern{" "}
+              So unterstützt das Vertriebstraining Ihre Verkäufer{" "}
               <span
                 style={{
                   background:
@@ -53,7 +53,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Nicht nur die Menschen, Trainer &amp; Mitarbeiter, sondern
                   auch die Inhalte müssen mit <b>Ihren Herausforderungen</b>{" "}
@@ -72,7 +72,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Zusammen identifizieren wir und legen klare Ziele für Ihr
                   Verkaufstraining fest und fokussieren uns auf die Entwicklung
@@ -91,7 +91,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Analogie Übungen in einem positiven Lernumfeld sichern ein
                   intensives Trainieren an der eigenen Performance. Die
@@ -110,7 +110,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Effektive Follow-up Aktivitäten unterstützen eine nachhaltig
                   wirksame Trainingsinvestition.
@@ -128,7 +128,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Unsere Trainingsmethoden gewährleisten Wissensaufbau durch
                   systemische Arbeitssequenzen. Der Wissenstransfer reduziert
@@ -148,7 +148,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Motivation und Engagement der Mitarbeiter wachsen, somit wird
                   die Realisierung ambitionierter, und Unternehmensziele
@@ -167,7 +167,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Im Vertrieb sind Trainings notwendig, um ihre Mitarbeiter zu
                   unterstützen und deren Performance zu verbessern, das
@@ -187,7 +187,7 @@ const Targets = (props) => {
                   </h2>
                 </div>
               </div>
-              <div className="relative pl-28">
+              <div className="relative md:">
                 <p className="font-semibold text-gray-500 text-md">
                   Intervall heißt für Ihren Vertrieb: kontinuierliches Lernen
                   und Umsetzen in Themeneinheiten, sind der Schlüssel zum
