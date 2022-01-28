@@ -91,7 +91,7 @@ const Footer = (props) => {
       </div>
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2011-2021 KRAUSS AND FRIENDS. All rights reserved.
+          © Copyright 2011-2022 KRAUSS AND FRIENDS. All rights reserved.
         </p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
