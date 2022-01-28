@@ -10,10 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     // Initialize Fathom when the app loads
-    // Example: yourdomain.com
-    //  - Do not include https://
-    //  - This must be an exact match of your domain.
-    //  - If you're using www. for your domain, make sure you include that here.
+
     Fathom.load("YKCURMCH", {
       includedDomains: [
         "www.krauss-training.de",
