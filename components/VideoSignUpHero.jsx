@@ -5,13 +5,13 @@ import { openPopupWidget } from "react-calendly";
 
 const navigation = [{ name: "Termin anfragen", href: "/appointment" }];
 
-export const onClick = () =>
-  openPopupWidget({
-    url: "https://calendly.com/krauss-friends/kennenlerngesprach-coach-ausbildung",
-  });
-
-export default function HeroSignUp({ blok }) {
+export default function HeroSignUp({ blok, page }) {
   const videoFrame = useRef(null);
+
+  const onClick = () =>
+    openPopupWidget({
+      url: page.calendlyURL,
+    });
 
   return (
     <div className="relative overflow-hidden bg-background-500">

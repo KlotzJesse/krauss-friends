@@ -55,10 +55,10 @@ const Components = {
   page: Page,
 };
 
-const DynamicComponent = ({ blok }) => {
+const DynamicComponent = ({ blok, page }) => {
   if (typeof Components[blok.component] !== "undefined") {
     const Component = Components[blok.component];
-    return <Component blok={blok} />;
+    return <Component page={page} blok={blok} />;
   }
   return <Placeholder componentName={blok.component} />;
 };

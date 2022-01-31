@@ -1,5 +1,5 @@
 import React from "react";
-import { onClick } from "./VideoSignUpHero";
+import { openPopupWidget } from "react-calendly";
 
 const stats = [
   { label: "Gegründet", value: "2012" },
@@ -494,7 +494,12 @@ const logos = [
   },
 ];
 
-const SingleTestimonial = (props) => {
+const SingleTestimonial = ({ page }) => {
+  const onClick = () =>
+    openPopupWidget({
+      url: page.calendlyURL,
+    });
+
   return (
     <div>
       {/* Testimonial/stats section */}
