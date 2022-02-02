@@ -9,4 +9,22 @@ module.exports = {
   env: {
     BASE_URL: process.env.NEXT_PUBLIC_TRACKING_ID,
   },
+  rewrites() {
+    return {
+      beforeFiles: [
+        // if the host is `app.acme.com`,
+        // this rewrite will be applied
+        {
+          source: "/",
+          has: [
+            {
+              type: "host",
+              value: "neukunden.krauss-gmbh.com",
+            },
+          ],
+          destination: "/neukundengewinnung",
+        },
+      ],
+    };
+  },
 };
