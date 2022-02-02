@@ -62,9 +62,9 @@ export default function HeroSignUp({ blok, page }) {
       </div>
 
       <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-        <Popover>
+        <Popover className="fixed top-0 z-50 w-full bg-white shadow-md">
           <nav
-            className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6"
+            className="relative flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6"
             aria-label="Global"
           >
             <div className="flex items-center flex-1">
@@ -159,7 +159,7 @@ export default function HeroSignUp({ blok, page }) {
           </Transition>
         </Popover>
 
-        <main className="px-4 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
+        <main className="px-4 pt-6 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
