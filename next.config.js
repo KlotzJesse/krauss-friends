@@ -24,6 +24,31 @@ module.exports = {
           ],
           destination: "/neukundengewinnung",
         },
+        {
+          source: "/",
+          has: [{ type: "host", value: "coach-ausbildung.krauss-training.de" }],
+          destination: "/coach-ausbildung",
+        },
+        {
+          source: "/",
+          has: [{ type: "host", value: "coach-ausbildung.krauss-friends.com" }],
+          destination: "/coach-ausbildung",
+        },
+
+        {
+          source: "/",
+          has: [
+            { type: "host", value: "vertriebstraining.krauss-friends.com" },
+          ],
+          destination: "/vertrieb-trainieren",
+        },
+        {
+          source: "/",
+          has: [
+            { type: "host", value: "vertriebstraining.krauss-training.com" },
+          ],
+          destination: "/vertrieb-trainieren",
+        },
       ],
     };
   },
