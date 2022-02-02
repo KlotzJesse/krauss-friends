@@ -178,7 +178,7 @@ export default function HeroSignUp({ blok, page }) {
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <p className="text-base font-medium text-gray-900">
-                  Unverbindliches Beratungsgespräch vereinbaren
+                  Kontaktieren Sie uns heute
                 </p>
                 <div className="mt-3 sm:flex">
                   <label htmlFor="email" className="sr-only">

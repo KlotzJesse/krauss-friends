@@ -2,6 +2,7 @@ import Column from "./Column";
 import Container from "./Container";
 import CTASection from "./CTASection";
 import DiagonalImageHero from "./DiagonalImageHero";
+import FeaturesWithTestimonial from "./FeaturesWithTestimonial";
 import Footer from "./Footer";
 import GridMiddle from "./GridMiddle";
 import GridText from "./GridText";
@@ -21,6 +22,7 @@ import SingleTestimonial from "./SingleTestimonial";
 import Targets from "./Targets";
 import Testimonial from "./Testimonial";
 import TestimonialGrid from "./TestimonialGrid";
+import threeColFeatures from "./threeColFeatures";
 import TwoColumnsWithTestimonial from "./TwoColumnsWithTestimonial";
 import VideoHero from "./VideoHero";
 import HeroSignUp from "./VideoSignUpHero";
@@ -52,6 +54,8 @@ const Components = {
   imageTextFull: ImageTextFull,
   sidebysideFuntions: SideBySideFunctions,
   twoColumnsWithTestimonial: TwoColumnsWithTestimonial,
+  featuresWithTestimonial: FeaturesWithTestimonial,
+  threeColFeatures: threeColFeatures,
   page: Page,
 };
 
