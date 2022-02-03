@@ -1,4 +1,4 @@
-import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
+import { ChartPieIcon, TrendingUpIcon } from "@heroicons/react/outline";
 import React from "react";
 
 const FeaturesWithTestimonial = (props) => {
@@ -9,8 +9,8 @@ const FeaturesWithTestimonial = (props) => {
           <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div>
-                <span className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-600">
-                  <InboxIcon
+                <span className="flex items-center justify-center w-12 h-12 rounded-md bg-purple-600">
+                  <ChartPieIcon
                     className="w-6 h-6 text-white"
                     aria-hidden="true"
                   />
@@ -31,9 +31,9 @@ const FeaturesWithTestimonial = (props) => {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700"
+                    className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-purple-600 hover:bg-purple-700"
                   >
-                    Get started
+                    Kennenlerngespräch vereinbaren
                   </a>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const FeaturesWithTestimonial = (props) => {
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg"
+                src="/DashboardExample.png"
                 alt="Inbox user interface"
               />
             </div>
@@ -80,8 +80,8 @@ const FeaturesWithTestimonial = (props) => {
           <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
             <div>
               <div>
-                <span className="flex items-center justify-center w-12 h-12 rounded-md bg-primary-600">
-                  <SparklesIcon
+                <span className="flex items-center justify-center w-12 h-12 rounded-md bg-purple-600">
+                  <TrendingUpIcon
                     className="w-6 h-6 text-white"
                     aria-hidden="true"
                   />
@@ -92,19 +92,18 @@ const FeaturesWithTestimonial = (props) => {
                   Erzielen Sie einen besseren ROI für Ihr Marketingbudget.
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Mit unserer Telefonakquise erreichen wir für Sie direkt den
-                  Entscheider und wecken am Telefon den Bedarf an Ihrer Lösung.
+                  Mit unserer Telefonakquise erreichen wir für Sie direkt die
+                  Entscheider und wecken am Telefon dann Bedarf an Ihrer Lösung.
                   Mit unserer Datenbank an über 300.000 Entscheidern, können wir
                   persönlich genau das Potenzial im Markt ansprechen, welches
                   für Ihr Unternehmen interessant ist.
                 </p>
                 <div className="mt-6">
-                  +
                   <a
                     href="#"
-                    className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-primary-600 hover:bg-primary-700"
+                    className="inline-flex px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-purple-600 hover:bg-purple-700"
                   >
-                    Get started
+                    Kennenlerngespräch vereinbaren
                   </a>
                 </div>
               </div>
