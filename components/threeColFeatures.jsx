@@ -1,63 +1,64 @@
 import {
-  ChatAltIcon,
-  DocumentReportIcon,
-  HeartIcon,
-  InboxInIcon,
-  PencilAltIcon,
-  ReplyIcon,
-  TrashIcon,
-  UsersIcon,
+  ChartBarIcon,
+  CursorClickIcon,
+  DatabaseIcon,
+  IdentificationIcon,
+  LightningBoltIcon,
+  PhoneOutgoingIcon,
+  ShieldCheckIcon,
+  WifiIcon,
 } from "@heroicons/react/outline";
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
 const features = [
   {
     name: "100%ig genaue Termine",
     description:
       "Wir übernehmen die gesamte Arbeit für Sie, so dass Ihre Vertriebsmitarbeiter nur die Termine wahrnehmen müssen, die von beiden Seiten gewünscht werden.",
-    icon: InboxInIcon,
+    icon: CursorClickIcon,
   },
   {
-    name: "Keine Kaltakquise durch Datenbank eigener Kunden",
+    name: "Keine Kaltakquise dank Datenbank eigener Kunden",
     description:
       "Verabschieden Sie sich von der Kaltakquise. Unsere Kunden bestehen nur aus solchen, die Interesse an neuen Produkten wie Ihren haben, was garantiert, dass nur hochqualifizierte Leads kontaktiert werden.",
-    icon: UsersIcon,
+    icon: DatabaseIcon,
   },
   {
     name: "Professionelle Anrufer",
     description:
       "Wir verfügen über sehr erfahrene Fachleute, die in der Lage sind, tagein, tagaus die höchsten Standards zu erfüllen.",
-    icon: TrashIcon,
+    icon: PhoneOutgoingIcon,
   },
   {
     name: "Schneller mehr Termine vereinbaren",
     description:
       "Wir sind bereits mit Ihrer Branche vertraut - es gibt also kein 'Herumirren' mehr. Wir wissen genau, was erwartet wird, wenn es darum geht, Einwände anzusprechen oder Kunden auf Vorteile hinzuweisen.",
-    icon: PencilAltIcon,
+    icon: LightningBoltIcon,
   },
   {
     name: "Wir kennen Ihre zukünftigen Käufer",
     description:
       "Riskieren Sie keine Zeitverschwendung bei der Akquise von Terminen durch Kaltakquise, wenn wir das für Sie erledigen! Wir behalten im Auge, wer sich für was interessiert, damit wir qualifizierte Interessenten direkt zu Ihnen bringen können, wenn sie bereit sind zu kaufen.",
-    icon: DocumentReportIcon,
+    icon: IdentificationIcon,
   },
   {
     name: "Akquise nur für Sie",
     description:
       "Wenn wir in Ihrem Namen anrufen, bedeutet das, dass wir nicht im Namen von jemand anderem anrufen. So erhalten Sie mehr Leads und mehr Verkäufe.",
-    icon: ReplyIcon,
+    icon: ShieldCheckIcon,
   },
   {
     name: "Mehr Umsatz bei bestehenden Vertriebskapazitäten",
     description:
       "High Performer für Ihr Vertriebsteam zu gewinnen ist zunehmend herausfordernd. Wir erhöhen Ihre Termindichte bei Ihrem bestehenden Vertriebsteam und ermöglichen Ihnen somit Mehr Umsatz.",
-    icon: ChatAltIcon,
+    icon: ChartBarIcon,
   },
   {
     name: "Digitale Neukundengewinnung",
     description:
       "Zeitgemäße Neukundenakquise, die funktioniert. Wir vernetzen die innovative KRAUSS Telefonakquise mit digitalen Inhalten und sind für Ihre Neukunden so jederzeit in Echtzeit erreichbar.",
-    icon: HeartIcon,
+    icon: WifiIcon,
   },
 ];
 const metrics = [
@@ -87,7 +88,12 @@ const metrics = [
   },
 ];
 
-const threeColFeatures = (props) => {
+const threeColFeatures = ({ blok, page }) => {
+  const onClick = () =>
+    openPopupWidget({
+      url: page.calendlyURL,
+    });
+
   return (
     <>
       {/* Gradient Feature Section */}
@@ -182,24 +188,24 @@ const threeColFeatures = (props) => {
       <div className="bg-white">
         <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span className="block">Ready to get started?</span>
+            <span className="block">Bereit für mehr Termine?</span>
             <span className="block text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text">
-              Get in touch or create an account.
+              Vereinbaren Sie ein Kennenlerngespräch.
             </span>
           </h2>
           <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
-            <a
-              href="#"
+            <button
+              onClick={onClick}
               className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border hover:from-purple-700 hover:to-indigo-700"
             >
-              Learn more
-            </a>
-            <a
-              href="#"
+              Mehr Informationen
+            </button>
+            <button
+              onClick={onClick}
               className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-800 border border-transparent rounded-md shadow-sm bg-indigo-50 hover:bg-indigo-100"
             >
-              Get started
-            </a>
+              Termin anfragen
+            </button>
           </div>
         </div>
       </div>
