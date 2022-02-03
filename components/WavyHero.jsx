@@ -8,9 +8,9 @@ const WavyHero = (props) => {
         className="absolute inset-0 object-cover w-full h-full"
         alt=""
       />
-      <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
+      <div className="relative bg-opacity-75 bg-purple-800">
         <svg
-          className="absolute inset-x-0 bottom-0 text-white"
+          className="absolute inset-x-0 -bottom-1 text-white"
           viewBox="0 0 1160 163"
         >
           <path
@@ -22,20 +22,22 @@ const WavyHero = (props) => {
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                The quick, brown fox <br className="hidden md:block" />
-                jumps over a lazy dog
+                Wir generieren Ihnen qualifzierte Verkaufschancen
               </h2>
               <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                quae.
+                Und Sie steigern Ihren Umsatz. Mit KRAUSS Terminvereinbarung
+                gibt es keine Kaltakquise oder teure Werbung, sondern wir
+                bringen Sie direkt mit Entscheidern zusammen, die bereits
+                Interesse an Ihrem Angebot bekundet haben. Das bedeutet weniger
+                Zeitverschwendung für alle Beteiligten - insbesondere für Ihr
+                Unternehmen!
               </p>
               <a
                 href="/"
                 aria-label=""
-                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-400 hover:text-teal-700"
               >
-                Learn more
+                Kennenlerngespräch vereinbaren
                 <svg
                   className="inline-block w-3 ml-2"
                   fill="currentColor"
@@ -53,38 +55,6 @@ const WavyHero = (props) => {
                 <form>
                   <div className="mb-1 sm:mb-2">
                     <label
-                      htmlFor="firstName"
-                      className="inline-block mb-1 font-medium"
-                    >
-                      First name
-                    </label>
-                    <input
-                      placeholder="John"
-                      required
-                      type="text"
-                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="firstName"
-                      name="firstName"
-                    />
-                  </div>
-                  <div className="mb-1 sm:mb-2">
-                    <label
-                      htmlFor="lastName"
-                      className="inline-block mb-1 font-medium"
-                    >
-                      Last name
-                    </label>
-                    <input
-                      placeholder="Doe"
-                      required
-                      type="text"
-                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="lastName"
-                      name="lastName"
-                    />
-                  </div>
-                  <div className="mb-1 sm:mb-2">
-                    <label
                       htmlFor="email"
                       className="inline-block mb-1 font-medium"
                     >
@@ -94,7 +64,7 @@ const WavyHero = (props) => {
                       placeholder="john.doe@example.org"
                       required
                       type="text"
-                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-purple-400 focus:outline-none focus:shadow-outline"
                       id="email"
                       name="email"
                     />
@@ -102,7 +72,7 @@ const WavyHero = (props) => {
                   <div className="mt-4 mb-2 sm:mb-4">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                     >
                       Subscribe
                     </button>

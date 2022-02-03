@@ -14,7 +14,11 @@ export default function HeroSignUp({ blok, page }) {
     });
 
   return (
-    <div className="relative overflow-hidden bg-background-500">
+    <div
+      className={`relative overflow-hidden  ${
+        page.color == "gold" ? "bg-background-500" : "bg-white"
+      }`}
+    >
       <div
         className="hidden lg:block lg:absolute lg:inset-0"
         aria-hidden="true"
@@ -100,7 +104,11 @@ export default function HeroSignUp({ blok, page }) {
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <button
                   onClick={onClick}
-                  className="inline-flex items-center px-4 py-2 text-base font-medium bg-white border border-transparent rounded-md text-primary-600 hover:bg-gray-50"
+                  className={`inline-flex items-center px-4 py-2 text-base font-medium bg-white border border-transparent rounded-md ${
+                    page.color == "gold"
+                      ? "text-primary-600"
+                      : "text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text"
+                  } hover:bg-gray-50`}
                 >
                   Unverbindlichen Termin vereinbaren
                 </button>
@@ -150,7 +158,11 @@ export default function HeroSignUp({ blok, page }) {
                 </div>
                 <a
                   href="#"
-                  className="block w-full px-5 py-3 font-medium text-center text-primary-500 bg-gray-50 hover:bg-gray-100"
+                  className={`block w-full px-5 py-3 font-medium text-center text-primary-500 bg-gray-50 hover:bg-gray-100 ${
+                    page.color == "gold"
+                      ? "text-primary-600"
+                      : "text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text"
+                  } `}
                 >
                   Unverbindlichen Termin vereinbaren
                 </a>
@@ -166,9 +178,15 @@ export default function HeroSignUp({ blok, page }) {
                 <span className="block text-sm font-semibold tracking-wide text-gray-500 uppercase sm:text-base lg:text-sm xl:text-base">
                   {blok.subHeadline}
                 </span>
-                <span className="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-[3.66rem]">
+                <span className="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-[2.75rem]">
                   <span className="block text-gray-900">{blok.headline}</span>
-                  <span className="block text-primary-600">
+                  <span
+                    className={`block leading-[3.3rem] ${
+                      page.color == "gold"
+                        ? "text-primary-600"
+                        : "text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text"
+                    }`}
+                  >
                     {blok.highlight}
                   </span>
                 </span>

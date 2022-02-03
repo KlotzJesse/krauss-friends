@@ -16,6 +16,7 @@ import Placeholder from "./Placeholder";
 import ScrollySnap from "./ScrollySnap";
 import ScrollyTellings from "./ScrollyTelling";
 import Section from "./Section";
+import Services from "./Services";
 import SideBySideFunctions from "./sidebysideFuntions";
 import SimpleFooter from "./SimpleFooter";
 import SingleTestimonial from "./SingleTestimonial";
@@ -56,6 +57,7 @@ const Components = {
   twoColumnsWithTestimonial: TwoColumnsWithTestimonial,
   featuresWithTestimonial: FeaturesWithTestimonial,
   threeColFeatures: threeColFeatures,
+  services: Services,
   page: Page,
 };
 
