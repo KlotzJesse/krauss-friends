@@ -12,17 +12,19 @@ const Targets = (props) => {
             <h1 className="mb-16 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
               So unterstützt das Vertriebstraining Ihre Verkäufer{" "}
               <span
-                style={{
-                  background:
-                    "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
-                }}
+                className="bg-gradient-to-r from-primary-200 to-primary-200
+               bg-no-repeat [background-position:0_88%]
+               [background-size:100%_0.3em]
+               motion-safe:transition-all motion-safe:duration-200
+               hover:[background-size:100%_100%]
+               focus:[background-size:100%_100%]"
               >
                 die Ziele zu erreichen.
               </span>
             </h1>
             <a
               href="https://calendly.com/krauss-friends/kennenlerngespraech"
-              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform bg-secondary-400 border-0 rounded-lg shadow-lg hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Erstgespräch reservieren
               <svg

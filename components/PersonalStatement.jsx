@@ -20,10 +20,12 @@ const PersonalStatement = (props) => {
           <h1 className="mb-8 text-2xl font-semibold leading-tight text-gray-800 dark:text-white xl:text-5xl xl:leading-tight">
             Ich{" "}
             <span
-              style={{
-                background:
-                  "linear-gradient( 0deg , rgba(255,0,255,0) 0%, rgba(255,0,255,0) 10%, #fde479 10%, #fde479 35%, rgba(255,0,255,0) 35%)",
-              }}
+              className="bg-gradient-to-r from-primary-200 to-primary-200
+              bg-no-repeat [background-position:0_88%]
+              [background-size:100%_0.3em]
+              motion-safe:transition-all motion-safe:duration-200
+              hover:[background-size:100%_100%]
+              focus:[background-size:100%_100%]"
             >
               lebe jeden Tag
             </span>{" "}
