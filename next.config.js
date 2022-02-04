@@ -45,7 +45,7 @@ module.exports = {
         {
           source: "/",
           has: [
-            { type: "host", value: "vertriebstraining.krauss-training.com" },
+            { type: "host", value: "vertriebstraining.krauss-training.de" },
           ],
           destination: "/vertrieb-trainieren",
         },
