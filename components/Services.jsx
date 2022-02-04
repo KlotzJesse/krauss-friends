@@ -84,8 +84,9 @@ const Services = (props) => {
             Vertriebstraining
           </h5>
           <p className="text-gray-700">
-            I'll be sure to note that in my log. Smooth as an android's bottom,
-            eh, Data? When has justice ever been as simple as a rule book?
+            I&apos;ll be sure to note that in my log. Smooth as an
+            android&apos;s bottom, eh, Data? When has justice ever been as
+            simple as a rule book?
           </p>
         </div>
         <div>
