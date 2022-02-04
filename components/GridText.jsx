@@ -1,7 +1,12 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
-const GridText = (props) => {
+const GridText = ({ page }) => {
+  const onClick = () =>
+    openPopupWidget({
+      url: page.calendlyURL,
+    });
   return (
     <div className="py-5">
       <h1 className="px-5 mb-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
@@ -20,7 +25,10 @@ const GridText = (props) => {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto md:px-5 2xl:w-3/5">
           <div className="flex flex-wrap">
-            <div className="w-full p-2 cursor-pointer md:w-1/3">
+            <div
+              className="w-full p-2 cursor-pointer md:w-1/3"
+              onClick={onClick}
+            >
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -31,7 +39,10 @@ const GridText = (props) => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-2 cursor-pointer md:w-1/3">
+            <div
+              className="w-full p-2 cursor-pointer md:w-1/3"
+              onClick={onClick}
+            >
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -43,7 +54,10 @@ const GridText = (props) => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-2 cursor-pointer md:w-1/3">
+            <div
+              className="w-full p-2 cursor-pointer md:w-1/3"
+              onClick={onClick}
+            >
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -54,7 +68,10 @@ const GridText = (props) => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-2 cursor-pointer md:w-1/3">
+            <div
+              className="w-full p-2 cursor-pointer md:w-1/3"
+              onClick={onClick}
+            >
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -64,7 +81,10 @@ const GridText = (props) => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-2 cursor-pointer md:w-1/3">
+            <div
+              className="w-full p-2 cursor-pointer md:w-1/3"
+              onClick={onClick}
+            >
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -75,7 +95,10 @@ const GridText = (props) => {
                 </div>
               </div>
             </div>
-            <div className="w-full p-2 cursor-pointer md:w-1/3">
+            <div
+              className="w-full p-2 cursor-pointer md:w-1/3"
+              onClick={onClick}
+            >
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
