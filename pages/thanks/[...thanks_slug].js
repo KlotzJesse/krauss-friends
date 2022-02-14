@@ -4,10 +4,10 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import SimpleFooter from "./../../components/SimpleFooter";
 
-const goals = new Map(
+const goals = new Map([
   ["vertrieb-trainieren", "Q55TCXUC"],
-  ["coach-ausbildung", "1CRLFZ5Q"]
-);
+  ["coach-ausbildung", "1CRLFZ5Q"],
+]);
 
 const ThanksPage = (props) => {
   const router = useRouter();
