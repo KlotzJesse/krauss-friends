@@ -4,12 +4,17 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import SimpleFooter from "./../../components/SimpleFooter";
 
+const goals = new Map(
+  ["vertrieb-trainieren", "Q55TCXUC"],
+  ["coach-ausbildung", "1CRLFZ5Q"]
+);
+
 const ThanksPage = (props) => {
   const router = useRouter();
   const { thanks_slug } = router.query;
 
   useEffect(() => {
-    trackGoal("goal_" + thanks_slug, 100);
+    trackGoal(goals.get(thanks_slug) ?? "ZJJHYTQN", 100);
   }, []);
 
   return (
