@@ -7,7 +7,7 @@ const Footer = (props) => {
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
           <a
-            href="#"
+            href="/"
             aria-label="Zur Startseite"
             title="KRAUSS and Friends"
             className="inline-flex items-center"
@@ -36,7 +36,7 @@ const Footer = (props) => {
           <div className="flex">
             <p className="mr-1 text-gray-800">Telefon:</p>
             <a
-              href="#"
+              href="tel:+4981919375900"
               aria-label="Unser Telefon"
               title="Unser Telefon"
               className="transition-colors duration-300 text-purple-accent-400 hover:text-purple-800"

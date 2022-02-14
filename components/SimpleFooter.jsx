@@ -1,6 +1,5 @@
 const navigation = {
   main: [
-    { name: "Termin vereinbaren", href: "/appointment" },
     { name: "Impressum", href: "https://www.krauss-friends.com/about" },
     {
       name: "Datenschutzerklärung",

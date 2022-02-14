@@ -1,7 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-const Hero = (props) => {
+const Hero = ({ page }) => {
+  const onClick = () =>
+    openPopupWidget({
+      url: page.calendlyURL,
+    });
   return (
     <div className="overflow-hidden bg-slate-100 md:max-h-screen">
       <div className="flex flex-col items-center justify-center flex-grow mx-auto space-y-5 text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 md:pb-28 xl:p-40 xl:text-left">
@@ -84,8 +88,8 @@ const Hero = (props) => {
               mehr Erfolg im Verkauf.
             </p>
           </div>
-          <a
-            href="https://calendly.com/krauss-friends/kennenlerngespraech"
+          <button
+            onClick={onClick}
             className="items-center self-start hidden px-12 py-4 mr-2 text-lg font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:flex primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Erstgespräch reservieren
@@ -101,7 +105,7 @@ const Hero = (props) => {
                 d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0 l115.5-115.5C460.366,409.989,463,403.63,463,397s-2.634-12.989-7.322-17.678l-115.5-115.5c-9.763-9.762-25.593-9.763-35.355,0 c-9.763,9.763-9.763,25.592,0,35.355l72.822,72.822H-24c-13.808,0-25,11.193-25,25S-37.808,422-24,422z"
               ></path>
             </svg>
-          </a>
+          </button>
           <p className="self-start hidden pt-3 text-sm text-gray-500 cursor-pointer md:block">
             In nur 60 Sekunden online einen freien Termin suchen
           </p>

@@ -1,16 +1,21 @@
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Fragment, useRef } from "react";
+import { Fragment, useRef, useState } from "react";
 import { openPopupWidget } from "react-calendly";
 
-const navigation = [{ name: "Termin anfragen", href: "/appointment" }];
+const navigation = [];
 
 export default function HeroSignUp({ blok, page }) {
   const videoFrame = useRef(null);
 
+  const [mail, setMail] = useState();
+
   const onClick = () =>
     openPopupWidget({
       url: page.calendlyURL,
+      prefill: {
+        email: mail,
+      },
     });
 
   return (
@@ -73,7 +78,7 @@ export default function HeroSignUp({ blok, page }) {
           >
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">KRAUSS Training</span>
                   <img
                     className="w-auto h-8 sm:h-10"
@@ -156,8 +161,8 @@ export default function HeroSignUp({ blok, page }) {
                     </a>
                   ))}
                 </div>
-                <a
-                  href="#"
+                <button
+                  onClick={onClick}
                   className={`block w-full px-5 py-3 font-medium text-center text-primary-500 bg-gray-50 hover:bg-gray-100 ${
                     page.color == "gold"
                       ? "text-primary-600"
@@ -165,7 +170,7 @@ export default function HeroSignUp({ blok, page }) {
                   } `}
                 >
                   Unverbindlichen Termin vereinbaren
-                </a>
+                </button>
               </div>
             </Popover.Panel>
           </Transition>
@@ -203,6 +208,9 @@ export default function HeroSignUp({ blok, page }) {
                     Email
                   </label>
                   <input
+                    onChange={(event) => {
+                      setMail(event.currentTarget.value);
+                    }}
                     type="email"
                     name="email"
                     id="email"
