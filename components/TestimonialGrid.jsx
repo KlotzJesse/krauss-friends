@@ -29,44 +29,12 @@ const TestimonialGrid = (props) => {
           </p>
         </div>
         <div className="flex flex-wrap -m-1 md:-m-2">
-          <div className="flex flex-wrap w-1/2">
-            <div className="w-1/2 p-1 md:p-2">
-              <Image
-                alt="Training Gruppenarbeit"
-                width="253"
-                height="184"
-                layout="responsive"
-                className="block object-cover object-center w-full h-full rounded"
-                src="https://image.jimcdn.com/app/cms/image/transf/dimension=660x10000:format=png/path/s136c472730450c10/image/ib3ff735be07090b9/version/1621596236/training-gruppenarbeit.png"
-              />
-            </div>
-            <div className="w-1/2 p-1 md:p-2">
-              <Image
-                alt="Golf Analogieübung beim Vertriebstraining"
-                width="253"
-                height="184"
-                layout="responsive"
-                className="block object-cover object-center w-full h-full rounded"
-                src="https://www.krauss-friends.com/app/download/8105144261/_DSC4647-min.png?t=1625756283"
-              />
-            </div>
-            <div className="w-full p-1 md:p-2">
-              <Image
-                alt="Flipchart bearbeiten im Team"
-                width="523"
-                height="356"
-                layout="responsive"
-                className="block object-cover object-center w-full h-full rounded"
-                src="https://www.krauss-friends.com/app/download/8105144061/_DSC4662-min.png?t=1625756102"
-              />
-            </div>
-          </div>
-          <div className="flex flex-wrap w-1/2 mx-auto">
+          <div className="flex flex-wrap w-full mx-auto">
             <div className="w-full p-1 md:p-2">
               <Image
                 alt="gallery"
                 width="523"
-                height="294"
+                height="194"
                 layout="responsive"
                 className="block object-cover object-center w-full h-full rounded"
                 src="https://www.krauss-friends.com/app/download/8105114861/Mitarbeiter+Interview+Krauss+GmbH+2-19+screenshot.png?t=1625750993"
@@ -76,7 +44,7 @@ const TestimonialGrid = (props) => {
               <Image
                 alt="gallery"
                 width="253"
-                height="253"
+                height="153"
                 layout="responsive"
                 className="block object-cover object-center w-full h-full rounded"
                 src="https://www.krauss-friends.com/app/download/8111814061/20210729_112121.jpeg?t=1629117333"
@@ -84,25 +52,18 @@ const TestimonialGrid = (props) => {
             </div>
             <div className="w-1/2 p-1 md:p-2">
               <Image
-                alt="gallery"
+                alt="Training Gruppenarbeit"
                 width="253"
-                height="253"
+                height="153"
                 layout="responsive"
                 className="block object-cover object-center w-full h-full rounded"
-                src="https://www.krauss-friends.com/app/download/8105144761/_DSC4611-min.png?t=1625756542"
+                src="https://image.jimcdn.com/app/cms/image/transf/dimension=660x10000:format=png/path/s136c472730450c10/image/ib3ff735be07090b9/version/1621596236/training-gruppenarbeit.png"
               />
             </div>
           </div>
           <div className="flex flex-wrap w-full mx-auto">
-            <div className="w-1/2 p-1 md:p-2">
-              <p className="text-left text-gray-600">
-                Präsenz Vertriebstraining mit erlebnisreicher Golf
-                Analogieübung, um das eigene Verhalten zu reflektieren, für mehr
-                Erfolg im nächsten Verkaufsgespräch.
-              </p>
-            </div>
-            <div className="w-1/2 p-1 md:p-2">
-              <p className="text-right text-gray-600">
+            <div className="p-1 md:p-2">
+              <p className="text-gray-600 ">
                 Online Vertriebstraining mit interaktiven Whiteboard für
                 motivierte Übung um das nächste Verkaufsgespräch direkt zu
                 gewinnen und mehr Umsatz zu erzielen.
