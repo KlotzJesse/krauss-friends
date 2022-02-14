@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
 const Hero = ({ page }) => {
   const onClick = () =>

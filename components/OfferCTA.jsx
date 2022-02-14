@@ -1,4 +1,5 @@
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
 const OfferCTA = ({ page }) => {
   const onClick = () =>
