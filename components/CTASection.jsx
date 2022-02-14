@@ -11,7 +11,7 @@ const CTASection = ({ page }) => {
         <div className="flex flex-col items-start mx-auto my-12 sm:container md:flex-row">
           <div className="sticky flex flex-col w-full mt-2 md:top-36 lg:w-1/2 md:px-8">
             <p className="font-semibold text-gray-600 uppercase tracking-loose">
-              So kann ich Ihnen helfen
+              So können Wir Ihnen helfen
             </p>
             <h1 className="mb-12 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
               <span
@@ -56,7 +56,7 @@ const CTASection = ({ page }) => {
                   Wenn Ihre Antwort auf die vorige Frage <strong>“ja”</strong>{" "}
                   lautet
                 </u>
-                , kann ich Ihnen helfen.
+                , können Wir Ihnen helfen.
                 <br />
                 <br />
                 Für namhafte Marken betreiben wir seit vielen Jahren{" "}

@@ -47,7 +47,7 @@ const Hero = ({ page }) => {
             </span>
           </h1>
           <p className="mb-8 text-base font-medium text-gray-500 md:text-2xl">
-            Ich unterstütze Ihren Vertrieb, Potenziale zu erkennen und Chancen
+            Wir unterstützen Ihren Vertrieb, Potenziale zu erkennen und Chancen
             im Verkaufsgespräch zu ergreifen, um mit gewonnener Motivation mehr
             Neukunden zu gewinnen.
           </p>
