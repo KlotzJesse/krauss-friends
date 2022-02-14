@@ -1,52 +1,58 @@
 import { ShieldCheckIcon } from "@heroicons/react/solid";
+import { trackGoal } from "fathom-client";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect } from "react";
 import SimpleFooter from "./../../components/SimpleFooter";
 
 const ThanksPage = (props) => {
   const router = useRouter();
   const { thanks_slug } = router.query;
+
+  useEffect(() => {
+    trackGoal("goal_" + thanks_slug, 100);
+  }, []);
+
   return (
-    <div className="overflow-hidden h-screen">
-      <div className="lg:px-20 lg:py-20 py-12 md:px-6 px-4 w-full flex items-center justify-center w-full ">
-        <div className="relative bg-indigo-700 border rounded-md max-w-7xl w-full lg:py-20 md:py-16 py-12 overflow-hidden">
-          <div className="z-0 md:hidden absolute bottom-0 right-0">
+    <div className="h-screen overflow-hidden">
+      <div className="flex items-center justify-center w-full px-4 py-12 lg:px-20 lg:py-20 md:px-6 ">
+        <div className="relative w-full py-12 overflow-hidden bg-indigo-700 border rounded-md max-w-7xl lg:py-20 md:py-16">
+          <div className="absolute bottom-0 right-0 z-0 md:hidden">
             <img src="https://i.ibb.co/bJP553D/Vector-2.png" />
           </div>
-          <div className="z-0 md:hidden absolute bottom-0 left-0">
+          <div className="absolute bottom-0 left-0 z-0 md:hidden">
             <img src="https://i.ibb.co/0m03kPF/Vector-1.png" />
           </div>
-          <div className="z-0 hidden md:block absolute bottom-0 right-0 lg:hidden">
+          <div className="absolute bottom-0 right-0 z-0 hidden md:block lg:hidden">
             <img src="https://i.ibb.co/S3NqCPm/Vector-1-3.png" />
           </div>
-          <div className="z-0 hidden md:block absolute bottom-0 left-0 lg:hidden">
+          <div className="absolute bottom-0 left-0 z-0 hidden md:block lg:hidden">
             <img src="https://i.ibb.co/TkcMPsM/Vector-1-2.png" />
           </div>
-          <div className="z-0 hidden lg:block absolute bottom-0 right-0">
+          <div className="absolute bottom-0 right-0 z-0 hidden lg:block">
             <img src="https://i.ibb.co/pzpth1G/Vector-1-1.png" />
           </div>
-          <div className="z-0 hidden lg:block absolute bottom-0 left-0">
+          <div className="absolute bottom-0 left-0 z-0 hidden lg:block">
             <img src="https://i.ibb.co/W3HTXFv/Vector-1.png" />
           </div>
-          <div className="relative z-20 text-white text-center lg:px-0 sm:px-12 px-4">
-            <div className="font-bold lg:text-8xl md:text-7xl text-6xl">
-              <ShieldCheckIcon className="h-28 w-28 mx-auto" />
+          <div className="relative z-20 px-4 text-center text-white lg:px-0 sm:px-12">
+            <div className="text-6xl font-bold lg:text-8xl md:text-7xl">
+              <ShieldCheckIcon className="mx-auto h-28 w-28" />
             </div>
-            <div className="font-bold lg:text-5xl md:text-4xl text-2xl mt-6">
+            <div className="mt-6 text-2xl font-bold lg:text-5xl md:text-4xl">
               Vielen Dank für Ihren Terminvorschlag!
             </div>
-            <div className="text-base mt-4">
+            <div className="mt-4 text-base">
               Wir werden uns in dem von Ihnen ausgewählten Zeitraum{" "}
-              <br className="md:block hidden" /> telefonisch melden!
+              <br className="hidden md:block" /> telefonisch melden!
             </div>
-            <div className="sm:flex justify-center gap-x-4 mt-12">
+            <div className="justify-center mt-12 sm:flex gap-x-4">
               <a
                 href="https://www.krauss-friends.com"
-                className="bg-white sm:w-auto w-full text-indigo-700 px-12 border rounded-md hover:bg-gray-200 grid place-items-center py-4"
+                className="grid w-full px-12 py-4 text-indigo-700 bg-white border rounded-md sm:w-auto hover:bg-gray-200 place-items-center"
               >
                 Zur Trainings Website
               </a>
-              <a className="bg-transparent text-white px-6 border rounded-md hover:bg-indigo-800 grid place-items-center py-4 sm:w-auto w-full sm:mt-0 mt-4">
+              <a className="grid w-full px-6 py-4 mt-4 text-white bg-transparent border rounded-md hover:bg-indigo-800 place-items-center sm:w-auto sm:mt-0">
                 Weitere E-Mail senden
               </a>
             </div>
