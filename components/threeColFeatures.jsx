@@ -25,9 +25,9 @@ const features = [
     icon: DatabaseIcon,
   },
   {
-    name: "Professionelle Anrufer",
+    name: "Professionelle Assistenz",
     description:
-      "Wir verfügen über sehr erfahrene Fachleute, die in der Lage sind, tagein, tagaus die höchsten Standards zu erfüllen.",
+      "Wir verfügen über sehr erfahrene Fachleute, die sich mit Ihrer Zielgruppe perfekt auskennen, auf Ihr Produkt geschult werden und trainiert darin sind, Ihre potenziellen Kunden von Ihrer Lösung zu begeistern, eine Beziehung aufzubauen und sowohl lang- als auch kurzfristig Termine für Sie zu erzielen.",
     icon: PhoneOutgoingIcon,
   },
   {

@@ -227,7 +227,10 @@ export default function HeroSignUp({ blok, page }) {
                 <p className="mt-3 text-sm text-gray-500">
                   Vereinbaren Sie unverbindlich ein Kennenlerngespräch innerhalb
                   der nächsten Tage.{" "}
-                  <a href="#" className="font-medium text-gray-900 underline">
+                  <a
+                    href="https://www.krauss-friends.com/j/privacy"
+                    className="font-medium text-gray-900 underline"
+                  >
                     Datenschutz
                   </a>
                   .

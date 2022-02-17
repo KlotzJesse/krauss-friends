@@ -6,9 +6,9 @@ const Services = (props) => {
       <div className="max-w-xl mb-6 sm:mx-auto sm:text-center md:mb-10 lg:max-w-2xl">
         <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
           <a href="/" className="mb-6 sm:mx-auto">
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+            <div className="flex items-center justify-center w-12 h-12 bg-purple-600 rounded-full">
               <svg
-                className="w-10 h-10 text-deep-purple-accent-400"
+                className="w-10 h-10 text-white"
                 stroke="currentColor"
                 viewBox="0 0 52 52"
               >
@@ -24,39 +24,18 @@ const Services = (props) => {
           </a>
         </div>
         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-          <span className="relative inline-block">
-            <svg
-              viewBox="0 0 52 24"
-              fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-            >
-              <defs>
-                <pattern
-                  id="e77df901-b9d7-4b9b-822e-16b2d410795b"
-                  x="0"
-                  y="0"
-                  width=".135"
-                  height=".30"
-                >
-                  <circle cx="1" cy="1" r=".7" />
-                </pattern>
-              </defs>
-              <rect
-                fill="url(#e77df901-b9d7-4b9b-822e-16b2d410795b)"
-                width="52"
-                height="24"
-              />
-            </svg>
-            <span className="relative">Wie</span>
-          </span>{" "}
-          Zeitgemäße Neukundengewinnung zu mehr Terminen führt
+          Es kann schwierig sein, neue Kunden zu finden
         </h2>
-        <p className="mb-1 text-xs font-semibold tracking-wide uppercase md:mb-2">
-          New History
+        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+          Sie wissen, dass Sie mehr Kunden finden müssen, um zu wachsen, aber
+          Ihre verfügbaren Kontakte neigen sich dem Ende.
         </p>
-        <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+          KRAUSS Neukundengewinnung ist die Antwort. Wir generieren
+          qualifizierte Verkaufschancen für Sie, indem wir potenzielle Kunden
+          ansprechen, die an Ihrem Produkt oder Ihrer Dienstleistung
+          interessiert sind. Mit unserer Hilfe können Sie das beste aus Ihrer
+          Zeit machen und mehr Kunden gewinnen.
         </p>
       </div>
       <div className="grid gap-6 row-gap-5 lg:grid-cols-3">
@@ -70,8 +49,15 @@ const Services = (props) => {
             Telefonakquise
           </h5>
           <p className="text-gray-700">
-            O for awesome, this chocka full cuzzie is as rip-off as a cracker.
-            Meanwhile, in behind the bicycle shed, Hercules Morse.
+            Unsere erfahrenen Fachleute ermitteln Entscheider aus unserer
+            umfangreichen Datenbank, schätzen deren Bedürfnisse ein und
+            vereinbaren einen Termin mit Ihnen. Alle unsere Kunden erhalten
+            Unterlagen über Ihr Produkt oder Ihre Dienstleistung und werden auf
+            unseren Marktplatz weitergeleitet, damit sie mehr erfahren und einen
+            Termin buchen können, bevor wir sie erneut kontaktieren. Lassen Sie
+            uns für Sie Verkaufschancen erarbeiten und konzentrieren Sie sich
+            auf das, was Sie am besten können - hochwertige Produkte und
+            Dienstleistungen anbieten!
           </p>
         </div>
         <div>
@@ -84,9 +70,16 @@ const Services = (props) => {
             Vertriebstraining
           </h5>
           <p className="text-gray-700">
-            I&apos;ll be sure to note that in my log. Smooth as an
-            android&apos;s bottom, eh, Data? When has justice ever been as
-            simple as a rule book?
+            Mit unserem Vertriebstraining können Sie sicher sein, dass Ihre
+            Vertriebsmitarbeiter die Fähigkeiten und die Unterstützung erhalten,
+            die sie benötigen, um erfolgreich neue Geschäfte abzuschließen.
+            Unser Training unterstützt dabei die Telefonakquise, so dass Sie von
+            hochqualifizierten Leads und begeisterten Kunden profitieren können.
+            Mit unserer Hilfe lernen Ihre Vertriebsmitarbeiter, mit Einwänden
+            umzugehen und die Vorteile Ihres Produkts oder Ihrer Dienstleistung
+            so zu präsentieren, dass potenzielle Kunden überzeugt sind, mit
+            Ihnen ins Geschäft zu kommen. Lassen Sie uns Ihnen helfen, Ihre
+            Verkaufsziele zu erreichen und Ihr Geschäft noch heute auszubauen!
           </p>
         </div>
         <div>
@@ -99,8 +92,11 @@ const Services = (props) => {
             Online Lead Generierung
           </h5>
           <p className="text-gray-700">
-            Yolo ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
-            suscipit leo. Carpe diem vulputate est nec commodo rutrum.
+            Wir bieten Ihnen alles aus einer Hand, was Sie zur
+            Neukundengewinnung benötigen, von persönlichen Anrufen bis hin zu
+            gezielten Marketingkampagnen. Außerdem erstellen wir täglich neue
+            Inhalte für Ihre Zielgruppe, damit Sie bei den Entscheidungsträgern
+            von heute stets im Mittelpunkt stehen.
           </p>
         </div>
       </div>

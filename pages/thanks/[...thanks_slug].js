@@ -7,6 +7,8 @@ import SimpleFooter from "./../../components/SimpleFooter";
 const goals = new Map([
   ["vertrieb-trainieren", "Q55TCXUC"],
   ["coach-ausbildung", "1CRLFZ5Q"],
+  ["gastronomy-world", "67UTPTNF"],
+  [("neukundengewinnung", "BG7BSHZU")],
 ]);
 
 const ThanksPage = (props) => {
