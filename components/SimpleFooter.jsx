@@ -57,7 +57,7 @@ export default function SimpleFooter() {
           ))}
         </div>
         <p className="mt-8 text-base text-center text-gray-600">
-          &copy; 2011 - 2022 KRAUSS Training, Inc. All rights reserved.
+          &copy; 2011 - 2022 KRAUSS, Inc. All rights reserved.
         </p>
       </div>
     </footer>
