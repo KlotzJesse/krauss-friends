@@ -96,7 +96,7 @@ const Hero = ({ page }) => {
             onClick={onClick}
             className="items-center self-start hidden px-12 py-4 mr-2 text-lg font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:flex primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
-            Erstgespräch reservieren
+            Erstgespräch anfragen
             <svg
               className="w-5 h-5 ml-2 fill-current color-white"
               id="Layer_1"
@@ -119,7 +119,7 @@ const Hero = ({ page }) => {
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
             className="flex items-center px-12 py-4 text-xs font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
-            Erstgespräch reservieren
+            Erstgespräch anfragen
           </a>
           <p className="pt-3 text-sm text-gray-500 cursor-pointer xl:hidden">
             In nur 60 Sekunden online einen freien Termin suchen

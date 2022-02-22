@@ -28,7 +28,7 @@ const OfferCTA = ({ page }) => {
               onClick={onClick}
               className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-500 hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
-              Kennenlerngespräch reservieren
+              Erstgespräch anfragen
               <svg
                 className="w-5 h-5 ml-2 fill-current color-white"
                 id="Layer_1"
