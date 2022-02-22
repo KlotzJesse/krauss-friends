@@ -8,6 +8,7 @@ import {
   ShieldCheckIcon,
   WifiIcon,
 } from "@heroicons/react/outline";
+import { trackGoal } from "fathom-client";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
@@ -89,10 +90,12 @@ const metrics = [
 ];
 
 const threeColFeatures = ({ blok, page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
 
   return (
     <>

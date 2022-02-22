@@ -2,10 +2,12 @@ import React from "react";
 import { openPopupWidget } from "react-calendly";
 
 const CTASection = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
   return (
     <section id="your-profit" className="container px-5 mx-auto 2xl:w-3/5">
       <div className="py-3">
@@ -30,7 +32,8 @@ const CTASection = ({ page }) => {
             <button
               onClick={onClick}
               style={{ color: "white !important" }}
-              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+              className="flex items-ceimport { trackGoal } from 'fathom-client';
+nter self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Erstgespräch reservieren
               <svg

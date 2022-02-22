@@ -1,12 +1,15 @@
 import { ChartPieIcon, TrendingUpIcon } from "@heroicons/react/outline";
+import { trackGoal } from "fathom-client";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
 const FeaturesWithTestimonial = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
   return (
     <div className="relative pt-16 pb-32 overflow-hidden bg-white">
       <div className="relative">

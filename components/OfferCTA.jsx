@@ -1,11 +1,14 @@
+import { trackGoal } from "fathom-client";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
 const OfferCTA = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
   return (
     <div className="flex items-center justify-center -mb-10 bg-white">
       <div className="relative flex flex-col items-center w-full max-w-6xl p-10 mx-auto text-center transform rounded-lg shadow-2xl md:p-16 lg:block bg-gradient-to-br from-primary-100 via-primary-200 to-primary-100 -translate-y-28">

@@ -6,14 +6,17 @@ import {
   PhoneOutgoingIcon,
   TrendingUpIcon,
 } from "@heroicons/react/solid";
+import { trackGoal } from "fathom-client";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
 const GridMiddle = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
   return (
     <section className="z-50 text-gray-600 transform -translate-y-16 body-font">
       <div className="container px-5 pt-10 mx-auto md:pt-0 2xl:w-3/5">

@@ -1,11 +1,14 @@
+import { trackGoal } from "fathom-client";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
 const Targets = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
   return (
     <section className="container px-5 mx-auto 2xl:w-3/5">
       <div className="py-3">

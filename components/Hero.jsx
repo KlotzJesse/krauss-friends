@@ -1,12 +1,15 @@
+import { trackGoal } from "fathom-client";
 import Image from "next/image";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
 const Hero = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
   return (
     <div className="overflow-hidden bg-slate-100 md:max-h-screen">
       <div className="flex flex-col items-center justify-center flex-grow mx-auto space-y-5 text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 md:pb-28 xl:p-40 xl:text-left">

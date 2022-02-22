@@ -1,3 +1,4 @@
+import { trackGoal } from "fathom-client";
 import React from "react";
 import { openPopupWidget } from "react-calendly";
 
@@ -495,10 +496,12 @@ const logos = [
 ];
 
 const SingleTestimonial = ({ page }) => {
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
     });
+  };
 
   return (
     <div>

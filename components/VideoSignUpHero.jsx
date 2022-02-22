@@ -1,5 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { trackGoal } from "fathom-client";
 import { Fragment, useRef, useState } from "react";
 import { openPopupWidget } from "react-calendly";
 
@@ -10,13 +11,12 @@ export default function HeroSignUp({ blok, page }) {
 
   const [mail, setMail] = useState();
 
-  const onClick = () =>
+  const onClick = () => {
+    trackGoal("O3RLAFSO", 0);
     openPopupWidget({
       url: page.calendlyURL,
-      prefill: {
-        email: mail,
-      },
     });
+  };
 
   return (
     <div
