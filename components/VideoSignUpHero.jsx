@@ -1,8 +1,8 @@
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import { Fragment, useRef, useState } from "react";
-import { openPopupWidget } from "react-calendly";
 
 const navigation = [];
 
@@ -10,12 +10,13 @@ export default function HeroSignUp({ blok, page }) {
   const videoFrame = useRef(null);
 
   const [mail, setMail] = useState();
-
+  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("O3RLAFSO", 0);
-    openPopupWidget({
+    trackGoal("MPOZNNML", 0); //03RLAFSO
+    /*openPopupWidget({
       url: page.calendlyURL,
-    });
+    });*/
+    toggle();
   };
 
   return (

@@ -6,16 +6,18 @@ import {
   PhoneOutgoingIcon,
   TrendingUpIcon,
 } from "@heroicons/react/solid";
+import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
-import { openPopupWidget } from "react-calendly";
 
 const GridMiddle = ({ page }) => {
+  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("O3RLAFSO", 0);
-    openPopupWidget({
+    trackGoal("MPOZNNML", 0); //03RLAFSO
+    /*openPopupWidget({
       url: page.calendlyURL,
-    });
+    });*/
+    toggle();
   };
   return (
     <section className="z-50 text-gray-600 transform -translate-y-16 body-font">

@@ -1,3 +1,4 @@
+import "@typeform/embed/build/css/popup.css";
 import * as Fathom from "fathom-client";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";

@@ -1,13 +1,15 @@
+import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
-import { openPopupWidget } from "react-calendly";
 
 const OfferCTA = ({ page }) => {
+  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("O3RLAFSO", 0);
-    openPopupWidget({
+    trackGoal("MPOZNNML", 0); //03RLAFSO
+    /*openPopupWidget({
       url: page.calendlyURL,
-    });
+    });*/
+    toggle();
   };
   return (
     <div className="flex items-center justify-center -mb-10 bg-white">

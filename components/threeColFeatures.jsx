@@ -8,9 +8,9 @@ import {
   ShieldCheckIcon,
   WifiIcon,
 } from "@heroicons/react/outline";
+import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
-import { openPopupWidget } from "react-calendly";
 
 const features = [
   {
@@ -90,11 +90,13 @@ const metrics = [
 ];
 
 const threeColFeatures = ({ blok, page }) => {
+  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("O3RLAFSO", 0);
-    openPopupWidget({
+    trackGoal("MPOZNNML", 0); //03RLAFSO
+    /*openPopupWidget({
       url: page.calendlyURL,
-    });
+    });*/
+    toggle();
   };
 
   return (
