@@ -90,13 +90,20 @@ const metrics = [
 ];
 
 const threeColFeatures = ({ blok, page }) => {
-  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("MPOZNNML", 0); //03RLAFSO
-    /*openPopupWidget({
-      url: page.calendlyURL,
-    });*/
-    toggle();
+    if (page.calendlyURL) {
+      trackGoal("03RLAFSO", 0); //03RLAFSO
+      openPopupWidget({
+        url: page.calendlyURL,
+      });
+      return;
+    }
+    if (page.typeformId) {
+      const { toggle } = createPopup(page.typeformId);
+      trackGoal("MPOZNNML", 0);
+      toggle();
+      return;
+    }
   };
 
   return (

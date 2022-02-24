@@ -1,15 +1,23 @@
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
 const Targets = ({ page }) => {
-  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("MPOZNNML", 0); //03RLAFSO
-    /*openPopupWidget({
-      url: page.calendlyURL,
-    });*/
-    toggle();
+    if (page.calendlyURL) {
+      trackGoal("03RLAFSO", 0); //03RLAFSO
+      openPopupWidget({
+        url: page.calendlyURL,
+      });
+      return;
+    }
+    if (page.typeformId) {
+      const { toggle } = createPopup(page.typeformId);
+      trackGoal("MPOZNNML", 0);
+      toggle();
+      return;
+    }
   };
   return (
     <section className="container px-5 mx-auto 2xl:w-3/5">

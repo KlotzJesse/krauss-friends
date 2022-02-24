@@ -1,6 +1,7 @@
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
 const stats = [
   { label: "Gegründet", value: "2012" },
@@ -496,13 +497,20 @@ const logos = [
 ];
 
 const SingleTestimonial = ({ page }) => {
-  const { toggle } = createPopup(page.typeformId);
   const onClick = () => {
-    trackGoal("MPOZNNML", 0); //03RLAFSO
-    /*openPopupWidget({
-      url: page.calendlyURL,
-    });*/
-    toggle();
+    if (page.calendlyURL) {
+      trackGoal("03RLAFSO", 0); //03RLAFSO
+      openPopupWidget({
+        url: page.calendlyURL,
+      });
+      return;
+    }
+    if (page.typeformId) {
+      const { toggle } = createPopup(page.typeformId);
+      trackGoal("MPOZNNML", 0);
+      toggle();
+      return;
+    }
   };
 
   return (
