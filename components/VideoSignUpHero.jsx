@@ -227,7 +227,7 @@ export default function HeroSignUp({ blok, page }) {
                   </svg>
                 </button>
                 <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
-                  In nur 60 Sekunden online einen freien Termin suchen
+                  Kostenlose Analyse sichern in nur 1 Minute
                 </p>
                 {/* <p className="text-base font-medium text-gray-900">
                   Kontaktieren Sie uns heute

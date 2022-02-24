@@ -121,7 +121,7 @@ const Hero = ({ page }) => {
             </svg>
           </button>
           <p className="self-start hidden pt-3 text-sm text-gray-500 cursor-pointer md:block">
-            In nur 60 Sekunden online einen freien Termin suchen
+            Kostenlose Analyse sichern in nur 1 Minute
           </p>
         </div>
         <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end">
@@ -132,7 +132,7 @@ const Hero = ({ page }) => {
             Erstgespräch anfragen
           </a>
           <p className="pt-3 text-sm text-gray-500 cursor-pointer xl:hidden">
-            In nur 60 Sekunden online einen freien Termin suchen
+            Kostenlose Analyse sichern in nur 1 Minute
           </p>
 
           <div className="w-full h-full pt-10 md:pt-0">

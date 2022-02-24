@@ -55,7 +55,7 @@ const OfferCTA = ({ page }) => {
           </div>
         </div>
         <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
-          In nur 60 Sekunden online einen freien Termin suchen
+          Kostenlose Analyse sichern in nur 1 Minute
         </p>
       </div>
     </div>
