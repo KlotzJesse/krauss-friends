@@ -22,6 +22,7 @@ import SimpleFooter from "./SimpleFooter";
 import SimpleTestimonial from "./SimpleTestimonial";
 import SingleTestimonial from "./SingleTestimonial";
 import Targets from "./Targets";
+import TempBuilder from "./TempBuilder";
 import Testimonial from "./Testimonial";
 import TestimonialGrid from "./TestimonialGrid";
 import threeColFeatures from "./threeColFeatures";
@@ -61,6 +62,7 @@ const Components = {
   services: Services,
   page: Page,
   simpleTestimonial: SimpleTestimonial,
+  tempBuilder: TempBuilder,
 };
 
 const DynamicComponent = ({ blok, page }) => {
