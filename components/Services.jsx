@@ -60,7 +60,7 @@ const Services = (props) => {
             Dienstleistungen anbieten!
           </p>
         </div>
-        <div>
+        {/*<div>
           <img
             className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
             src="https://i.ibb.co/HGsJvVk/Mitarbeiter-Interview-Krauss-Gmb-H-1-59-screenshot.png"
@@ -81,7 +81,7 @@ const Services = (props) => {
             Ihnen ins Geschäft zu kommen. Lassen Sie uns Ihnen helfen, Ihre
             Verkaufsziele zu erreichen und Ihr Geschäft noch heute auszubauen!
           </p>
-        </div>
+        </div>*/}
         <div>
           <img
             className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"

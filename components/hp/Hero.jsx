@@ -67,7 +67,7 @@ function classNames(...classes) {
 
 export default function Hero() {
   return (
-    <Popover className="z-50 relative">
+    <Popover className="z-50 fixed w-full">
       {({ open }) => (
         <>
           <div className="relative z-50 bg-white shadow">

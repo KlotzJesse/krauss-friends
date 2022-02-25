@@ -66,13 +66,13 @@ const features = [
 const metrics = [
   {
     id: 1,
-    stat: "300K+",
+    stat: "305K+",
     emphasis: "Entscheider-Kontakte",
     rest: "werden jährlich qualifiziert.",
   },
   {
     id: 2,
-    stat: "1.6K+",
+    stat: "3.2K+",
     emphasis: "Key Accounts-Zentralkunden",
     rest: "mit deren Objektstruktur.",
   },
