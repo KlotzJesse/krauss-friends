@@ -11,6 +11,7 @@ import {
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
+import { openPopupWidget } from "react-calendly";
 
 const features = [
   {
