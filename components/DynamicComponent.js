@@ -19,6 +19,7 @@ import Section from "./Section";
 import Services from "./Services";
 import SideBySideFunctions from "./sidebysideFuntions";
 import SimpleFooter from "./SimpleFooter";
+import SimpleTestimonial from "./SimpleTestimonial";
 import SingleTestimonial from "./SingleTestimonial";
 import Targets from "./Targets";
 import Testimonial from "./Testimonial";
@@ -59,6 +60,7 @@ const Components = {
   threeColFeatures: threeColFeatures,
   services: Services,
   page: Page,
+  simpleTestimonial: SimpleTestimonial,
 };
 
 const DynamicComponent = ({ blok, page }) => {
