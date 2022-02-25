@@ -207,46 +207,7 @@ export default function HeroSignUp({ blok, page }) {
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 {blok.description}
               </p>
-
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                {blok.reference && (
-                  <div className="flex flex-col items-center mb-8 space-x-3 space-y-3 md:flex-row md:space-y-0">
-                    <div className="flex-grow flex -space-x-2">
-                      <img
-                        alt="Gert Behre"
-                        width="32px"
-                        height="32px"
-                        className="inline-block rounded-full ring-2 ring-white"
-                        src="https://i.ibb.co/1zj9jvz/Gert-Behre.png"
-                      />{" "}
-                      <img
-                        alt="Stephan Kotterer"
-                        width="32px"
-                        height="32px"
-                        className="z-10 inline-block rounded-full ring-2 ring-white"
-                        src="https://i.ibb.co/bd3kKfB/Stephan-Kotterer.png"
-                      />{" "}
-                      <img
-                        alt="Jan Hauschildt"
-                        width="32px"
-                        height="32px"
-                        className="z-20 inline-block rounded-full ring-2 ring-white"
-                        src="https://i.ibb.co/Js04MG9/Jan-Hauschildt.png"
-                      />{" "}
-                      <img
-                        alt="Michael Schwab"
-                        width="32px"
-                        height="32px"
-                        className="z-30 inline-block rounded-full ring-2 ring-white"
-                        src="https://i.ibb.co/yVPhbgQ/Michael-Schwab.png"
-                      />{" "}
-                    </div>
-                    <p className="text-xs pl-14 ">
-                      <b>Herr Michael Schwab, Leiter CRM Innendienst</b> und{" "}
-                      {blok.reference}
-                    </p>
-                  </div>
-                )}
                 <button
                   onClick={onClick}
                   className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
