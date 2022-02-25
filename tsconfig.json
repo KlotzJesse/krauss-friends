@@ -22,7 +22,8 @@
     "pages/[[...index]].jss",
     "components/Heading.jsx",
     "pages/test.js",
-    "pages/appointment.jsx"
+    "pages/appointment.jsx",
+    "components/SimpleTestimonial.jsx"
   ],
   "exclude": ["node_modules"]
 }
