@@ -38,7 +38,7 @@ const Services = (props) => {
           Zeit machen und mehr Kunden gewinnen.
         </p>
       </div>
-      <div className="grid gap-6 row-gap-5 lg:grid-cols-3">
+      <div className="grid gap-6 row-gap-5 lg:grid-cols-2">
         <div>
           <img
             className="object-cover w-full h-64 mb-6 rounded shadow-lg lg:h-80 xl:h-96"
