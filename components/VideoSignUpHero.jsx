@@ -347,62 +347,73 @@ export default function HeroSignUp({ blok, page }) {
                 />
               </svg>
               <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md">
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (blok.video.url) {
-                      videoFrame.current.src = blok.video.url;
-                      videoFrame.current.classList.toggle("hidden");
-                    }
-                  }}
-                  className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500"
-                >
-                  <span className="sr-only">Watch our video to learn more</span>
-                  <img
-                    className="w-full"
-                    src={blok.placeholder.filename}
-                    alt=""
-                  />
+                <iframe
+                  src={blok.videoask}
+                  allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;"
+                  width="100%"
+                  height="600px"
+                  style={{ border: "none", borderRadius: "24px" }}
+                ></iframe>
+                {(blok.video.url || blok.placeholder.filename) && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (blok.video.url) {
+                        videoFrame.current.src = blok.video.url;
+                        videoFrame.current.classList.toggle("hidden");
+                      }
+                    }}
+                    className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500"
+                  >
+                    <span className="sr-only">
+                      Watch our video to learn more
+                    </span>
+                    <img
+                      className="w-full"
+                      src={blok.placeholder.filename}
+                      alt=""
+                    />
 
-                  {blok.video.url && (
-                    <div
-                      className="absolute inset-0 flex items-center justify-center w-full h-full"
-                      aria-hidden="true"
-                    >
-                      <svg
-                        className="w-20 h-20 text-secondary-500"
-                        fill="currentColor"
-                        viewBox="0 0 84 84"
+                    {blok.video.url && (
+                      <div
+                        className="absolute inset-0 flex items-center justify-center w-full h-full"
+                        aria-hidden="true"
                       >
-                        <circle
-                          opacity="0.9"
-                          cx={42}
-                          cy={42}
-                          r={42}
-                          fill="white"
-                        />
-                        <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                      </svg>
-                    </div>
-                  )}
-                  {blok.video.url && (
-                    <div
-                      className="absolute inset-0 flex items-center justify-center w-full h-full "
-                      aria-hidden="true"
-                    >
-                      <iframe
-                        ref={videoFrame}
-                        width="448"
-                        height="252"
-                        className="hidden"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  )}
-                </button>
+                        <svg
+                          className="w-20 h-20 text-secondary-500"
+                          fill="currentColor"
+                          viewBox="0 0 84 84"
+                        >
+                          <circle
+                            opacity="0.9"
+                            cx={42}
+                            cy={42}
+                            r={42}
+                            fill="white"
+                          />
+                          <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                        </svg>
+                      </div>
+                    )}
+                    {blok.video.url && (
+                      <div
+                        className="absolute inset-0 flex items-center justify-center w-full h-full "
+                        aria-hidden="true"
+                      >
+                        <iframe
+                          ref={videoFrame}
+                          width="448"
+                          height="252"
+                          className="hidden"
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                    )}
+                  </button>
+                )}
               </div>
             </div>
           </div>
