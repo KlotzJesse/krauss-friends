@@ -3,6 +3,7 @@ import Container from "./Container";
 import CTASection from "./CTASection";
 import DiagonalImageHero from "./DiagonalImageHero";
 import FeaturesWithTestimonial from "./FeaturesWithTestimonial";
+import FloatingButton from "./FloatingButton";
 import Footer from "./Footer";
 import GridMiddle from "./GridMiddle";
 import GridText from "./GridText";
@@ -63,6 +64,7 @@ const Components = {
   page: Page,
   simpleTestimonial: SimpleTestimonial,
   tempBuilder: TempBuilder,
+  floatingButton: FloatingButton,
 };
 
 const DynamicComponent = ({ blok, page }) => {
