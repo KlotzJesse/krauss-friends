@@ -210,7 +210,7 @@ export default function HeroSignUp({ blok, page }) {
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 {blok.reference && (
                   <div className="flex flex-col items-center mb-8 space-x-3 space-y-3 md:flex-row md:space-y-0">
-                    <div className="flex-grow flex -space-x-2">
+                    <div className="flex flex-grow -space-x-2">
                       <img
                         alt="Gert Behre"
                         width="32px"
@@ -248,7 +248,7 @@ export default function HeroSignUp({ blok, page }) {
                 )}
                 <button
                   onClick={onClick}
-                  className="mx-auto md:mx-0 flex items-center self-start px-12 py-4 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+                  className="flex items-center self-start px-12 py-4 mx-auto font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg md:mx-0 bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                 >
                   Erstgespräch anfragen
                   <svg
@@ -347,13 +347,15 @@ export default function HeroSignUp({ blok, page }) {
                 />
               </svg>
               <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md">
-                <iframe
-                  src={blok.videoask}
-                  allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;"
-                  width="100%"
-                  height="600px"
-                  style={{ border: "none", borderRadius: "24px" }}
-                ></iframe>
+                {blok.videoask && (
+                  <iframe
+                    src={blok.videoask}
+                    allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;"
+                    width="100%"
+                    height="600px"
+                    style={{ border: "none", borderRadius: "24px" }}
+                  ></iframe>
+                )}
                 {(blok.video.url || blok.placeholder.filename) && (
                   <button
                     type="button"
