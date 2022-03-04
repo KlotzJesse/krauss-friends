@@ -186,7 +186,7 @@ export default function HeroSignUp({ blok, page }) {
 
         <main className="px-4 pt-6 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-            <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+            <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
                 <span className="block text-sm font-semibold tracking-wide text-gray-500 uppercase sm:text-base lg:text-sm xl:text-base">
                   {blok.subHeadline}
@@ -240,7 +240,7 @@ export default function HeroSignUp({ blok, page }) {
                         src="https://i.ibb.co/yVPhbgQ/Michael-Schwab.png"
                       />{" "}
                     </div>
-                    <p className="text-xs pl-14 ">
+                    <p className="text-xs md:pl-14 ">
                       <b>Herr Michael Schwab, Leiter CRM Innendienst</b> und{" "}
                       {blok.reference}
                     </p>
@@ -248,7 +248,7 @@ export default function HeroSignUp({ blok, page }) {
                 )}
                 <button
                   onClick={onClick}
-                  className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+                  className="mx-auto md:mx-0 flex items-center self-start px-12 py-4 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                 >
                   Erstgespräch anfragen
                   <svg
