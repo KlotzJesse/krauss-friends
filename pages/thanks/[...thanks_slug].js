@@ -54,14 +54,14 @@ const ThanksPage = (props) => {
             </div>
             <div className="justify-center mt-12 sm:flex gap-x-4">
               <a
-                href="https://www.krauss-friends.com"
+                href="https://www.krauss-gmbh.com"
                 className="grid w-full px-12 py-4 text-indigo-700 bg-white border rounded-md sm:w-auto hover:bg-gray-200 place-items-center"
               >
-                Zur Trainings Website
+                Zur Website
               </a>
-              <a className="grid w-full px-6 py-4 mt-4 text-white bg-transparent border rounded-md hover:bg-indigo-800 place-items-center sm:w-auto sm:mt-0">
+              {/*<a className="grid w-full px-6 py-4 mt-4 text-white bg-transparent border rounded-md hover:bg-indigo-800 place-items-center sm:w-auto sm:mt-0">
                 Weitere E-Mail senden
-              </a>
+              </a>*/}
             </div>
           </div>
         </div>
