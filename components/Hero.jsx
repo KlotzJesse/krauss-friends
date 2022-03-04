@@ -48,7 +48,7 @@ const Hero = ({ page }) => {
       </div>
       <section className="flex flex-col items-center justify-center flex-grow mx-auto text-center text-gray-700 xl:flex-row xl:space-x-32 xl:px-40 md:h-screen xl:text-left">
         <div className="flex flex-col flex-initial w-2/3 xl:py-40">
-          <h1 className="mb-8 text-xl font-semibold leading-tight text-gray-800 md:text-2xl dark:text-white xl:text-4xl xl:leading-tight">
+          <h1 className="mb-8 text-xl font-semibold leading-tight text-gray-800 md:text-2xl xl:text-4xl xl:leading-tight">
             Verkaufserfolg ist trainierbar.
             <br />
             <span

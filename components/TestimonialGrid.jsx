@@ -6,7 +6,7 @@ const TestimonialGrid = (props) => {
     <section className="container mx-auto text-gray-600 body-font md:px-5 2xl:w-3/5">
       <div className="container flex flex-col px-5 mx-auto md:py-20 md:flex-wrap">
         <div className="flex flex-wrap w-full mb-20">
-          <h1 className="mb-4 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight lg:w-1/3 lg:mb-0">
+          <h1 className="mb-4 text-4xl font-semibold leading-tight text-gray-800 xl:leading-tight lg:w-1/3 lg:mb-0">
             Eindrücke aus unserem{" "}
             <span
               className="bg-gradient-to-r from-primary-200 to-primary-200

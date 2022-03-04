@@ -27,7 +27,7 @@ const CTASection = ({ page }) => {
             <p className="font-semibold text-gray-600 uppercase tracking-loose">
               So können wir Ihnen helfen
             </p>
-            <h1 className="mb-12 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
+            <h1 className="mb-12 text-4xl font-semibold leading-tight text-gray-800 xl:leading-tight">
               <span
                 className="bg-gradient-to-r from-primary-200 to-primary-200
                 bg-no-repeat [background-position:0_88%]

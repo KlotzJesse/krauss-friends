@@ -27,7 +27,7 @@ const Targets = ({ page }) => {
             <p className="font-semibold text-gray-600 uppercase tracking-loose">
               Was Sie erwartet
             </p>
-            <h1 className="mb-16 text-4xl font-semibold leading-tight text-gray-800 dark:text-white xl:leading-tight">
+            <h1 className="mb-16 text-4xl font-semibold leading-tight text-gray-800 xl:leading-tight">
               So unterstützt das Vertriebstraining Ihre Verkäufer{" "}
               <span
                 className="bg-gradient-to-r from-primary-200 to-primary-200

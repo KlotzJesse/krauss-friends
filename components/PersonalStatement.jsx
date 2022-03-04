@@ -4,9 +4,9 @@ import React from "react";
 const PersonalStatement = (props) => {
   return (
     <div className="h-70" style={{ backgroundColor: "#F5F6FA" }}>
-      <section className="flex flex-col-reverse items-center justify-center flex-grow h-full mx-auto text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 py-20 xl:p-40 md:w-5/6 xl:text-left">
+      <section className="flex flex-col-reverse items-center justify-center flex-grow h-full py-20 mx-auto text-center text-gray-700 xl:flex-row xl:space-x-32 md:space-y-0 xl:py-0 xl:p-40 md:w-5/6 xl:text-left">
         <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2">
-          <div className="relative h-96 w-full md:pt-32">
+          <div className="relative w-full h-96 md:pt-32">
             <Image
               objectFit="contain"
               src="https://www.krauss-friends.com/app/download/8104229161/johannes-krauss-1+%281%29.png?t=1625479308"
@@ -15,9 +15,9 @@ const PersonalStatement = (props) => {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center px-5 text-left md:flex-initial md:w-2/3  py-4 md:py-16">
+        <div className="flex flex-col justify-center px-5 py-4 text-left md:flex-initial md:w-2/3 md:py-16">
           <p className="font-semibold text-gray-800 uppercase">Über mich</p>
-          <h1 className="mb-8 text-2xl font-semibold leading-tight text-gray-800 dark:text-white xl:text-5xl xl:leading-tight">
+          <h1 className="mb-8 text-2xl font-semibold leading-tight text-gray-800 xl:text-5xl xl:leading-tight">
             Ich{" "}
             <span
               className="bg-gradient-to-r from-primary-200 to-primary-200
