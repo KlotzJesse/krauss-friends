@@ -4,7 +4,7 @@ import React from "react";
 const Testimonial = (props) => {
   return (
     <section className="container px-5 mx-auto text-gray-600 2xl:w-3/5">
-      <h1 className="px-5 my-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
+      <h1 className=" my-8 text-4xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
         Das sagen{" "}
         <span
           className="bg-gradient-to-r from-primary-200 to-primary-200
@@ -17,7 +17,7 @@ const Testimonial = (props) => {
           unsere Kunden
         </span>
       </h1>
-      <div className="container flex flex-col px-5 py-16 mx-auto lg:items-center md:flex-row">
+      <div className="container flex flex-col py-16 mx-auto lg:items-center md:flex-row">
         <div className="w-full mb-10 lg:w-5/6 lg:max-w-lg md:w-1/2">
           <Image
             className="object-cover object-center rounded"

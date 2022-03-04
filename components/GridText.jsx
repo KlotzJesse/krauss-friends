@@ -22,7 +22,7 @@ const GridText = ({ page }) => {
   };
   return (
     <div className="py-5">
-      <h1 className="px-5 mb-8 text-xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
+      <h1 className="px-5 mb-8 text-4xl font-semibold leading-tight text-gray-800 md:text-center dark:text-white xl:text-4xl xl:leading-tight">
         <span
           className="bg-gradient-to-r from-primary-200 to-primary-200
          bg-no-repeat [background-position:0_88%]
