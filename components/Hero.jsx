@@ -120,7 +120,7 @@ const Hero = ({ page }) => {
               ></path>
             </svg>
           </button>
-          <p className="self-start hidden pt-3 text-sm text-gray-500 cursor-pointer md:block">
+          <p className="self-start hidden pt-3 text-sm text-gray-500 md:block">
             Kostenlose Analyse sichern in nur 1 Minute
           </p>
         </div>
@@ -131,7 +131,7 @@ const Hero = ({ page }) => {
           >
             Erstgespräch anfragen
           </a>
-          <p className="pt-3 text-sm text-gray-500 cursor-pointer xl:hidden">
+          <p className="pt-3 text-sm text-gray-500 xl:hidden">
             Kostenlose Analyse sichern in nur 1 Minute
           </p>
 

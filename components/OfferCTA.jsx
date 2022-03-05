@@ -54,7 +54,7 @@ const OfferCTA = ({ page }) => {
             </button>
           </div>
         </div>
-        <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
+        <p className="self-start pt-3 text-sm text-gray-600">
           Kostenlose Analyse sichern in nur 1 Minute
         </p>
       </div>
