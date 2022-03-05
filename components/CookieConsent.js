@@ -38,6 +38,7 @@ export default function CookieConsent() {
           transition: "slide", // zoom/slide
         },
       },
+      hide_from_bots: true,
       autoclear_cookies: true,
       page_scripts: true,
       languages: {
