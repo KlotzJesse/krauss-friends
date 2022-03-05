@@ -1,10 +1,11 @@
 import "@typeform/embed/build/css/popup.css";
 import * as Fathom from "fathom-client";
 import type { AppProps } from "next/app";
+import dynamic from "next/dynamic";
 import { Router, useRouter } from "next/router";
 import { useEffect } from "react";
 import "../styles/globals.css";
-import CookieConsent from "./../components/CookieConsent";
+const CookieConsent = dynamic(() => import("./../components/CookieConsent"));
 
 // Record a pageview when route changes
 Router.events.on("routeChangeComplete", () => {

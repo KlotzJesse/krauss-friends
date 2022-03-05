@@ -1,36 +1,41 @@
-import Column from "./Column";
-import Container from "./Container";
-import CTASection from "./CTASection";
-import DiagonalImageHero from "./DiagonalImageHero";
-import FeaturesWithTestimonial from "./FeaturesWithTestimonial";
-import FloatingButton from "./FloatingButton";
-import Footer from "./Footer";
-import GridMiddle from "./GridMiddle";
-import GridText from "./GridText";
-import Heading from "./Heading";
-import Hero from "./Hero";
-import ImageTextFull from "./ImageTextFull";
-import OfferCTA from "./OfferCTA";
-import Page from "./Page";
-import PersonalStatement from "./PersonalStatement";
-import Placeholder from "./Placeholder";
-import ScrollySnap from "./ScrollySnap";
-import ScrollyTellings from "./ScrollyTelling";
-import Section from "./Section";
-import Services from "./Services";
-import SideBySideFunctions from "./sidebysideFuntions";
-import SimpleFooter from "./SimpleFooter";
-import SimpleTestimonial from "./SimpleTestimonial";
-import SingleTestimonial from "./SingleTestimonial";
-import Targets from "./Targets";
-import TempBuilder from "./TempBuilder";
-import Testimonial from "./Testimonial";
-import TestimonialGrid from "./TestimonialGrid";
-import threeColFeatures from "./threeColFeatures";
-import TwoColumnsWithTestimonial from "./TwoColumnsWithTestimonial";
-import VideoHero from "./VideoHero";
-import HeroSignUp from "./VideoSignUpHero";
-import WavyHero from "./WavyHero";
+import dynamic from "next/dynamic";
+const Column = dynamic(() => import("./Column"));
+const Container = dynamic(() => import("./Container"));
+const CTASection = dynamic(() => import("./CTASection"));
+const DiagonalImageHero = dynamic(() => import("./DiagonalImageHero"));
+const FeaturesWithTestimonial = dynamic(() =>
+  import("./FeaturesWithTestimonial")
+);
+const FloatingButton = dynamic(() => import("./FloatingButton"));
+const Footer = dynamic(() => import("./Footer"));
+const GridMiddle = dynamic(() => import("./GridMiddle"));
+const GridText = dynamic(() => import("./GridText"));
+const Heading = dynamic(() => import("./Heading"));
+const Hero = dynamic(() => import("./Hero"));
+const ImageTextFull = dynamic(() => import("./ImageTextFull"));
+const OfferCTA = dynamic(() => import("./OfferCTA"));
+const Page = dynamic(() => import("./Page"));
+const PersonalStatement = dynamic(() => import("./PersonalStatement"));
+const Placeholder = dynamic(() => import("./Placeholder"));
+const ScrollySnap = dynamic(() => import("./ScrollySnap"));
+const ScrollyTellings = dynamic(() => import("./ScrollyTelling"));
+const Section = dynamic(() => import("./Section"));
+const Services = dynamic(() => import("./Services"));
+const SideBySideFunctions = dynamic(() => import("./sidebysideFuntions"));
+const SimpleFooter = dynamic(() => import("./SimpleFooter"));
+const SimpleTestimonial = dynamic(() => import("./SimpleTestimonial"));
+const SingleTestimonial = dynamic(() => import("./SingleTestimonial"));
+const Targets = dynamic(() => import("./Targets"));
+const TempBuilder = dynamic(() => import("./TempBuilder"));
+const Testimonial = dynamic(() => import("./Testimonial"));
+const TestimonialGrid = dynamic(() => import("./TestimonialGrid"));
+const threeColFeatures = dynamic(() => import("./threeColFeatures"));
+const TwoColumnsWithTestimonial = dynamic(() =>
+  import("./TwoColumnsWithTestimonial")
+);
+const VideoHero = dynamic(() => import("./VideoHero"));
+const HeroSignUp = dynamic(() => import("./VideoSignUpHero"));
+const WavyHero = dynamic(() => import("./WavyHero"));
 
 const Components = {
   heading: Heading,

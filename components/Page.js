@@ -1,6 +1,7 @@
 import { sbEditable } from "@storyblok/storyblok-editable";
 import { NextSeo } from "next-seo";
-import DynamicComponent from "./DynamicComponent";
+import dynamic from "next/dynamic";
+const DynamicComponent = dynamic(() => import("./DynamicComponent"));
 
 const Page = ({ blok }) => (
   <main {...sbEditable(blok)} key={blok._uid}>

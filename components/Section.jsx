@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import React from "react";
-import DynamicComponent from "./DynamicComponent";
+const DynamicComponent = dynamic(() => import("./DynamicComponent"));
 
 const layouts = {
   none: "",

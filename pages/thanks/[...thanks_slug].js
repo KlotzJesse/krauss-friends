@@ -1,8 +1,10 @@
 import { ShieldCheckIcon } from "@heroicons/react/solid";
 import { trackGoal } from "fathom-client";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
-import SimpleFooter from "./../../components/SimpleFooter";
+
+const SimpleFooter = dynamic(() => import("./../../components/SimpleFooter"));
 
 const goals = new Map([
   ["vertrieb-trainieren", "Q55TCXUC"],

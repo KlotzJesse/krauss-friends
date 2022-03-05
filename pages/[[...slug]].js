@@ -1,6 +1,10 @@
+import dynamic from "next/dynamic";
 import React from "react";
-import DynamicComponent from "../components/DynamicComponent";
 import Storyblok, { useStoryblok } from "../lib/storyblok";
+
+const DynamicComponent = dynamic(() =>
+  import("../components/DynamicComponent")
+);
 
 export default function Page({ story, preview }) {
   const enableBridge = true; // load the storyblok bridge everywhere
