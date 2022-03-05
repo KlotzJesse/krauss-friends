@@ -1,8 +1,7 @@
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Popover } from "@headlessui/react";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
-import { Fragment, useRef } from "react";
+import { useRef } from "react";
 import { openPopupWidget } from "react-calendly";
 
 const navigation = [];
@@ -85,7 +84,7 @@ export default function HeroSignUp({ blok, page }) {
             aria-label="Global"
           >
             <div className="flex items-center flex-1">
-              <div className="flex items-center justify-between w-full md:w-auto">
+              <div className="flex flex-col items-center justify-center w-full md:flex-row">
                 <a href="/">
                   <span className="sr-only">KRAUSS Training</span>
                   <img
@@ -94,11 +93,18 @@ export default function HeroSignUp({ blok, page }) {
                     alt=""
                   />
                 </a>
-                <div className="flex items-center -mr-2 md:hidden">
-                  <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-600 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
+                <div className="flex-1 pt-4 text-center md:py-0">
+                  Jetzt anrufen:{" "}
+                  <a
+                    href="tel:+49 8191 93759-23"
+                    className="underline text-secondary-500"
+                  >
+                    +49 8191 93759-23
+                  </a>
+                  {/*<Popover.Button className="inline-flex items-center justify-center p-2 text-gray-600 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
                     <span className="sr-only">Open main menu</span>
                     <MenuIcon className="w-6 h-6" aria-hidden="true" />
-                  </Popover.Button>
+                  </Popover.Button>*/}
                 </div>
               </div>
               <div className="hidden md:block md:ml-10 md:space-x-10">
@@ -129,7 +135,7 @@ export default function HeroSignUp({ blok, page }) {
             </div>
           </nav>
 
-          <Transition
+          {/*<Transition
             as={Fragment}
             enter="duration-150 ease-out"
             enterFrom="opacity-0 scale-95"
@@ -181,10 +187,10 @@ export default function HeroSignUp({ blok, page }) {
                 </button>
               </div>
             </Popover.Panel>
-          </Transition>
+          </Transition>*/}
         </Popover>
 
-        <main className="px-4 pt-6 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
+        <main className="px-4 pt-12 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1>
