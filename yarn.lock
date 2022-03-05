@@ -2411,10 +2411,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-calendly@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-3.0.0.tgz#70d7a86061073c19b9b1f6d25241975bfc42b77a"
-  integrity sha512-5OmBKAz3+4VBdWa4+I9hE7APaii93NoDKfAyhylEDBRATm+nHaUxrX57tYtxDw0T0HsA62WX0okUJQ7iREwF7g==
+react-calendly@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-2.2.3.tgz#3ed3fca006a02bbeca7d3b257787e376f54b3d34"
+  integrity sha512-+OkZE4ZrOYoeEbhOEw9mljruvnMlT6a114mpNx27tL5FEmRiJA+Tn1NJvTqYuF1p+BF7p3WQTWO+ZD45Uu7iBQ==
 
 react-dom@17.0.2:
   version "17.0.2"
