@@ -264,7 +264,7 @@ export default function HeroSignUp({ blok, page }) {
                     ></path>
                   </svg>
                 </button>
-                <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
+                <p className="self-start pt-3 text-sm text-gray-600">
                   Kostenlose Analyse sichern in nur 1 Minute
                 </p>
                 {/* <p className="text-base font-medium text-gray-900">
