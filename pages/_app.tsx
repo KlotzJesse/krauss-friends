@@ -16,17 +16,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
     // Initialize Fathom when the app loads
-
     Fathom.load("YKCURMCH", {
       url: "https://cheeky-pleasurable.krauss-training.de/script.js",
+      auto: false,
     });
   }, []);
 
   return (
-    <div className="">
+    <>
       <Component {...pageProps} />
       <CookieConsent />
-    </div>
+    </>
   );
 }
 
