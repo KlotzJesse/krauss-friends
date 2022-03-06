@@ -197,7 +197,7 @@ export default function HeroSignUp({ blok, page }) {
                 <span className="block text-sm font-semibold tracking-wide text-gray-500 uppercase sm:text-base lg:text-sm xl:text-base">
                   {blok.subHeadline}
                 </span>
-                <span className="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-[2.75rem]">
+                <span className="block mt-1 text-3xl font-extrabold tracking-tight sm:text-2xl xl:text-xl">
                   <span className="block text-gray-900">{blok.headline}</span>
                   <span
                     className={`block leading-[3.3rem] ${
