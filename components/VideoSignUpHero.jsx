@@ -198,14 +198,15 @@ export default function HeroSignUp({ blok, page }) {
                   {blok.subHeadline}
                 </span>
                 <span className="block mt-1 text-3xl font-extrabold tracking-tight sm:text-2xl xl:text-xl">
-                  <span className="block text-gray-900">{blok.headline}</span>
+                  <span className="text-gray-900">{blok.headline}</span>
                   <span
-                    className={`block leading-[3.3rem] ${
+                    className={` ${
                       page.color == "gold"
                         ? "text-primary-600"
                         : "text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text"
                     }`}
                   >
+                    {" "}
                     {blok.highlight}
                   </span>
                 </span>
