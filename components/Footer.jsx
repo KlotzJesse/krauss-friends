@@ -6,8 +6,7 @@ const Footer = (props) => {
     <div className="px-4 pt-16 mx-auto md:px-24">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
-          <a
-            href="/"
+          <div
             aria-label="Zur Startseite"
             title="KRAUSS and Friends"
             className="inline-flex items-center"
@@ -18,7 +17,7 @@ const Footer = (props) => {
               alt="Logo"
               height="43"
             />
-          </a>
+          </div>
           <div className="mt-6 lg:max-w-sm">
             <p className="text-sm text-gray-800">
               Wir sind der Trainings- und Consultingspezialist für eine bessere

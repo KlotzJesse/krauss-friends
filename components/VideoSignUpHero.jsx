@@ -98,14 +98,14 @@ export default function HeroSignUp({ blok, page }) {
           >
             <div className="flex items-center flex-1">
               <div className="flex flex-col items-center justify-center w-full md:flex-row">
-                <a href="/">
+                <div>
                   <span className="sr-only">KRAUSS Training</span>
                   <img
                     className="w-auto h-8 sm:h-10"
                     src="/KRAUSS Logo Blau.svg"
                     alt=""
                   />
-                </a>
+                </div>
                 <div className="flex-1 pt-4 text-center md:py-0">
                   Jetzt anrufen:{" "}
                   <a

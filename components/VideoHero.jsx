@@ -26,10 +26,7 @@ const VideoHero = (props) => {
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
-            <a
-              href="/"
-              className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-            >
+            <a className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
               <span className="mr-3">Start Shopping</span>
               <svg
                 width="24"
@@ -73,7 +70,6 @@ const VideoHero = (props) => {
               </svg>
             </a>
             <a
-              href="/"
               aria-label=""
               className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
@@ -88,7 +84,6 @@ const VideoHero = (props) => {
             alt=""
           />
           <a
-            href="/"
             aria-label="Play Video"
             className="absolute inset-0 flex items-center justify-center w-full h-full transition-colors duration-300 bg-gray-900 bg-opacity-50 group hover:bg-opacity-25"
           >
