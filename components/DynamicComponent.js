@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Text from "./Text";
 const Column = dynamic(() => import("./Column"));
 const Container = dynamic(() => import("./Container"));
 const CTASection = dynamic(() => import("./CTASection"));
@@ -70,6 +71,7 @@ const Components = {
   simpleTestimonial: SimpleTestimonial,
   tempBuilder: TempBuilder,
   floatingButton: FloatingButton,
+  text: Text,
 };
 
 const DynamicComponent = ({ blok, page }) => {

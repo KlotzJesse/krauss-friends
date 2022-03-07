@@ -1,6 +1,7 @@
 import { Popover } from "@headlessui/react";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
+import { useRouter } from "next/router";
 import { useRef } from "react";
 import { openPopupWidget } from "react-calendly";
 
@@ -8,6 +9,9 @@ const navigation = [];
 
 export default function HeroSignUp({ blok, page }) {
   const videoFrame = useRef(null);
+  const router = useRouter();
+
+  const bucket = router.asPath.split("bucket=")[1].charAt(0) ?? 0;
 
   const onClick = () => {
     if (page.calendlyURL) {
@@ -198,7 +202,9 @@ export default function HeroSignUp({ blok, page }) {
                   {blok.subHeadline}
                 </span>
                 <span className="block mt-1 text-2xl font-extrabold tracking-tight xl:text-5xl">
-                  <span className="text-gray-900">{blok.headline}</span>
+                  <span className="text-gray-900">
+                    {blok.variants[bucket].text ?? blok.headline}
+                  </span>
                   <span
                     className={` ${
                       page.color == "gold"
