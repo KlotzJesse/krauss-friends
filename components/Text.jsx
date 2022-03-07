@@ -1,7 +1,5 @@
-import React from "react";
-
 const Text = ({ blok }) => {
-  return <p>{blok.text}</p>;
+  return blok.text;
 };
 
 export default Text;
