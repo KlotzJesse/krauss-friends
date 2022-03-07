@@ -14,7 +14,7 @@ export default function HeroSignUp({ blok, page }) {
   useEffect(() => {
     if (
       cookieCutter.get("bucket") &&
-      blok.variants[cookieCutter.get("bucket")].text
+      blok.variants[cookieCutter.get("bucket")]
     ) {
       setHeadline(blok.variants[cookieCutter.get("bucket")].text);
     }
