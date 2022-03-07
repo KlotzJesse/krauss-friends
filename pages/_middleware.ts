@@ -8,7 +8,6 @@ export function middleware(req: NextRequest) {
   // Get the bucket cookie
   const bucket = req.cookies[COOKIE_NAME] || getBucket(HOME_BUCKETS)
   const url = req.nextUrl.clone()
-  req.nextUrl.searchParams.set(COOKIE_NAME, bucket);
   const res = NextResponse.rewrite(url)
 
   // Add the bucket to cookies if it's not there
