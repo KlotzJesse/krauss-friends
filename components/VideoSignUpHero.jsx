@@ -211,8 +211,10 @@ export default function HeroSignUp({ blok, page }) {
                   {blok.subHeadline}
                 </span>
                 <span className="block mt-1 text-2xl font-extrabold tracking-tight xl:text-5xl">
-                  <span className="text-gray-900">{headline}</span>
-                  {/*<span
+                  <span className="text-gray-900">
+                    {headline.split("<br>")[0]}
+                  </span>
+                  <span
                     className={` ${
                       page.color == "gold"
                         ? "text-primary-600"
@@ -220,8 +222,8 @@ export default function HeroSignUp({ blok, page }) {
                     }`}
                   >
                     {" "}
-                    {blok.highlight}
-                  </span>*/}
+                    {headline.split("<br>")[1]}
+                  </span>
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
