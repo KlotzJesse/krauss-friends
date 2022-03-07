@@ -34,8 +34,8 @@ const Services = (props) => {
           KRAUSS Neukundengewinnung ist die Antwort. Wir generieren
           qualifizierte Verkaufschancen für Sie, indem wir potenzielle Kunden
           ansprechen, die an Ihrem Produkt oder Ihrer Dienstleistung
-          interessiert sind. Mit unserer Hilfe können Sie das beste aus Ihrer
-          Zeit machen und mehr Kunden gewinnen.
+          interessiert sind. Mit unserer Hilfe können Sie Ihre Zeit effizient
+          nutzen um Neukunden zu gewinnen.
         </p>
       </div>
       <div className="grid gap-6 row-gap-5 lg:grid-cols-2">
@@ -49,7 +49,7 @@ const Services = (props) => {
             Telefonakquise
           </h5>
           <p className="text-gray-700">
-            Unsere erfahrenen Fachleute ermitteln Entscheider aus unserer
+            Unser erfahrenes Team ermitteln Entscheider aus unserer
             umfangreichen Datenbank, schätzen deren Bedürfnisse ein und
             vereinbaren einen Termin mit Ihnen. Alle unsere Kunden erhalten
             Unterlagen über Ihr Produkt oder Ihre Dienstleistung und werden auf

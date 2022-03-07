@@ -27,10 +27,9 @@ const WavyHero = (props) => {
               <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
                 Und Sie steigern Ihren Umsatz. Mit KRAUSS Terminvereinbarung
                 gibt es keine Kaltakquise oder teure Werbung, sondern wir
-                bringen Sie direkt mit Entscheidern zusammen, die bereits
-                Interesse an Ihrem Angebot bekundet haben. Das bedeutet weniger
-                Zeitverschwendung für alle Beteiligten - insbesondere für Ihr
-                Unternehmen!
+                bringen Sie direkt mit Entscheidern zusammen, die Interesse an
+                Ihrem Angebot bekunden. Das bedeutet weniger Zeitverschwendung
+                für alle Beteiligten - insbesondere für Ihr Unternehmen!
               </p>
               <a
                 href="/"

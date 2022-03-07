@@ -29,7 +29,7 @@ const features = [
   {
     name: "Professionelle Assistenz",
     description:
-      "Wir verfügen über sehr erfahrene Fachleute, die sich mit Ihrer Zielgruppe perfekt auskennen, auf Ihr Produkt geschult werden und trainiert darin sind, Ihre potenziellen Kunden von Ihrer Lösung zu begeistern, eine Beziehung aufzubauen und sowohl lang- als auch kurzfristig Termine für Sie zu erzielen.",
+      "Wir verfügen über sehr erfahrene Fachleute, die sich mit Ihrer Zielgruppe perfekt auskennen, auf Ihr Produkt geschult werden und darin trainiert sind, Ihre potenziellen Kunden von Ihrer Lösung zu begeistern, eine Beziehung aufzubauen und sowohl lang- als auch kurzfristig Termine für Sie zu erzielen.",
     icon: PhoneOutgoingIcon,
   },
   {
@@ -45,15 +45,15 @@ const features = [
     icon: IdentificationIcon,
   },
   {
-    name: "Akquise nur für Sie",
+    name: "Akquise in Ihrer CI",
     description:
-      "Wenn wir in Ihrem Namen anrufen, bedeutet das, dass wir nicht im Namen von jemand anderem anrufen. So erhalten Sie mehr Leads und mehr Verkäufe.",
+      "Wir melden uns am Telefon unter Ihrem Namen und treten nach außen zum Kunden immer mit Ihrem Brand auf.",
     icon: ShieldCheckIcon,
   },
   {
     name: "Mehr Umsatz bei bestehenden Vertriebskapazitäten",
     description:
-      "High Performer für Ihr Vertriebsteam zu gewinnen ist zunehmend herausfordernd. Wir erhöhen Ihre Termindichte bei Ihrem bestehenden Vertriebsteam und ermöglichen Ihnen somit Mehr Umsatz.",
+      "High Performer für Ihr Vertriebsteam zu gewinnen ist zunehmend herausfordernd. Wir erhöhen Ihre Termindichte bei Ihrem bestehenden Vertriebsteam und ermöglichen Ihnen somit mehr Umsatz.",
     icon: ChartBarIcon,
   },
   {
@@ -116,8 +116,8 @@ const threeColFeatures = ({ blok, page }) => {
             Keine Zeit verschwenden - mehr Umsatz erzielen!
           </h2>
           <p className="max-w-3xl mt-4 text-lg text-purple-200">
-            Es ist nicht leicht, sein Produkt zu verkaufen. Es erfordert viel
-            Zeit und Energie. Und eine Menge Geld. Mit unserem
+            Es ist nicht leicht, das eigene Produkt zu verkaufen. Es erfordert
+            viel Zeit und Energie. Und eine Menge Geld. Mit unserem
             Terminvereinbarungsservice können Sie sowohl Zeit als auch Geld
             sparen. Wir bringen die Verkaufschancen zu Ihnen.
           </p>
@@ -202,7 +202,7 @@ const threeColFeatures = ({ blok, page }) => {
         <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Bereit für mehr Termine?</span>
-            <span className="block text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text">
+            <span className="text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text">
               Vereinbaren Sie ein Kennenlerngespräch.
             </span>
           </h2>
