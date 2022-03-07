@@ -38,10 +38,7 @@ const GridText = ({ page }) => {
       <section className="text-gray-600 body-font">
         <div className="container mx-auto md:px-5 2xl:w-3/5">
           <div className="flex flex-wrap">
-            <div
-              className="w-full p-2 cursor-pointer md:w-1/3"
-              onClick={onClick}
-            >
+            <div className="w-full p-2 md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -52,10 +49,7 @@ const GridText = ({ page }) => {
                 </div>
               </div>
             </div>
-            <div
-              className="w-full p-2 cursor-pointer md:w-1/3"
-              onClick={onClick}
-            >
+            <div className="w-full p-2 md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -67,10 +61,7 @@ const GridText = ({ page }) => {
                 </div>
               </div>
             </div>
-            <div
-              className="w-full p-2 cursor-pointer md:w-1/3"
-              onClick={onClick}
-            >
+            <div className="w-full p-2 md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -81,10 +72,7 @@ const GridText = ({ page }) => {
                 </div>
               </div>
             </div>
-            <div
-              className="w-full p-2 cursor-pointer md:w-1/3"
-              onClick={onClick}
-            >
+            <div className="w-full p-2 md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -94,10 +82,7 @@ const GridText = ({ page }) => {
                 </div>
               </div>
             </div>
-            <div
-              className="w-full p-2 cursor-pointer md:w-1/3"
-              onClick={onClick}
-            >
+            <div className="w-full p-2 md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">
@@ -108,10 +93,7 @@ const GridText = ({ page }) => {
                 </div>
               </div>
             </div>
-            <div
-              className="w-full p-2 cursor-pointer md:w-1/3"
-              onClick={onClick}
-            >
+            <div className="w-full p-2 md:w-1/3">
               <div className="flex items-center h-full p-4">
                 <ArrowRightIcon className="flex-shrink-0 w-4 h-4 mr-4 " />
                 <div className="flex-grow">

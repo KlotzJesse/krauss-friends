@@ -6,33 +6,15 @@ import {
   PhoneOutgoingIcon,
   TrendingUpIcon,
 } from "@heroicons/react/solid";
-import { createPopup } from "@typeform/embed";
-import { trackGoal } from "fathom-client";
 import React from "react";
-import { openPopupWidget } from "react-calendly";
 
 const GridMiddle = ({ page }) => {
-  const onClick = () => {
-    if (page.calendlyURL) {
-      trackGoal("03RLAFSO", 0); //03RLAFSO
-      openPopupWidget({
-        url: page.calendlyURL,
-      });
-      return;
-    }
-    if (page.typeformId) {
-      const { toggle } = createPopup(page.typeformId);
-      trackGoal("MPOZNNML", 0);
-      toggle();
-      return;
-    }
-  };
   return (
     <section className="z-50 text-gray-600 transform -translate-y-16 body-font">
       <div className="container px-5 pt-10 mx-auto md:pt-0 2xl:w-3/5">
         <div className="flex flex-wrap">
-          <div className="w-full p-2 cursor-pointer md:w-1/3" onClick={onClick}>
-            <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
               <TrendingUpIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
@@ -41,8 +23,8 @@ const GridMiddle = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full p-2 cursor-pointer md:w-1/3" onClick={onClick}>
-            <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg flex-col text-center ">
               <CurrencyEuroIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
@@ -51,8 +33,8 @@ const GridMiddle = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full p-2 cursor-pointer md:w-1/3" onClick={onClick}>
-            <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
               <BookOpenIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
@@ -61,8 +43,8 @@ const GridMiddle = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full p-2 cursor-pointer md:w-1/3" onClick={onClick}>
-            <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
               <CashIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
@@ -71,8 +53,8 @@ const GridMiddle = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full p-2 cursor-pointer md:w-1/3" onClick={onClick}>
-            <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg flex-col text-center ">
               <AnnotationIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
@@ -81,8 +63,8 @@ const GridMiddle = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full p-2 cursor-pointer md:w-1/3" onClick={onClick}>
-            <div className="flex items-center h-full p-4 bg-white rounded-lg shadow-xl">
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg flex-col text-center ">
               <PhoneOutgoingIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
