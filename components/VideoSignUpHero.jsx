@@ -1,8 +1,9 @@
 import { Popover } from "@headlessui/react";
 import { createPopup } from "@typeform/embed";
+import cookieCutter from "cookie-cutter";
 import { trackGoal } from "fathom-client";
 import { useRouter } from "next/router";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { openPopupWidget } from "react-calendly";
 
 const navigation = [];
@@ -10,8 +11,16 @@ const navigation = [];
 export default function HeroSignUp({ blok, page }) {
   const videoFrame = useRef(null);
   const router = useRouter();
+  useEffect(() => {
+    if (
+      cookieCutter.get("bucket") &&
+      blok.variants[cookieCutter.get("bucket")].text
+    ) {
+      setHeadline(blok.variants[cookieCutter.get("bucket")].text);
+    }
+  });
 
-  const bucket = router.asPath.split("bucket=")[1].charAt(0) ?? 0;
+  const [headline, setHeadline] = useState(blok.headline);
 
   const onClick = () => {
     if (page.calendlyURL) {
@@ -202,10 +211,8 @@ export default function HeroSignUp({ blok, page }) {
                   {blok.subHeadline}
                 </span>
                 <span className="block mt-1 text-2xl font-extrabold tracking-tight xl:text-5xl">
-                  <span className="text-gray-900">
-                    {blok.variants[bucket].text ?? blok.headline}
-                  </span>
-                  <span
+                  <span className="text-gray-900">{headline}</span>
+                  {/*<span
                     className={` ${
                       page.color == "gold"
                         ? "text-primary-600"
@@ -214,7 +221,7 @@ export default function HeroSignUp({ blok, page }) {
                   >
                     {" "}
                     {blok.highlight}
-                  </span>
+                  </span>*/}
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
