@@ -170,6 +170,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@react_hooks/use-beforeleave@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@react_hooks/use-beforeleave/-/use-beforeleave-1.0.1.tgz#ea590dc892aa3cc1d19c62d5d1daed2670a7f964"
+  integrity sha512-VL8vbt8HvPNptBGQlV283u2iXs6QNuXCpr8bj99wVnXyUjqGOAsecMatTCHIeUxeY4ZxFjUcppQe/8JEO/jzHw==
+
 "@rushstack/eslint-patch@1.0.8":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.8.tgz#be3e914e84eacf16dbebd311c0d0b44aa1174c64"

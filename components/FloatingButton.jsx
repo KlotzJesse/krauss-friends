@@ -19,6 +19,7 @@ const FloatingButton = ({ page }) => {
       return;
     }
   };
+
   return (
     <div className="fixed bottom-0 left-0 z-40 flex items-center justify-center w-screen md:hidden bg-gradient-to-t from-white via-white to-transparent">
       <button

@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import ExitIntent from "./ExitIntent";
 import Text from "./Text";
 const Column = dynamic(() => import("./Column"));
 const Container = dynamic(() => import("./Container"));
@@ -72,6 +73,7 @@ const Components = {
   tempBuilder: TempBuilder,
   floatingButton: FloatingButton,
   text: Text,
+  exitIntent: ExitIntent,
 };
 
 const DynamicComponent = ({ blok, page }) => {
