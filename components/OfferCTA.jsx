@@ -23,13 +23,13 @@ const OfferCTA = ({ page }) => {
     <div className="flex items-center justify-center -mb-10 bg-white">
       <div className="relative flex flex-col items-center w-full max-w-6xl p-10 mx-auto text-center transform rounded-lg shadow-2xl md:p-16 lg:block bg-gradient-to-br from-primary-100 via-primary-200 to-primary-100 -translate-y-28">
         <h2 className="my-4 text-3xl font-extrabold tracking-tight text-black sm:text-4xl md:text-5xl lg:my-0 xl:text-4xl sm:leading-tight">
-          Kostenloses Kennenlerngespräch
+          Geschenk: 5 Std. Verkaufstraining für Ihr Team
         </h2>
         <p className="mt-1 mb-10 text-sm font-medium text-black xl:text-base xl:tracking-wider">
-          Vereinbaren Sie jetzt Ihr <i>kostenloses Kennenlerngespräch</i> und
-          erhalten Sie ein kostenloses Vertriebstraining zum Thema{" "}
+          Zum Kennenlernen bieten wir Ihnen ein kostenloses Vertriebstraining
+          für Ihr Team, z.B. zum Thema{" "}
           <strong>Einwandbehandlung: „Einwände lieben lernen“</strong> um Ihr
-          Team bei neuen Vorwänden zu unterstützen,{" "}
+          Team beim Verkauf zu unterstützen,{" "}
           <u>sodass Ihr Vertrieb mehr Abschlüsse erzielt</u>.
         </p>
         <div className="flex mb-8 lg:mt-6 lg:mb-0">
@@ -38,7 +38,7 @@ const OfferCTA = ({ page }) => {
               onClick={onClick}
               className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-500 hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
-              Erstgespräch anfragen
+              Geschenk einfordern
               <svg
                 className="w-5 h-5 ml-2 fill-current color-white"
                 id="Layer_1"
@@ -55,7 +55,7 @@ const OfferCTA = ({ page }) => {
           </div>
         </div>
         <p className="self-start pt-3 text-sm text-gray-600">
-          Kostenlose Analyse sichern in nur 1 Minute
+          Kostenlose Training für Ihr Team
         </p>
       </div>
     </div>
