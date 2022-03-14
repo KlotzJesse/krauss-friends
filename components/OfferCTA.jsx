@@ -55,7 +55,7 @@ const OfferCTA = ({ page }) => {
           </div>
         </div>
         <p className="self-start pt-3 text-sm text-gray-600">
-          Kostenlose Training für Ihr Team
+          Kostenloses Training für Ihr Team
         </p>
       </div>
     </div>
