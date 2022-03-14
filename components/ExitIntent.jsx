@@ -23,7 +23,7 @@ const ExitIntent = ({ page, blok }) => {
   const openedTimes = 0;
 
   const begForLife = () => {
-    if (openedTimes < 2) {
+    if (openedTimes < 1) {
       setIsOpen(true);
       openedTimes++;
     }
