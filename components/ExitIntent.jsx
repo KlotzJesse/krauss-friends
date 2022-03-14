@@ -7,9 +7,6 @@ import { openPopupWidget } from "react-calendly";
 
 const ExitIntent = ({ page }) => {
   const useBeforeLeave = (onBefore) => {
-    if (typeof onBefore !== "function") {
-      return;
-    }
     const handle = (event) => {
       const { clientY } = event;
       if (clientY <= 0) {
