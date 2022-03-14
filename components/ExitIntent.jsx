@@ -5,7 +5,7 @@ import { trackGoal } from "fathom-client";
 import React, { Fragment, useEffect, useState } from "react";
 import { openPopupWidget } from "react-calendly";
 
-const ExitIntent = ({ page }) => {
+const ExitIntent = ({ page, blok }) => {
   const useBeforeLeave = (onBefore) => {
     const handle = (event) => {
       const { clientY } = event;
@@ -113,18 +113,14 @@ const ExitIntent = ({ page }) => {
                   as="h3"
                   className="text-xl font-medium leading-6 text-gray-900"
                 >
-                  ✋ Kostenloses Verkaufstraining für Ihr Team zum Kennenlernen?
+                  {blok.title}
                 </Dialog.Title>
                 <div className="mt-2">
-                  <p className="text-gray-500 text-md">
-                    Wer seinem Vertrieb die Unterstützung vorenthält die er
-                    benötigt verzichtet auf maßgeblich viel Umsatz.
-                  </p>
-                  <p className="text-gray-500 text-md">
-                    Damit Sie wissen, dass wir kein weitere theoretisches
-                    Verkaufstraining sind das nichts bringt, trainieren wir Ihr{" "}
-                    <b>Team gerne für 5 Stunden kostenlos</b>.
-                  </p>
+                  <p className="text-gray-500 text-md">{blok.subHeadline}</p>
+                  <p
+                    className="text-gray-500 text-md"
+                    dangerouslySetInnerHTML={{ __html: blok.description }}
+                  ></p>
                 </div>
 
                 <div className="mt-4 space-x-5">
@@ -133,14 +129,14 @@ const ExitIntent = ({ page }) => {
                     className="inline-flex justify-center px-4 py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-500"
                     onClick={yes}
                   >
-                    Jetzt Verkaufstraining sichern
+                    {blok.button}
                   </button>
                   <button
                     type="button"
                     className="inline-flex justify-center text-sm text-gray-400 border border-transparent rounded-md font-base hover:text-gray-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-gray-500"
                     onClick={closeModal}
                   >
-                    Nein, danke - Umsatz ist mir nicht so wichtig!
+                    {blok.secondButton}
                   </button>
                 </div>
               </div>
