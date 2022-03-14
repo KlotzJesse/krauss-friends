@@ -20,10 +20,10 @@ const FloatingButton = ({ page }) => {
     }
   };
   return (
-    <div className="fixed z-20 bottom-0 left-0 w-screen flex items-center justify-center md:hidden bg-gradient-to-t from-white  via-white to-transparent">
+    <div className="fixed bottom-0 left-0 z-40 flex items-center justify-center w-screen md:hidden bg-gradient-to-t from-white via-white to-transparent">
       <button
         onClick={onClick}
-        className="mb-10 flex items-center self-start px-12 py-4 font-medium text-white uppercase border-0 rounded-lg shadow-lg bg-secondary-400 hover:shadow-inner  focus:outline-none text-md"
+        className="flex items-center self-start px-12 py-4 mb-10 font-medium text-white uppercase border-0 rounded-lg shadow-lg bg-secondary-400 hover:shadow-inner focus:outline-none text-md"
       >
         Erstgespräch anfragen
         <svg
