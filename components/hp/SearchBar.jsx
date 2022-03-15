@@ -1,126 +1,181 @@
-import React, { useState } from "react";
-export default function SearchBar() {
-  const [show3, setShow3] = useState(false);
+/*
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+*/
 
+const navigation = [
+  { name: "Product", href: "#" },
+  { name: "Features", href: "#" },
+  { name: "Marketplace", href: "#" },
+  { name: "Company", href: "#" },
+];
+
+export default function SearchBar() {
   return (
-    <>
-      <div className="container py-12 mx-auto">
-        {/* Hero */}
-        <div className="flex flex-col items-center justify-center w-full px-4 py-16 xl:px-0">
-          <h1 className="text-3xl font-bold text-center lg:text-6xl text-secondary-500">
-            Wonach suchen Sie?
-          </h1>
-          <h2 className="pt-6 mb-4 text-lg text-center text-gray-600 lg:text-2xl lg:mb-0">
-            Coach Ausbildung, Verkaufstraining, Online-Marketing-Training und
-            vieles mehr.
-          </h2>
-          <div className="flex flex-col w-full mt-3 sm:w-1/2 md:ml-4 md:mt-10">
-            <div className="relative w-full">
-              <div
-                className="right-0 z-30 flex items-center justify-between h-full py-3 pr-3 mb-4 bg-gray-100 border-gray-300 cursor-pointer lg:absolute lg:border-r lg:border-t lg:border-b lg:mb-0 lg:py-5"
-                onClick={() => setShow3(!show3)}
-              >
-                <p className="px-4 text-lg leading-tight tracking-normal text-gray-700 lg:text-2xl">
-                  Alle Kategorien
-                </p>
-                {show3 ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Hide"
-                    className="icon icon-tabler icon-tabler-chevron-up"
-                    id="andicators5"
-                    width={24}
-                    height={20}
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="#718096"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <polyline points="6 15 12 9 18 15" />
-                  </svg>
-                ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-label="Show"
-                    className="block icon icon-tabler icon-tabler-chevron-down"
-                    id="andicators4"
-                    width={24}
-                    height={20}
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="#718096"
-                    fill="none"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" />
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                )}
-                {show3 && (
-                  <ul
-                    className="absolute z-40 w-64 p-4 mt-56 duration-300 bg-white shadow-lg opacity-100 lg:-ml-16"
-                    id="listHolder2"
-                  >
-                    <li className="py-3 text-base hover:opacity-75">
-                      Alle Kategorien
-                    </li>
-                    <li className="py-3 text-base hover:opacity-75">
-                      Coach Ausbildung
-                    </li>
-                    <li className="py-3 text-base hover:opacity-75">
-                      Verkaufstraining
-                    </li>
-                    <li className="py-3 text-base hover:opacity-75">Blog</li>
-                  </ul>
-                )}
-              </div>
-              <div className="absolute inset-0 z-20 flex items-center w-16 h-full pl-6 mt-8 text-gray-700 lg:mt-0 lg:py-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={28}
-                  height={28}
-                  viewBox="0 0 28 28"
-                  fill="none"
-                >
-                  <circle
-                    cx="11.6667"
-                    cy="11.6667"
-                    r="8.16667"
-                    stroke="#4A5568"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M24.5 24.5L17.5 17.5"
-                    stroke="#4A5568"
-                    strokeWidth="1.75"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <input
-                id="search"
-                className="relative z-10 flex items-center w-full py-2 pl-16 pr-24 text-2xl font-normal border border-gray-300 rounded text-text-gray-600 focus:outline-none focus:border lg:py-5"
-                placeholder="Suche"
+    <div className="relative bg-white overflow-hidden">
+      <div
+        className="hidden lg:block lg:absolute lg:inset-0"
+        aria-hidden="true"
+      >
+        <svg
+          className="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8"
+          width={640}
+          height={784}
+          fill="none"
+          viewBox="0 0 640 784"
+        >
+          <defs>
+            <pattern
+              id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047"
+              x={118}
+              y={0}
+              width={20}
+              height={20}
+              patternUnits="userSpaceOnUse"
+            >
+              <rect
+                x={0}
+                y={0}
+                width={4}
+                height={4}
+                className="text-gray-200"
+                fill="currentColor"
               />
+            </pattern>
+          </defs>
+          <rect
+            y={72}
+            width={640}
+            height={640}
+            className="text-gray-50"
+            fill="currentColor"
+          />
+          <rect
+            x={118}
+            width={404}
+            height={784}
+            fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)"
+          />
+        </svg>
+      </div>
+
+      <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+        <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+              <h1>
+                <span className="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">
+                  Ihr Kontakt für mehr Wachstum
+                </span>
+                <span className="mt-1 block text-4xl tracking-thight font-extrabold sm:text-5xl xl:text-6xl">
+                  <span className="block text-gray-900">Mehr qualifizerte</span>
+                  <span className="block text-secondary-500">Mitarbeiter</span>
+                </span>
+              </h1>
+              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                Wir geben Ihren Mitarbeitern die Instrumente an die Hand, die
+                sie benötigen, um ihre Aufgaben und Verantwortlichkeiten besser
+                zu erfüllen. Dies führt zu einem höheren Umsatz und bindet sie
+                stärker in ihre Arbeit ein.
+              </p>
+              <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+                <p className="text-base font-medium text-gray-900">
+                  Sign up to get notified when it’s ready.
+                </p>
+                <form action="#" method="POST" className="mt-3 sm:flex">
+                  <label htmlFor="email" className="sr-only">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    className="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:flex-1 border-gray-300"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    type="submit"
+                    className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                  >
+                    Notify me
+                  </button>
+                </form>
+                <p className="mt-3 text-sm text-gray-500">
+                  We care about the protection of your data. Read our{" "}
+                  <a href="#" className="font-medium text-gray-900 underline">
+                    Privacy Policy
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+            <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+              <svg
+                className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden"
+                width={640}
+                height={784}
+                fill="none"
+                viewBox="0 0 640 784"
+                aria-hidden="true"
+              >
+                <defs>
+                  <pattern
+                    id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e"
+                    x={118}
+                    y={0}
+                    width={20}
+                    height={20}
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect
+                      x={0}
+                      y={0}
+                      width={4}
+                      height={4}
+                      className="text-gray-200"
+                      fill="currentColor"
+                    />
+                  </pattern>
+                </defs>
+                <rect
+                  y={72}
+                  width={640}
+                  height={640}
+                  className="text-gray-50"
+                  fill="currentColor"
+                />
+                <rect
+                  x={118}
+                  width={404}
+                  height={784}
+                  fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"
+                />
+              </svg>
+              <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+                <iframe
+                  src="https://www.videoask.com/fzs7g0z4o"
+                  allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;"
+                  width="100%"
+                  height="600px"
+                  style={{ border: "none", borderRadius: "24px" }}
+                ></iframe>
+              </div>
             </div>
           </div>
-          <div className="items-center justify-center pt-12 sm:flex">
-            <button className="w-full px-8 py-4 mr-4 text-lg text-white border sm:w-auto bg-secondary-500 lg:text-2xl border-secondary-500 hover:opacity-75 focus:outline-none">
-              Suchen
-            </button>
-            <button className="w-full px-8 py-4 mt-4 text-lg bg-transparent border sm:w-auto sm:mt-0 border-secondary-500 text-secondary-500 text-text-secondary-700 hover:opacity-75 lg:text-2xl focus:outline-none">
-              Zu den Trainings
-            </button>
-          </div>
-        </div>
+        </main>
       </div>
-    </>
+    </div>
   );
 }
