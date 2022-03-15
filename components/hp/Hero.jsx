@@ -60,6 +60,27 @@ const solutions = [
   },
 ];
 
+const benefits = [
+  {
+    name: "Coach Ausbildung",
+    description: "Die Weiterentwicklung der Führungskraft zum Coach",
+    href: "/coach-ausbildung",
+    icon: AcademicCapIcon,
+  },
+  {
+    name: "Verkaufstraining",
+    description: "Create your own targeted content",
+    href: "/verkaufstraining",
+    icon: CurrencyEuroIcon,
+  },
+  {
+    name: "Online-Marketing-Training",
+    description: "Websiten vermarkten die auch wirklich Verkaufen",
+    href: "/online-marketing-training",
+    icon: DesktopComputerIcon,
+  },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -77,7 +98,7 @@ export default function Hero() {
                     <span className="sr-only">KRAUSS Training</span>
                     <img
                       className="h-8 w-auto sm:h-10"
-                      src="/KRAUSS Logo Blau.svg"
+                      src="/markup-cropped (1).svg"
                       alt=""
                     />
                   </a>
@@ -275,19 +296,16 @@ export default function Hero() {
                     <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                       Warum KRAUSS Training?
                     </h3>
-                    <ul role="list" className="mt-5 space-y-6">
-                      {solutions.map((item) => (
+                    <ul role="list" className="mt-5">
+                      {benefits.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
-                          className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
+                          className="flex items-center p-2 -m-3 pt-5 pl-0 transition duration-150 ease-in-out rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
                         >
                           <div className="ml-4">
-                            <p className="text-sm font-medium text-gray-900">
+                            <p className="text-sm font-medium text-gray-900 hover:text-gray-50">
                               {item.name}
-                            </p>
-                            <p className="text-sm text-gray-500">
-                              {item.description}
                             </p>
                           </div>
                         </a>
