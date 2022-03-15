@@ -5,6 +5,10 @@ class MyDocument extends Document {
     return (
       <Html lang="de">
         <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+            rel="stylesheet"
+          />
           <script
             defer
             src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.js"
