@@ -304,7 +304,7 @@ export default function Hero() {
                           className="flex items-center p-2 -m-3 pt-5 pl-0 transition duration-150 ease-in-out rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
                         >
                           <div className="ml-4">
-                            <p className="text-sm font-medium text-gray-900 hover:text-gray-50">
+                            <p className="text-sm font-medium text-gray-900 hover:text-gray-400">
                               {item.name}
                             </p>
                           </div>
