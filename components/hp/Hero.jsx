@@ -1,13 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Popover, Transition } from "@headlessui/react";
 import {
+  AcademicCapIcon,
   BookmarkAltIcon,
+  CurrencyEuroIcon,
   DesktopComputerIcon,
   GlobeAltIcon,
-  InformationCircleIcon,
   MenuIcon,
-  NewspaperIcon,
-  OfficeBuildingIcon,
   UserGroupIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
@@ -15,8 +14,8 @@ import { Fragment } from "react";
 
 const resources = [
   { name: "Über uns", href: "/about-us", icon: UserGroupIcon },
-  { name: "Partners", href: "#", icon: GlobeAltIcon },
-  { name: "Guides", href: "#", icon: BookmarkAltIcon },
+  { name: "Jobs & Karriere", href: "#", icon: GlobeAltIcon },
+  { name: "Ressourcen", href: "#", icon: BookmarkAltIcon },
   { name: "Webinars", href: "#", icon: DesktopComputerIcon },
 ];
 const blogPosts = [
@@ -43,21 +42,21 @@ const blogPosts = [
 const solutions = [
   {
     name: "Coach Ausbildung",
-    description: "Measure actions your users take",
-    href: "##",
-    icon: InformationCircleIcon,
+    description: "Die Weiterentwicklung der Führungskraft zum Coach",
+    href: "/coach-ausbildung",
+    icon: AcademicCapIcon,
   },
   {
     name: "Verkaufstraining",
     description: "Create your own targeted content",
-    href: "##",
-    icon: OfficeBuildingIcon,
+    href: "/verkaufstraining",
+    icon: CurrencyEuroIcon,
   },
   {
     name: "Online-Marketing-Training",
-    description: "Keep track of your growth",
-    href: "##",
-    icon: NewspaperIcon,
+    description: "Websiten vermarkten die auch wirklich Verkaufen",
+    href: "/online-marketing-training",
+    icon: DesktopComputerIcon,
   },
 ];
 
@@ -96,7 +95,7 @@ export default function Hero() {
                       "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500"
                     )}
                   >
-                    <span>Themen</span>
+                    <span>Trainings</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? "text-gray-600" : "text-gray-400",
@@ -241,11 +240,11 @@ export default function Hero() {
                   aria-labelledby="topics-heading"
                 >
                   <h2 id="topics-heading" className="sr-only">
-                    Themen menu
+                    Training menu
                   </h2>
                   <div>
                     <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                      Themen
+                      Trainings
                     </h3>
                     <ul role="list" className="mt-5 space-y-6">
                       {solutions.map((item) => (
@@ -274,7 +273,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                      Nächste Veranstaltungen
+                      Warum KRAUSS Training?
                     </h3>
                     <ul role="list" className="mt-5 space-y-6">
                       {solutions.map((item) => (

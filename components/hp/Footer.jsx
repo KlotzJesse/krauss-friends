@@ -116,7 +116,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Solutions
+                  Trainings
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
@@ -152,7 +152,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Company
+                  Unternehmen
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
@@ -169,7 +169,7 @@ export default function Footer() {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Legal
+                  Rechtliches
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
@@ -188,11 +188,11 @@ export default function Footer() {
           </div>
           <div className="mt-8 xl:mt-0">
             <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Subscribe to our newsletter
+              Abonnieren Sie unseren Newsletter
             </h3>
             <p className="mt-4 text-base text-gray-500">
-              The latest news, articles, and resources, sent to your inbox
-              weekly.
+              Die neuesten Nachrichten, Artikel und Ressourcen werden
+              wöchentlich an Ihren Posteingang geschickt.
             </p>
             <form className="mt-4 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
@@ -212,7 +212,7 @@ export default function Footer() {
                   type="submit"
                   className="w-full bg-indigo-600 flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  Subscribe
+                  Abonnieren
                 </button>
               </div>
             </form>
@@ -232,7 +232,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2011 - 2022 KRAUSS Training, Inc. All rights reserved.
           </p>
         </div>
       </div>
