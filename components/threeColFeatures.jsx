@@ -206,19 +206,29 @@ const threeColFeatures = ({ blok, page }) => {
               Vereinbaren Sie ein Kennenlerngespräch.
             </span>
           </h2>
-          <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
+          <div className="mt-6">
             <button
               onClick={onClick}
-              className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border hover:from-purple-700 hover:to-indigo-700"
+              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
-              Mehr Informationen
+              Kostenlose Beratung erhalten
+              <svg
+                className="w-5 h-5 ml-2 fill-current color-white"
+                id="Layer_1"
+                x="0px"
+                y="0px"
+                viewBox="-49 141 512 512"
+              >
+                <path
+                  id="XMLID_11_"
+                  d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0 l115.5-115.5C460.366,409.989,463,403.63,463,397s-2.634-12.989-7.322-17.678l-115.5-115.5c-9.763-9.762-25.593-9.763-35.355,0 c-9.763,9.763-9.763,25.592,0,35.355l72.822,72.822H-24c-13.808,0-25,11.193-25,25S-37.808,422-24,422z"
+                ></path>
+              </svg>
             </button>
-            <button
-              onClick={onClick}
-              className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-800 border border-transparent rounded-md shadow-sm bg-indigo-50 hover:bg-indigo-100"
-            >
-              Termin anfragen
-            </button>
+            <p className="self-start pt-3 text-sm text-gray-600">
+              Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
+              Unverbindlich und komplett Kostenlos.
+            </p>
           </div>
         </div>
       </div>

@@ -49,10 +49,26 @@ const FeaturesWithTestimonial = ({ page }) => {
                 <div className="mt-6">
                   <button
                     onClick={onClick}
-                    className="inline-flex px-4 py-2 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md shadow-sm hover:bg-purple-700"
+                    className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                   >
-                    Kennenlerngespräch vereinbaren
+                    Kostenlose Beratung erhalten
+                    <svg
+                      className="w-5 h-5 ml-2 fill-current color-white"
+                      id="Layer_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="-49 141 512 512"
+                    >
+                      <path
+                        id="XMLID_11_"
+                        d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0 l115.5-115.5C460.366,409.989,463,403.63,463,397s-2.634-12.989-7.322-17.678l-115.5-115.5c-9.763-9.762-25.593-9.763-35.355,0 c-9.763,9.763-9.763,25.592,0,35.355l72.822,72.822H-24c-13.808,0-25,11.193-25,25S-37.808,422-24,422z"
+                      ></path>
+                    </svg>
                   </button>
+                  <p className="self-start pt-3 text-sm text-gray-600">
+                    Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch
+                    heute. Unverbindlich und komplett Kostenlos.
+                  </p>
                 </div>
               </div>
             </div>
@@ -81,7 +97,7 @@ const FeaturesWithTestimonial = ({ page }) => {
               </blockquote>
             </div>
           </div>
-          <div className="hidden mt-12 sm:mt-16 lg:mt-0 md:block">
+          <div className="mt-12 sm:mt-16 lg:mt-0">
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
@@ -117,15 +133,31 @@ const FeaturesWithTestimonial = ({ page }) => {
                 <div className="mt-6">
                   <button
                     onClick={onClick}
-                    className="inline-flex px-4 py-2 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md shadow-sm hover:bg-purple-700"
+                    className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                   >
-                    Kennenlerngespräch vereinbaren
+                    Kostenlose Beratung erhalten
+                    <svg
+                      className="w-5 h-5 ml-2 fill-current color-white"
+                      id="Layer_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="-49 141 512 512"
+                    >
+                      <path
+                        id="XMLID_11_"
+                        d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0 l115.5-115.5C460.366,409.989,463,403.63,463,397s-2.634-12.989-7.322-17.678l-115.5-115.5c-9.763-9.762-25.593-9.763-35.355,0 c-9.763,9.763-9.763,25.592,0,35.355l72.822,72.822H-24c-13.808,0-25,11.193-25,25S-37.808,422-24,422z"
+                      ></path>
+                    </svg>
                   </button>
+                  <p className="self-start pt-3 text-sm text-gray-600">
+                    Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch
+                    heute. Unverbindlich und komplett Kostenlos.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="hidden mt-12 sm:mt-16 lg:mt-0 lg:col-start-1 md:block">
+          <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
             <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <img
                 className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
