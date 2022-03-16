@@ -5,7 +5,7 @@ const TwoColumnsWithTestimonial = (props) => {
     <div className="py-16 overflow-hidden">
       <div className="px-4 mx-auto space-y-8 max-w-7xl sm:px-6 lg:px-8">
         <div className="mx-auto text-base max-w-prose lg:max-w-none">
-          <h2 className="text-base font-semibold tracking-wide uppercase text-primary-600">
+          <h2 className="text-base font-semibold tracking-wide text-purple-600 uppercase">
             Mehr Termine, mehr Umsatz
           </h2>
           <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
@@ -23,7 +23,7 @@ const TwoColumnsWithTestimonial = (props) => {
         </div>
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
           <div className="relative z-10">
-            <div className="mx-auto prose text-gray-500 prose-primary lg:max-w-none">
+            <div className="mx-auto prose text-gray-500 prose-purple lg:max-w-none">
               <p>
                 Zeit ist Geld, und wenn Sie Ihre Zeit nicht sinnvoll nutzen,
                 entgehen Ihnen potenzielle Aufträge. Sie müssen in der Lage
@@ -56,7 +56,7 @@ const TwoColumnsWithTestimonial = (props) => {
               <div className="rounded-md shadow">
                 <a
                   href="#"
-                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white border border-transparent rounded-md bg-primary-600 hover:bg-primary-700"
+                  className="flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-purple-600 border border-transparent rounded-md hover:bg-purple-700"
                 >
                   Kennenlerngespräch vereinbaren
                 </a>
@@ -119,15 +119,15 @@ const TwoColumnsWithTestimonial = (props) => {
                   </p>
                 </div>
               </div>
-              <cite className="relative flex items-center px-6 py-5 not-italic rounded-b-lg sm:items-start bg-primary-600 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
+              <cite className="relative flex items-center px-6 py-5 not-italic bg-purple-600 rounded-b-lg sm:items-start sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
                 <div className="relative border-2 border-white rounded-full sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2">
                   <img
-                    className="w-12 h-12 rounded-full sm:w-20 sm:h-20 bg-primary-300"
+                    className="w-12 h-12 bg-purple-300 rounded-full sm:w-20 sm:h-20"
                     src="https://renderapi.s3.amazonaws.com/eJQVu3p1G.png"
                     alt=""
                   />
                 </div>
-                <span className="relative ml-4 font-semibold leading-6 text-primary-300 sm:ml-24 sm:pl-1">
+                <span className="relative ml-4 font-semibold leading-6 text-purple-300 sm:ml-24 sm:pl-1">
                   <p className="font-semibold text-white sm:inline">
                     Geschäftsführer
                   </p>{" "}
