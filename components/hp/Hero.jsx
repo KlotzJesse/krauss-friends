@@ -115,29 +115,29 @@ function classNames(...classes) {
 export default function Hero() {
   const roo = useRef();
   return (
-    <div className="z-50 fixed w-full">
+    <div className="fixed z-50 w-full">
       <>
         <div className="relative z-50 bg-white shadow">
-          <div className=" max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+          <div className="px-4 mx-auto max-w-7xl sm:px-6">
+            <div className="flex items-center justify-between py-4 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
                   <span className="sr-only">KRAUSS Training</span>
                   <img
-                    className="h-8 w-auto sm:h-10"
-                    src="/markup-cropped (1).svg"
+                    className="w-auto h-8 sm:h-10"
+                    src="/KRAUSS Logo Blau.svg"
                     alt=""
                   />
                 </a>
               </div>
 
-              <div className="-mr-2 -my-2 md:hidden">
-                {/*<Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
+              <div className="-my-2 -mr-2 md:hidden">
+                {/*<Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
                   <span className="sr-only">Open menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                  <MenuIcon className="w-6 h-6" aria-hidden="true" />
   </Popover.Button>*/}
               </div>
-              <Popover.Group as="nav" className="hidden md:flex space-x-10">
+              <Popover.Group as="nav" className="hidden space-x-10 md:flex">
                 <Popover>
                   {({ open }) => (
                     <>
@@ -165,17 +165,17 @@ export default function Hero() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-1"
                       >
-                        <Popover.Panel className="absolute z-50 inset-x-0 transform shadow-lg top-full">
+                        <Popover.Panel className="absolute inset-x-0 z-50 transform shadow-lg top-full">
                           <div
                             className="absolute inset-0 flex"
                             aria-hidden="true"
                           >
-                            <div className="bg-white w-1/2" />
-                            <div className="bg-gray-50 w-1/2" />
+                            <div className="w-1/2 bg-white" />
+                            <div className="w-1/2 bg-gray-50" />
                           </div>
-                          <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+                          <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
                             <nav
-                              className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12"
+                              className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12"
                               aria-labelledby="topics-heading"
                             >
                               <h2 id="topics-heading" className="sr-only">
@@ -190,9 +190,9 @@ export default function Hero() {
                                     <a
                                       key={item.name}
                                       href={item.href}
-                                      className="flex items-center p-2 -m-3 mt-5 first:mt-0 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
+                                      className="flex items-center p-2 mt-5 -m-3 transition duration-150 ease-in-out rounded-lg first:mt-0 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
                                     >
-                                      <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12 bg-primary-100 rounded-lg">
+                                      <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white rounded-lg sm:h-12 sm:w-12 bg-primary-100">
                                         <item.icon
                                           className="w-1/2 text-primary-300"
                                           aria-hidden="true"
@@ -219,7 +219,7 @@ export default function Hero() {
                                     <a
                                       key={item.name}
                                       href={item.href}
-                                      className="flex items-center p-2 -m-3 pt-5 pl-0 transition duration-150 ease-in-out rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
+                                      className="flex items-center p-2 pt-5 pl-0 -m-3 transition duration-150 ease-in-out rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
                                     >
                                       <div className="ml-4">
                                         <p className="text-sm font-medium text-gray-900 hover:text-gray-400">
@@ -231,7 +231,7 @@ export default function Hero() {
                                 </ul>
                               </div>
                             </nav>
-                            <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                            <div className="px-4 py-8 bg-gray-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                   Aus unserem Blog
@@ -241,16 +241,16 @@ export default function Hero() {
                                     <li key={post.id} className="flow-root">
                                       <a
                                         href={post.href}
-                                        className="-m-3 p-3 flex rounded-lg hover:bg-gray-100 transition ease-in-out duration-150"
+                                        className="flex p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100"
                                       >
-                                        <div className="hidden sm:block flex-shrink-0">
+                                        <div className="flex-shrink-0 hidden sm:block">
                                           <img
-                                            className="w-32 h-20 object-cover rounded-md"
+                                            className="object-cover w-32 h-20 rounded-md"
                                             src={post.imageUrl}
                                             alt=""
                                           />
                                         </div>
-                                        <div className="min-w-0 flex-1 sm:ml-8">
+                                        <div className="flex-1 min-w-0 sm:ml-8">
                                           <h4 className="text-base font-medium text-gray-900 truncate">
                                             {post.name}
                                           </h4>
@@ -266,7 +266,7 @@ export default function Hero() {
                               <div className="mt-6 text-sm font-medium">
                                 <a
                                   href="#"
-                                  className="text-secondary-500 hover:text-secondary-400 transition ease-in-out duration-150"
+                                  className="transition duration-150 ease-in-out text-secondary-500 hover:text-secondary-400"
                                 >
                                   Alle Artikel ansehen{" "}
                                   <span aria-hidden="true">&rarr;</span>
@@ -307,17 +307,17 @@ export default function Hero() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-1"
                       >
-                        <Popover.Panel className="absolute z-50 inset-x-0 transform shadow-lg top-full">
+                        <Popover.Panel className="absolute inset-x-0 z-50 transform shadow-lg top-full">
                           <div
                             className="absolute inset-0 flex"
                             aria-hidden="true"
                           >
-                            <div className="bg-white w-1/2" />
-                            <div className="bg-gray-50 w-1/2" />
+                            <div className="w-1/2 bg-white" />
+                            <div className="w-1/2 bg-gray-50" />
                           </div>
-                          <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+                          <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
                             <nav
-                              className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12"
+                              className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12"
                               aria-labelledby="topics-heading"
                             >
                               <h2 id="topics-heading" className="sr-only">
@@ -332,7 +332,7 @@ export default function Hero() {
                                     <a
                                       key={item.name}
                                       href={item.href}
-                                      className="flex items-center p-2 -m-3 pt-5 pl-0 transition duration-150 ease-in-out rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
+                                      className="flex items-center p-2 pt-5 pl-0 -m-3 transition duration-150 ease-in-out rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
                                     >
                                       <div className="ml-4">
                                         <p className="text-sm font-medium text-gray-900 hover:text-gray-400">
@@ -352,7 +352,7 @@ export default function Hero() {
                                     <a
                                       key={item.name}
                                       href={item.href}
-                                      className="flex items-center p-2 -m-3 pt-5 pl-0 transition duration-150 ease-in-out rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
+                                      className="flex items-center p-2 pt-5 pl-0 -m-3 transition duration-150 ease-in-out rounded-lg focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-50"
                                     >
                                       <div className="ml-4">
                                         <p className="text-sm font-medium text-gray-900 hover:text-gray-400">
@@ -364,7 +364,7 @@ export default function Hero() {
                                 </ul>
                               </div>
                             </nav>
-                            <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                            <div className="px-4 py-8 bg-gray-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                               <div>
                                 <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                   Aus unserem Blog
@@ -374,16 +374,16 @@ export default function Hero() {
                                     <li key={post.id} className="flow-root">
                                       <a
                                         href={post.href}
-                                        className="-m-3 p-3 flex rounded-lg hover:bg-gray-100 transition ease-in-out duration-150"
+                                        className="flex p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100"
                                       >
-                                        <div className="hidden sm:block flex-shrink-0">
+                                        <div className="flex-shrink-0 hidden sm:block">
                                           <img
-                                            className="w-32 h-20 object-cover rounded-md"
+                                            className="object-cover w-32 h-20 rounded-md"
                                             src={post.imageUrl}
                                             alt=""
                                           />
                                         </div>
-                                        <div className="min-w-0 flex-1 sm:ml-8">
+                                        <div className="flex-1 min-w-0 sm:ml-8">
                                           <h4 className="text-base font-medium text-gray-900 truncate">
                                             {post.name}
                                           </h4>
@@ -399,7 +399,7 @@ export default function Hero() {
                               <div className="mt-6 text-sm font-medium">
                                 <a
                                   href="#"
-                                  className="text-secondary-500 hover:text-secondary-400 transition ease-in-out duration-150"
+                                  className="transition duration-150 ease-in-out text-secondary-500 hover:text-secondary-400"
                                 >
                                   Alle Artikel ansehen{" "}
                                   <span aria-hidden="true">&rarr;</span>
@@ -448,17 +448,17 @@ export default function Hero() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1"
                       >
-                        <Popover.Panel className="absolute left-1/2 z-50 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
-                          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                            <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <Popover.Panel className="absolute z-50 w-screen max-w-md px-2 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
+                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                            <div className="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                               {resources.map((item) => (
                                 <a
                                   key={item.name}
                                   href={item.href}
-                                  className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                                  className="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
                                 >
                                   <item.icon
-                                    className="flex-shrink-0 h-6 w-6 text-secondary-500"
+                                    className="flex-shrink-0 w-6 h-6 text-secondary-500"
                                     aria-hidden="true"
                                   />
                                   <div className="ml-4">
@@ -474,7 +474,7 @@ export default function Hero() {
                             </div>
                             <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
                               <div>
-                                <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">
+                                <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                   Neuste Artikel
                                 </h3>
                                 <ul role="list" className="mt-4 space-y-4">
@@ -511,16 +511,16 @@ export default function Hero() {
                   )}
                 </Popover>
               </Popover.Group>
-              <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+              <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 {/*<a
                     href="#"
-                    className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                    className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900"
                   >
                     Sign in
                   </a>*/}
                 <a
                   href="#"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary-500 hover:bg-secondary-600"
+                  className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-secondary-500 hover:bg-secondary-600"
                 >
                   Kostenlose Potenzialanalyse
                 </a>

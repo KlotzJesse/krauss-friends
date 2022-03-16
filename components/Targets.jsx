@@ -44,7 +44,7 @@ const Targets = ({ page }) => {
               onClick={onClick}
               className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
-              Erstgespräch anfragen
+              Kostenlose Beratung erhalten
               <svg
                 className="w-5 h-5 ml-2 fill-current color-white"
                 x="0px"
@@ -55,7 +55,8 @@ const Targets = ({ page }) => {
               </svg>
             </button>
             <p className="self-start pt-3 text-sm text-gray-600 cursor-pointer">
-              Kostenlose Analyse sichern in nur 1 Minute
+              In nur 1 Minute. Wir melden uns noch heute. Unverbindlich und
+              komplett Kostenlos.
             </p>
           </div>
           <div className="flex"></div>

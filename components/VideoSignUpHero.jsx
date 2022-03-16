@@ -142,7 +142,7 @@ export default function HeroSignUp({ blok, page }) {
                       : "text-white bg-gradient-to-r from-purple-600 to-indigo-600"
                   } hover:bg-secondary-600`}
                 >
-                  Unverbindlichen Termin vereinbaren
+                  Kostenlose Beratung erhalten
                 </button>
               </span>
             </div>
@@ -272,7 +272,7 @@ export default function HeroSignUp({ blok, page }) {
                   onClick={onClick}
                   className="flex items-center self-start px-12 py-4 mx-auto font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg md:mx-0 bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                 >
-                  Erstgespräch anfragen
+                  Kostenlose Beratung erhalten
                   <svg
                     className="w-5 h-5 ml-2 fill-current color-white"
                     id="Layer_1"
@@ -287,7 +287,8 @@ export default function HeroSignUp({ blok, page }) {
                   </svg>
                 </button>
                 <p className="self-start pt-3 text-sm text-gray-600">
-                  Kostenlose Analyse sichern in nur 1 Minute
+                  In nur 1 Minute. Wir melden uns noch heute. Unverbindlich und
+                  komplett kostenlos.
                 </p>
                 {/* <p className="text-base font-medium text-gray-900">
                   Kontaktieren Sie uns heute
