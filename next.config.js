@@ -4,7 +4,14 @@ module.exports = {
   reactStrictMode: false,
   images: {
     formats: ["image/avif", "image/webp"],
-    domains: ["www.krauss-friends.com", "i.ibb.co", "image.jimcdn.com"],
+    domains: [
+      "www.krauss-friends.com",
+      "i.ibb.co",
+      "image.jimcdn.com",
+      "amazonaws.com",
+      "s3.amazonaws.com",
+      "renderapi.s3.amazonaws.com",
+    ],
   },
   env: {
     BASE_URL: process.env.NEXT_PUBLIC_TRACKING_ID,
