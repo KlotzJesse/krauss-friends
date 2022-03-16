@@ -136,7 +136,7 @@ export default function HeroSignUp({ blok, page }) {
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <button
                   onClick={onClick}
-                  className={`inline-flex items-center px-4 py-2 text-base font-medium border border-transparent rounded-md ${
+                  className={`inline-flex items-center capitalize px-4 py-2 text-base font-medium border border-transparent rounded-md ${
                     page.color == "gold"
                       ? "text-white bg-secondary-500"
                       : "text-white bg-gradient-to-r from-purple-600 to-indigo-600"
