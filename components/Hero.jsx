@@ -104,7 +104,7 @@ const Hero = ({ page }) => {
           </div>
           <button
             onClick={onClick}
-            className="items-center self-start hidden px-12 py-4 mr-2 text-lg font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:flex primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
+            className="items-center self-start hidden px-12 py-4 mr-2 text-lg font-medium text-white capitalize transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:flex primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Kostenlose Beratung erhalten
             <svg
@@ -121,20 +121,20 @@ const Hero = ({ page }) => {
             </svg>
           </button>
           <p className="self-start hidden pt-3 text-sm text-gray-500 md:block">
-            In nur 1 Minute. Wir melden uns noch heute. Unverbindlich und
-            komplett Kostenlos.
+            Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
+            Unverbindlich und komplett Kostenlos.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end">
           <a
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
-            className="flex items-center px-12 py-4 text-xs font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
+            className="flex items-center px-12 py-4 text-xs font-medium text-white capitalize transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
             Kostenlose Beratung erhalten
           </a>
           <p className="pt-3 text-sm text-gray-500 xl:hidden">
-            In nur 1 Minute. Wir melden uns noch heute. Unverbindlich und
-            komplett Kostenlos.
+            Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
+            Unverbindlich und komplett Kostenlos.
           </p>
 
           <div className="w-full h-full pt-10 md:pt-0">

@@ -42,7 +42,7 @@ const CTASection = ({ page }) => {
             </h1>
             <button
               onClick={onClick}
-              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white capitalize transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Kostenlose Beratung erhalten
               <svg
@@ -59,8 +59,8 @@ const CTASection = ({ page }) => {
               </svg>
             </button>
             <p className="self-start pt-3 text-sm text-gray-600">
-              In nur 1 Minute. Wir melden uns noch heute. Unverbindlich und
-              komplett Kostenlos.
+              Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
+              Unverbindlich und komplett Kostenlos.
             </p>
           </div>
           <div className="sticky pt-10 ml-0 md:ml-12 lg:w-1/2 md:pt-0">
