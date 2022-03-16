@@ -136,7 +136,7 @@ export default function HeroSignUp({ blok, page }) {
               <span className="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                 <button
                   onClick={onClick}
-                  className={`inline-flex items-center capitalize px-4 py-2 text-base font-medium border border-transparent rounded-md ${
+                  className={`inline-flex items-center uppercase px-4 py-2 text-base font-medium border border-transparent rounded-md ${
                     page.color == "gold"
                       ? "text-white bg-secondary-500"
                       : "text-white bg-gradient-to-r from-purple-600 to-indigo-600"
@@ -270,7 +270,7 @@ export default function HeroSignUp({ blok, page }) {
                 )}
                 <button
                   onClick={onClick}
-                  className="flex items-center self-start px-12 py-4 mx-auto font-medium text-white capitalize transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg md:mx-0 bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+                  className="flex items-center self-start px-12 py-4 mx-auto font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg md:mx-0 bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                 >
                   Kostenlose Beratung erhalten
                   <svg

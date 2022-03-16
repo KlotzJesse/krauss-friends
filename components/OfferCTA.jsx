@@ -36,7 +36,7 @@ const OfferCTA = ({ page }) => {
           <div className="inline-flex mx-auto">
             <button
               onClick={onClick}
-              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white capitalize transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-500 hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
+              className="flex items-center self-start px-12 py-4 mr-2 font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg bg-secondary-500 hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
             >
               Geschenk einfordern
               <svg
