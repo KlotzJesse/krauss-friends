@@ -21,7 +21,8 @@
     "**/*.tsx",
     "pages/[[...index]].jss",
     "components/Heading.jsx",
-    "components/SimpleTestimonial.jsx"
+    "components/SimpleTestimonial.jsx",
+    "pages/_document.jsx"
   ],
   "exclude": ["node_modules"]
 }
