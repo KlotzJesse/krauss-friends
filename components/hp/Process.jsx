@@ -48,7 +48,7 @@ const Process = (props) => {
                 width="18"
                 height="33"
                 viewBox="0 0 18 33"
-                className="text-stone-800 group-last:hidden absolute bg-orange-500 rotate-90 transform -translate-x-1/2"
+                className="text-stone-800 group-last:hidden absolute left-1/2 md:left-auto top-[111%] rotate-90 md:rotate-0 origin-top-right md:origin-center md:top-1/2 md:-right-[18px] md:transform md:-translate-y-1/2"
                 fill="none"
               >
                 <path
