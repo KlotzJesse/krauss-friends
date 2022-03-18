@@ -15,6 +15,16 @@ const GridMiddle = ({ page }) => {
         <div className="flex flex-wrap">
           <div className="w-full p-2 md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
+              <BookOpenIcon className="flex-shrink-0 w-6 h-6 mr-4" />
+              <div className="flex-grow">
+                <h2 className="font-medium text-gray-900 title-font">
+                  Die Preiserhöhungen erfolgreich beim Kunden durchsetzen
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div className="w-full p-2 md:w-1/3">
+            <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
               <TrendingUpIcon className="flex-shrink-0 w-6 h-6 mr-4" />
               <div className="flex-grow">
                 <h2 className="font-medium text-gray-900 title-font">
@@ -33,16 +43,7 @@ const GridMiddle = ({ page }) => {
               </div>
             </div>
           </div>
-          <div className="w-full p-2 md:w-1/3">
-            <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
-              <BookOpenIcon className="flex-shrink-0 w-6 h-6 mr-4" />
-              <div className="flex-grow">
-                <h2 className="font-medium text-gray-900 title-font">
-                  Kunden begeistern durch Storytelling
-                </h2>
-              </div>
-            </div>
-          </div>
+
           <div className="w-full p-2 md:w-1/3">
             <div className="flex items-center h-full p-4 bg-white rounded-lg  flex-col text-center ">
               <CashIcon className="flex-shrink-0 w-6 h-6 mr-4" />
