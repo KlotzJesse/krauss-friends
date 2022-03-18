@@ -115,7 +115,7 @@ function classNames(...classes) {
 export default function Hero() {
   const roo = useRef();
   return (
-    <div className="fixed z-50 w-full">
+    <div className="fixed top-0 z-50 w-full">
       <>
         <div className="relative z-50 bg-white shadow">
           <div className="px-4 mx-auto max-w-7xl sm:px-6">
