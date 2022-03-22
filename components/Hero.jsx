@@ -106,7 +106,7 @@ const Hero = ({ page }) => {
             onClick={onClick}
             className="items-center self-start hidden px-12 py-4 mr-2 text-lg font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:flex primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
-            Kostenlose Beratung erhalten
+            {page.call_to_action_btn}
             <svg
               className="w-5 h-5 ml-2 fill-current color-white"
               id="Layer_1"
@@ -130,7 +130,7 @@ const Hero = ({ page }) => {
             href="https://calendly.com/krauss-friends/kennenlerngespraech"
             className="flex items-center px-12 py-4 text-xs font-medium text-white uppercase transition duration-500 ease-in-out transform bg-orange-400 border-0 rounded-lg shadow-lg xl:hidden primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none"
           >
-            Kostenlose Beratung erhalten
+            {page.call_to_action_btn}
           </a>
           <p className="pt-3 text-sm text-gray-500 xl:hidden">
             Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.

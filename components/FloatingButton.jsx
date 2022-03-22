@@ -26,7 +26,7 @@ const FloatingButton = ({ page }) => {
         onClick={onClick}
         className="flex items-center self-start px-12 py-4 mb-10 font-medium text-white uppercase border-0 rounded-lg shadow-lg bg-secondary-400 hover:shadow-inner focus:outline-none text-md"
       >
-        Kostenlose Beratung erhalten
+        {page.call_to_action_btn}
         <svg
           className="w-5 h-5 ml-2 fill-current color-white"
           x="0px"

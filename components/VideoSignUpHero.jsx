@@ -138,7 +138,7 @@ export default function HeroSignUp({ blok, page }) {
                   onClick={onClick}
                   className={`inline-flex items-center uppercase px-4 py-2 text-base font-medium border border-transparent rounded-md text-white bg-secondary-500 hover:bg-secondary-600`}
                 >
-                  Kostenlose Beratung erhalten
+                  {page.call_to_action_btn}
                 </button>
               </span>
             </div>
@@ -268,7 +268,7 @@ export default function HeroSignUp({ blok, page }) {
                   onClick={onClick}
                   className="flex items-center self-start px-12 py-4 mx-auto font-medium text-white uppercase transition duration-500 ease-in-out transform border-0 rounded-lg shadow-lg md:mx-0 bg-secondary-400 primary-cta hover:shadow-inner hover:-translate-y-1 hover:scale-110 focus:outline-none text-md"
                 >
-                  Kostenlose Beratung erhalten
+                  {page.call_to_action_btn}
                   <svg
                     className="w-5 h-5 ml-2 fill-current color-white"
                     id="Layer_1"
