@@ -121,8 +121,8 @@ const Hero = ({ page }) => {
             </svg>
           </button>
           <p className="self-start hidden pt-3 text-sm text-gray-500 md:block">
-            Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
-            Unverbindlich und komplett Kostenlos.
+            Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1 Minute.
+            Wir melden uns noch heute. Unverbindlich und komplett Kostenlos.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center w-5/6 xl:w-1/2 md:self-end">
@@ -133,8 +133,8 @@ const Hero = ({ page }) => {
             {page.call_to_action_btn}
           </a>
           <p className="pt-3 text-sm text-gray-500 xl:hidden">
-            Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
-            Unverbindlich und komplett Kostenlos.
+            Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1 Minute.
+            Wir melden uns noch heute. Unverbindlich und komplett Kostenlos.
           </p>
 
           <div className="w-full h-full pt-10 md:pt-0">

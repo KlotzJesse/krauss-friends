@@ -66,8 +66,9 @@ const FeaturesWithTestimonial = ({ page }) => {
                     </svg>
                   </button>
                   <p className="self-start pt-3 text-sm text-gray-600">
-                    Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch
-                    heute. Unverbindlich und komplett Kostenlos.
+                    Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1
+                    Minute. Wir melden uns noch heute. Unverbindlich und
+                    komplett Kostenlos.
                   </p>
                 </div>
               </div>
@@ -150,8 +151,9 @@ const FeaturesWithTestimonial = ({ page }) => {
                     </svg>
                   </button>
                   <p className="self-start pt-3 text-sm text-gray-600">
-                    Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch
-                    heute. Unverbindlich und komplett Kostenlos.
+                    Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1
+                    Minute. Wir melden uns noch heute. Unverbindlich und
+                    komplett Kostenlos.
                   </p>
                 </div>
               </div>

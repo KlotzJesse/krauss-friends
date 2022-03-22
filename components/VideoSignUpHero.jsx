@@ -283,8 +283,9 @@ export default function HeroSignUp({ blok, page }) {
                   </svg>
                 </button>
                 <p className="self-start pt-3 text-sm text-gray-600">
-                  Kurzer Fragebogen. In nur 1 Minute. Wir melden uns noch heute.
-                  Unverbindlich und komplett kostenlos.
+                  Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1
+                  Minute. Wir melden uns noch heute. Unverbindlich und komplett
+                  kostenlos.
                 </p>
                 {/* <p className="text-base font-medium text-gray-900">
                   Kontaktieren Sie uns heute
