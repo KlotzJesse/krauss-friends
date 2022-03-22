@@ -226,8 +226,9 @@ const threeColFeatures = ({ blok, page }) => {
               </svg>
             </button>
             <p className="self-start pt-3 text-sm text-gray-600">
-              Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1 Minute.
-              Wir melden uns noch heute. Unverbindlich und komplett Kostenlos.
+              <b>Geschenk - nur für kurze Zeit.</b> Kurzer Fragebogen. In nur 1
+              Minute. Wir melden uns noch heute. Unverbindlich und komplett
+              Kostenlos.
             </p>
           </div>
         </div>

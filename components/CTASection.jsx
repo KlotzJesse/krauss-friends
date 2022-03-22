@@ -59,8 +59,9 @@ const CTASection = ({ page }) => {
               </svg>
             </button>
             <p className="self-start pt-3 text-sm text-gray-600">
-              Geschenk - nur für kurze Zeit. Kurzer Fragebogen. In nur 1 Minute.
-              Wir melden uns noch heute. Unverbindlich und komplett Kostenlos.
+              <b>Geschenk - nur für kurze Zeit.</b> Kurzer Fragebogen. In nur 1
+              Minute. Wir melden uns noch heute. Unverbindlich und komplett
+              Kostenlos.
             </p>
           </div>
           <div className="sticky pt-10 ml-0 md:ml-12 lg:w-1/2 md:pt-0">
