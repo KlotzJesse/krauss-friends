@@ -10,7 +10,10 @@ import {
   ViewGridIcon,
   XIcon,
 } from "@heroicons/react/outline";
+import { createPopup } from "@typeform/embed";
+import { trackGoal } from "fathom-client";
 import { Fragment } from "react";
+import { openPopupWidget } from "react-calendly";
 
 const features = [
   {
@@ -69,7 +72,23 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NewLP() {
+export default function NewLP({ blok, page }) {
+  const onClick = () => {
+    if (page.calendlyURL) {
+      trackGoal("03RLAFSO", 0); //03RLAFSO
+      openPopupWidget({
+        url: page.calendlyURL,
+      });
+      return;
+    }
+    if (page.typeformId) {
+      const { toggle } = createPopup(page.typeformId);
+      trackGoal("MPOZNNML", 0);
+      toggle();
+      return;
+    }
+  };
+
   return (
     <div className="relative bg-gray-50">
       <div className="relative overflow-hidden">
@@ -107,12 +126,12 @@ export default function NewLP() {
                 })}
               </div>
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-secondary-500 border border-transparent rounded-md shadow-sm whitespace-nowrap hover:bg-secondary-600"
+                <button
+                  onClick={onClick}
+                  className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-secondary-500 border border-transparent whitespace-nowrap hover:bg-secondary-600"
                 >
                   Erstgespräch sichern!
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -247,7 +266,10 @@ export default function NewLP() {
                     </p>
                   </li>
                 </ul>
-                <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
+                <button
+                  onClick={onClick}
+                  className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+                >
                   <span className="text-[1.375em] font-bold">
                     Jetzt Erstgespräch sichern!
                   </span>
@@ -297,7 +319,10 @@ export default function NewLP() {
             Dann werden die kommenden Zeilen Goldwert für Sie sein…
           </p>
           <div className="max-w-sm mx-auto pt-14">
-            <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
+            <button
+              onClick={onClick}
+              className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+            >
               <span className="text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
@@ -380,7 +405,10 @@ export default function NewLP() {
         </div>
         <div className="relative h-[350px] -mt-48 bg-[url('https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/AdobeStock_88560614.jpg')]">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-90"></div>
-          <button className="relative top-1/2 bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full max-w-3xl mx-auto mt-10">
+          <button
+            onClick={onClick}
+            className="relative top-1/2 bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full max-w-3xl mx-auto mt-10"
+          >
             <span className="text-[1.5625em] font-medium">
               Fragen Sie jetzt ein unverbindliches Erstgespräch an!
             </span>
@@ -451,7 +479,10 @@ export default function NewLP() {
             );
           })}
           <div className="max-w-sm mx-auto pt-14">
-            <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
+            <button
+              onClick={onClick}
+              className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+            >
               <span className="text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
@@ -534,7 +565,10 @@ export default function NewLP() {
                 </li>
               </ul>
 
-              <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
+              <button
+                onClick={onClick}
+                className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+              >
                 <span className="text-[1.125em] font-medium">
                   Hier klicken, um uns persönlich kennenzulernen!
                 </span>
@@ -570,7 +604,10 @@ export default function NewLP() {
             })}
           </div>
           <div className="max-w-sm mx-auto pt-14">
-            <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
+            <button
+              onClick={onClick}
+              className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+            >
               <span className="text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
