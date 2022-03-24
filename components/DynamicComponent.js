@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import ExitIntent from "./ExitIntent";
+import NewLP from "./NewLP";
 import Text from "./Text";
 const Column = dynamic(() => import("./Column"));
 const Container = dynamic(() => import("./Container"));
@@ -74,6 +75,7 @@ const Components = {
   floatingButton: FloatingButton,
   text: Text,
   exitIntent: ExitIntent,
+  newLP: NewLP,
 };
 
 const DynamicComponent = ({ blok, page }) => {
