@@ -462,81 +462,84 @@ export default function NewLP() {
           </div>
         </div>
       </div>
-      <div className="max-w-5xl mx-auto py-20">
-        <h2 className="text-[2.1875em] font-semibold">bowa-consulting</h2>
-        <p className="text-[1.5625em]">
-          Umsetzungsstarke Beratung für Produktions- und Logistikunternehmen
-        </p>
-        <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
-        <div className="flex space-x-10 pt-10">
-          <div className="text-[1.0625em]">
-            <p>
-              In einer Zusammenarbeit mit uns bekommen Sie genau die Sicherheit,
-              die Sie benötigen: Seit über 30 Jahren entwickeln und verbessern
-              wir Produktions- und Logistikabläufe, Materialflüsse und
-              Geschäftsprozesse in mittelständischen Industrieunternehmen und
-              Konzernen.
-            </p>
-            <p className="pt-5">
-              <span className="underline">Unser Erfolgsgarantie:</span> Auf
-              Basis der langjährigen Linien- und Beratungserfahrung haben wir
-              uns auf die Umsetzung erfolgreicher Konzepte fokussiert. Der
-              Unterschied zwischen Theorie und Praxis… wir wissen, worauf es
-              ankommt!
-            </p>
+      <div className="bg-white">
+        <div className="max-w-5xl mx-auto py-20 ">
+          <h2 className="text-[2.1875em] font-semibold">bowa-consulting</h2>
+          <p className="text-[1.5625em]">
+            Umsetzungsstarke Beratung für Produktions- und Logistikunternehmen
+          </p>
+          <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
+          <div className="flex space-x-10 pt-10">
+            <div className="text-[1.0625em]">
+              <p>
+                In einer Zusammenarbeit mit uns bekommen Sie genau die
+                Sicherheit, die Sie benötigen: Seit über 30 Jahren entwickeln
+                und verbessern wir Produktions- und Logistikabläufe,
+                Materialflüsse und Geschäftsprozesse in mittelständischen
+                Industrieunternehmen und Konzernen.
+              </p>
+              <p className="pt-5">
+                <span className="underline">Unser Erfolgsgarantie:</span> Auf
+                Basis der langjährigen Linien- und Beratungserfahrung haben wir
+                uns auf die Umsetzung erfolgreicher Konzepte fokussiert. Der
+                Unterschied zwischen Theorie und Praxis… wir wissen, worauf es
+                ankommt!
+              </p>
+            </div>
+            <div className="w-5/6">
+              <img src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-07-2020_195.jpg" />
+            </div>
           </div>
-          <div className="w-5/6">
-            <img src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-07-2020_195.jpg" />
-          </div>
-        </div>
-        <div className="flex space-x-10 pt-10">
-          <div className="w-2/4">
-            <img
-              src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-07-2020_237.jpg"
-              className="aspect-square object-cover"
-            />
-          </div>
-          <div>
-            <h2 className="text-[1.5625em] font-semibold">
-              Unsere Kunden schätzen an uns besonders:
-            </h2>
-            <ul className="list-reset text-black mb-8 text-grey-darker rounded pt-5">
-              <li className="flex items-center mb-3">
-                <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
-                <p>
-                  das Gefühl von Sicherheit und Professionalität, das wir
-                  aufgrund unserer langjährigen Erfahrung vermitteln.
-                </p>
-              </li>
-              <li className="flex items-center mb-3">
-                <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+          <div className="flex space-x-10 pt-10">
+            <div className="w-2/4">
+              <img
+                src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-07-2020_237.jpg"
+                className="aspect-square object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-[1.5625em] font-semibold">
+                Unsere Kunden schätzen an uns besonders:
+              </h2>
+              <ul className="list-reset text-black mb-8 text-grey-darker rounded pt-5">
+                <li className="flex items-center mb-3">
+                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <p>
+                    das Gefühl von Sicherheit und Professionalität, das wir
+                    aufgrund unserer langjährigen Erfahrung vermitteln.
+                  </p>
+                </li>
+                <li className="flex items-center mb-3">
+                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
 
-                <p>
-                  unser umfangreiches Know-how im Bereich Produktion, Logistik,
-                  Vertrieb, Controlling und IT.
-                </p>
-              </li>
-              <li className="flex items-center mb-3">
-                <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
-                <p>
-                  die Art & Weise, wie wir Dinge angehen: Wir erzielen messbare
-                  Ergebnisse, weil wir praxis- & erfolgsorientiert arbeiten.
-                </p>
-              </li>
-              <li className="flex items-center mb-3">
-                <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
-                <p>
-                  unseren Umgang mit den Menschen im Unternehmen. Wir machen
-                  interne Ressourcen zu Beteiligten auf Augenhöhe!
-                </p>
-              </li>
-            </ul>
+                  <p>
+                    unser umfangreiches Know-how im Bereich Produktion,
+                    Logistik, Vertrieb, Controlling und IT.
+                  </p>
+                </li>
+                <li className="flex items-center mb-3">
+                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <p>
+                    die Art & Weise, wie wir Dinge angehen: Wir erzielen
+                    messbare Ergebnisse, weil wir praxis- & erfolgsorientiert
+                    arbeiten.
+                  </p>
+                </li>
+                <li className="flex items-center mb-3">
+                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <p>
+                    unseren Umgang mit den Menschen im Unternehmen. Wir machen
+                    interne Ressourcen zu Beteiligten auf Augenhöhe!
+                  </p>
+                </li>
+              </ul>
 
-            <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
-              <span className="text-[1.125em] font-medium">
-                Hier klicken, um uns persönlich kennenzulernen!
-              </span>
-            </button>
+              <button className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full">
+                <span className="text-[1.125em] font-medium">
+                  Hier klicken, um uns persönlich kennenzulernen!
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
