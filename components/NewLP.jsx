@@ -4,7 +4,11 @@ import {
   ChartBarIcon,
   CheckIcon,
   CursorClickIcon,
+  GlobeIcon,
+  LockOpenIcon,
+  MailIcon,
   MenuIcon,
+  PhoneIcon,
   RefreshIcon,
   ShieldCheckIcon,
   ViewGridIcon,
@@ -621,28 +625,37 @@ export default function NewLP({ blok, page }) {
       <footer className="bg-slate-900 text-white">
         <div className="grid grid-cols-3 max-w-5xl mx-auto py-14">
           <div>
-            <img src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-consulting_white.png" />
+            <img src="/KRAUSS Logo Blau - Hell Negativ.svg" className="w-3/4" />
           </div>
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Informationen</p>
-            <a href="#" className="text-[1.0625em] w-fit">
-              <CheckIcon className="h-5 inline-block mr-2 text-secondary-500" />
+            <a
+              href="https://www.krauss-friends.com/about"
+              className="text-[1.0625em] w-fit"
+            >
+              <GlobeIcon className="h-5 inline-block mr-2 text-secondary-500" />
               Impressum
             </a>
-            <a href="#" className="text-[1.0625em] w-fit">
-              <CheckIcon className="h-5 inline-block mr-2 text-secondary-500" />
+            <a
+              href="https://www.krauss-friends.com/j/privacy"
+              className="text-[1.0625em] w-fit"
+            >
+              <LockOpenIcon className="h-5 inline-block mr-2 text-secondary-500" />
               Datenschutz
             </a>
           </div>
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Kontakt</p>
-            <a href="#" className="text-[1.0625em] w-fit">
-              <CheckIcon className="h-5 inline-block mr-2 text-secondary-500" />
-              Telefon
+            <a href="tel:+49 8191 93759-23" className="text-[1.0625em] w-fit">
+              <PhoneIcon className="h-5 inline-block mr-2 text-secondary-500" />
+              +49 8191 93759-23
             </a>
-            <a href="#" className="text-[1.0625em] w-fit">
-              <CheckIcon className="h-5 inline-block mr-2 text-secondary-500" />
-              info@
+            <a
+              href="mail:info@krauss-friends.com"
+              className="text-[1.0625em] w-fit"
+            >
+              <MailIcon className="h-5 inline-block mr-2 text-secondary-500" />
+              info@krauss-friends.com
             </a>
           </div>
         </div>
