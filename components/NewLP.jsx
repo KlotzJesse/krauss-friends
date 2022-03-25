@@ -16,7 +16,7 @@ import {
 } from "@heroicons/react/outline";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
-import { Fragment } from "react";
+import { Fragment, useRef } from "react";
 import { openPopupWidget } from "react-calendly";
 
 const features = [
@@ -56,19 +56,19 @@ const features = [
 const resources = [
   {
     name: "Unsere Methodik",
-    href: "#",
-  },
-  {
-    name: "Kundenstimmen",
-    href: "#",
+    anchor: "method",
   },
   {
     name: "Vorteile",
-    href: "#",
+    anchor: "vorteile",
+  },
+  {
+    name: "Kundenstimmen",
+    anchor: "customers",
   },
   {
     name: "Über Uns",
-    href: "#",
+    anchor: "about-us",
   },
 ];
 
@@ -93,11 +93,13 @@ export default function NewLP({ blok, page }) {
     }
   };
 
+  const header = useRef();
+
   return (
-    <div className="relative bg-gray-50">
+    <div className="relative bg-gray-50 scroll-smooth">
       <div className="relative overflow-hidden">
         <Popover className="fixed top-0 left-0 w-full z-20 bg-white shadow">
-          <div className="px-4 mx-auto max-w-5xl sm:px-6">
+          <div ref={header} className="px-4 mx-auto max-w-5xl sm:px-6 ">
             <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
@@ -119,13 +121,23 @@ export default function NewLP({ blok, page }) {
               <div className="hidden space-x-10 md:flex">
                 {resources.map((link) => {
                   return (
-                    <a
+                    <button
                       key={link.name}
                       href={link.href}
+                      onClick={() => {
+                        window.scrollTo({
+                          top:
+                            document.getElementById(link.anchor).offsetTop -
+                            header.current.offsetHeight -
+                            40,
+                          left: 0,
+                          behavior: "smooth",
+                        });
+                      }}
                       className="text-base font-medium text-gray-500 hover:text-gray-900"
                     >
                       {link.name}
-                    </a>
+                    </button>
                   );
                 })}
               </div>
@@ -346,7 +358,7 @@ export default function NewLP({ blok, page }) {
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white via-white"></div>
         <div className="relative max-w-5xl mx-auto">
           <div className="max-w-3xl py-20">
-            <h2 className="text-[2.1875em] font-semibold">
+            <h2 id="vorteile" className="text-[2.1875em] font-semibold">
               Die Produktion ist der elementare Motor Ihres Unternehmens
             </h2>
             <p className="text-[1.375em] pt-3">
@@ -373,7 +385,7 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="text-center">
         <div className="max-w-5xl mx-auto py-20">
-          <h2 className="text-[2.1875em] font-semibold">
+          <h2 id="method" className="text-[2.1875em] font-semibold">
             So läuft Ihre Produktion wie ein Uhrwerk, in dem jeder Prozess
             reibungslos aufeinander abgestimmt ist
           </h2>
@@ -421,7 +433,7 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="text-center">
         <div className="max-w-5xl mx-auto py-20">
-          <h2 className="text-[2.1875em] font-semibold">
+          <h2 id="customers" className="text-[2.1875em] font-semibold">
             3 Erfolgsgeschichten von Produktionsunternehmen, die in einer
             ähnlichen Lage waren, wie Sie es gerade sind
           </h2>
@@ -499,7 +511,9 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="bg-white">
         <div className="max-w-5xl mx-auto py-20 ">
-          <h2 className="text-[2.1875em] font-semibold">bowa-consulting</h2>
+          <h2 id="about-us" className="text-[2.1875em] font-semibold">
+            bowa-consulting
+          </h2>
           <p className="text-[1.5625em]">
             Umsetzungsstarke Beratung für Produktions- und Logistikunternehmen
           </p>
