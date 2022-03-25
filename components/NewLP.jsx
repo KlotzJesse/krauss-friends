@@ -254,8 +254,8 @@ export default function NewLP({ blok, page }) {
                     <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                     <p>
                       <b className="underline">Höhere Abschlussquoten</b>, weil
-                      wir Ihre Mitarbeiter zu professionellen "Verkaufstalenten"
-                      machen
+                      wir Ihre Mitarbeiter zu professionellen
+                      &quot;Verkaufstalenten&quot; machen
                     </p>
                   </li>
                   <li className="flex items-center mb-3">
