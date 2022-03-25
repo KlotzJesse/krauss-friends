@@ -55,7 +55,7 @@ const features = [
 ];
 const resources = [
   {
-    name: "Unsere Methodik",
+    name: "Unsere Methode",
     anchor: "method",
   },
   {
@@ -63,7 +63,7 @@ const resources = [
     anchor: "vorteile",
   },
   {
-    name: "Kundenstimmen",
+    name: "Referenzen",
     anchor: "customers",
   },
   {
@@ -171,8 +171,8 @@ export default function NewLP({ blok, page }) {
                     <div>
                       <img
                         className="w-auto h-8"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt="Workflow"
+                        src="/KRAUSS Blau Logo.svg"
+                        alt="KRAUSS Training"
                       />
                     </div>
                     <div className="-mr-2">
@@ -229,11 +229,11 @@ export default function NewLP({ blok, page }) {
         <main className="lg:relative h-full">
           <img
             className="absolute top-0 left-0 object-cover w-full h-full"
-            src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+            src="https://i.postimg.cc/PxRFMZgn/Design-ohne-Titel-13.png"
             alt=""
           />
           <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
-          <div className="relative z-10 w-full pt-16 pb-20 mx-auto text-center max-w-5xl lg:py-48 lg:text-left sm:px-6 px-4">
+          <div className="relative z-10 w-full pt-16 pb-20 mx-auto text-center max-w-5xl lg:pt-36 lg:text-left sm:px-6 px-4">
             <h1 className="text-2xl font-medium tracking-tight  text-secondary-500">
               Für Vertriebs- und Verkaufsleiter:
             </h1>
@@ -253,32 +253,27 @@ export default function NewLP({ blok, page }) {
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                     <p>
-                      Erfahren Sie, wie Sie Ihre aktuellen Ressourcen maximal
-                      ausschöpfen und die{" "}
-                      <strong>
-                        Effizienz Ihrer Produktion um 15 - 30 % steigern.
-                      </strong>
+                      <b className="underline">Höhere Abschlussquoten</b>, weil
+                      wir Ihre Mitarbeiter zu professionellen "Verkaufstalenten"
+                      machen
                     </p>
                   </li>
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
 
                     <p>
-                      Wir zeigen Ihnen, wie Sie Ihre Organisation intelligent
-                      strukturieren, sodass sich Ihre{" "}
-                      <strong>Kosten senken und Ihr Ertrag sich erhöht.</strong>
+                      <b className="underline">
+                        Steigerung der Gesamtperformance
+                      </b>
+                      , da Sie nicht mehr abhängig von einzelnen Superstars im
+                      Team sind.
                     </p>
                   </li>
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                     <p>
-                      Wir unterstützen Sie dabei, geplante Vorhaben wie z. B.
-                      die{" "}
-                      <strong>
-                        Erweiterung Ihrer Produktpalette oder Erweiterungen in
-                        Ihrer Produktion
-                      </strong>{" "}
-                      strategisch klug zu realisieren.
+                      <b className="underline">Mehr Neukunden</b>, da Wachstum
+                      bedeutet, mehr Kunden zu gewinnen als zu verlieren
                     </p>
                   </li>
                 </ul>
@@ -309,9 +304,8 @@ export default function NewLP({ blok, page }) {
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
           </div>
           <p className="text-[1.375em] max-w-3xl mx-auto">
-            Als Geschäftsführer, Produktions-, Logistik-, Werks- und
-            Betriebsleiter kommen Ihnen die folgenden Punkte sicherlich bekannt
-            vor:
+            Als Geschäftsführer, Verkaufsleiter und Vertriebsleiter kommen Ihnen
+            die folgenden Punkte sicherlich bekannt vor:
           </p>
           <div className="pt-10 grid grid-cols-3 gap-10">
             {blocks.map(function (block, index) {
@@ -352,14 +346,14 @@ export default function NewLP({ blok, page }) {
       <div className="relative">
         <img
           className="absolute top-0 left-0 object-cover w-full h-full"
-          src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+          src="https://i.postimg.cc/SKtwgw9P/Design-ohne-Titel-14.png"
           alt=""
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white via-white"></div>
         <div className="relative max-w-5xl mx-auto">
           <div className="max-w-3xl py-20">
             <h2 id="vorteile" className="text-[2.1875em] font-semibold">
-              Die Produktion ist der elementare Motor Ihres Unternehmens
+              Der Vertrieb ist der elementare Motor Ihres Unternehmens
             </h2>
             <p className="text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
@@ -386,7 +380,7 @@ export default function NewLP({ blok, page }) {
       <div className="text-center">
         <div className="max-w-5xl mx-auto py-20">
           <h2 id="method" className="text-[2.1875em] font-semibold">
-            So läuft Ihre Produktion wie ein Uhrwerk, in dem jeder Prozess
+            So läuft Ihr Vertrieb wie ein Uhrwerk, in dem jeder Prozess
             reibungslos aufeinander abgestimmt ist
           </h2>
           <hr className="border-t border-secondary-500 border-[4px] w-[125px] mx-auto mt-7"></hr>
@@ -419,8 +413,8 @@ export default function NewLP({ blok, page }) {
             })}
           </div>
         </div>
-        <div className="relative h-[350px] -mt-48 bg-[url('https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/AdobeStock_88560614.jpg')]">
-          <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-90"></div>
+        <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')]">
+          <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
           <button
             onClick={onClick}
             className="relative top-1/2 bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full max-w-3xl mx-auto mt-10"
@@ -434,8 +428,8 @@ export default function NewLP({ blok, page }) {
       <div className="text-center">
         <div className="max-w-5xl mx-auto py-20">
           <h2 id="customers" className="text-[2.1875em] font-semibold">
-            3 Erfolgsgeschichten von Produktionsunternehmen, die in einer
-            ähnlichen Lage waren, wie Sie es gerade sind
+            3 Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
+            waren, wie Sie es gerade sind
           </h2>
           <hr className="border-t border-secondary-500 border-[4px] w-[125px] mx-auto mt-7"></hr>
           {casestudies.map((study, index) => {
@@ -468,7 +462,7 @@ export default function NewLP({ blok, page }) {
                     </ul>
                   </div>
                   <div>
-                    <img src={study.img} />
+                    <img src={study.img} className="h-[300px]" />
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-10">
@@ -512,37 +506,41 @@ export default function NewLP({ blok, page }) {
       <div className="bg-white">
         <div className="max-w-5xl mx-auto py-20 ">
           <h2 id="about-us" className="text-[2.1875em] font-semibold">
-            bowa-consulting
+            KRAUSS Training
           </h2>
           <p className="text-[1.5625em]">
             Umsetzungsstarke Beratung für Produktions- und Logistikunternehmen
           </p>
           <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
           <div className="flex space-x-10 pt-10">
-            <div className="text-[1.0625em]">
+            <div className="text-[1.0625em] w-1/2">
               <p>
                 In einer Zusammenarbeit mit uns bekommen Sie genau die
-                Sicherheit, die Sie benötigen: Seit über 30 Jahren entwickeln
-                und verbessern wir Produktions- und Logistikabläufe,
-                Materialflüsse und Geschäftsprozesse in mittelständischen
-                Industrieunternehmen und Konzernen.
+                Erfahrungen, die Sie benötigen: Für namhafte Marken betreiben
+                wir seit vielen Jahren in unserem Vertriebsteam die tägliche
+                Terminvereinbarung in der Neukundenakquise. Und deshalb glauben
+                wir zu wissen was die Herausforderungen jetzt und zukünftig sein
+                werden - Wir leben Vertrieb.
               </p>
               <p className="pt-5">
-                <span className="underline">Unser Erfolgsgarantie:</span> Auf
-                Basis der langjährigen Linien- und Beratungserfahrung haben wir
-                uns auf die Umsetzung erfolgreicher Konzepte fokussiert. Der
-                Unterschied zwischen Theorie und Praxis… wir wissen, worauf es
-                ankommt!
+                <span className="underline">Unser Erfolgsgarantie:</span> Wir
+                motivieren & trainieren Ihr Team in echten Praxis Situationen
+                auch außerhalb des Seminarraums und machen Erfolg erlebbar. Die
+                gewonnen Erkenntnisse aus der Übung machen Lust auf
+                Verhaltensänderungen.
               </p>
             </div>
-            <div className="w-5/6">
-              <img src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-07-2020_195.jpg" />
+            <div className="w-1/2">
+              <img
+                src="https://www.krauss-gmbh.com/app/download/14507845733/IMG_2386+%281%29.jpg?t=1636713958"
+                className="aspect-video object-cover"
+              />
             </div>
           </div>
           <div className="flex space-x-10 pt-10">
             <div className="w-2/4">
               <img
-                src="https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/bowa-07-2020_237.jpg"
+                src="https://www.krauss-gmbh.com/app/download/14507852333/_DSC4442.JPG?t=1636714258"
                 className="aspect-square object-cover"
               />
             </div>
@@ -554,16 +552,16 @@ export default function NewLP({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                   <p>
-                    das Gefühl von Sicherheit und Professionalität, das wir
-                    aufgrund unserer langjährigen Erfahrung vermitteln.
+                    Unsere Trainingsmethoden gewährleisten Wissensaufbau durch
+                    systemische Arbeitssequenzen.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
 
                   <p>
-                    unser umfangreiches Know-how im Bereich Produktion,
-                    Logistik, Vertrieb, Controlling und IT.
+                    Der Wissenstransfer reduziert sich auf das Wesentliche und
+                    ist sofort für die Praxis nutzbar.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
@@ -577,8 +575,8 @@ export default function NewLP({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                   <p>
-                    unseren Umgang mit den Menschen im Unternehmen. Wir machen
-                    interne Ressourcen zu Beteiligten auf Augenhöhe!
+                    Ihr Vertrieb hat die Möglichkeit sofort seine Leistung zu
+                    verdoppeln.
                   </p>
                 </li>
               </ul>
@@ -692,21 +690,21 @@ const steps = [
   {
     title: "Beratung",
     description:
-      "Wir werfen einen ersten Blick auf Ihre Strukturen und Prozesse und erstellen im Nachgang gerne ein unverbindliches Angebot.",
+      "Sie bekommen eine auf Ihre Situation angepasste Lösung, um Ihr Unternehmen optimal für die Zukunft aufzustellen.",
   },
 ];
 
 const casestudies = [
   {
-    company: "apra-norm Elektromechanik GmbH",
+    company: "FVZ Convenience GmbH",
     title: `Steigerung des Umsatzes um 23 % durch Optimierung der
   Produktivität und der Flächenressourcen`,
-    group: "Blechverarbeitung / Elektronikgehäusefertigung",
+    group: "HOGA Convenience Produkte",
     workers: "400",
     start: `Die Kapazitäten der apra-norm GmbH waren in den Produktions- und Logistikflächen maximal ausgelastet. Dadurch waren weitere Kundenaufträge sowie internes Wachstum nicht möglich.`,
     solution: `Durch eine optimale Prozess- und Layoutgestaltung und die Optimierung der bestehenden Flächenressourcen konnten wir die Unternehmensentwicklung nachhaltig verbessern.`,
     end: `Dadurch hat sich nicht nur die wirtschaftliche Situation der Firma verbessert, sondern auch die vertrauensvolle Kooperation mit den Mitarbeitern nachhaltig weiterentwickelt.`,
-    img: "https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/3.png",
+    img: "/fvz-convenience-gmbh-logo-vector.svg",
   },
   {
     company: "HOLMER Maschinenbau GmbH",
@@ -725,14 +723,14 @@ const process = [
     title: "Analyse",
     points: [
       "Jedes Unternehmen ist individuell. Wir prüfen Ihre Situation und finden die versteckten Ursachen, die Ihre Effizienz gerade drosseln.",
-      "Als erfahrener Berater blicken wir mit einer Vogelperspektive auf Ihre komplexe Situation und sehen deshalb nachweislich und schnell, an welchen Stellen Sie den größten Effekt in kurzer Zeit erzielen können.",
+      "Als erfahrene Trainer blicken wir mit einer Vogelperspektive auf Ihre komplexe Situation und sehen deshalb nachweislich und schnell, an welchen Stellen Sie den größten Effekt in kurzer Zeit erzielen können.",
     ],
   },
   {
     title: "Konzeption",
     points: [
       "Auf Grundlage der Potenzialanalyse erstellen wir einen klar strukturierten Handlungsplan mit dem Ziel, Ihre Wettbewerbsfähigkeit als Unternehmen zu erhöhen.",
-      "Bei der Erstellung unserer Strategie lassen wir unsere geballte Erfahrung mit einfließen, die wir in über 180 Kundenprojekten gesammelt haben.",
+      "Bei der Erstellung unserer Strategie lassen wir unsere geballte Erfahrung mit einfließen, die wir in über 980 Kundenprojekten gesammelt haben.",
     ],
   },
   {
@@ -746,30 +744,30 @@ const process = [
 ];
 
 const wollen = [
-  "Wollen auch Sie ein gutes Gefühl haben, wenn Sie an Ihre Kennzahlen denken, weil Sie wissen, dass in Ihrer Abteilung alles reibungslos läuft?",
-  "Möchten Sie das maximale Potenzial Ihrer Produktion entfalten, die Effizienz Ihrer Mitarbeiter steigern und gleichzeitig unnötige Kostenfaktoren eliminieren, sodass sich Ihr Ertrag in Ihrer monatlichen Auswertung sichtbar verbessert?",
-  "Dann brauchen Sie eine genaue Übersicht, die Ihnen aufzeigt, an welchen Stellen Sie optimieren müssen.",
+  "Wollen auch Sie ein gutes Gefühl haben, wenn Sie an Ihre Kennzahlen denken, weil Sie wissen, dass in Ihrem Vertrieb alles reibungslos läuft?",
+  "Möchten Sie das maximale Potenzial Ihres Vertriebs entfalten, die Effizienz Ihrer Mitarbeiter steigern und gleichzeitig unnötig verlorene Geschäfte eliminieren, sodass sich Ihr Ertrag in Ihrer monatlichen Auswertung sichtbar verbessert?",
+  "Dann brauchen Sie ein maßgeschneidertes Training, das Ihrem Team die Tools zur Verfügung stellt, die auch wirklich zu mehr Abschlüssen führen.",
   "Zudem benötigen Sie einen glasklaren Schritt-für-Schritt-Plan, den Sie im Anschluss 1:1 umsetzen können.",
 ];
 
 const blocks = [
   {
     text: `Beobachten Sie seit Längerem, dass in Ihrem Unternehmen und in
-    Ihren Prozessen eigentlich viel mehr Potenzial steckt?`,
+    Ihren Vertrieb eigentlich viel mehr Potenzial steckt?`,
   },
   {
     text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein glasklarer Fahrplan, der Ihnen zeigt, wie Sie Ihr Vorhaben am besten umsetzen.`,
   },
   {
-    text: `Dazu kommt der hohe Druck, weil es aufgrund der hohen Nachfrage zu Kapazitätsengpässen kommt. Es wird Zeit, dass Sie die Effizienz Ihrer internen Abläufe erhöhen.`,
+    text: `Dazu kommt der hohe Druck, weil Sie weniger Neukunden gewinnen als sie Bestandskunden verlieren. Es wird Zeit, dass Sie die Effizienz Ihres Vertriebs erhöhen.`,
   },
   {
-    text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihre Abteilungen bereits unterbesetzt sind? Daher muss erst Recht die Produktivität erhöht und Verschwendung eliminiert werden!`,
+    text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihre Abteilungen bereits unterbesetzt sind? Daher muss erst Recht die Produktivität erhöht und Ineffizienz eliminiert werden!`,
   },
   {
-    text: `Außerdem müssten Sie dringend Ihre Herstellungskosten reduzieren, weil der Ertrag seit einiger Zeit zurückgeht und Sie Ihre Zahlen aber profitabel halten wollen?`,
+    text: `Außerdem müssten Sie dringend Ihr Neukundengeschäft vergrößern, weil durch die Krise die Kundenzahl seit einiger Zeit zurückgeht und Sie Ihre Zahlen aber profitabel halten wollen?`,
   },
   {
-    text: `Sie stehen vor der Herausforderung, neue Kundenprojekte oder Produkte zu integrieren und benötigen Unterstützung bei der Prozess- und Layoutgestaltung?`,
+    text: `Sie stehen vor der Herausforderung, Preisanpassungen erfolgreich durchzusetzen oder mehr Neukunden zu gewinnen und benötigen Unterstützung im Verkauf?`,
   },
 ];
