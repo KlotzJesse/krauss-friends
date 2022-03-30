@@ -297,14 +297,18 @@ export default function NewLP({ blok, page }) {
             Haben auch Sie das Gefühl, in Ihrem Vertrieb müsste eine Veränderung
             geschehen, allerdings wissen Sie nicht genau, wie Sie vorgehen
             sollen?
-                      </h2>*/}
+                      </h2>
           <div className="py-7">
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
           </div>
-          <p className="text-[1.375em] max-w-3xl mx-auto">
+          */}
+          <p className="text-[1.75em] font-semibold">
             Als Geschäftsführer, Verkaufsleiter und Vertriebsleiter kommen Ihnen
             die folgenden Punkte sicherlich bekannt vor:
           </p>
+          <div className="py-7">
+            <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
+          </div>
           <div className="pt-10 grid grid-cols-3 gap-10">
             {blocks.map(function (block, index) {
               return (
