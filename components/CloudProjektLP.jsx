@@ -59,6 +59,10 @@ const resources = [
     anchor: "method",
   },
   {
+    name: "Vorteile",
+    anchor: "vorteile",
+  },
+  {
     name: "Referenzen",
     anchor: "customers",
   },
@@ -72,7 +76,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NewLP({ blok, page }) {
+export default function CloudProjektLP({ blok, page }) {
   const onClick = () => {
     if (page.calendlyURL) {
       trackGoal("03RLAFSO", 0); //03RLAFSO
@@ -268,10 +272,8 @@ export default function NewLP({ blok, page }) {
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                     <p>
-                      <b className="underline">
-                        Preise erfolgreich durchsetzen
-                      </b>
-                      , da nirgends soviel Ertrag gewonnen oder verloren wird
+                      <b className="underline">Mehr Neukunden</b>, da Wachstum
+                      bedeutet, mehr Kunden zu gewinnen als zu verlieren
                     </p>
                   </li>
                 </ul>
@@ -293,11 +295,11 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className=" bg-slate-900 text-white">
         <div className="max-w-5xl mx-auto text-center pb-20 pt-20">
-          {/*<!--<h2 className="text-[1.75em] font-semibold">
-            Haben auch Sie das Gefühl, in Ihrem Vertrieb müsste eine Veränderung
+          <h2 className="text-[1.75em] font-semibold">
+            Haben auch Sie das Gefühl, in Ihrem Betrieb müsste eine Veränderung
             geschehen, allerdings wissen Sie nicht genau, wie Sie vorgehen
             sollen?
-                      </h2>*/}
+          </h2>
           <div className="py-7">
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
           </div>
@@ -343,14 +345,14 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="relative">
         <img
-          className="absolute top-0 right-0 object-cover w-1/2 h-full"
-          src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=cytonn-photography-vWchRczcQwM-unsplash.jpg"
+          className="absolute top-0 left-0 object-cover w-full h-full"
+          src="https://i.postimg.cc/SKtwgw9P/Design-ohne-Titel-14.png"
           alt=""
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white via-white"></div>
         <div className="relative max-w-5xl mx-auto">
           <div className="max-w-3xl py-20">
-            <h2 className="text-[2.1875em] font-semibold">
+            <h2 id="vorteile" className="text-[2.1875em] font-semibold">
               Der Vertrieb ist der elementare Motor Ihres Unternehmens
             </h2>
             <p className="text-[1.375em] pt-3">
@@ -411,7 +413,7 @@ export default function NewLP({ blok, page }) {
             })}
           </div>
         </div>
-        <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')] bg-cover">
+        <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')]">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
           <button
             onClick={onClick}
@@ -507,7 +509,7 @@ export default function NewLP({ blok, page }) {
             KRAUSS Training
           </h2>
           <p className="text-[1.5625em]">
-            Praxisorientiertes Training für mehr Wachstum
+            Umsetzungsstarke Beratung für Produktions- und Logistikunternehmen
           </p>
           <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
           <div className="flex space-x-10 pt-10">
@@ -550,16 +552,16 @@ export default function NewLP({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                   <p>
-                    die Trainingsmethoden, die Wissensaufbau durch systemische
-                    Arbeitssequenzen gewährleisten.
+                    Unsere Trainingsmethoden gewährleisten Wissensaufbau durch
+                    systemische Arbeitssequenzen.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
 
                   <p>
-                    den reduzierten Wissenstransfer auf das Wesentliche und
-                    sofortige anwendbarkeit in der Praxis
+                    Der Wissenstransfer reduziert sich auf das Wesentliche und
+                    ist sofort für die Praxis nutzbar.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
@@ -573,8 +575,8 @@ export default function NewLP({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
                   <p>
-                    das der Vertrieb durch ein Training sofort die Möglichkeit
-                    erhält seine Leistung zu verdoppeln
+                    Ihr Vertrieb hat die Möglichkeit sofort seine Leistung zu
+                    verdoppeln.
                   </p>
                 </li>
               </ul>
@@ -598,7 +600,7 @@ export default function NewLP({ blok, page }) {
           alt=""
         />
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
-        <div className="relative z-10 w-full pt-16 pb-20 mx-auto text-center max-w-5xl lg:py-24 sm:px-6 px-4">
+        <div className="relative z-10 w-full pt-16 pb-20 mx-auto text-center max-w-5xl lg:py-48 sm:px-6 px-4">
           <h1 className="text-[2.1875em] font-semibold tracking-tight">
             Für Vertriebs- und Verkaufsleiter:
           </h1>
@@ -641,7 +643,6 @@ export default function NewLP({ blok, page }) {
             <p className="text-[1.25em] font-semibold pb-2">Informationen</p>
             <a
               href="https://www.krauss-friends.com/about"
-              target="_blank"
               className="text-[1.0625em] w-fit"
             >
               <GlobeIcon className="h-5 inline-block mr-2 text-secondary-500" />
@@ -649,7 +650,6 @@ export default function NewLP({ blok, page }) {
             </a>
             <a
               href="https://www.krauss-friends.com/j/privacy"
-              target="_blank"
               className="text-[1.0625em] w-fit"
             >
               <LockOpenIcon className="h-5 inline-block mr-2 text-secondary-500" />
@@ -658,17 +658,12 @@ export default function NewLP({ blok, page }) {
           </div>
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Kontakt</p>
-            <a
-              href="tel:+49 8191 93759-23"
-              target="_blank"
-              className="text-[1.0625em] w-fit"
-            >
+            <a href="tel:+49 8191 93759-23" className="text-[1.0625em] w-fit">
               <PhoneIcon className="h-5 inline-block mr-2 text-secondary-500" />
               +49 8191 93759-23
             </a>
             <a
               href="mail:info@krauss-friends.com"
-              target="_blank"
               className="text-[1.0625em] w-fit"
             >
               <MailIcon className="h-5 inline-block mr-2 text-secondary-500" />
@@ -693,7 +688,7 @@ const steps = [
       "Wir lernen uns per Telefon kennen und sprechen über Ihre aktuellen Herausforderungen.",
   },
   {
-    title: "Training",
+    title: "Beratung",
     description:
       "Sie bekommen eine auf Ihre Situation angepasste Lösung, um Ihr Unternehmen optimal für die Zukunft aufzustellen.",
   },

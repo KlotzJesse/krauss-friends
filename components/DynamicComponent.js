@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import CloudProjektLP from "./CloudProjektLP";
 import ExitIntent from "./ExitIntent";
 import NewLP from "./NewLP";
 import Text from "./Text";
@@ -76,6 +77,7 @@ const Components = {
   text: Text,
   exitIntent: ExitIntent,
   newLP: NewLP,
+  cloudProjektLP: CloudProjektLP,
 };
 
 const DynamicComponent = ({ blok, page }) => {
