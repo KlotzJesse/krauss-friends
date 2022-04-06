@@ -603,6 +603,7 @@ export default function NewLP({ blok, page }) {
             <a
               href="https://www.krauss-friends.com/about"
               target="_blank"
+              rel="noreferrer"
               className="text-[1.0625em] w-fit"
             >
               <GlobeIcon className="inline-block h-5 mr-2 text-secondary-500" />
@@ -611,6 +612,7 @@ export default function NewLP({ blok, page }) {
             <a
               href="https://www.krauss-friends.com/j/privacy"
               target="_blank"
+              rel="noreferrer"
               className="text-[1.0625em] w-fit"
             >
               <LockOpenIcon className="inline-block h-5 mr-2 text-secondary-500" />
@@ -622,6 +624,7 @@ export default function NewLP({ blok, page }) {
             <a
               href="tel:+49 8191 93759-23"
               target="_blank"
+              rel="noreferrer"
               className="text-[1.0625em] w-fit"
             >
               <PhoneIcon className="inline-block h-5 mr-2 text-secondary-500" />
@@ -630,6 +633,7 @@ export default function NewLP({ blok, page }) {
             <a
               href="mail:info@krauss-friends.com"
               target="_blank"
+              rel="noreferrer"
               className="text-[1.0625em] w-fit"
             >
               <MailIcon className="inline-block h-5 mr-2 text-secondary-500" />
