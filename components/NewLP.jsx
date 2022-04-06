@@ -187,7 +187,7 @@ export default function NewLP({ blok, page }) {
             <h1 className="font-medium tracking-tight md:text-2xl text-secondary-500">
               Für Vertriebs- und Verkaufsleiter:
             </h1>
-            <p className=" text-xl md:text-[2.6em] font-bold tracking-tight pt-5">
+            <p className=" text-xl md:text-[2.6em] font-bold tracking-tight pt-5 md:leading-10">
               Mehr Abschlüsse und Neukunden durch ein hochmotiviertes
               Vertriebsteam.
             </p>
@@ -308,17 +308,20 @@ export default function NewLP({ blok, page }) {
         <div className="absolute top-0 left-0 hidden w-full h-full md:block bg-gradient-to-r from-white via-white"></div>
         <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
-            <h2 className="text-[2.1875em] font-semibold">
+            <h2 className="text-2xl md:text-[2.1875em] font-semibold">
               Der Vertrieb ist der elementare Motor Ihres Unternehmens
             </h2>
-            <p className="text-[1.375em] pt-3">
+            <p className="text-lg md:text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
             </p>
             <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:m-0"></hr>
             <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
               {wollen.map((will) => {
                 return (
-                  <li key={will} className="flex items-center mb-3">
+                  <li
+                    key={will}
+                    className="flex flex-col items-center mb-3 md:flex-row"
+                  >
                     <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>{will}</p>
                   </li>
@@ -335,7 +338,7 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="text-center">
         <div className="max-w-5xl px-10 py-20 mx-auto">
-          <h2 id="method" className="text-[2.1875em] font-semibold">
+          <h2 id="method" className="text-2xl md:text-[2.1875em] font-semibold">
             So läuft Ihr Vertrieb wie ein Uhrwerk, in dem jeder Prozess
             reibungslos aufeinander abgestimmt ist
           </h2>
@@ -372,10 +375,10 @@ export default function NewLP({ blok, page }) {
         <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')] bg-cover">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
 
-          <div className="relative flex items-center justify-center px-10 pt-40 md:pt-10">
+          <div className="relative flex items-center justify-center px-10 pt-40">
             <button
               onClick={onClick}
-              className="w-full max-w-3xl px-10 py-3 mx-auto text-white transition-all duration-300 ease-in-out transform top-1/2 bg-secondary-500 hover:scale-110"
+              className="w-full max-w-3xl px-10 py-3 mx-auto text-white transition-all duration-300 ease-in-out transform md:relative top-1/2 bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.5625em] font-medium">
                 Fragen Sie jetzt ein unverbindliches Erstgespräch an!
@@ -386,7 +389,10 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="text-center">
         <div className="max-w-5xl px-10 py-20 mx-auto">
-          <h2 id="customers" className="text-[2.1875em] font-semibold">
+          <h2
+            id="customers"
+            className="text-2xl md:text-[2.1875em] font-semibold"
+          >
             3 Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
             waren, wie Sie es gerade sind
           </h2>
@@ -397,7 +403,7 @@ export default function NewLP({ blok, page }) {
                 <div className=" absolute top-0 -left-36 text-[12.5em] italic font-semibold text-gray-200">
                   {index + 1}
                 </div>
-                <div className="flex items-center">
+                <div className="flex flex-col-reverse items-center md:flex-row">
                   <div>
                     <h3 className="text-[1.25em] font-semibold text-secondary-500">
                       {study.company}
@@ -421,7 +427,7 @@ export default function NewLP({ blok, page }) {
                     </ul>
                   </div>
                   <div>
-                    <img src={study.img} className="h-[300px]" />
+                    <img src={study.img} className="md:m-h-[300px] w-full" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -464,7 +470,10 @@ export default function NewLP({ blok, page }) {
       </div>
       <div className="bg-white">
         <div className="max-w-5xl px-10 py-20 mx-auto">
-          <h2 id="about-us" className="text-[2.1875em] font-semibold">
+          <h2
+            id="about-us"
+            className="text-2xl md:text-[2.1875em] font-semibold"
+          >
             KRAUSS Training
           </h2>
           <p className="text-[1.5625em]">
@@ -560,7 +569,7 @@ export default function NewLP({ blok, page }) {
         />
         <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
         <div className="relative z-10 w-full max-w-5xl px-4 pt-16 pb-20 mx-auto text-center lg:py-24 sm:px-6">
-          <h1 className="text-[2.1875em] font-semibold tracking-tight">
+          <h1 className="text-2xl md:text-[2.1875em] font-semibold tracking-tight">
             Für Vertriebs- und Verkaufsleiter:
           </h1>
           <div className="grid grid-cols-1 gap-10 pt-10 md:grid-cols-3">
@@ -594,9 +603,12 @@ export default function NewLP({ blok, page }) {
         </div>
       </div>
       <footer className="text-white bg-slate-900">
-        <div className="grid max-w-5xl grid-cols-3 px-10 py-14">
+        <div className="grid max-w-5xl grid-cols-1 gap-10 px-10 mx-auto md:gap-0 md:grid-cols-3 py-14">
           <div>
-            <img src="/KRAUSS Logo Blau - Hell Negativ.svg" className="w-3/4" />
+            <img
+              src="/KRAUSS Logo Blau - Hell Negativ.svg"
+              className="w-3/5 md:w-3/4"
+            />
           </div>
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Informationen</p>
