@@ -9,6 +9,7 @@ import {
   PhoneIcon,
   XIcon,
 } from "@heroicons/react/outline";
+import { ChevronRightIcon } from "@heroicons/react/solid";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import { Fragment, useRef } from "react";
@@ -63,8 +64,8 @@ export default function CloudProjektLP({ blok, page }) {
                   <span className="sr-only">KRAUSS Training</span>
                   <img
                     className="w-auto h-8 sm:h-10"
-                    src="/KRAUSS Logo Blau.svg"
-                    alt=""
+                    src="/logo-cloudprojekt.png"
+                    alt="CloudProjekt"
                   />
                 </a>
               </div>
@@ -103,7 +104,7 @@ export default function CloudProjektLP({ blok, page }) {
                   onClick={onClick}
                   className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent bg-secondary-500 whitespace-nowrap hover:bg-secondary-600"
                 >
-                  Erstgespräch sichern!
+                  Messekarte sichern!
                 </button>
               </div>
             </div>
@@ -128,12 +129,12 @@ export default function CloudProjektLP({ blok, page }) {
                     <div>
                       <img
                         className="w-auto h-8"
-                        src="/KRAUSS Logo Blau.svg"
-                        alt="KRAUSS Training"
+                        src="/logo-cloudprojekt.png"
+                        alt="CloudProjekt"
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-secondary-500">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="w-6 h-6" aria-hidden="true" />
                       </Popover.Button>
@@ -168,7 +169,7 @@ export default function CloudProjektLP({ blok, page }) {
                     onClick={onClick}
                     className="items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent bg-secondary-500 whitespace-nowrap hover:bg-secondary-600"
                   >
-                    Erstgespräch sichern!
+                    Messekarte sichern!
                   </button>
                 </div>
               </div>
@@ -176,74 +177,218 @@ export default function CloudProjektLP({ blok, page }) {
           </Transition>
         </Popover>
 
-        <main className="relative h-full">
-          <img
-            className="absolute top-0 left-0 object-cover w-screen h-full"
-            src="https://i.postimg.cc/PxRFMZgn/Design-ohne-Titel-13.png"
-            alt=""
-          />
-          <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
-          <div className="relative z-10 w-full max-w-5xl px-4 pt-24 pb-20 mx-auto text-center lg:pt-36 lg:text-left sm:px-6">
-            <h1 className="font-medium tracking-tight md:text-2xl text-secondary-500">
-              Für Vertriebs- und Verkaufsleiter:
-            </h1>
-            <p className=" text-xl md:text-[2.6em] font-bold tracking-tight pt-5">
-              Mehr Abschlüsse und Neukunden durch ein hochmotiviertes
-              Vertriebsteam.
-            </p>
-            <div className="flex flex-col w-full pt-5 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
-              <div className="md:w-[60%]">
-                <img
-                  src="https://a.storyblok.com/f/141545/1920x1080/eb6dacdfff/krauss-interview.jpg"
-                  className="shadow-xl"
-                />
-              </div>
-              <div className="md:w-[40%]">
-                <ul className="mb-8 text-black rounded list-reset text-grey-darker">
-                  <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
-                    <p>
-                      <b className="underline">Höhere Abschlussquoten</b>, weil
-                      wir Ihre Mitarbeiter zu professionellen
-                      &quot;Verkaufstalenten&quot; machen
-                    </p>
-                  </li>
-                  <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
-
-                    <p>
-                      <b className="underline">
-                        Steigerung der Gesamtperformance
-                      </b>
-                      , da Sie nicht mehr abhängig von einzelnen Superstars im
-                      Team sind.
-                    </p>
-                  </li>
-                  <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
-                    <p>
-                      <b className="underline">
-                        Preise erfolgreich durchsetzen
-                      </b>
-                      , da nirgends soviel Ertrag gewonnen oder verloren wird
-                    </p>
-                  </li>
-                </ul>
-                <button
-                  onClick={onClick}
-                  className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
+        <div className="relative overflow-hidden bg-gray-800">
+          <div
+            className="hidden sm:block sm:absolute sm:inset-0"
+            aria-hidden="true"
+          >
+            <svg
+              className="absolute bottom-0 right-0 mb-48 text-gray-700 transform translate-x-1/2 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
+              width={364}
+              height={384}
+              viewBox="0 0 364 384"
+              fill="none"
+            >
+              <defs>
+                <pattern
+                  id="eab71dd9-9d7a-47bd-8044-256344ee00d0"
+                  x={0}
+                  y={0}
+                  width={20}
+                  height={20}
+                  patternUnits="userSpaceOnUse"
                 >
-                  <span className="text-lg md:text-[1.375em] font-bold">
-                    Jetzt Erstgespräch sichern!
-                  </span>
-                  <span className="block font-medium text-gray-200">
-                    kostenfrei & unverbindlich
-                  </span>
-                </button>
-              </div>
-            </div>
+                  <rect x={0} y={0} width={4} height={4} fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect
+                width={364}
+                height={384}
+                fill="url(#eab71dd9-9d7a-47bd-8044-256344ee00d0)"
+              />
+            </svg>
           </div>
-        </main>
+          <div className="relative pt-6 pb-16 sm:pb-24">
+            <main className="mt-16 sm:mt-24">
+              <div className="mx-auto max-w-7xl">
+                <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+                  <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+                    <div>
+                      <div
+                        href="#"
+                        className="inline-flex items-center p-1 pr-2 text-white bg-gray-900 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
+                      >
+                        <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-secondary-500 rounded-full">
+                          Kostenlose Messekarte für
+                        </span>
+                        <span className="ml-4 text-sm">
+                          Altenpflege Messe Essen
+                        </span>
+                        <ChevronRightIcon
+                          className="w-5 h-5 ml-2 text-gray-500"
+                          aria-hidden="true"
+                        />
+                      </div>
+                      <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
+                        <span className="md:block">Sicheren Sie sich Ihre</span>{" "}
+                        <span className="text-secondary-400 md:block">
+                          kostenlose Messekarte
+                        </span>
+                      </h1>
+                      <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                        Wir bieten Ihnen innovative und kostengünstige Lösungen
+                        im Bereich Lichtrufanlagen sowie Ruf- und
+                        Ortungssystemen. Personen in Krankenhäusern oder
+                        Pflegeheimen sind häufig auf die Unterstützung einer
+                        Pflegekraft angewiesen.
+                      </p>
+                      <p className="mt-8 text-sm font-semibold tracking-wide text-white uppercase sm:mt-10">
+                        Treffen Sie uns auf der
+                      </p>
+                      <div className="w-full mt-5 sm:mx-auto sm:max-w-lg lg:ml-0">
+                        <div className="flex items-start justify-center space-x-2">
+                          <div className="flex justify-center w-1/3 px-2 py-3 bg-white rounded-2xl">
+                            <img
+                              className="h-5 sm:h-8"
+                              src="/ap-logo.png"
+                              alt="Altenpflege Messe Essen"
+                            />
+                          </div>
+                          <div className="flex justify-center w-1/3 px-2 py-3 bg-white rounded-2xl">
+                            <img
+                              className="h-5 sm:h-8"
+                              src="/dmea.svg"
+                              alt="DMEA Berlin"
+                            />
+                          </div>
+                          <div className="flex justify-center w-1/3 px-2 py-3 bg-white rounded-2xl">
+                            <img
+                              className="h-5 sm:h-8"
+                              src="/gworld.svg"
+                              alt="@gastronomy.world"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
+                    <div className="bg-white sm:max-w-md sm:w-full sm:mx-auto sm:rounded-lg sm:overflow-hidden">
+                      <div className="px-4 py-8 sm:px-10">
+                        <div>
+                          <p className="text-3xl font-medium text-center text-gray-700">
+                            Kostenlose Messekarte sichern
+                          </p>
+                        </div>
+
+                        <div className="relative mt-6">
+                          <div
+                            className="absolute inset-0 flex items-center"
+                            aria-hidden="true"
+                          >
+                            <div className="w-full border-t border-gray-300" />
+                          </div>
+                          <div className="relative flex justify-center text-sm"></div>
+                        </div>
+
+                        <div className="mt-6">
+                          <form action="#" method="POST" className="space-y-6">
+                            <div>
+                              <label htmlFor="name" className="sr-only">
+                                Name
+                              </label>
+                              <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                autoComplete="name"
+                                placeholder="Vollständiger Name"
+                                required
+                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:text-sm"
+                              />
+                            </div>
+
+                            <div>
+                              <label htmlFor="email" className="sr-only">
+                                E-Mail
+                              </label>
+                              <input
+                                type="text"
+                                name="email"
+                                id="email"
+                                autoComplete="email"
+                                placeholder="E-Mail"
+                                required
+                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:text-sm"
+                              />
+                            </div>
+
+                            <div>
+                              <label htmlFor="phone" className="sr-only">
+                                Telefon
+                              </label>
+                              <input
+                                id="phone"
+                                name="phone"
+                                type="tel"
+                                placeholder="Telefon"
+                                autoComplete="tel"
+                                required
+                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:text-sm"
+                              />
+                            </div>
+
+                            <div>
+                              <div className="max-w-sm mx-auto">
+                                <button
+                                  onClick={onClick}
+                                  className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
+                                >
+                                  <span className="text-[1.375em] font-bold">
+                                    Jetzt Messekarte sichern!
+                                  </span>
+                                  <span className="block font-medium text-gray-200">
+                                    kostenfrei & unverbindlich
+                                  </span>
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div className="px-4 py-6 border-t-2 border-gray-200 bg-gray-50 sm:px-10">
+                        <p className="text-xs leading-5 text-gray-500">
+                          Mit dem absenden, aktzeptieren Sie die{" "}
+                          <a
+                            href="#"
+                            className="font-medium text-gray-900 hover:underline"
+                          >
+                            Allgemeinen Bedingungen
+                          </a>
+                          ,{" "}
+                          <a
+                            href="#"
+                            className="font-medium text-gray-900 hover:underline"
+                          >
+                            Datenschutzerklärung
+                          </a>{" "}
+                          und{" "}
+                          <a
+                            href="#"
+                            className="font-medium text-gray-900 hover:underline"
+                          >
+                            Cookie-Richtlinien
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
       </div>
       <div className="text-white bg-slate-900">
         <div className="max-w-5xl px-10 pt-20 pb-20 mx-auto text-center">
@@ -290,7 +435,7 @@ export default function CloudProjektLP({ blok, page }) {
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.375em] font-bold">
-                Jetzt Erstgespräch sichern!
+                Jetzt Messekarte sichern!
               </span>
               <span className="block font-medium text-gray-200">
                 kostenfrei & unverbindlich
@@ -308,17 +453,20 @@ export default function CloudProjektLP({ blok, page }) {
         <div className="absolute top-0 left-0 hidden w-full h-full md:block bg-gradient-to-r from-white via-white"></div>
         <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
-            <h2 className="text-[2.1875em] font-semibold">
+            <h2 className="text-2xl md:text-[2.1875em] font-semibold">
               Der Vertrieb ist der elementare Motor Ihres Unternehmens
             </h2>
-            <p className="text-[1.375em] pt-3">
+            <p className="text-lg md:text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
             </p>
             <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:m-0"></hr>
             <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
               {wollen.map((will) => {
                 return (
-                  <li key={will} className="flex items-center mb-3">
+                  <li
+                    key={will}
+                    className="flex flex-col items-center mb-3 md:flex-row"
+                  >
                     <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>{will}</p>
                   </li>
@@ -335,7 +483,7 @@ export default function CloudProjektLP({ blok, page }) {
       </div>
       <div className="text-center">
         <div className="max-w-5xl px-10 py-20 mx-auto">
-          <h2 id="method" className="text-[2.1875em] font-semibold">
+          <h2 id="method" className="text-2xl md:text-[2.1875em] font-semibold">
             So läuft Ihr Vertrieb wie ein Uhrwerk, in dem jeder Prozess
             reibungslos aufeinander abgestimmt ist
           </h2>
@@ -372,13 +520,13 @@ export default function CloudProjektLP({ blok, page }) {
         <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')] bg-cover">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
 
-          <div className="relative flex items-center justify-center px-10 pt-40 md:pt-10">
+          <div className="relative flex items-center justify-center px-10 pt-40">
             <button
               onClick={onClick}
-              className="w-full max-w-3xl px-10 py-3 mx-auto text-white transition-all duration-300 ease-in-out transform top-1/2 bg-secondary-500 hover:scale-110"
+              className="w-full max-w-3xl px-10 py-3 mx-auto text-white transition-all duration-300 ease-in-out transform md:relative top-1/2 bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.5625em] font-medium">
-                Fragen Sie jetzt ein unverbindliches Erstgespräch an!
+                Fragen Sie jetzt ein unverbindliches Messekarte an!
               </span>
             </button>
           </div>
@@ -386,7 +534,10 @@ export default function CloudProjektLP({ blok, page }) {
       </div>
       <div className="text-center">
         <div className="max-w-5xl px-10 py-20 mx-auto">
-          <h2 id="customers" className="text-[2.1875em] font-semibold">
+          <h2
+            id="customers"
+            className="text-2xl md:text-[2.1875em] font-semibold"
+          >
             3 Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
             waren, wie Sie es gerade sind
           </h2>
@@ -397,7 +548,7 @@ export default function CloudProjektLP({ blok, page }) {
                 <div className=" absolute top-0 -left-36 text-[12.5em] italic font-semibold text-gray-200">
                   {index + 1}
                 </div>
-                <div className="flex items-center">
+                <div className="flex flex-col-reverse items-center md:flex-row">
                   <div>
                     <h3 className="text-[1.25em] font-semibold text-secondary-500">
                       {study.company}
@@ -421,7 +572,7 @@ export default function CloudProjektLP({ blok, page }) {
                     </ul>
                   </div>
                   <div>
-                    <img src={study.img} className="h-[300px]" />
+                    <img src={study.img} className="md:m-h-[300px] w-full" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -453,7 +604,7 @@ export default function CloudProjektLP({ blok, page }) {
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.375em] font-bold">
-                Jetzt Erstgespräch sichern!
+                Jetzt Messekarte sichern!
               </span>
               <span className="block font-medium text-gray-200">
                 kostenfrei & unverbindlich
@@ -464,7 +615,10 @@ export default function CloudProjektLP({ blok, page }) {
       </div>
       <div className="bg-white">
         <div className="max-w-5xl px-10 py-20 mx-auto">
-          <h2 id="about-us" className="text-[2.1875em] font-semibold">
+          <h2
+            id="about-us"
+            className="text-2xl md:text-[2.1875em] font-semibold"
+          >
             KRAUSS Training
           </h2>
           <p className="text-[1.5625em]">
@@ -560,7 +714,7 @@ export default function CloudProjektLP({ blok, page }) {
         />
         <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
         <div className="relative z-10 w-full max-w-5xl px-4 pt-16 pb-20 mx-auto text-center lg:py-24 sm:px-6">
-          <h1 className="text-[2.1875em] font-semibold tracking-tight">
+          <h1 className="text-2xl md:text-[2.1875em] font-semibold tracking-tight">
             Für Vertriebs- und Verkaufsleiter:
           </h1>
           <div className="grid grid-cols-1 gap-10 pt-10 md:grid-cols-3">
@@ -584,7 +738,7 @@ export default function CloudProjektLP({ blok, page }) {
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.375em] font-bold">
-                Jetzt Erstgespräch sichern!
+                Jetzt Messekarte sichern!
               </span>
               <span className="block font-medium text-gray-200">
                 kostenfrei & unverbindlich
@@ -594,14 +748,17 @@ export default function CloudProjektLP({ blok, page }) {
         </div>
       </div>
       <footer className="text-white bg-slate-900">
-        <div className="grid max-w-5xl grid-cols-3 px-10 py-14">
+        <div className="grid max-w-5xl grid-cols-1 gap-10 px-10 mx-auto md:gap-0 md:grid-cols-3 py-14">
           <div>
-            <img src="/KRAUSS Logo Blau - Hell Negativ.svg" className="w-3/4" />
+            <img
+              src="/KRAUSS Logo Blau - Hell Negativ.svg"
+              className="w-3/5 md:w-3/4"
+            />
           </div>
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Informationen</p>
             <a
-              href="https://www.krauss-friends.com/about"
+              href="https://www.gastronomy-world.com/about"
               target="_blank"
               rel="noreferrer"
               className="text-[1.0625em] w-fit"
@@ -610,7 +767,7 @@ export default function CloudProjektLP({ blok, page }) {
               Impressum
             </a>
             <a
-              href="https://www.krauss-friends.com/j/privacy"
+              href="https://www.gastronomy.world.com/j/privacy"
               target="_blank"
               rel="noreferrer"
               className="text-[1.0625em] w-fit"
@@ -631,13 +788,13 @@ export default function CloudProjektLP({ blok, page }) {
               +49 8191 93759-23
             </a>
             <a
-              href="mail:info@krauss-friends.com"
+              href="mail:info@gastronomy.world"
               target="_blank"
               rel="noreferrer"
               className="text-[1.0625em] w-fit"
             >
               <MailIcon className="inline-block h-5 mr-2 text-secondary-500" />
-              info@krauss-friends.com
+              info@gastronomy.world
             </a>
           </div>
         </div>
@@ -650,10 +807,10 @@ const steps = [
   {
     title: "Termin anfragen",
     description:
-      "Vereinbaren Sie jetzt ein kostenloses Erstgespräch und verabreden mit uns einen passenden Termin.",
+      "Vereinbaren Sie jetzt ein kostenloses Messekarte und verabreden mit uns einen passenden Termin.",
   },
   {
-    title: "Erstgespräch",
+    title: "Messekarte",
     description:
       "Wir lernen uns per Telefon kennen und sprechen über Ihre aktuellen Herausforderungen.",
   },
