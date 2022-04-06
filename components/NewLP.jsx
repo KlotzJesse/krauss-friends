@@ -1,17 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Popover, Transition } from "@headlessui/react";
 import {
-  ChartBarIcon,
   CheckIcon,
-  CursorClickIcon,
   GlobeIcon,
   LockOpenIcon,
   MailIcon,
   MenuIcon,
   PhoneIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
   XIcon,
 } from "@heroicons/react/outline";
 import { createPopup } from "@typeform/embed";
@@ -19,40 +14,6 @@ import { trackGoal } from "fathom-client";
 import { Fragment, useRef } from "react";
 import { openPopupWidget } from "react-calendly";
 
-const features = [
-  {
-    name: "Analytics",
-    href: "#",
-    description:
-      "Get a better understanding of where your traffic is coming from.",
-    icon: ChartBarIcon,
-  },
-  {
-    name: "Engagement",
-    href: "#",
-    description: "Speak directly to your customers in a more meaningful way.",
-    icon: CursorClickIcon,
-  },
-  {
-    name: "Security",
-    href: "#",
-    description: "Your customers' data will be safe and secure.",
-    icon: ShieldCheckIcon,
-  },
-  {
-    name: "Integrations",
-    href: "#",
-    description: "Connect with third-party tools that you're already using.",
-    icon: ViewGridIcon,
-  },
-  {
-    name: "Automations",
-    href: "#",
-    description:
-      "Build strategic funnels that will drive your customers to convert",
-    icon: RefreshIcon,
-  },
-];
 const resources = [
   {
     name: "Unsere Methode",
@@ -94,8 +55,8 @@ export default function NewLP({ blok, page }) {
   return (
     <div className="relative bg-gray-50 scroll-smooth">
       <div className="relative overflow-hidden">
-        <Popover className="fixed top-0 left-0 w-full z-20 bg-white shadow">
-          <div ref={header} className="px-4 mx-auto max-w-5xl sm:px-6 ">
+        <Popover className="fixed top-0 left-0 z-20 w-screen bg-white shadow">
+          <div ref={header} className="max-w-5xl px-4 mx-auto sm:px-6 ">
             <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
@@ -140,7 +101,7 @@ export default function NewLP({ blok, page }) {
               <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <button
                   onClick={onClick}
-                  className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-secondary-500 border border-transparent whitespace-nowrap hover:bg-secondary-600"
+                  className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white border border-transparent bg-secondary-500 whitespace-nowrap hover:bg-secondary-600"
                 >
                   Erstgespräch sichern!
                 </button>
@@ -167,7 +128,7 @@ export default function NewLP({ blok, page }) {
                     <div>
                       <img
                         className="w-auto h-8"
-                        src="/KRAUSS Blau Logo.svg"
+                        src="/KRAUSS Logo Blau.svg"
                         alt="KRAUSS Training"
                       />
                     </div>
@@ -180,74 +141,67 @@ export default function NewLP({ blok, page }) {
                   </div>
                   <div className="mt-6">
                     <nav className="grid gap-y-8">
-                      {features.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="flex items-center p-3 -m-3 rounded-md hover:bg-gray-50"
+                      {resources.map((link) => (
+                        <button
+                          key={link.name}
+                          href={link.href}
+                          onClick={() => {
+                            window.scrollTo({
+                              top:
+                                document.getElementById(link.anchor).offsetTop -
+                                header.current.offsetHeight -
+                                40,
+                              left: 0,
+                              behavior: "smooth",
+                            });
+                          }}
+                          className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
                         >
-                          <item.icon
-                            className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                            aria-hidden="true"
-                          />
-                          <span className="ml-3 text-base font-medium text-gray-900">
-                            {item.name}
-                          </span>
-                        </a>
+                          {link.name}
+                        </button>
                       ))}
                     </nav>
                   </div>
                 </div>
                 <div className="px-5 py-6 space-y-6">
-                  <div>
-                    <a
-                      href="#"
-                      className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
-                    >
-                      Sign up
-                    </a>
-                    <p className="mt-6 text-base font-medium text-center text-gray-500">
-                      Existing customer?{" "}
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-500"
-                      >
-                        Sign in
-                      </a>
-                    </p>
-                  </div>
+                  <button
+                    onClick={onClick}
+                    className="items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent bg-secondary-500 whitespace-nowrap hover:bg-secondary-600"
+                  >
+                    Erstgespräch sichern!
+                  </button>
                 </div>
               </div>
             </Popover.Panel>
           </Transition>
         </Popover>
 
-        <main className="lg:relative h-full">
+        <main className="relative h-full">
           <img
-            className="absolute top-0 left-0 object-cover w-full h-full"
+            className="absolute top-0 left-0 object-cover w-screen h-full"
             src="https://i.postimg.cc/PxRFMZgn/Design-ohne-Titel-13.png"
             alt=""
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
-          <div className="relative z-10 w-full pt-16 pb-20 mx-auto text-center max-w-5xl lg:pt-36 lg:text-left sm:px-6 px-4">
-            <h1 className="text-2xl font-medium tracking-tight  text-secondary-500">
+          <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
+          <div className="relative z-10 w-full max-w-5xl px-4 pt-24 pb-20 mx-auto text-center lg:pt-36 lg:text-left sm:px-6">
+            <h1 className="font-medium tracking-tight md:text-2xl text-secondary-500">
               Für Vertriebs- und Verkaufsleiter:
             </h1>
-            <p className="text-[2.6em] font-bold tracking-tight pt-5">
+            <p className=" text-xl md:text-[2.6em] font-bold tracking-tight pt-5">
               Mehr Abschlüsse und Neukunden durch ein hochmotiviertes
               Vertriebsteam.
             </p>
-            <div className="flex space-x-10 pt-5 w-full">
-              <div className="w-[60%]">
+            <div className="flex flex-col w-full pt-5 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
+              <div className="md:w-[60%]">
                 <img
                   src="https://a.storyblok.com/f/141545/1920x1080/eb6dacdfff/krauss-interview.jpg"
                   className="shadow-xl"
                 />
               </div>
-              <div className="w-[40%]">
-                <ul className="list-reset text-black mb-8 text-grey-darker rounded">
+              <div className="md:w-[40%]">
+                <ul className="mb-8 text-black rounded list-reset text-grey-darker">
                   <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>
                       <b className="underline">Höhere Abschlussquoten</b>, weil
                       wir Ihre Mitarbeiter zu professionellen
@@ -255,7 +209,7 @@ export default function NewLP({ blok, page }) {
                     </p>
                   </li>
                   <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
                     <p>
                       <b className="underline">
@@ -266,7 +220,7 @@ export default function NewLP({ blok, page }) {
                     </p>
                   </li>
                   <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>
                       <b className="underline">
                         Preise erfolgreich durchsetzen
@@ -277,12 +231,12 @@ export default function NewLP({ blok, page }) {
                 </ul>
                 <button
                   onClick={onClick}
-                  className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+                  className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
                 >
-                  <span className="text-[1.375em] font-bold">
+                  <span className="text-lg md:text-[1.375em] font-bold">
                     Jetzt Erstgespräch sichern!
                   </span>
-                  <span className="block text-gray-200 font-medium">
+                  <span className="block font-medium text-gray-200">
                     kostenfrei & unverbindlich
                   </span>
                 </button>
@@ -291,8 +245,8 @@ export default function NewLP({ blok, page }) {
           </div>
         </main>
       </div>
-      <div className=" bg-slate-900 text-white">
-        <div className="max-w-5xl mx-auto text-center pb-20 pt-20">
+      <div className="text-white bg-slate-900">
+        <div className="max-w-5xl px-10 pt-20 pb-20 mx-auto text-center">
           {/*<!--<h2 className="text-[1.75em] font-semibold">
             Haben auch Sie das Gefühl, in Ihrem Vertrieb müsste eine Veränderung
             geschehen, allerdings wissen Sie nicht genau, wie Sie vorgehen
@@ -309,12 +263,12 @@ export default function NewLP({ blok, page }) {
           <div className="py-7">
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
           </div>
-          <div className="pt-10 grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 gap-10 pt-10 md:grid-cols-3">
             {blocks.map(function (block, index) {
               return (
                 <div
                   key={index}
-                  className="bg-white text-black text-center align-middle py-10 px-5 relative"
+                  className="relative px-5 py-10 text-center text-black align-middle bg-white"
                 >
                   <div className="h-[40px] w-[40px] rounded-full bg-secondary-500 absolute -top-5 -left-5 text-center align-middle text-white font-bold italic text-3xl">
                     {index + 1}
@@ -333,26 +287,26 @@ export default function NewLP({ blok, page }) {
           <div className="max-w-sm mx-auto pt-14">
             <button
               onClick={onClick}
-              className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+              className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
-              <span className="block text-gray-200 font-medium">
+              <span className="block font-medium text-gray-200">
                 kostenfrei & unverbindlich
               </span>
             </button>
           </div>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative px-10">
         <img
-          className="absolute top-0 right-0 object-cover w-1/2 h-full"
+          className="absolute top-0 right-0 hidden object-cover w-1/2 h-full md:block"
           src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=cytonn-photography-vWchRczcQwM-unsplash.jpg"
           alt=""
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-white via-white"></div>
-        <div className="relative max-w-5xl mx-auto">
+        <div className="absolute top-0 left-0 hidden w-full h-full md:block bg-gradient-to-r from-white via-white"></div>
+        <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
             <h2 className="text-[2.1875em] font-semibold">
               Der Vertrieb ist der elementare Motor Ihres Unternehmens
@@ -360,12 +314,12 @@ export default function NewLP({ blok, page }) {
             <p className="text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
             </p>
-            <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3"></hr>
+            <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:m-0"></hr>
             <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
               {wollen.map((will) => {
                 return (
                   <li key={will} className="flex items-center mb-3">
-                    <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>{will}</p>
                   </li>
                 );
@@ -380,7 +334,7 @@ export default function NewLP({ blok, page }) {
         </div>
       </div>
       <div className="text-center">
-        <div className="max-w-5xl mx-auto py-20">
+        <div className="max-w-5xl px-10 py-20 mx-auto">
           <h2 id="method" className="text-[2.1875em] font-semibold">
             So läuft Ihr Vertrieb wie ein Uhrwerk, in dem jeder Prozess
             reibungslos aufeinander abgestimmt ist
@@ -390,7 +344,7 @@ export default function NewLP({ blok, page }) {
             Eine Zusammenarbeit mit uns setzt sich aus einem erfolgserprobten
             3-Stufen-Prozess zusammen:
           </p>
-          <div className="grid grid-cols-3 gap-10 text-left pt-20">
+          <div className="grid grid-cols-1 gap-10 pt-20 text-left md:grid-cols-3">
             {process.map((proc, index) => {
               return (
                 <div key={proc} className="bg-white p-[20px] shadow-xl z-10">
@@ -404,7 +358,7 @@ export default function NewLP({ blok, page }) {
                     {proc.points.map((point) => {
                       return (
                         <li key={point} className="flex items-center mb-3">
-                          <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                          <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                           <p className="text-[0.9375em]">{point}</p>
                         </li>
                       );
@@ -417,18 +371,21 @@ export default function NewLP({ blok, page }) {
         </div>
         <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')] bg-cover">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
-          <button
-            onClick={onClick}
-            className="relative top-1/2 bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full max-w-3xl mx-auto mt-10"
-          >
-            <span className="text-[1.5625em] font-medium">
-              Fragen Sie jetzt ein unverbindliches Erstgespräch an!
-            </span>
-          </button>
+
+          <div className="relative flex items-center justify-center px-10 pt-40 md:pt-10">
+            <button
+              onClick={onClick}
+              className="w-full max-w-3xl px-10 py-3 mx-auto text-white transition-all duration-300 ease-in-out transform top-1/2 bg-secondary-500 hover:scale-110"
+            >
+              <span className="text-[1.5625em] font-medium">
+                Fragen Sie jetzt ein unverbindliches Erstgespräch an!
+              </span>
+            </button>
+          </div>
         </div>
       </div>
       <div className="text-center">
-        <div className="max-w-5xl mx-auto py-20">
+        <div className="max-w-5xl px-10 py-20 mx-auto">
           <h2 id="customers" className="text-[2.1875em] font-semibold">
             3 Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
             waren, wie Sie es gerade sind
@@ -436,7 +393,7 @@ export default function NewLP({ blok, page }) {
           <hr className="border-t border-secondary-500 border-[4px] w-[125px] mx-auto mt-7"></hr>
           {casestudies.map((study, index) => {
             return (
-              <div key={study.company} className=" relative text-left pt-20">
+              <div key={study.company} className="relative pt-20 text-left ">
                 <div className=" absolute top-0 -left-36 text-[12.5em] italic font-semibold text-gray-200">
                   {index + 1}
                 </div>
@@ -450,13 +407,13 @@ export default function NewLP({ blok, page }) {
                     </p>
                     <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
                       <li className="flex items-center mb-3">
-                        <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                        <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                         <p>
                           <strong>Branche:</strong> {study.group}
                         </p>
                       </li>
                       <li className="flex items-center mb-3">
-                        <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                        <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                         <p>
                           <strong>Mitarbeiterzahl:</strong> {study.workers}
                         </p>
@@ -467,21 +424,21 @@ export default function NewLP({ blok, page }) {
                     <img src={study.img} className="h-[300px]" />
                   </div>
                 </div>
-                <div className="grid grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
                   <div className="bg-white">
-                    <span className="bg-gray-500 block pl-3 py-2 text-white font-semibold">
+                    <span className="block py-2 pl-3 font-semibold text-white bg-gray-500">
                       Ausgangssituation:
                     </span>
                     <p className="px-3 py-3">{study.start}</p>
                   </div>
                   <div className="bg-white">
-                    <span className="bg-gray-700 block pl-3 py-2 text-white font-semibold">
+                    <span className="block py-2 pl-3 font-semibold text-white bg-gray-700">
                       Lösung:
                     </span>
                     <p className="px-3 py-3">{study.solution}</p>
                   </div>
                   <div className="bg-white">
-                    <span className="bg-secondary-500 block pl-3 py-2 text-white font-semibold">
+                    <span className="block py-2 pl-3 font-semibold text-white bg-secondary-500">
                       Ergebnis:
                     </span>
                     <p className="px-3 py-3">{study.end}</p>
@@ -493,12 +450,12 @@ export default function NewLP({ blok, page }) {
           <div className="max-w-sm mx-auto pt-14">
             <button
               onClick={onClick}
-              className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+              className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
-              <span className="block text-gray-200 font-medium">
+              <span className="block font-medium text-gray-200">
                 kostenfrei & unverbindlich
               </span>
             </button>
@@ -506,7 +463,7 @@ export default function NewLP({ blok, page }) {
         </div>
       </div>
       <div className="bg-white">
-        <div className="max-w-5xl mx-auto py-20 ">
+        <div className="max-w-5xl px-10 py-20 mx-auto">
           <h2 id="about-us" className="text-[2.1875em] font-semibold">
             KRAUSS Training
           </h2>
@@ -514,8 +471,8 @@ export default function NewLP({ blok, page }) {
             Praxisorientiertes Training für mehr Wachstum
           </p>
           <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
-          <div className="flex space-x-10 pt-10">
-            <div className="text-[1.0625em] w-1/2">
+          <div className="flex flex-col pt-10 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
+            <div className="text-[1.0625em] md:w-1/2">
               <p>
                 In einer Zusammenarbeit mit uns bekommen Sie genau die
                 Erfahrungen, die Sie benötigen: Für namhafte Marken betreiben
@@ -532,34 +489,34 @@ export default function NewLP({ blok, page }) {
                 Verhaltensänderungen.
               </p>
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <img
                 src="https://www.krauss-gmbh.com/app/download/14507845733/IMG_2386+%281%29.jpg?t=1636713958"
-                className="aspect-video object-cover"
+                className="object-cover aspect-video"
               />
             </div>
           </div>
-          <div className="flex space-x-10 pt-10">
-            <div className="w-2/4">
+          <div className="flex flex-col-reverse pt-10 md:flex-row md:space-x-10">
+            <div className="w-full pt-10 md:w-2/4 md:pt-0">
               <img
                 src="https://www.krauss-gmbh.com/app/download/14507852333/_DSC4442.JPG?t=1636714258"
-                className="aspect-square object-cover"
+                className="object-cover aspect-square"
               />
             </div>
             <div>
               <h2 className="text-[1.5625em] font-semibold">
                 Unsere Kunden schätzen an uns besonders:
               </h2>
-              <ul className="list-reset text-black mb-8 text-grey-darker rounded pt-5">
+              <ul className="pt-5 mb-8 text-black rounded list-reset text-grey-darker">
                 <li className="flex items-center mb-3">
-                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
                     die Trainingsmethoden, die Wissensaufbau durch systemische
                     Arbeitssequenzen gewährleisten.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
-                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
                   <p>
                     den reduzierten Wissenstransfer auf das Wesentliche und
@@ -567,7 +524,7 @@ export default function NewLP({ blok, page }) {
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
-                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
                     die Art & Weise, wie wir Dinge angehen: Wir erzielen
                     messbare Ergebnisse, weil wir praxis- & erfolgsorientiert
@@ -575,7 +532,7 @@ export default function NewLP({ blok, page }) {
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
-                  <CheckIcon className="flex-none w-7 mr-2 text-secondary-500 " />
+                  <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
                     das der Vertrieb durch ein Training sofort die Möglichkeit
                     erhält seine Leistung zu verdoppeln
@@ -585,7 +542,7 @@ export default function NewLP({ blok, page }) {
 
               <button
                 onClick={onClick}
-                className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+                className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
               >
                 <span className="text-[1.125em] font-medium">
                   Hier klicken, um uns persönlich kennenzulernen!
@@ -595,21 +552,21 @@ export default function NewLP({ blok, page }) {
           </div>
         </div>
       </div>
-      <div className="lg:relative h-full">
+      <div className="relative h-full">
         <img
-          className="absolute top-0 left-0 object-cover w-full h-full"
+          className="absolute top-0 left-0 object-cover w-screen h-full"
           src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
           alt=""
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
-        <div className="relative z-10 w-full pt-16 pb-20 mx-auto text-center max-w-5xl lg:py-24 sm:px-6 px-4">
+        <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
+        <div className="relative z-10 w-full max-w-5xl px-4 pt-16 pb-20 mx-auto text-center lg:py-24 sm:px-6">
           <h1 className="text-[2.1875em] font-semibold tracking-tight">
             Für Vertriebs- und Verkaufsleiter:
           </h1>
-          <div className="grid grid-cols-3 gap-10 pt-10">
+          <div className="grid grid-cols-1 gap-10 pt-10 md:grid-cols-3">
             {steps.map((step, index) => {
               return (
-                <div key={index} className="bg-white shadow-xl py-5 pb-10 px-5">
+                <div key={index} className="px-5 py-5 pb-10 bg-white shadow-xl">
                   <div className="rounded-full bg-secondary-500 italic text-white text-[3.125em] h-[80px] w-[80px] mx-auto font-bold">
                     {index + 1}
                   </div>
@@ -624,20 +581,20 @@ export default function NewLP({ blok, page }) {
           <div className="max-w-sm mx-auto pt-14">
             <button
               onClick={onClick}
-              className="bg-secondary-500 px-10 py-3 text-white transform hover:scale-110 transition-all ease-in-out duration-300 w-full"
+              className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
-              <span className="block text-gray-200 font-medium">
+              <span className="block font-medium text-gray-200">
                 kostenfrei & unverbindlich
               </span>
             </button>
           </div>
         </div>
       </div>
-      <footer className="bg-slate-900 text-white">
-        <div className="grid grid-cols-3 max-w-5xl mx-auto py-14">
+      <footer className="text-white bg-slate-900">
+        <div className="grid max-w-5xl grid-cols-3 px-10 py-14">
           <div>
             <img src="/KRAUSS Logo Blau - Hell Negativ.svg" className="w-3/4" />
           </div>
@@ -648,7 +605,7 @@ export default function NewLP({ blok, page }) {
               target="_blank"
               className="text-[1.0625em] w-fit"
             >
-              <GlobeIcon className="h-5 inline-block mr-2 text-secondary-500" />
+              <GlobeIcon className="inline-block h-5 mr-2 text-secondary-500" />
               Impressum
             </a>
             <a
@@ -656,7 +613,7 @@ export default function NewLP({ blok, page }) {
               target="_blank"
               className="text-[1.0625em] w-fit"
             >
-              <LockOpenIcon className="h-5 inline-block mr-2 text-secondary-500" />
+              <LockOpenIcon className="inline-block h-5 mr-2 text-secondary-500" />
               Datenschutz
             </a>
           </div>
@@ -667,7 +624,7 @@ export default function NewLP({ blok, page }) {
               target="_blank"
               className="text-[1.0625em] w-fit"
             >
-              <PhoneIcon className="h-5 inline-block mr-2 text-secondary-500" />
+              <PhoneIcon className="inline-block h-5 mr-2 text-secondary-500" />
               +49 8191 93759-23
             </a>
             <a
@@ -675,7 +632,7 @@ export default function NewLP({ blok, page }) {
               target="_blank"
               className="text-[1.0625em] w-fit"
             >
-              <MailIcon className="h-5 inline-block mr-2 text-secondary-500" />
+              <MailIcon className="inline-block h-5 mr-2 text-secondary-500" />
               info@krauss-friends.com
             </a>
           </div>
