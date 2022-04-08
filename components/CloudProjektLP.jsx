@@ -699,7 +699,7 @@ export default function CloudProjektLP({ blok, page }) {
       <div className="relative h-full">
         <img
           className="absolute top-0 left-0 object-cover w-screen h-full"
-          src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+          src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=national-cancer-institute-BxXgTQEw1M4-unsplash.jpg"
           alt=""
         />
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
