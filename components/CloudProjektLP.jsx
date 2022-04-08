@@ -437,14 +437,14 @@ export default function CloudProjektLP({ blok, page }) {
       <div className="relative px-10">
         <img
           className="absolute top-0 right-0 hidden object-cover w-1/2 h-full md:block"
-          src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=cytonn-photography-vWchRczcQwM-unsplash.jpg"
+          src="https://cloudprojekt.de/wp-content/uploads/2018/04/cloudprojekt_kind.jpg"
           alt=""
         />
         <div className="absolute top-0 left-0 hidden w-full h-full md:block bg-gradient-to-r from-white via-white"></div>
         <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
             <h2 className="text-2xl md:text-[2.1875em] font-semibold">
-              Modernes Patientenentertainment spart Zeit und Geld
+              Modernes Entertainment und Infotainment spart Zeit und Geld
             </h2>
             <p className="text-lg md:text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
@@ -507,7 +507,7 @@ export default function CloudProjektLP({ blok, page }) {
             })}
           </div>
         </div>
-        <div className="relative h-[350px] -mt-48 bg-[url('https://i.postimg.cc/fyWmkg2w/Design-ohne-Titel-15.png')] bg-cover">
+        <div className="relative h-[350px] -mt-48 bg-[url('https://s4c680ef60d53e150.jimcontent.com/download/version/1643875265/module/8675965315/name/peter-olexa-p-L7-Ire-X9-AGY-unsplash-10%20%281%29.png')] bg-cover">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
 
           <div className="relative flex items-center justify-center px-10 pt-40">
@@ -637,7 +637,7 @@ export default function CloudProjektLP({ blok, page }) {
             </div>
             <div className="w-full md:w-1/2">
               <img
-                src="https://www.krauss-gmbh.com/app/download/14507845733/IMG_2386+%281%29.jpg?t=1636713958"
+                src="https://i.ibb.co/RBPJ5Fw/DSC05982-Fotor2-1030x609-1.jpg"
                 className="object-cover aspect-video"
               />
             </div>
@@ -645,7 +645,7 @@ export default function CloudProjektLP({ blok, page }) {
           <div className="flex flex-col-reverse pt-10 md:flex-row md:space-x-10">
             <div className="w-full pt-10 md:w-2/4 md:pt-0">
               <img
-                src="https://www.krauss-gmbh.com/app/download/14507852333/_DSC4442.JPG?t=1636714258"
+                src="https://i.ibb.co/MscPZ5w/shutterstock-1937848336-Demenzhilfe.jpg"
                 className="object-cover aspect-square"
               />
             </div>
