@@ -732,13 +732,13 @@ const wollen = [
 const blocks = [
   {
     text: `Beobachten Sie seit Längerem, dass in Ihrem Unternehmen und in
-    Ihren Vertrieb eigentlich viel mehr Potenzial steckt?`,
+    Ihrem Vertrieb eigentlich viel mehr Potenzial steckt?`,
   },
   {
     text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein glasklarer Fahrplan, der Ihnen zeigt, wie Sie Ihr Vorhaben am besten umsetzen.`,
   },
   {
-    text: `Dazu kommt der hohe Druck, weil Sie weniger Neukunden gewinnen als sie Bestandskunden verlieren. Es wird Zeit, dass Sie die Effizienz Ihres Vertriebs erhöhen.`,
+    text: `Dazu kommt der hohe Druck, weil Sie weniger Neukunden gewinnen als Sie Bestandskunden verlieren. Es wird Zeit, dass Sie die Effizienz Ihres Vertriebs erhöhen.`,
   },
   {
     text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihre Abteilungen bereits unterbesetzt sind? Daher muss erst Recht die Produktivität erhöht und Ineffizienz eliminiert werden!`,
