@@ -295,7 +295,7 @@ export default function CloudProjektLP({ blok, page }) {
                             <input
                               type="hidden"
                               name="_next"
-                              value="/thanks/messekarte"
+                              value="https://cloudprojekt.gastronomy.world/thanks/cloudprojekt"
                             ></input>
                             <input
                               type="hidden"
