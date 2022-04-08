@@ -679,8 +679,7 @@ const steps = [
 const casestudies = [
   {
     company: "Elro Großküchentechnik",
-    title: `Steigerung des Umsatzes um 23 % durch Optimierung der
-  Produktivität und der Flächenressourcen`,
+    title: `Mehr Freude und Motivation an der Akquise und somit mehr Neukundenkontakte`,
     group: "Hersteller Großküchentechnik",
     workers: "80",
     start: `Als Anbieter im oberen Qualitäts- und Preissegment ist die Neukundenakquise als Hersteller
