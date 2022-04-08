@@ -567,7 +567,7 @@ export default function NewLP({ blok, page }) {
           src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
           alt=""
         />
-        <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
         <div className="relative z-10 w-full max-w-5xl px-4 pt-16 pb-20 mx-auto text-center lg:py-24 sm:px-6">
           <h1 className="text-2xl md:text-[2.1875em] font-semibold tracking-tight">
             Für Vertriebs- und Verkaufsleiter:

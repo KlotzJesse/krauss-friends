@@ -9,10 +9,7 @@ import {
   PhoneIcon,
   XIcon,
 } from "@heroicons/react/outline";
-import { createPopup } from "@typeform/embed";
-import { trackGoal } from "fathom-client";
 import { Fragment, useRef } from "react";
-import { openPopupWidget } from "react-calendly";
 
 const resources = [
   {
@@ -35,19 +32,11 @@ function classNames(...classes) {
 
 export default function CloudProjektLP({ blok, page }) {
   const onClick = () => {
-    if (page.calendlyURL) {
-      trackGoal("03RLAFSO", 0); //03RLAFSO
-      openPopupWidget({
-        url: page.calendlyURL,
-      });
-      return;
-    }
-    if (page.typeformId) {
-      const { toggle } = createPopup(page.typeformId);
-      trackGoal("MPOZNNML", 0);
-      toggle();
-      return;
-    }
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   };
 
   const header = useRef();
@@ -60,7 +49,7 @@ export default function CloudProjektLP({ blok, page }) {
             <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
-                  <span className="sr-only">KRAUSS Training</span>
+                  <span className="sr-only">CloudProjekt</span>
                   <img
                     className="w-auto h-8 sm:h-10"
                     src="/logo-cloudprojekt.png"
@@ -220,7 +209,7 @@ export default function CloudProjektLP({ blok, page }) {
                         <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-secondary-500 rounded-full">
                           Kostenlose Messekarte für
                         </span>
-                        <span className="ml-4 text-sm">
+                        <span className="pr-2 ml-4 text-sm">
                           Altenpflege Messe Essen
                         </span>
                       </div>
@@ -231,11 +220,10 @@ export default function CloudProjektLP({ blok, page }) {
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Wir bieten Ihnen innovative und kostengünstige Lösungen
-                        im Bereich Lichtrufanlagen sowie Ruf- und
-                        Ortungssystemen. Personen in Krankenhäusern oder
-                        Pflegeheimen sind häufig auf die Unterstützung einer
-                        Pflegekraft angewiesen.
+                        Mit unserem Gesamtpaket für WLAN, TV, Telefonie und
+                        Notruflösungen heben sich unsere Kunden von der
+                        Konkurrenz ab und erhöhen die Zufriedenheit Ihrer
+                        Patienten und Bewohner.
                       </p>
                       <p className="mt-8 text-sm font-semibold tracking-wide text-white uppercase sm:mt-10">
                         Treffen Sie uns auf der
@@ -374,24 +362,12 @@ export default function CloudProjektLP({ blok, page }) {
                         <p className="text-xs leading-5 text-gray-500">
                           Mit dem absenden, aktzeptieren Sie die{" "}
                           <a
-                            href="#"
-                            className="font-medium text-gray-900 hover:underline"
-                          >
-                            Allgemeinen Bedingungen
-                          </a>
-                          ,{" "}
-                          <a
-                            href="#"
+                            href="https://www.gastronomy.world/j/privacy"
+                            target="_blank"
+                            rel="noreferrer"
                             className="font-medium text-gray-900 hover:underline"
                           >
                             Datenschutzerklärung
-                          </a>{" "}
-                          und{" "}
-                          <a
-                            href="#"
-                            className="font-medium text-gray-900 hover:underline"
-                          >
-                            Cookie-Richtlinien
                           </a>
                           .
                         </p>
@@ -416,8 +392,8 @@ export default function CloudProjektLP({ blok, page }) {
           </div>
           */}
           <p className="text-[1.75em] font-semibold">
-            Als Geschäftsführer, Verkaufsleiter und Vertriebsleiter kommen Ihnen
-            die folgenden Punkte sicherlich bekannt vor:
+            Als Altenheim kommen Ihnen die folgenden Punkte sicherlich bekannt
+            vor:
           </p>
           <div className="py-7">
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
@@ -468,12 +444,12 @@ export default function CloudProjektLP({ blok, page }) {
         <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
             <h2 className="text-2xl md:text-[2.1875em] font-semibold">
-              Der Vertrieb ist der elementare Motor Ihres Unternehmens
+              Modernes Patientenentertainment spart Zeit und Geld
             </h2>
             <p className="text-lg md:text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
             </p>
-            <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:m-0"></hr>
+            <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:mx-0"></hr>
             <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
               {wollen.map((will) => {
                 return (
@@ -498,8 +474,8 @@ export default function CloudProjektLP({ blok, page }) {
       <div className="text-center">
         <div className="max-w-5xl px-10 py-20 mx-auto">
           <h2 id="method" className="text-2xl md:text-[2.1875em] font-semibold">
-            So läuft Ihr Vertrieb wie ein Uhrwerk, in dem jeder Prozess
-            reibungslos aufeinander abgestimmt ist
+            So läuft Ihre Einrichtung wie ein Uhrwerk, in dem jeder Prozess
+            kostensparend, reibungslos aufeinander abgestimmt ist
           </h2>
           <hr className="border-t border-secondary-500 border-[4px] w-[125px] mx-auto mt-7"></hr>
           <p className="text-[1.25em] pt-7">
@@ -540,7 +516,7 @@ export default function CloudProjektLP({ blok, page }) {
               className="w-full max-w-3xl px-10 py-3 mx-auto text-white transition-all duration-300 ease-in-out transform md:relative top-1/2 bg-secondary-500 hover:scale-110"
             >
               <span className="text-[1.5625em] font-medium">
-                Fragen Sie jetzt ein unverbindliches Messekarte an!
+                Besuchen Sie uns jetzt an unserem Messestand kostenlos!
               </span>
             </button>
           </div>
@@ -552,8 +528,8 @@ export default function CloudProjektLP({ blok, page }) {
             id="customers"
             className="text-2xl md:text-[2.1875em] font-semibold"
           >
-            3 Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
-            waren, wie Sie es gerade sind
+            Erfolgsgeschichten von Altenheimen / Krankenhäusern, die in einer
+            ähnlichen Lage waren, wie Sie es gerade sind
           </h2>
           <hr className="border-t border-secondary-500 border-[4px] w-[125px] mx-auto mt-7"></hr>
           {casestudies.map((study, index) => {
@@ -574,13 +550,13 @@ export default function CloudProjektLP({ blok, page }) {
                       <li className="flex items-center mb-3">
                         <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                         <p>
-                          <strong>Branche:</strong> {study.group}
+                          <strong>WLAN Sender:</strong> {study.group}
                         </p>
                       </li>
                       <li className="flex items-center mb-3">
                         <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                         <p>
-                          <strong>Mitarbeiterzahl:</strong> {study.workers}
+                          <strong>Anzahl Betten:</strong> {study.workers}
                         </p>
                       </li>
                     </ul>
@@ -633,28 +609,30 @@ export default function CloudProjektLP({ blok, page }) {
             id="about-us"
             className="text-2xl md:text-[2.1875em] font-semibold"
           >
-            KRAUSS Training
+            CloudProjekt
           </h2>
           <p className="text-[1.5625em]">
-            Praxisorientiertes Training für mehr Wachstum
+            Wir setzen neue Maßstäbe in allen Bereichen des Gäste- und
+            Patientenentertain­ments.
           </p>
           <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
           <div className="flex flex-col pt-10 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
             <div className="text-[1.0625em] md:w-1/2">
               <p>
-                In einer Zusammenarbeit mit uns bekommen Sie genau die
-                Erfahrungen, die Sie benötigen: Für namhafte Marken betreiben
-                wir seit vielen Jahren in unserem Vertriebsteam die tägliche
-                Terminvereinbarung in der Neukundenakquise. Und deshalb glauben
-                wir zu wissen was die Herausforderungen jetzt und zukünftig sein
-                werden - Wir leben Vertrieb.
+                Das Unternehmen Cloudprojekt GmbH beschäftigt sich mit dem
+                Design & der Abrechnung von TV- / WLAN- und
+                Kommunikations-Lösungen, sowie der Digitalisierung (und somit
+                Optimierung) von kostenintensiven Prozessen wie z.B. der
+                Tagesablauf eines Reha-Patienten. Unsere Kunden sind in erster
+                Linie Krankenhäuser, Reha-Einrichtungen sowie
+                Senioren-Wohnheime.
               </p>
               <p className="pt-5">
                 <span className="underline">Unser Erfolgsgarantie:</span> Wir
-                motivieren & trainieren Ihr Team in echten Praxis Situationen
-                auch außerhalb des Seminarraums und machen Erfolg erlebbar. Die
-                gewonnen Erkenntnisse aus der Übung machen Lust auf
-                Verhaltensänderungen.
+                legen die oberste Priorität bei unserer Beratung auf eine
+                individuelle, auf den jeweiligen Kunden angepasste
+                Wirtschaftlichkeitsbetrachtung für die Nutzung von
+                Entertainment- und Infotainmentdiensten.
               </p>
             </div>
             <div className="w-full md:w-1/2">
@@ -679,32 +657,24 @@ export default function CloudProjektLP({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    die Trainingsmethoden, die Wissensaufbau durch systemische
-                    Arbeitssequenzen gewährleisten.
+                    die Flexibilität bei den verschiedenen
+                    Finanzierungsvarianten
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
-                  <p>
-                    den reduzierten Wissenstransfer auf das Wesentliche und
-                    sofortige anwendbarkeit in der Praxis
-                  </p>
+                  <p>die Budgetneutralität durch Fachberatung</p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    die Art & Weise, wie wir Dinge angehen: Wir erzielen
-                    messbare Ergebnisse, weil wir praxis- & erfolgsorientiert
-                    arbeiten.
+                    die Kosteneinsparung durch Wegfall antiquierter Prozesse
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
-                  <p>
-                    das der Vertrieb durch ein Training sofort die Möglichkeit
-                    erhält seine Leistung zu verdoppeln
-                  </p>
+                  <p>die Positive Bewertung durch Patienten und Kostenträger</p>
                 </li>
               </ul>
 
@@ -713,7 +683,7 @@ export default function CloudProjektLP({ blok, page }) {
                 className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
               >
                 <span className="text-[1.125em] font-medium">
-                  Hier klicken, um uns persönlich kennenzulernen!
+                  Hier klicken, um uns auf der Messe persönlich kennenzulernen!
                 </span>
               </button>
             </div>
@@ -726,10 +696,10 @@ export default function CloudProjektLP({ blok, page }) {
           src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
           alt=""
         />
-        <div className="absolute top-0 left-0 w-screen h-full bg-white opacity-90"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
         <div className="relative z-10 w-full max-w-5xl px-4 pt-16 pb-20 mx-auto text-center lg:py-24 sm:px-6">
           <h1 className="text-2xl md:text-[2.1875em] font-semibold tracking-tight">
-            Für Vertriebs- und Verkaufsleiter:
+            Für Altenheime / Krankenhäuser:
           </h1>
           <div className="grid grid-cols-1 gap-10 pt-10 md:grid-cols-3">
             {steps.map((step, index) => {
@@ -764,10 +734,7 @@ export default function CloudProjektLP({ blok, page }) {
       <footer className="text-white bg-slate-900">
         <div className="grid max-w-5xl grid-cols-1 gap-10 px-10 mx-auto md:gap-0 md:grid-cols-3 py-14">
           <div>
-            <img
-              src="/KRAUSS Logo Blau - Hell Negativ.svg"
-              className="w-3/5 md:w-3/4"
-            />
+            <img src="/gworld-light.svg" className="w-3/5 md:w-3/4" />
           </div>
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Informationen</p>
@@ -819,17 +786,17 @@ export default function CloudProjektLP({ blok, page }) {
 
 const steps = [
   {
-    title: "Termin anfragen",
+    title: "Kostenlose Messekarte",
     description:
-      "Vereinbaren Sie jetzt ein kostenloses Messekarte und verabreden mit uns einen passenden Termin.",
+      "Wir schenken Ihnen eine kostenlose Messekarte, um uns bei unserem Event besuchen zu können.",
   },
   {
-    title: "Messekarte",
+    title: "Messe Besuch",
     description:
-      "Wir lernen uns per Telefon kennen und sprechen über Ihre aktuellen Herausforderungen.",
+      "Wir lernen uns an unserem Messestand kennen und sprechen über Ihre aktuellen Herausforderungen.",
   },
   {
-    title: "Training",
+    title: "Persönlicher Termin",
     description:
       "Sie bekommen eine auf Ihre Situation angepasste Lösung, um Ihr Unternehmen optimal für die Zukunft aufzustellen.",
   },
@@ -837,25 +804,15 @@ const steps = [
 
 const casestudies = [
   {
-    company: "FVZ Convenience GmbH",
-    title: `Steigerung des Umsatzes um 23 % durch Optimierung der
-  Produktivität und der Flächenressourcen`,
-    group: "HOGA Convenience Produkte",
-    workers: "400",
-    start: `Die Kapazitäten der apra-norm GmbH waren in den Produktions- und Logistikflächen maximal ausgelastet. Dadurch waren weitere Kundenaufträge sowie internes Wachstum nicht möglich.`,
-    solution: `Durch eine optimale Prozess- und Layoutgestaltung und die Optimierung der bestehenden Flächenressourcen konnten wir die Unternehmensentwicklung nachhaltig verbessern.`,
-    end: `Dadurch hat sich nicht nur die wirtschaftliche Situation der Firma verbessert, sondern auch die vertrauensvolle Kooperation mit den Mitarbeitern nachhaltig weiterentwickelt.`,
-    img: "/fvz-convenience-gmbh-logo-vector.svg",
-  },
-  {
-    company: "HOLMER Maschinenbau GmbH",
-    title: `Umsetzung einer hocheffizienten Werksstrukturplanung`,
-    group: "Maschinenbau",
-    workers: "400",
-    start: `Die HOLMER Maschinenbau GmbH hat 2017 ein neues Grundstück erworben. Die Herausforderung war vor allem die fehlende innerbetriebliche Erfahrung bei der Umsetzung einer Werksstrukturplanung.`,
-    solution: `Nach intensiver Gegenüberstellung unterschiedlicher Strukturkonzepte konnte die Entscheidung für den ersten Bauabschnitt in Form des HOLMER Logistikzentrums getroffen werden.`,
-    end: `Durch eine kooperative Zusammenarbeit in den letzten 5 Jahren konnten wir insbesondere Wachstums- und Optimierungspotenziale durch kompakte Produktions- und Logistiksysteme realisieren.`,
-    img: "https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/3.png",
+    company: "Reha Zentrum Lübbe",
+    title: `Steigerung der Patientenzufriedenheit durch Optimierung des Entertainmentsystems und der Prozesse`,
+    group: "72",
+    workers: "230",
+    start: `Für ein modernes Entertainmentsystem waren die reparturanfälligen Röhrenfernseher nicht mehr zeitgemäß. Für uns galt, im Rheazentrum Lübben den Spagat zwischen Finanzierbarkeit und die Anforderungen der Patienten zu schaffen. Eine Internetnutzung
+    war nur in den Aufenthaltsbereichen zu nutzen.`,
+    solution: `Durch eine optimale Prozess- und Layoutgestaltung und die Optimierung der bestehenden Flächenressourcen konnten wir die Unternehmensentwicklung nachhaltig verbessern. Die Röhrenfernseher wurden durch moderne 32” Zoll Fernsehgeräte ersetzt, welche durch ein innovatives Abrechnungssystem automatisiert freigeschaltet und abgerechnet werden können. Des weiteren wurde durch Ausbau der Infrastruktur Vorort, dem Haus erstmals ein flächendeckendes WLAN ermöglicht.`,
+    end: `Durch die Neuerungen konnte die Patientenzufriedenheit um ein Vielfaches verbessert werden. Durch das Abrechnungssystem wurde eine transparente Kostenkontrolle sichergestellt, wo zuvor auf die Ehrlichkeit der Patienten vertraut werden musste. Letzentlich konnte die Cloudprojekt Gmbh durch die Optimierung der Telefonieverträge und die bessere Ausnutzung sowie die belegbare Einnahmenkontrolle eine WIN-WIN Situtaion für beide Parteien erzielen.`,
+    img: "https://www.rehazentrum.com/assets/images/rzl_logo.svg",
   },
 ];
 
@@ -863,21 +820,21 @@ const process = [
   {
     title: "Analyse",
     points: [
-      "Jedes Unternehmen ist individuell. Wir prüfen Ihre Situation und finden die versteckten Ursachen, die Ihre Effizienz gerade drosseln.",
-      "Als erfahrene Trainer blicken wir mit einer Vogelperspektive auf Ihre komplexe Situation und sehen deshalb nachweislich und schnell, an welchen Stellen Sie den größten Effekt in kurzer Zeit erzielen können.",
+      "Jedes Altenheim / Krankenhaus ist individuell. Wir prüfen Ihre Situation und finden die versteckten Ursachen, die Ihre Effizienz gerade drosseln.",
+      "Als erfahrene Fachberater blicken wir mit einer Vogelperspektive auf Ihre komplexe Situation und sehen deshalb nachweislich und schnell, an welchen Stellen Sie den größten Effekt in kurzer Zeit erzielen können.",
     ],
   },
   {
     title: "Konzeption",
     points: [
-      "Auf Grundlage der Potenzialanalyse erstellen wir einen klar strukturierten Handlungsplan mit dem Ziel, Ihre Wettbewerbsfähigkeit als Unternehmen zu erhöhen.",
-      "Bei der Erstellung unserer Strategie lassen wir unsere geballte Erfahrung mit einfließen, die wir in über 980 Kundenprojekten gesammelt haben.",
+      "Auf Grundlage der Potenzialanalyse erstellen wir einen klar strukturierten Handlungsplan mit dem Ziel, Ihre Wettbewerbsfähigkeit als Altenheim / Krankenhaus zu erhöhen.",
+      "Bei der Erstellung unserer Strategie lassen wir unsere geballte Erfahrung mit einfließen, die wir in allen Kundenprojekten gesammelt haben.",
     ],
   },
   {
     title: "Umsetzung",
     points: [
-      "Im Anschluss setzen wir die Strategie gemeinsam mit Ihnen um.",
+      "Im Anschluss setzen wir die Digitalisierungsstrategie gemeinsam mit Ihnen um.",
       "Während des kompletten Prozesses können Sie sich sicher fühlen, weil wir diesen Weg bereits unzählige Male gegangen sind.",
       "Außerdem arbeiten wir maximal transparent und sprechen jeden Schritt mit Ihnen ab. So behalten Sie stets die volle Kontrolle.",
     ],
@@ -885,30 +842,29 @@ const process = [
 ];
 
 const wollen = [
-  "Wollen auch Sie ein gutes Gefühl haben, wenn Sie an Ihre Kennzahlen denken, weil Sie wissen, dass in Ihrem Vertrieb alles reibungslos läuft?",
-  "Möchten Sie das maximale Potenzial Ihres Vertriebs entfalten, die Effizienz Ihrer Mitarbeiter steigern und gleichzeitig unnötig verlorene Geschäfte eliminieren, sodass sich Ihr Ertrag in Ihrer monatlichen Auswertung sichtbar verbessert?",
-  "Dann brauchen Sie ein maßgeschneidertes Training, das Ihrem Team die Tools zur Verfügung stellt, die auch wirklich zu mehr Abschlüssen führen.",
+  "Wollen auch Sie ein gutes Gefühl haben, wenn Sie an Ihre Kennzahlen denken, weil Sie wissen, dass in Ihre Prozesse digitalisiert und Kostengemindert sind?",
+  "Möchten auch Sie eine Differenzierung gegenüber dem Wettbewerb, indem Sie Ihr Entertainmentsystem und Ihre Prozesse digitalisieren?",
+  "Dann brauchen Sie ein maßgeschneidertes Konzept, welche Ihre Einrichtung Budgetneutral berät, das auch wirklich Wirtschaftlich ist.",
   "Zudem benötigen Sie einen glasklaren Schritt-für-Schritt-Plan, den Sie im Anschluss 1:1 umsetzen können.",
 ];
 
 const blocks = [
   {
-    text: `Beobachten Sie seit Längerem, dass in Ihrem Unternehmen und in
-    Ihren Vertrieb eigentlich viel mehr Potenzial steckt?`,
+    text: `Beobachten Sie seit Längerem, dass das aufwendige Prozesse wie z.B. der Tagesblauf bei Reha-Patienten sehr kostenintesiv sind?`,
   },
   {
     text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein glasklarer Fahrplan, der Ihnen zeigt, wie Sie Ihr Vorhaben am besten umsetzen.`,
   },
   {
-    text: `Dazu kommt der hohe Druck, weil Sie weniger Neukunden gewinnen als sie Bestandskunden verlieren. Es wird Zeit, dass Sie die Effizienz Ihres Vertriebs erhöhen.`,
+    text: `Dazu kommt der hohe Druck, weil Patienten und Bewohner mehr Komfort fordern. Es wird Zeit, dass Sie die Effizienz Ihrer Einrichtung erhöhen.`,
   },
   {
-    text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihre Abteilungen bereits unterbesetzt sind? Daher muss erst Recht die Produktivität erhöht und Ineffizienz eliminiert werden!`,
+    text: `Die Wirtschaftlichkeit macht Ihnen zu schaffen, da antiquierte Prozesse kostenintensiv sind? Daher muss erst Recht die Produktivität erhöht und wo möglich digitalisiert werden!`,
   },
   {
-    text: `Außerdem müssten Sie dringend Ihr Neukundengeschäft vergrößern, weil durch die Krise die Kundenzahl seit einiger Zeit zurückgeht und Sie Ihre Zahlen aber profitabel halten wollen?`,
+    text: `Außerdem müssten Sie dringend ein modernes Entertainmentsystem integrieren, weil das derzeitige Reperaturanfällig ist und Sie Ihren Bewohnern und Patienten noch besser Qualität liefern möchten?`,
   },
   {
-    text: `Sie stehen vor der Herausforderung, Preisanpassungen erfolgreich durchzusetzen oder mehr Neukunden zu gewinnen und benötigen Unterstützung im Verkauf?`,
+    text: `Sie stehen vor der Herausforderung, Ihr Entertainment- und Infortainment den Anforderungen Ihrer Patienten und Bewohnern gerecht zu machen und benötigen Unterstützung in der Umsetzung?`,
   },
 ];
