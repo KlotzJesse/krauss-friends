@@ -48,15 +48,15 @@ const ThanksPage = (props) => {
               <ShieldCheckIcon className="mx-auto h-28 w-28" />
             </div>
             <div className="mt-6 text-2xl font-bold lg:text-5xl md:text-4xl">
-              Vielen Dank für Ihren Terminvorschlag!
+              Vielen Dank für Ihre Anfrage!
             </div>
             <div className="mt-4 text-base">
-              Wir werden uns in dem von Ihnen ausgewählten Zeitraum{" "}
+              Wir werden uns in kürze bei Ihnen{" "}
               <br className="hidden md:block" /> telefonisch melden!
             </div>
             <div className="justify-center mt-12 sm:flex gap-x-4">
               <a
-                href="https://www.krauss-gmbh.com"
+                href="https://www.gastronomy.world"
                 className="grid w-full px-12 py-4 text-indigo-700 bg-white border rounded-md sm:w-auto hover:bg-gray-200 place-items-center"
               >
                 Zur Website

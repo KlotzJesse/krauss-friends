@@ -9,7 +9,6 @@ import {
   PhoneIcon,
   XIcon,
 } from "@heroicons/react/outline";
-import { ChevronRightIcon } from "@heroicons/react/solid";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import { Fragment, useRef } from "react";
@@ -224,10 +223,6 @@ export default function CloudProjektLP({ blok, page }) {
                         <span className="ml-4 text-sm">
                           Altenpflege Messe Essen
                         </span>
-                        <ChevronRightIcon
-                          className="w-5 h-5 ml-2 text-gray-500"
-                          aria-hidden="true"
-                        />
                       </div>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
                         <span className="md:block">Sicheren Sie sich Ihre</span>{" "}
@@ -292,7 +287,26 @@ export default function CloudProjektLP({ blok, page }) {
                         </div>
 
                         <div className="mt-6">
-                          <form action="#" method="POST" className="space-y-6">
+                          <form
+                            action="https://formsubmit.co/anfrage@krauss-gmbh.com"
+                            method="POST"
+                            className="space-y-6"
+                          >
+                            <input
+                              type="hidden"
+                              name="_next"
+                              value="/thanks/messekarte"
+                            ></input>
+                            <input
+                              type="hidden"
+                              name="_subject"
+                              value="Messekarte Altenpflegemesse Essen Anfrage"
+                            ></input>
+                            <input
+                              type="hidden"
+                              name="_captcha"
+                              value="false"
+                            ></input>
                             <div>
                               <label htmlFor="name" className="sr-only">
                                 Name
@@ -341,7 +355,7 @@ export default function CloudProjektLP({ blok, page }) {
                             <div>
                               <div className="max-w-sm mx-auto">
                                 <button
-                                  onClick={onClick}
+                                  type="submit"
                                   className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
                                 >
                                   <span className="text-[1.375em] font-bold">

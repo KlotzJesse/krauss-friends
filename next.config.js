@@ -56,6 +56,21 @@ module.exports = {
           ],
           destination: "/vertrieb-trainieren",
         },
+        {
+          source: "/altenpflege-messe",
+          has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
+          destination: "/cloudprojekt",
+        },
+        {
+          source: "/dmea",
+          has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
+          destination: "/cloudprojekt-dmea",
+        },
+        {
+          source: "/thanks",
+          has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
+          destination: "/thanks/cloudprojekt",
+        },
       ],
     };
   },

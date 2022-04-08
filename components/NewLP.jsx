@@ -393,7 +393,7 @@ export default function NewLP({ blok, page }) {
             id="customers"
             className="text-2xl md:text-[2.1875em] font-semibold"
           >
-            3 Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
+            Erfolgsgeschichten von Verkaufsteams, die in einer ähnlichen Lage
             waren, wie Sie es gerade sind
           </h2>
           <hr className="border-t border-secondary-500 border-[4px] w-[125px] mx-auto mt-7"></hr>
