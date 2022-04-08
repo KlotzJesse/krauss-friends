@@ -213,6 +213,12 @@ export default function CloudProjektLP({ blok, page }) {
                           Altenpflege Messe Essen
                         </span>
                       </div>
+                      <h1 className="mt-4 text-lg font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-xl xl:text-wxl">
+                        <span className="pr-5">Wann? </span>{" "}
+                        <span className="text-secondary-400">
+                          26. - 28. April 22 in Essen
+                        </span>
+                      </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
                         <span className="md:block">Sicheren Sie sich Ihre</span>{" "}
                         <span className="text-secondary-400 md:block">
