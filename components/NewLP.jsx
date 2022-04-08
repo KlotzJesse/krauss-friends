@@ -678,25 +678,23 @@ const steps = [
 
 const casestudies = [
   {
-    company: "FVZ Convenience GmbH",
+    company: "Elro Großküchentechnik",
     title: `Steigerung des Umsatzes um 23 % durch Optimierung der
   Produktivität und der Flächenressourcen`,
-    group: "HOGA Convenience Produkte",
-    workers: "400",
-    start: `Die Kapazitäten der apra-norm GmbH waren in den Produktions- und Logistikflächen maximal ausgelastet. Dadurch waren weitere Kundenaufträge sowie internes Wachstum nicht möglich.`,
-    solution: `Durch eine optimale Prozess- und Layoutgestaltung und die Optimierung der bestehenden Flächenressourcen konnten wir die Unternehmensentwicklung nachhaltig verbessern.`,
-    end: `Dadurch hat sich nicht nur die wirtschaftliche Situation der Firma verbessert, sondern auch die vertrauensvolle Kooperation mit den Mitarbeitern nachhaltig weiterentwickelt.`,
-    img: "/fvz-convenience-gmbh-logo-vector.svg",
-  },
-  {
-    company: "HOLMER Maschinenbau GmbH",
-    title: `Umsetzung einer hocheffizienten Werksstrukturplanung`,
-    group: "Maschinenbau",
-    workers: "400",
-    start: `Die HOLMER Maschinenbau GmbH hat 2017 ein neues Grundstück erworben. Die Herausforderung war vor allem die fehlende innerbetriebliche Erfahrung bei der Umsetzung einer Werksstrukturplanung.`,
-    solution: `Nach intensiver Gegenüberstellung unterschiedlicher Strukturkonzepte konnte die Entscheidung für den ersten Bauabschnitt in Form des HOLMER Logistikzentrums getroffen werden.`,
-    end: `Durch eine kooperative Zusammenarbeit in den letzten 5 Jahren konnten wir insbesondere Wachstums- und Optimierungspotenziale durch kompakte Produktions- und Logistiksysteme realisieren.`,
-    img: "https://beratung.bowa-consulting.de/wp-content/uploads/2022/03/3.png",
+    group: "Hersteller Großküchentechnik",
+    workers: "80",
+    start: `Als Anbieter im oberen Qualitäts- und Preissegment ist die Neukundenakquise als Hersteller
+    von Investitionsgütern gerade in der Pandemiezeit eine gewisse Herausforderung.
+    Bei Erstgesprächen im Neukundenbereich gibt es zum Teil auch Einwände mit denen es
+    professionell umzugehen gilt.`,
+    solution: `Kennenlernen und Unterscheidung von Einwänden und Vorwänden, sowie die Ursache von
+    Einwänden reflektieren. Der größte Vorteil ist vor allem die sofortige Umsetzbarkeit der
+    Methodik in die Praxis sowie das, durch das Training, gestärkte Selbstbewusstsein in der
+    Akquise.`,
+    end: `Das Trainingswissen konnte sofort in die Praxis umgesetzt werden, wenn Einwände kommen
+    gibt man nicht zu früh auf. Mehr Freude und Motivation an der Akquise und somit auch mehr
+    Neukundenkontakte.`,
+    img: "/Elro logo.jpeg",
   },
 ];
 
