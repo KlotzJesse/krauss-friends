@@ -7,7 +7,7 @@ import {
   MailIcon,
   MenuIcon,
   PhoneIcon,
-  XIcon,
+  XIcon
 } from "@heroicons/react/outline";
 import { Fragment, useRef } from "react";
 
@@ -220,7 +220,7 @@ export default function SocamelLP({ blok, page }) {
                         </span>
                       </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
-                        <span className="md:block">Sicheren Sie sich Ihre</span>{" "}
+                        <span className="md:block">Sichern Sie sich Ihre</span>{" "}
                         <span className="text-secondary-400 md:block">
                           kostenlose Messekarte
                         </span>
