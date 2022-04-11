@@ -865,7 +865,7 @@ const blocks = [
     text: `Dazu kommt der hohe Druck, weil Patienten und Bewohner mehr Komfort fordern. Es wird Zeit, dass Sie die Effizienz Ihrer Einrichtung erhöhen.`,
   },
   {
-    text: `Die Wirtschaftlichkeit macht Ihnen zu schaffen, da antiquierte Prozesse kostenintensiv sind? Daher muss erst Recht die Produktivität erhöht und wo möglich digitalisiert werden!`,
+    text: `Die Wirtschaftlichkeit macht Ihnen zu schaffen, da antiquierte Prozesse kostenintensiv sind? Daher muss erst recht die Produktivität erhöht und wo möglich digitalisiert werden!`,
   },
   {
     text: `Außerdem müssten Sie dringend ein modernes Entertainmentsystem integrieren, weil das derzeitige Reperaturanfällig ist und Sie Ihren Bewohnern und Patienten noch bessere Qualität liefern möchten?`,
