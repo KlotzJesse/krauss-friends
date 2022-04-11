@@ -508,7 +508,7 @@ export default function SocamelLP({ blok, page }) {
             })}
           </div>
         </div>
-        <div className="relative h-[350px] -mt-48 bg-[url('https://s4c680ef60d53e150.jimcontent.com/download/version/1643875265/module/8675965315/name/peter-olexa-p-L7-Ire-X9-AGY-unsplash-10%20%281%29.png')] bg-cover">
+        <div className="relative h-[350px] -mt-48 bg-[url('https://res.cloudinary.com/gastronomyworld/image/fetch/q_auto,f_auto/https://www.socamel.de/wp-content/uploads/2021/10/Vue-stand1-960x754.jpg')] bg-cover">
           <div className="absolute top-0 left-0 w-full h-full bg-slate-900 opacity-80"></div>
 
           <div className="relative flex items-center justify-center px-10 pt-40">
@@ -700,7 +700,7 @@ export default function SocamelLP({ blok, page }) {
       <div className="relative h-full">
         <img
           className="absolute top-0 left-0 object-cover w-screen h-full"
-          src="https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=national-cancer-institute-BxXgTQEw1M4-unsplash.jpg"
+          src="https://res.cloudinary.com/gastronomyworld/image/fetch/q_auto,f_auto/https://www.socamel.de/wp-content/uploads/2021/10/Vue-stand1-960x754.jpg"
           alt=""
         />
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-90"></div>
