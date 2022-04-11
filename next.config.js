@@ -71,6 +71,21 @@ module.exports = {
           has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
           destination: "/thanks/cloudprojekt",
         },
+        {
+          source: "/altenpflege-messe",
+          has: [{ type: "host", value: "socamel.gastronomy.world" }],
+          destination: "/socamel",
+        },
+        {
+          source: "/internorga",
+          has: [{ type: "host", value: "socamel.gastronomy.world" }],
+          destination: "/socamel-internorga",
+        },
+        {
+          source: "/thanks",
+          has: [{ type: "host", value: "socamel.gastronomy.world" }],
+          destination: "/thanks/socamel",
+        },
       ],
     };
   },

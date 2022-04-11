@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import CloudProjektLP from "./CloudProjektLP";
 import ExitIntent from "./ExitIntent";
 import NewLP from "./NewLP";
+import SocamelLP from "./Socamel";
 import Text from "./Text";
 const Column = dynamic(() => import("./Column"));
 const Container = dynamic(() => import("./Container"));
@@ -78,6 +79,7 @@ const Components = {
   exitIntent: ExitIntent,
   newLP: NewLP,
   cloudProjektLP: CloudProjektLP,
+  socamelLP: SocamelLP,
 };
 
 const DynamicComponent = ({ blok, page }) => {
