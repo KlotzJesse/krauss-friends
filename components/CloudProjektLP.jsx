@@ -868,7 +868,7 @@ const blocks = [
     text: `Die Wirtschaftlichkeit macht Ihnen zu schaffen, da antiquierte Prozesse kostenintensiv sind? Daher muss erst Recht die Produktivität erhöht und wo möglich digitalisiert werden!`,
   },
   {
-    text: `Außerdem müssten Sie dringend ein modernes Entertainmentsystem integrieren, weil das derzeitige Reperaturanfällig ist und Sie Ihren Bewohnern und Patienten noch besser Qualität liefern möchten?`,
+    text: `Außerdem müssten Sie dringend ein modernes Entertainmentsystem integrieren, weil das derzeitige Reperaturanfällig ist und Sie Ihren Bewohnern und Patienten noch bessere Qualität liefern möchten?`,
   },
   {
     text: `Sie stehen vor der Herausforderung, Ihr Entertainment- und Infotainment den Anforderungen Ihrer Patienten und Bewohnern gerecht zu machen und benötigen Unterstützung in der Umsetzung?`,
