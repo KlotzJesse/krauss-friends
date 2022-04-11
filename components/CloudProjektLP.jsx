@@ -856,7 +856,7 @@ const wollen = [
 
 const blocks = [
   {
-    text: `Beobachten Sie seit Längerem, dass das aufwendige Prozesse wie z.B. der Tagesblauf bei Reha-Patienten sehr kostenintesiv sind?`,
+    text: `Beobachten Sie seit Längerem, dass aufwendige Prozesse wie z.B. der Tagesblauf bei Reha-Patienten sehr kostenintesiv sind?`,
   },
   {
     text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein glasklarer Fahrplan, der Ihnen zeigt, wie Sie Ihr Vorhaben am besten umsetzen.`,
