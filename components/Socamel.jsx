@@ -437,7 +437,7 @@ export default function SocamelLP({ blok, page }) {
       <div className="relative px-10">
         <img
           className="absolute top-0 right-0 hidden object-cover w-1/2 h-full md:block"
-          src="https://cloudprojekt.de/wp-content/uploads/2018/04/cloudprojekt_kind.jpg"
+          src="https://i.ibb.co/44rqh6f/image-from-rawpixel-id-259583-jpeg-4.jpg"
           alt=""
         />
         <div className="absolute top-0 left-0 hidden w-full h-full md:block bg-gradient-to-r from-white via-white"></div>
@@ -551,19 +551,22 @@ export default function SocamelLP({ blok, page }) {
                       <li className="flex items-center mb-3">
                         <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                         <p>
-                          <strong>WLAN Sender:</strong> {study.group}
+                          <strong>Branche:</strong> {study.group}
                         </p>
                       </li>
                       <li className="flex items-center mb-3">
                         <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                         <p>
-                          <strong>Anzahl Betten:</strong> {study.workers}
+                          <strong>Anzahl Mitarbeiter:</strong> {study.workers}
                         </p>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <img src={study.img} className="md:m-h-[300px] w-full" />
+                    <img
+                      src={study.img}
+                      className="md:m-h-[300px] w-full pl-5"
+                    />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -637,7 +640,7 @@ export default function SocamelLP({ blok, page }) {
             </div>
             <div className="w-full md:w-1/2">
               <img
-                src="https://i.ibb.co/RBPJ5Fw/DSC05982-Fotor2-1030x609-1.jpg"
+                src="https://www.socamel.de/wp-content/uploads/2021/02/Wageneinraeumen_c_regiomed-2-1024x621.jpg"
                 className="object-cover aspect-video"
               />
             </div>
@@ -645,7 +648,7 @@ export default function SocamelLP({ blok, page }) {
           <div className="flex flex-col-reverse pt-10 md:flex-row md:space-x-10">
             <div className="w-full pt-10 md:w-2/4 md:pt-0">
               <img
-                src="https://i.ibb.co/MscPZ5w/shutterstock-1937848336-Demenzhilfe.jpg"
+                src="https://res.cloudinary.com/gastronomyworld/image/fetch/q_auto,f_auto/https://www.socamel.de/wp-content/uploads/2021/11/IMG-20200217-WA0001-002.jpg"
                 className="object-cover aspect-square"
               />
             </div>
@@ -808,15 +811,16 @@ const steps = [
 
 const casestudies = [
   {
-    company: "Reha Zentrum Lübbe",
-    title: `Steigerung der Patientenzufriedenheit durch Optimierung des Entertainmentsystems und der Prozesse`,
-    group: "72",
-    workers: "230",
-    start: `Für ein modernes Entertainmentsystem waren die reparturanfälligen Röhrenfernseher nicht mehr zeitgemäß. Für uns galt, im Rheazentrum Lübben den Spagat zwischen Finanzierbarkeit und die Anforderungen der Patienten zu schaffen. Eine Internetnutzung
-    war nur in den Aufenthaltsbereichen zu nutzen.`,
-    solution: `Durch eine optimale Prozess- und Layoutgestaltung und die Optimierung der bestehenden Flächenressourcen konnten wir die Unternehmensentwicklung nachhaltig verbessern. Die Röhrenfernseher wurden durch moderne 32” Zoll Fernsehgeräte ersetzt, welche durch ein innovatives Abrechnungssystem automatisiert freigeschaltet und abgerechnet werden können. Des weiteren wurde durch Ausbau der Infrastruktur Vorort, dem Haus erstmals ein flächendeckendes WLAN ermöglicht.`,
-    end: `Durch die Neuerungen konnte die Patientenzufriedenheit um ein Vielfaches verbessert werden. Durch das Abrechnungssystem wurde eine transparente Kostenkontrolle sichergestellt, wo zuvor auf die Ehrlichkeit der Patienten vertraut werden musste. Letzentlich konnte die Cloudprojekt Gmbh durch die Optimierung der Telefonieverträge und die bessere Ausnutzung sowie die belegbare Einnahmenkontrolle eine WIN-WIN Situtaion für beide Parteien erzielen.`,
-    img: "https://www.rehazentrum.com/assets/images/rzl_logo.svg",
+    company: "Vivantes",
+    title: `Effiziente Abläufe für Zufriedenheit bei allen Beteiligten`,
+    group: "Krankenhaus",
+    workers: "13.500",
+    start: `
+    Vivantes versorgt ein Drittel der Patienten in der Hauptstadt und ist der fünftgrößte Arbeitgeber in Berlin. Für die Verteilung der Speisen hat sich ein besonderes Konzept durchgesetzt. An 58 Standorten in Berlin unterhält der Betreiber neun Krankenhäuser, 100 Kliniken und zwölf Pflegeeinrichtungen mit insgesamt 5.250 Betten; darüber hinaus zwei Häuser mit dem Konzept des Betreuten Wohnens.
+    Das Unternehmen beschäftigt 13.500 Mitarbeiter. 2007 erwirtschaftete es ein Plus von 2,1 Mio. €. Da dies 5 Mio. € weniger sind als im Vorjahr, arbeitet Vivantes an einem neuen Strukturkonzept. Der nächste Schritt hin zu mehr Wirtschaftlichkeit war ein neues Speisenverteilzentrum, das für 3,4 Mio. € auf dem Gelände der Geschäftsführungs zentrale in Berlin-Reinickendorf errichtet wurde.`,
+    solution: `Neben den ablauftechnischen Merkmalen wie Kapazität, Gewicht und einfacher Handhabung des Systems war auch die Wirtschaftlichkeit entscheidend. Früher wurde das Essen in den Krankenhausküchen zubereitet oder von einem Caterer zugeliefert. Wir hatten mit unserem durchgängigen und einheitlichen Wagen- und Tablettkonzept den Zuschlag erhalten. Somit kann ein und derselbe Wagen für Frühstück, Mittag- oder Abendessen verwendet werden. In der Folge erleicherten sich die Logistikabläufe im Verteilzentrum z. B. am Band oder im Waschtunnel, da keine Aufstellordnung nötig ist. Das einheitliche Tablett für z. B. Frühstück und Mittagessen erleichtert das richtige Portionieren am Band.`,
+    end: `Bei allen Essenszeiten kommt ein einheitlicher Wagen zum Einsatz. Ernst Brugger koordiniert derzeit 347 dieser Wagen. Das Modell Ergoserv mit einer Kapazität von 36 Tabletts deckt bis auf fünf Stationen die gesamte Krankenhausverpflegungab. Der logistische und küchentechnische Aufwand, der nötig ist, um Gemüse oder Nudeln knackig, Fleisch zart und alles zusammen heiß ans Bett zu bringen, wächst mit der Größe. Die Köche müssen Präzisionsarbeit leisten, die der Laie dem Ergebnis nicht unbedingt ansieht. Dank Cook & Chill und der Unterstützung von Socamel ist das eine lösbare Aufgabe für Ernst Brugger und seine Mannschaft geworden.`,
+    img: "http://www.socamel-speisenverteilsysteme.de/referenzen/bilder/berlin_2.jpg",
   },
 ];
 
