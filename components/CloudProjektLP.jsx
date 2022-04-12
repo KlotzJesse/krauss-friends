@@ -226,12 +226,15 @@ export default function CloudProjektLP({ blok, page }) {
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Mit unserem Gesamtpaket für WLAN, TV, Telefonie und
-                        Notruflösungen heben sich unsere Kunden von der
-                        Konkurrenz ab und erhöhen die Zufriedenheit Ihrer
-                        Patienten und Bewohner.
+                        CloudProjekt ist ein herstellerübergreifendes
+                        Beratungs-, und Dienstleistungsunternehmen für
+                        ITK-Lösungen im HealthCare Bereich und errichtet
+                        deutschlandweit Lösungen für Ihre individuellen
+                        Anforderungen, von flächendeckendem WLAN über
+                        Patienten-Entertainment bis hin zu innovativen
+                        Softwarelösungen.
                       </p>
-                      <p className="mt-8 text-sm font-semibold tracking-wide text-white uppercase sm:mt-10">
+                      {/* <p className="mt-8 text-sm font-semibold tracking-wide text-white uppercase sm:mt-10">
                         Treffen Sie uns auf der
                       </p>
                       <div className="w-full mt-5 sm:mx-auto sm:max-w-lg lg:ml-0">
@@ -258,7 +261,7 @@ export default function CloudProjektLP({ blok, page }) {
                             />
                           </div>
                         </div>
-                      </div>
+                        </div>*/}
                     </div>
                   </div>
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
@@ -311,6 +314,21 @@ export default function CloudProjektLP({ blok, page }) {
                                 id="name"
                                 autoComplete="name"
                                 placeholder="Vollständiger Name"
+                                required
+                                className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:text-sm"
+                              />
+                            </div>
+
+                            <div>
+                              <label htmlFor="company" className="sr-only">
+                                Firmenname
+                              </label>
+                              <input
+                                type="text"
+                                name="company"
+                                id="company"
+                                autoComplete="organization"
+                                placeholder="Firmenname"
                                 required
                                 className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-secondary-500 focus:border-secondary-500 sm:text-sm"
                               />
@@ -375,7 +393,7 @@ export default function CloudProjektLP({ blok, page }) {
                           >
                             Datenschutzerklärung
                           </a>
-                          .
+                          . Pro Unternehmen bis zu 2 Messekarten.
                         </p>
                       </div>
                     </div>
@@ -386,9 +404,9 @@ export default function CloudProjektLP({ blok, page }) {
           </div>
         </div>
       </div>
-      <div className="text-white bg-slate-900">
+      {/*<div className="text-white bg-slate-900">
         <div className="max-w-5xl px-10 pt-20 pb-20 mx-auto text-center">
-          {/*<!--<h2 className="text-[1.75em] font-semibold">
+          <!--<h2 className="text-[1.75em] font-semibold">
             Haben auch Sie das Gefühl, in Ihrem Vertrieb müsste eine Veränderung
             geschehen, allerdings wissen Sie nicht genau, wie Sie vorgehen
             sollen?
@@ -396,7 +414,7 @@ export default function CloudProjektLP({ blok, page }) {
           <div className="py-7">
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
           </div>
-          */}
+          
           <p className="text-[1.75em] font-semibold">
             Als Altenheim kommen Ihnen die folgenden Punkte sicherlich bekannt
             vor:
@@ -439,7 +457,7 @@ export default function CloudProjektLP({ blok, page }) {
             </button>
           </div>
         </div>
-      </div>
+      </div>*/}
       <div className="relative px-10">
         <img
           className="absolute top-0 right-0 hidden object-cover w-1/2 h-full md:block"
@@ -450,10 +468,12 @@ export default function CloudProjektLP({ blok, page }) {
         <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
             <h2 className="text-2xl md:text-[2.1875em] font-semibold">
-              Modernes Entertainment und Infotainment spart Zeit und Geld
+              Beratungs-, Lösungs- und Dienstleistungsunternehmen für
+              ITK-Lösungen im HealthCare Bereich
             </h2>
             <p className="text-lg md:text-[1.375em] pt-3">
-              Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
+              Planung, Implementierung und Erweiterung von komplexen
+              ITK-Infrastrukturen sowie deren Wartung
             </p>
             <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:mx-0"></hr>
             <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
@@ -470,9 +490,8 @@ export default function CloudProjektLP({ blok, page }) {
               })}
             </ul>
             <p className="text-[1.375em] font-semibold">
-              In einer Zusammenarbeit geben wir Ihnen einen Röntgenblick auf
-              Ihre aktuelle Situation und helfen Ihnen bei der kompletten
-              Umsetzung.
+              Unsere fachliche und soziale Anerkennung setzt neue Maßstäbe in
+              der Telekommunikationsbranche.
             </p>
           </div>
         </div>
@@ -618,27 +637,32 @@ export default function CloudProjektLP({ blok, page }) {
             CloudProjekt
           </h2>
           <p className="text-[1.5625em]">
-            Wir setzen neue Maßstäbe in allen Bereichen des Gäste- und
-            Patientenentertain­ments.
+            Durch Kommunikation auf Augenhöhe und Fairness im Umgang mit unseren
+            Kunden und Partnern erarbeiten wir uns das Vertrauen, dass für eine
+            langfristige Geschäftsbeziehung unerlässlich ist.
           </p>
           <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
           <div className="flex flex-col pt-10 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
             <div className="text-[1.0625em] md:w-1/2">
               <p>
-                Das Unternehmen Cloudprojekt GmbH beschäftigt sich mit dem
-                Design & der Abrechnung von TV- / WLAN- und
-                Kommunikations-Lösungen, sowie der Digitalisierung (und somit
-                Optimierung) von kostenintensiven Prozessen wie z.B. der
-                Tagesablauf eines Reha-Patienten. Unsere Kunden sind in erster
-                Linie Krankenhäuser, Reha-Einrichtungen sowie
-                Senioren-Wohnheime.
+                Das Team der CloudProjekt GmbH hilft Ihnen dabei, gemeinsam die
+                digitale Zukunft zu realisieren und sich im unübersichtlichen
+                Technikdschungel zurechtzufinden. Unsere IT-Fachexperten kennen
+                die Herausforderungen, mit denen Sie bei der Verwaltung Ihrer
+                Technik und Infrastruktur im Gesundheitswesen konfrontiert
+                werden. Wir bieten Ihnen vielfältige Möglichkeiten,
+                Arbeitsabläufe zu optimieren und Arbeitszeiten einzusparen, um
+                sich Ihren Kernaufgaben zu widmen und dabei gleichzeitig die
+                Versorgungssicherheit Ihrer Patienten zu erhöhen.
               </p>
               <p className="pt-5">
                 <span className="underline">Unser Erfolgsgarantie:</span> Wir
-                legen die oberste Priorität bei unserer Beratung auf eine
-                individuelle, auf den jeweiligen Kunden angepasste
-                Wirtschaftlichkeitsbetrachtung für die Nutzung von
-                Entertainment- und Infotainmentdiensten.
+                errichten deutschlandweit Lösungen für Ihre IT-Infrastruktur,
+                von flächendeckendem WLAN, TV-& SAT -Lösungen sowie
+                Patienten-Entertainment, über Kommunikationssysteme, innovative
+                Cloud-Lösungen und modular aufgebaute Software bis hin zu
+                Schwestern- und Personenrufanlagen und Dementen- und
+                Weglaufschutz.
               </p>
             </div>
             <div className="w-full md:w-1/2">
@@ -849,9 +873,9 @@ const process = [
 
 const wollen = [
   "Wollen auch Sie ein gutes Gefühl haben, wenn Sie an Ihre Kennzahlen denken, weil Sie wissen, dass in Ihre Prozesse digitalisiert und Kostengemindert sind?",
-  "Möchten auch Sie eine Differenzierung gegenüber dem Wettbewerb, indem Sie Ihr Entertainmentsystem und Ihre Prozesse digitalisieren?",
-  "Dann brauchen Sie ein maßgeschneidertes Konzept, welche Ihre Einrichtung Budgetneutral berät, das auch wirklich Wirtschaftlich ist.",
-  "Zudem benötigen Sie einen glasklaren Schritt-für-Schritt-Plan, den Sie im Anschluss 1:1 umsetzen können.",
+  "Möchten auch Sie eine Differenzierung gegenüber dem Wettbewerb, indem wir Ihre Arbeitsabläufe optimieren und Arbeitszeiten einsparen?",
+  "Dann brauchen Sie einen Partner, der Ihnen dabei hilft, gemeinsam die digitale Zukunft zu realisieren und sich im unübersichtlichen Technikdschungel zurechtzufinden",
+  "Das Gesundheitswesen sieht komplexe Systeme und Aufgaben vor, für die Sie spezialisierte Tools benötigen, um den reibungslosen und sicheren Betrieb Ihres Unternehmens zu gewährleisten.",
 ];
 
 const blocks = [
