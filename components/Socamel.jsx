@@ -7,7 +7,7 @@ import {
   MailIcon,
   MenuIcon,
   PhoneIcon,
-  XIcon
+  XIcon,
 } from "@heroicons/react/outline";
 import { Fragment, useRef } from "react";
 
@@ -231,28 +231,6 @@ export default function SocamelLP({ blok, page }) {
                         Speisenverteilsystem ist einfach zu bedienen und sorgt
                         für eine optimale Auslieferung der Mahlzeiten.
                       </p>
-                      <p className="mt-8 text-sm font-semibold tracking-wide text-white uppercase sm:mt-10">
-                        Treffen Sie uns auf der
-                      </p>
-                      <div className="w-full mt-5 sm:mx-auto sm:max-w-lg lg:ml-0">
-                        <div className="flex items-start justify-center space-x-2">
-                          <div className="flex justify-center w-1/3 px-2 py-3 bg-white rounded-2xl">
-                            <img
-                              className="h-5 sm:h-8"
-                              src="/ap-logo.png"
-                              alt="Altenpflege Messe Essen"
-                            />
-                          </div>
-
-                          <div className="flex justify-center w-1/3 px-2 py-3 bg-white rounded-2xl">
-                            <img
-                              className="h-5 sm:h-8"
-                              src="/gworld.svg"
-                              alt="@gastronomy.world"
-                            />
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
