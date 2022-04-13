@@ -11,6 +11,8 @@ const goals = new Map([
   ["coach-ausbildung", "1CRLFZ5Q"],
   ["gastronomy-world", "67UTPTNF"],
   ["neukundengewinnung", "BG7BSHZU"],
+  ["socamel", "MG2XORFL"],
+  ["cloudprojekt", "TUTBP3L9"],
 ]);
 
 const ThanksPage = (props) => {

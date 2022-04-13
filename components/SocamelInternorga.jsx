@@ -9,6 +9,7 @@ import {
   PhoneIcon,
   XIcon,
 } from "@heroicons/react/outline";
+import { trackGoal } from "fathom-client";
 import { Fragment, useRef } from "react";
 
 const resources = [
@@ -254,6 +255,9 @@ export default function SocamelInternorga({ blok, page }) {
                           <form
                             action="https://formsubmit.co/anfrage@krauss-gmbh.com"
                             method="POST"
+                            onSubmit={() => {
+                              trackGoal("0CNLDECK", 0);
+                            }}
                             className="space-y-6"
                           >
                             <input
