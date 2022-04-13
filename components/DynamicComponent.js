@@ -4,6 +4,7 @@ import CPDmea from "./cpDmea";
 import ExitIntent from "./ExitIntent";
 import NewLP from "./NewLP";
 import SocamelLP from "./Socamel";
+import SocamelInternorga from "./SocamelInternorga";
 import Text from "./Text";
 const Column = dynamic(() => import("./Column"));
 const Container = dynamic(() => import("./Container"));
@@ -82,6 +83,7 @@ const Components = {
   cloudProjektLP: CloudProjektLP,
   socamelLP: SocamelLP,
   cpDmea: CPDmea,
+  socamelInternorga: SocamelInternorga,
 };
 
 const DynamicComponent = ({ blok, page }) => {

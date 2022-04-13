@@ -30,7 +30,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SocamelLP({ blok, page }) {
+export default function SocamelInternorga({ blok, page }) {
   const onClick = () => {
     window.scrollTo({
       top: 0,
@@ -266,7 +266,7 @@ export default function SocamelLP({ blok, page }) {
                             <input
                               type="hidden"
                               name="_subject"
-                              value="Messekarte Altenpflegemesse Essen Anfrage (Socamel)"
+                              value="Messekarte Internorga Anfrage (Socamel)"
                             ></input>
                             <input
                               type="hidden"

@@ -62,6 +62,11 @@ module.exports = {
           destination: "/cloudprojekt",
         },
         {
+          source: "/",
+          has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
+          destination: "/cloudprojekt",
+        },
+        {
           source: "/dmea",
           has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
           destination: "/cloudprojekt-dmea",
@@ -70,6 +75,11 @@ module.exports = {
           source: "/thanks",
           has: [{ type: "host", value: "cloudprojekt.gastronomy.world" }],
           destination: "/thanks/cloudprojekt",
+        },
+        {
+          source: "/",
+          has: [{ type: "host", value: "socamel.gastronomy.world" }],
+          destination: "/socamel",
         },
         {
           source: "/altenpflege-messe",
