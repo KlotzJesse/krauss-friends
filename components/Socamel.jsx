@@ -440,8 +440,8 @@ export default function SocamelLP({ blok, page }) {
               Das marktführende Speisenverteilsystem spart Zeit und Geld
             </h2>
             <p className="text-lg md:text-[1.375em] pt-3">
-              Und in Ihrer Tätigkeit ist die Verantwortung für Ihre Patienten,
-              die Sie haben, sehr groß.
+              Und in Ihrer Tätigkeit ist die Verantwortung für Ihre Patienten
+              enorm groß.
             </p>
             <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:mx-0"></hr>
             <ul className="list-reset text-black mb-8 text-grey-darker rounded text-[1.0625em] pt-10">
@@ -813,7 +813,7 @@ const casestudies = [
     Das Unternehmen beschäftigt 13.500 Mitarbeiter. 2007 erwirtschaftete es ein Plus von 2,1 Mio. €. Da dies 5 Mio. € weniger sind als im Vorjahr, arbeitet Vivantes an einem neuen Strukturkonzept. Der nächste Schritt hin zu mehr Wirtschaftlichkeit war ein neues Speisenverteilzentrum, das für 3,4 Mio. € auf dem Gelände der Geschäftsführungs zentrale in Berlin-Reinickendorf errichtet wurde.`,
     solution: `Neben den ablauftechnischen Merkmalen wie Kapazität, Gewicht und einfacher Handhabung des Systems war auch die Wirtschaftlichkeit entscheidend. Früher wurde das Essen in den Krankenhausküchen zubereitet oder von einem Caterer zugeliefert. Wir hatten mit unserem durchgängigen und einheitlichen Wagen- und Tablettkonzept den Zuschlag erhalten. Somit kann ein und derselbe Wagen für Frühstück, Mittag- oder Abendessen verwendet werden. In der Folge erleicherten sich die Logistikabläufe im Verteilzentrum z. B. am Band oder im Waschtunnel, da keine Aufstellordnung nötig ist. Das einheitliche Tablett für z. B. Frühstück und Mittagessen erleichtert das richtige Portionieren am Band.`,
     end: `Bei allen Essenszeiten kommt ein einheitlicher Wagen zum Einsatz. Ernst Brugger koordiniert derzeit 347 dieser Wagen. Das Modell Ergoserv mit einer Kapazität von 36 Tabletts deckt bis auf fünf Stationen die gesamte Krankenhausverpflegungab. Der logistische und küchentechnische Aufwand, der nötig ist, um Gemüse oder Nudeln knackig, Fleisch zart und alles zusammen heiß ans Bett zu bringen, wächst mit der Größe. Die Köche müssen Präzisionsarbeit leisten, die der Laie dem Ergebnis nicht unbedingt ansieht. Dank Cook & Chill und der Unterstützung von Socamel ist das eine lösbare Aufgabe für Ernst Brugger und seine Mannschaft geworden.`,
-    img: "http://www.socamel-speisenverteilsysteme.de/referenzen/bilder/berlin_2.jpg",
+    img: "/berlin_2.jpg",
   },
 ];
 
