@@ -224,8 +224,8 @@ export default function SocamelInternorga({ blok, page }) {
                         </span>
                       </h1>
                       <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        Bringen Sie Ihre Mahlzeiten schnell und einfach zu den
-                        Bewohnern und Patienten. Das Socamel
+                        Bringen Sie Ihre Mahlzeiten hygienisch einwandfrei zu
+                        den Bewohnern und Patienten. Das Socamel
                         Speisenverteilsystem ist einfach zu bedienen und sorgt
                         für eine optimale Auslieferung der Mahlzeiten.
                       </p>
@@ -852,7 +852,7 @@ const blocks = [
     text: `Beobachten Sie seit Längerem, dass die Speisenverteilung in Ihrem Haus nicht richtig funktioniert?`,
   },
   {
-    text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein einfach Speisenverteilsystem, das Ihnen hilft, diese Aufgabe zuverlässig und einfach zu erledigen.`,
+    text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein Speisenverteilsystem, das Ihnen hilft, diese Aufgabe zuverlässig und einfach zu erledigen.`,
   },
   {
     text: `Dazu kommt der hohe Druck, weil Patienten und Bewohner gleichzeitig heiße Speisen sowie kalte fordern. Es wird Zeit, dass Sie die Effizienz Ihrer Speisenverteilung erhöhen.`,
@@ -861,9 +861,9 @@ const blocks = [
     text: `Die Wirtschaftlichkeit macht Ihnen zu schaffen, da die Speisenverteilung sowie Wagenreinigung sehr zeitintesiv ist? Daher muss erst Recht die Produktivität erhöht und der gesamte Umlauf eines Wagens in verschiedenen Arbeitsgängen optimiert werden.`,
   },
   {
-    text: `Außerdem müssten Sie dringend ein Speisenverteilsystem integrieren, das Gerichte die Warm bleiben sollen auch warm hält und kaltes auch kühlt und Sie dadurch Ihren Bewohnern und Patienten noch besser Qualität liefern möchten?`,
+    text: `Außerdem haben Sie eine hohe Verantwortung gegenüber Ihrer Patienten und Bewohner, die Mahlzeiten hygienisch einwandfrei zu servieren?`,
   },
   {
-    text: `Sie stehen vor der Herausforderung, Ihr Speisenverteilsystem den Anforderungen Ihrer Patienten und Bewohnern gerecht zu machen und benötigen Unterstützung in der Umsetzung?`,
+    text: `Sie stehen vor der Herausforderung, Ihr Speisen appetitlich zu servieren, selbst nach der regenierung der Mahlzeiten, um damit Ihren Ruf Ihrer Einrichtung zu erhöhen?`,
   },
 ];
