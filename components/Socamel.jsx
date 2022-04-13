@@ -626,9 +626,9 @@ export default function SocamelLP({ blok, page }) {
                 <span className="underline">Unser Erfolgsgarantie:</span> Dieses
                 System sollte sicherstellen, dass die Mahlzeiten schnell,
                 appetitlich und mit der richtigen Temperatur an Ihre Bewohner
-                geliefert werden. Außerdem sollte es einfach zu bedienen sein,
-                damit Sie sich auf die bestmögliche Versorgung Ihrer Patienten
-                konzentrieren können.
+                geliefert werden. Außerdem sollte es hygienisch einwandfrei
+                sein, da Sie eine hohe Verantwortung gegenüber geschwächten
+                Patienten und Bewohnern haben.
               </p>
             </div>
             <div className="w-full md:w-1/2">
