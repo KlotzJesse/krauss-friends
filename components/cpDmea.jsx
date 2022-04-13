@@ -30,7 +30,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function CloudProjektLP({ blok, page }) {
+export default function CPDmea({ blok, page }) {
   const onClick = () => {
     window.scrollTo({
       top: 0,
@@ -209,14 +209,12 @@ export default function CloudProjektLP({ blok, page }) {
                         <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-secondary-500 rounded-full">
                           Kostenlose Messekarte für
                         </span>
-                        <span className="pr-2 ml-4 text-sm">
-                          Altenpflege Messe Essen
-                        </span>
+                        <span className="pr-2 ml-4 text-sm">DMEA Berlin</span>
                       </div>
                       <h1 className="mt-4 text-lg font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-xl xl:text-wxl">
                         <span className="pr-5">Wann? </span>{" "}
                         <span className="text-secondary-400">
-                          26. - 28. April 22 in Essen
+                          26. - 28. April 22 in Berlin
                         </span>
                       </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
@@ -297,7 +295,7 @@ export default function CloudProjektLP({ blok, page }) {
                             <input
                               type="hidden"
                               name="_subject"
-                              value="Messekarte Altenpflegemesse Essen Anfrage (CloudProjekt)"
+                              value="Messekarte DMEA Berlin Anfrage (CloudProjekt)"
                             ></input>
                             <input
                               type="hidden"

@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import CloudProjektLP from "./CloudProjektLP";
+import CPDmea from "./cpDmea";
 import ExitIntent from "./ExitIntent";
 import NewLP from "./NewLP";
 import SocamelLP from "./Socamel";
@@ -80,6 +81,7 @@ const Components = {
   newLP: NewLP,
   cloudProjektLP: CloudProjektLP,
   socamelLP: SocamelLP,
+  cpDmea: CPDmea,
 };
 
 const DynamicComponent = ({ blok, page }) => {
