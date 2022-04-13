@@ -658,15 +658,15 @@ export default function SocamelLP({ blok, page }) {
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
                   <p>
-                    die Steigerung der Qualität aller Mahlzeiten der Bewohner /
+                    die Steigerung der Qualität aller Mahlzeiten für Bewohner /
                     Patienten
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    die leichte Bedienbarkeit ohne großen Schulungsaufwand für
-                    eine zügige Verteilung der Speisen
+                    die Zuverlässigkeit, hygienisch einwandfrei Essen zu
+                    servieren
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
