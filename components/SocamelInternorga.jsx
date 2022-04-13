@@ -209,14 +209,12 @@ export default function SocamelInternorga({ blok, page }) {
                         <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-secondary-500 rounded-full">
                           Kostenlose Messekarte für
                         </span>
-                        <span className="pr-2 ml-4 text-sm">
-                          Altenpflege Messe Essen
-                        </span>
+                        <span className="pr-2 ml-4 text-sm">Internorga</span>
                       </div>
                       <h1 className="mt-4 text-lg font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-xl xl:text-wxl">
                         <span className="pr-5">Wann? </span>{" "}
                         <span className="text-secondary-400">
-                          26. - 28. April 22 in Essen
+                          30. April - 04. Mai 22 in Hamburg
                         </span>
                       </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
