@@ -192,12 +192,6 @@ export default function NewLP({ blok, page }) {
               Vertriebsteam.
             </p>
             <div className="flex flex-col w-full pt-5 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
-              <div className="md:w-[60%]">
-                <img
-                  src="https://a.storyblok.com/f/141545/1920x1080/eb6dacdfff/krauss-interview.jpg"
-                  className="shadow-xl"
-                />
-              </div>
               <div className="md:w-[40%]">
                 <ul className="mb-8 text-black rounded list-reset text-grey-darker">
                   <li className="flex items-center mb-3">
@@ -240,6 +234,12 @@ export default function NewLP({ blok, page }) {
                     kostenfrei & unverbindlich
                   </span>
                 </button>
+              </div>
+              <div className="md:w-[60%]">
+                <img
+                  src="https://a.storyblok.com/f/141545/1920x1080/eb6dacdfff/krauss-interview.jpg"
+                  className="shadow-xl"
+                />
               </div>
             </div>
           </div>
