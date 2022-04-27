@@ -288,7 +288,7 @@ export default function NewLP({ blok, page }) {
               onClick={onClick}
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
-              <span className="text-[1.375em] font-bold">
+              <span className="text-lg md:text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
               <span className="block font-medium text-gray-200">
@@ -457,7 +457,7 @@ export default function NewLP({ blok, page }) {
               onClick={onClick}
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
-              <span className="text-[1.375em] font-bold">
+              <span className="text-lg md:text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
               <span className="block font-medium text-gray-200">
@@ -591,7 +591,7 @@ export default function NewLP({ blok, page }) {
               onClick={onClick}
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
-              <span className="text-[1.375em] font-bold">
+              <span className="text-lg md:text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
               <span className="block font-medium text-gray-200">
