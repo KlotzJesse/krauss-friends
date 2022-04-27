@@ -192,9 +192,9 @@ export default function NewLP({ blok, page }) {
               Mehr Abschlüsse und Neukunden durch ein hochmotiviertes
               Vertriebsteam.
             </p>
-            <div className="grid w-full gap-5 pt-10 md:grid-cols-2">
-              <div className="">
-                <ul className="mb-8 text-black rounded list-reset text-grey-darker">
+            <div className="grid w-full gap-5 pt-10 grid- md:grid-cols-2">
+              <div className="flex flex-col-reverse md:flex-col">
+                <ul className="mb-8 text-left text-black rounded list-reset text-grey-darker">
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>
@@ -226,7 +226,7 @@ export default function NewLP({ blok, page }) {
                 </ul>
                 <button
                   onClick={onClick}
-                  className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
+                  className="w-full px-10 py-3 mb-5 text-white transition-all duration-300 ease-in-out transform md:m-0 bg-secondary-500 hover:scale-110"
                 >
                   <span className="text-lg md:text-[1.375em] font-bold">
                     Jetzt Erstgespräch sichern!
@@ -236,7 +236,9 @@ export default function NewLP({ blok, page }) {
                   </span>
                 </button>
               </div>
-              <div className="grow-0 bg-[url('/img.jpg')] bg-cover"></div>
+              <div className="order-first md:order-none md:bg-[url('/img.jpg')] md:bg-cover">
+                <img src="/img.jpg" className="shadow-xl md:hidden" />
+              </div>
             </div>
           </div>
         </main>
