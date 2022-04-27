@@ -734,13 +734,13 @@ const blocks = [
     Ihrem Vertrieb eigentlich viel mehr Potenzial steckt?`,
   },
   {
-    text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihnen fehlt ein glasklarer Fahrplan, der Ihnen zeigt, wie Sie Ihr Vorhaben am besten umsetzen.`,
+    text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihr Vertrieb steht vor scheinbar unlösbaren Herausforderungen, die Abschlüsse verhindern oder verzögern.`,
   },
   {
-    text: `Dazu kommt der hohe Druck, weil Sie weniger Neukunden gewinnen als Sie Bestandskunden verlieren. Es wird Zeit, dass Sie die Effizienz Ihres Vertriebs erhöhen.`,
+    text: `Dazu kommt der hohe Druck, weil Sie zu wenig Neukunden gewinnen und immer mehr Bestandskunden verlieren. Es wird Zeit, dass Ihr Vertrieb erfolgreich mehr Abschlüsse erzielt.`,
   },
   {
-    text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihre Abteilungen bereits unterbesetzt sind? Daher muss erst Recht die Produktivität erhöht und Ineffizienz eliminiert werden!`,
+    text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihr Vertrieb bereits unterbesetzt ist? Daher muss erst Recht die Produktivität erhöht und Ineffizienz eliminiert werden!`,
   },
   {
     text: `Außerdem müssten Sie dringend Ihr Neukundengeschäft vergrößern, weil durch die Krise die Kundenzahl seit einiger Zeit zurückgeht und Sie Ihre Zahlen aber profitabel halten wollen?`,
