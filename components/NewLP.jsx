@@ -123,56 +123,60 @@ export default function NewLP({ blok, page }) {
               focus
               className="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform md:hidden"
             >
-              <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
-                <div className="px-5 pt-5 pb-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <img
-                        className="w-auto h-8"
-                        src="/KRAUSS Logo Blau.svg"
-                        alt="KRAUSS Training"
-                      />
+              {({ close }) => (
+                <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
+                  <div className="px-5 pt-5 pb-6">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <img
+                          className="w-auto h-8"
+                          src="/KRAUSS Logo Blau.svg"
+                          alt="KRAUSS Training"
+                        />
+                      </div>
+                      <div className="-mr-2">
+                        <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                          <span className="sr-only">Close menu</span>
+                          <XIcon className="w-6 h-6" aria-hidden="true" />
+                        </Popover.Button>
+                      </div>
                     </div>
-                    <div className="-mr-2">
-                      <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                        <span className="sr-only">Close menu</span>
-                        <XIcon className="w-6 h-6" aria-hidden="true" />
-                      </Popover.Button>
+                    <div className="mt-6">
+                      <nav className="grid gap-y-8">
+                        {resources.map((link) => (
+                          <button
+                            key={link.name}
+                            href={link.href}
+                            onClick={() => {
+                              window.scrollTo({
+                                top:
+                                  document.getElementById(link.anchor)
+                                    .offsetTop -
+                                  header.current.offsetHeight -
+                                  40,
+                                left: 0,
+                                behavior: "smooth",
+                              });
+                              close();
+                            }}
+                            className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+                          >
+                            {link.name}
+                          </button>
+                        ))}
+                      </nav>
                     </div>
                   </div>
-                  <div className="mt-6">
-                    <nav className="grid gap-y-8">
-                      {resources.map((link) => (
-                        <button
-                          key={link.name}
-                          href={link.href}
-                          onClick={() => {
-                            window.scrollTo({
-                              top:
-                                document.getElementById(link.anchor).offsetTop -
-                                header.current.offsetHeight -
-                                40,
-                              left: 0,
-                              behavior: "smooth",
-                            });
-                          }}
-                          className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-                        >
-                          {link.name}
-                        </button>
-                      ))}
-                    </nav>
+                  <div className="px-5 py-6 space-y-6">
+                    <button
+                      onClick={onClick}
+                      className="items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent bg-secondary-500 whitespace-nowrap hover:bg-secondary-600"
+                    >
+                      Erstgespräch sichern!
+                    </button>
                   </div>
                 </div>
-                <div className="px-5 py-6 space-y-6">
-                  <button
-                    onClick={onClick}
-                    className="items-center justify-center w-full px-4 py-2 text-base font-medium text-white border border-transparent bg-secondary-500 whitespace-nowrap hover:bg-secondary-600"
-                  >
-                    Erstgespräch sichern!
-                  </button>
-                </div>
-              </div>
+              )}
             </Popover.Panel>
           </Transition>
         </Popover>
