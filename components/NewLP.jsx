@@ -43,7 +43,8 @@ export default function NewLP({ blok, page }) {
       return;
     }
     if (page.typeformId) {
-      const { toggle } = createPopup(page.typeformId);
+      const params = Object.fromEntries(new URLSearchParams(location.search));
+      const { toggle } = createPopup(page.typeformId, { hidden: params });
       trackGoal("MPOZNNML", 0);
       toggle();
       return;
