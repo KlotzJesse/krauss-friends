@@ -236,9 +236,7 @@ export default function NewLP({ blok, page }) {
                   </span>
                 </button>
               </div>
-              <div className="">
-                <img src="/img.jpg" className="shadow-xl" />
-              </div>
+              <div className="grow-0 bg-[url('/img.jpg')] bg-cover"></div>
             </div>
           </div>
         </main>
