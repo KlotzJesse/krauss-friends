@@ -236,10 +236,7 @@ export default function NewLP({ blok, page }) {
                 </button>
               </div>
               <div className="md:w-[60%]">
-                <img
-                  src="https://a.storyblok.com/f/141545/1920x1080/eb6dacdfff/krauss-interview.jpg"
-                  className="shadow-xl"
-                />
+                <img src="/img.jpeg" className="shadow-xl" />
               </div>
             </div>
           </div>
