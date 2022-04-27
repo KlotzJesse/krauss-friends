@@ -58,7 +58,7 @@ const ThanksPage = (props) => {
             </div>
             <div className="justify-center mt-12 sm:flex gap-x-4">
               <a
-                href="https://www.gastronomy.world"
+                href="https://www.krauss-friends.com"
                 className="grid w-full px-12 py-4 text-indigo-700 bg-white border rounded-md sm:w-auto hover:bg-gray-200 place-items-center"
               >
                 Zur Website

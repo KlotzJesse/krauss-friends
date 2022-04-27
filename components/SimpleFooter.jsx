@@ -1,15 +1,15 @@
 const navigation = {
   main: [
-    { name: "Impressum", href: "https://www.gastronomy.world/about" },
+    { name: "Impressum", href: "https://www.krauss-friends.com/about" },
     {
       name: "Datenschutzerklärung",
-      href: "https://www.gastronomy.world/j/privacy",
+      href: "https://www.krauss-friends.com/j/privacy",
     },
   ],
   social: [
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/company/gastronomyworld/",
+      href: "https://www.linkedin.com/company/krauss-and-friends-gmbh/",
       icon: (props) => (
         <svg
           fill="currentColor"

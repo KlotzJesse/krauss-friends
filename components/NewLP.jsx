@@ -237,7 +237,7 @@ export default function NewLP({ blok, page }) {
                 </button>
               </div>
               <div className="md:w-[60%]">
-                <img src="/img.jpeg" className="shadow-xl" />
+                <img src="/img.jpg" className="shadow-xl" />
               </div>
             </div>
           </div>
