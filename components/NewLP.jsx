@@ -188,12 +188,12 @@ export default function NewLP({ blok, page }) {
             <h1 className="font-medium tracking-tight md:text-2xl text-secondary-500">
               Für Vertriebs- und Verkaufsleiter:
             </h1>
-            <p className=" text-xl md:text-[2.6em] font-bold tracking-tight pt-5 md:leading-10">
+            <p className="text-xl md:text-[2.6em] font-bold tracking-tight pt-5 md:leading-10">
               Mehr Abschlüsse und Neukunden durch ein hochmotiviertes
               Vertriebsteam.
             </p>
-            <div className="flex flex-col w-full pt-5 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
-              <div className="md:w-[40%]">
+            <div className="grid w-full gap-5 pt-10 md:grid-cols-2">
+              <div className="">
                 <ul className="mb-8 text-black rounded list-reset text-grey-darker">
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
@@ -236,7 +236,7 @@ export default function NewLP({ blok, page }) {
                   </span>
                 </button>
               </div>
-              <div className="md:w-[60%]">
+              <div className="">
                 <img src="/img.jpg" className="shadow-xl" />
               </div>
             </div>
@@ -335,7 +335,7 @@ export default function NewLP({ blok, page }) {
         </div>
       </div>
       <div className="text-center">
-        <div className="max-w-5xl px-10 py-20 mx-auto">
+        <div className="max-w-6xl px-10 py-20 mx-auto">
           <h2 id="method" className="text-2xl md:text-[2.1875em] font-semibold">
             So läuft Ihr Vertrieb wie ein Uhrwerk, in dem jeder Prozess
             reibungslos aufeinander abgestimmt ist
