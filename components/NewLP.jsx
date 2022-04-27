@@ -255,8 +255,9 @@ export default function NewLP({ blok, page }) {
           </div>
           */}
           <p className="text-[1.75em] font-semibold">
-            Als Geschäftsführer, Verkaufsleiter und Vertriebsleiter kommen Ihnen
-            die folgenden Punkte sicherlich bekannt vor:
+            Als <u>Geschäftsführer</u>, <u>Verkaufsleiter</u> und{" "}
+            <u>Vertriebsleiter</u> kommen Ihnen die folgenden Punkte sicherlich
+            bekannt vor:
           </p>
           <div className="py-7">
             <hr className="mx-auto border-t border-secondary-500 border-[5px] w-[125px]" />
