@@ -288,7 +288,7 @@ export default function NewLP({ blok, page }) {
               onClick={onClick}
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
-              <span className="text-lg md:text-[1.375em] font-bold">
+              <span className="text-md md:text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
               <span className="block font-medium text-gray-200">
@@ -310,7 +310,7 @@ export default function NewLP({ blok, page }) {
             <h2 className="text-2xl md:text-[2.1875em] font-semibold">
               Der Vertrieb ist der elementare Motor Ihres Unternehmens
             </h2>
-            <p className="text-lg md:text-[1.375em] pt-3">
+            <p className="text-md md:text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
             </p>
             <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-3 mx-auto md:mx-0"></hr>
@@ -457,7 +457,7 @@ export default function NewLP({ blok, page }) {
               onClick={onClick}
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
-              <span className="text-lg md:text-[1.375em] font-bold">
+              <span className="text-md md:text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
               <span className="block font-medium text-gray-200">
@@ -591,7 +591,7 @@ export default function NewLP({ blok, page }) {
               onClick={onClick}
               className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform bg-secondary-500 hover:scale-110"
             >
-              <span className="text-lg md:text-[1.375em] font-bold">
+              <span className="text-md md:text-[1.375em] font-bold">
                 Jetzt Erstgespräch sichern!
               </span>
               <span className="block font-medium text-gray-200">
