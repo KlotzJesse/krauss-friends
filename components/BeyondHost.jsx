@@ -191,12 +191,18 @@ export default function BeyondHost({ blok, page }) {
               Für Veranstaltungs- und Tagungsleiter:
             </h1>
             <p className="text-xl md:text-[2.6em] font-bold tracking-tight pt-5 md:leading-10">
-              Mehr neue Gäste dank perfekten Service durch ein
-              Service-Ruf-System.
+              Mehr Umsatz dank perfekten Service durch ein Service-Ruf-System.
             </p>
             <div className="grid w-full gap-5 pt-10 grid- md:grid-cols-2">
               <div className="flex flex-col-reverse md:flex-col">
                 <ul className="mb-8 text-left text-black rounded list-reset text-grey-darker">
+                  <li className="flex items-center mb-3">
+                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
+                    <p>
+                      <b className="underline">Kosten senken</b>, da wir Ihre
+                      Prozesse durch eine digitale Lösung optimieren.
+                    </p>
+                  </li>
                   <li className="flex items-center mb-3">
                     <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                     <p>
@@ -208,15 +214,8 @@ export default function BeyondHost({ blok, page }) {
                     <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
                     <p>
-                      <b className="underline">Mehr Kunden & Umsatz gewinnen</b>
-                      , da wir Ihre Servicequalität verbessern.
-                    </p>
-                  </li>
-                  <li className="flex items-center mb-3">
-                    <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
-                    <p>
-                      <b className="underline">Kosten senken</b>, da wir Ihre
-                      Prozesse durch eine digitale Lösung optimieren.
+                      <b className="underline">Mehr Gäste & Umsatz gewinnen</b>,
+                      da wir Ihre Servicequalität verbessern.
                     </p>
                   </li>
                 </ul>
@@ -515,31 +514,32 @@ export default function BeyondHost({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    die Trainingsmethoden, die Wissensaufbau durch systemische
-                    Arbeitssequenzen gewährleisten.
+                    das wir mehr als ein Service-Ruf-System sind: Beyond.Host
+                    bietet eine unkomplizierte, intuitive Oberfläche
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
                   <p>
-                    den reduzierten Wissenstransfer auf das Wesentliche und
-                    sofortige anwendbarkeit in der Praxis
+                    das unser Fokus auf dem Gast und gleichzeitig auf den
+                    täglichen Aufgaben im Bankett und Tagungsgeschäft liegt
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    die Art & Weise, wie wir Dinge angehen: Wir erzielen
-                    messbare Ergebnisse, weil wir praxis- & erfolgsorientiert
-                    arbeiten.
+                    das mit einer intuitiven Bedienung die verschiedenen
+                    Service-Anfrage-Optionen vom Referenten gewählt werden, per
+                    Smartwatch an die Mitarbeiter übermittelt und von einem
+                    bestätigt werden.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    das der Vertrieb durch ein Training sofort die Möglichkeit
-                    erhält seine Leistung zu verdoppeln
+                    das wir die wichtigen Bedürfnisse der Referenten bereits
+                    kennen
                   </p>
                 </li>
               </ul>
@@ -692,14 +692,14 @@ const process = [
   {
     title: "Konzeption & Beratung",
     points: [
-      "Auf Grundlage der Analyse erstellen wir einen klar strukturierten Handlungsplan mit dem Ziel, Ihre Wettbewerbsfähigkeit als Unternehmen zu erhöhen.",
+      "Auf Grundlage der Analyse erstellen wir einen klar strukturierten Handlungsplan mit dem Ziel, Ihren Service für Tagungen produktiver zu gestalten.",
       "Bei der Erstellung unserer Strategie lassen wir unsere geballte Erfahrung mit einfließen, die wir in vielen Kundenprojekten gesammelt haben.",
     ],
   },
   {
     title: "Umsetzung & Training",
     points: [
-      "Im Anschluss setzen wir die Strategie gemeinsam mit Ihnen um. Wir installieren die notwendige Hardware und schulen Ihre Mitarbeiter im Umgang.",
+      "Im Anschluss setzen wir die Strategie gemeinsam mit Ihnen um. Wir installieren die notwendige Hardware und schulen Ihre Mitarbeiter in dessen Umgang.",
       "Während des kompletten Prozesses können Sie sich sicher fühlen, weil wir diesen Weg bereits unzählige Male gegangen sind.",
       "Außerdem arbeiten wir maximal transparent und sprechen jeden Schritt mit Ihnen ab. So behalten Sie stets die volle Kontrolle.",
     ],
