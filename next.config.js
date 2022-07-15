@@ -96,6 +96,16 @@ module.exports = {
           has: [{ type: "host", value: "socamel.gastronomy.world" }],
           destination: "/thanks/socamel",
         },
+        {
+          source: "/thanks",
+          has: [{ type: "host", value: "beyondhost.gastronomy.world" }],
+          destination: "/thanks/beyondhost",
+        },
+        {
+          source: "/",
+          has: [{ type: "host", value: "beyondhost.gastronomy.world" }],
+          destination: "/beyondhost",
+        },
       ],
     };
   },
