@@ -222,7 +222,7 @@ export default function BeyondHost({ blok, page }) {
                 </ul>
                 <button
                   onClick={onClick}
-                  className="w-full px-10 py-3 text-white transition-all duration-300 ease-in-out transform md:m-0 bg-secondary-500 hover:scale-110"
+                  className="w-full px-10 py-3 mb-5 text-white transition-all duration-300 ease-in-out transform md:m-0 bg-secondary-500 hover:scale-110"
                 >
                   <span className="text-lg md:text-[1.375em] font-bold">
                     Jetzt Erstgespräch sichern!
@@ -234,14 +234,13 @@ export default function BeyondHost({ blok, page }) {
               </div>
               <div className="order-first md:order-none ">
                 <iframe
-                  width="560"
                   height="315"
                   src="https://www.youtube-nocookie.com/embed/zVEf_b60u6o"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="shadow-xl"
+                  className="w-full shadow-xl"
                 ></iframe>
               </div>
             </div>
