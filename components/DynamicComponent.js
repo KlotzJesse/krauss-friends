@@ -43,6 +43,7 @@ const TwoColumnsWithTestimonial = dynamic(() =>
 const VideoHero = dynamic(() => import("./VideoHero"));
 const HeroSignUp = dynamic(() => import("./VideoSignUpHero"));
 const WavyHero = dynamic(() => import("./WavyHero"));
+const BeyondHost = dynamic(() => import("./BeyondHost"));
 
 const Components = {
   heading: Heading,
@@ -84,6 +85,7 @@ const Components = {
   socamelLP: SocamelLP,
   cpDmea: CPDmea,
   socamelInternorga: SocamelInternorga,
+  beyondHost: BeyondHost,
 };
 
 const DynamicComponent = ({ blok, page }) => {
