@@ -54,7 +54,7 @@ export default function BeyondHost({ blok, page }) {
   const header = useRef();
 
   return (
-    <div className="relative bg-gray-50 scroll-smooth">
+    <div className="relative bg-gray-50 scroll-smooth font-beyond">
       <div className="relative overflow-hidden">
         <Popover className="fixed top-0 left-0 z-20 w-screen bg-white shadow">
           <div ref={header} className="max-w-5xl px-4 mx-auto sm:px-6 ">
@@ -311,7 +311,10 @@ export default function BeyondHost({ blok, page }) {
         <div className="relative max-w-5xl mx-auto text-center md:text-left">
           <div className="max-w-3xl py-20">
             <h2 className="text-2xl md:text-[2.1875em] font-semibold">
-              Der Service ist der elementare Motor Ihres Tagungsraumes
+              Möchten Sie die maximale Auslastung Ihrer Räumlichkeiten, die
+              Effizienz Ihrer Mitarbeiter steigern und gleichzeitig nicht
+              unnötig Gäste verlieren, sodass Ihre monatlichen Ergebnisse sich
+              sichtbar verbessern?
             </h2>
             <p className="text-md md:text-[1.375em] pt-3">
               Aus diesem Grund ist die Verantwortung, die Sie haben, sehr groß.
@@ -670,6 +673,16 @@ const steps = [
 
 const casestudies = [
   {
+    company: "Munich Marriott Hotel",
+    title: `Mehr Interaktion mit dem Service und entlastung der Mitarbeiter und somit zufriedenere Gäste`,
+    group: "Hotel",
+    workers: "80",
+    start: `Sollten Sie eine Veranstaltung planen, werden Sie unsere vielseitigen Veranstaltungsräumlichkeiten wie unseren großen Ballsaal schätzen. Dank unserer idealen Lage in Schwabing sind die Sehenswürdigkeiten Münchens, wie der Englische Garten schnell und einfach zu erreichen. Erleben Sie einen unvergesslichen Aufenthalt in unserem Hotel in München-Schwabing. Wir haben gezielt nach einer Lösung gesucht, die uns von unserem Comp-Set unterscheidet, da besonders in Schwabing in den vergangenen Jahren viele neue Tagungsflächen entstanden sind und wir bewusst auf Innovation setzen möchten. `,
+    solution: `Die Größe und das Layout unseres Veranstaltungsbereichs ermöglicht es uns eine Vielzahl verschiedener Segmente zu bedienen. Ganz besonders wichtig dabei, auch die technische Ausstattung immer auf einem aktuelle Level zu halten und wann immer möglich einen Schritt weiter zu denken. Mit Beyond.Host haben wir genau das getan. Wir sind einen Schritt weiter gegangen, um unseren internationalen Gäste innovative und intuitive Kommutation in unserem Tagungsbereich bieten zu können. `,
+    end: `Mitarbeiter und Gäste sind begeistert und haben Beyond.Host direkt vom ersten Tag an sehr gut angenommen.`,
+    img: "/mc_logo_L.webp",
+  },
+  {
     company: "Felix Hotel Leipzig",
     title: `Mehr Interaktion mit dem Service und entlastung der Mitarbeiter und somit zufriedenere Gäste`,
     group: "Hotel",
@@ -718,10 +731,10 @@ const blocks = [
     text: `Beobachten Sie seit Längerem, dass in Ihrem Tagungsraum eigentlich viel mehr Potenzial steckt?`,
   },
   {
-    text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihr Service Team steht vor scheinbar unlösbaren Herausforderungen, die die Begeisterung der Gäste hemmen.`,
+    text: `Das Problem ist, Sie wissen auch schon, an welchen Stellen es liegt, aber Ihr Service Team steht vor scheinbar unlösbaren Herausforderungen, da die Erfahrung fehlt und Anforderungen stetig steigen.`,
   },
   {
-    text: `Dazu kommt der hohe Druck, weil Ihre Räume nicht ausgelastet werden. Es wird Zeit, dass Ihr Service Team auf den Punkt genau beim Gast ankommt, wenn er um einen Service bittet.`,
+    text: `Dazu kommt der hohe Druck, weil Ihre Räume nicht ausgelastet werden. Wir unterstützen Sie mit Service auf den Punkt, da wir Ihr Team und Ihre Kunden verbinden und so keine Service-Anfrage unbeantwortet bleibt!`,
   },
   {
     text: `Der Fachkräftemangel macht Ihnen zu schaffen, da Ihr Service Team bereits unterbesetzt ist? Daher muss erst Recht die Produktivität erhöht und Ineffizienz eliminiert werden!`,
@@ -730,6 +743,6 @@ const blocks = [
     text: `Außerdem müssten Sie dringend Ihr Ressourcenverteilung optimieren, weil die Kosten explodieren und Sie Ihre Zahlen aber profitabel halten wollen?`,
   },
   {
-    text: `Sie stehen vor der Herausforderung, Ihre Tagungsraum zu digitalisieren und benötigen Unterstützung das effizient und profitabel zu machen?`,
+    text: `Sie stehen vor der Herausforderung, Ihre Tagungsräume digitalisieren zu wollen und benötigen Unterstützung das effizient und profitabel zu machen?`,
   },
 ];

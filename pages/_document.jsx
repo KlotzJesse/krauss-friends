@@ -12,6 +12,13 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.css"
         ></link>
+        <link
+          rel="preload"
+          href="/FontFont - Mark Pro Bold.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin=""
+        />
       </Head>
       <body>
         <Main />

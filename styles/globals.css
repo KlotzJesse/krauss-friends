@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Mark Pro";
+  src: url("/FontFont - Mark Pro Bold.otf");
+}
+
 body {
   @apply bg-white;
 }

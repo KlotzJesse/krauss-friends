@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -5,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        beyond: ['"Mark Pro"', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         background: {
           50: "#FFFFFF",
@@ -53,6 +58,19 @@ module.exports = {
           700: "#005D8F",
           800: "#003F61",
           900: "#001E2E",
+        },
+        beyond: {
+          DEFAULT: "#309ED9",
+          50: "#CBE7F5",
+          100: "#BADFF2",
+          200: "#97CEEC",
+          300: "#75BEE6",
+          400: "#52AEDF",
+          500: "#309ED9",
+          600: "#207EB0",
+          700: "#185C81",
+          800: "#0F3A52",
+          900: "#061922",
         },
       },
     },
