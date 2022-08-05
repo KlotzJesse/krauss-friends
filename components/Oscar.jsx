@@ -51,11 +51,7 @@ export default function BeyondHost({ blok, page }) {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="#">
                   <span className="sr-only">Oscar Systems</span>
-                  <img
-                    className="w-auto h-8 sm:h-12"
-                    src="/oscar.webp"
-                    alt=""
-                  />
+                  <img className="w-auto h-8 sm:h-12" src="/oscar.png" alt="" />
                 </a>
               </div>
               <div className="-my-2 -mr-2 md:hidden">
