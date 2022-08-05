@@ -396,7 +396,7 @@ export default function BeyondHost({ blok, page }) {
       <div className="relative px-10">
         <img
           className="absolute top-0 right-0 hidden object-cover w-1/2 h-full md:block"
-          src="https://beyond.host/wp-content/uploads/Demotermin_Bild.jpg"
+          src="/bills.jpg"
           alt=""
         />
         <div className="absolute top-0 left-0 hidden w-full h-full md:block bg-gradient-to-r from-white via-white"></div>
