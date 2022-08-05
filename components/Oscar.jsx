@@ -566,43 +566,39 @@ export default function BeyondHost({ blok, page }) {
             id="about-us"
             className="text-2xl md:text-[2.1875em] font-semibold"
           >
-            Beyond.Host
+            Oscar Audit Software
           </h2>
           <p className="text-[1.5625em]">
-            Digitaler Service Assistent für Ihren Eventbereich
+            Schnell. Sicher. Digital. Einfach oscar.
           </p>
           <hr className="border-t border-secondary-500 border-[3px] w-[125px] mt-10"></hr>
           <div className="flex flex-col pt-10 space-y-10 md:space-x-10 md:space-y-0 md:flex-row">
             <div className="text-[1.0625em] md:w-1/2">
               <p>
-                Wir kommen aus der Branche und haben in unserer jahrelangen
-                Erfahrung in den Bereichen Hotellerie, F&B, Bankett, Management,
-                Eventmanagement und Technik die Bedürfnisse der Kunden erkannt.
-                Mit Beyond.Host haben wir die Kommunikation im Tagungsraum
-                weitergedacht und setzen einen neuen Standard für die optimale
-                Ausstattung.
+                oscar ist aus der Idee entstanden, ein einfach zu bedienendes
+                Portal für Wirtschaftprüfer*innen zu entwickeln, das die
+                Auswahl, Einholung und Dokumentation der
+                Saldenbestätigungsanfragen digital abwickelt und ohne
+                Installation und Schulungsaufwand in den Workflow der
+                Jahresabschlussprüfung implementiert werden kann.
               </p>
               <p className="pt-5">
-                <span className="underline">Unser Erfolgsgarantie:</span> Mit
-                Beyond.Host gehen wir den nächsten Schritt in der
-                Gast-Kommunikation und freuen uns Teil Ihrer Erfolgsgeschichte
-                zu sein.
+                <span className="underline">Unser Erfolgsgarantie:</span> Durch
+                die Nutzung von oscar sparen Sie und der Mandant Ressourcen ein.
+                Insbesondere kann der Mandant den Fortschritt der Prüfung
+                verfolgen. Dateien und Dokumente werden zentral abgelegt. Der
+                Download für die Dokumentation in der eigenen Prüfungssoftware
+                ist möglich.
               </p>
             </div>
             <div className="w-full md:w-1/2">
               <img
-                src="https://beyond.host/wp-content/uploads/team.jpg"
+                src="https://le-cdn.website-editor.net/s/6f7e553b6c194b4798c336fa252f70c6/dms3rep/multi/opt/Ank-C3-BCndigung-WP-Tage-8ed59570-1152w.jpg?Expires=1661499087&Signature=iFjxqGv6soESi~9QVGwb0~zqqKUJXDkZuh8neffjgbFg1avUW7Wh7~Wu6RMjI4cDiyxv60~Sa-YrRSV6qzqWrPcykC29tJR~LmaISdrc-qiUXUvbAMKT37fUeR6CmdKpfRzS2f42oZavM0FlHnz6obIzGJsvA3V504tHKMuF8ajxjaApKp9rmEvA39f5GbsQ3rmDpbjeno1cAnUy7x4~uKxFwxZ7RqIVb4FdHrJcRMHuZrxJsCUhLMQLM-jxAzp3F~Uj6jchtpGzjiiCIDSI1O99XVZA~fhGhrbLbNmuPQhXalTUg-AIsHHO-G4A92Gd2HUz9uGuQHRx8uVtiBEe7w__&Key-Pair-Id=K2NXBXLF010TJW"
                 className="object-cover aspect-video"
               />
             </div>
           </div>
           <div className="flex flex-col-reverse pt-10 md:flex-row md:space-x-10">
-            <div className="w-full pt-10 md:w-2/4 md:pt-0">
-              <img
-                src="https://beyond.host/wp-content/uploads/Demotermin_Bild.jpg"
-                className="object-cover aspect-square"
-              />
-            </div>
             <div>
               <h2 className="text-[1.5625em] font-semibold">
                 Unsere Kunden schätzen an uns besonders:
@@ -611,32 +607,30 @@ export default function BeyondHost({ blok, page }) {
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    das wir mehr als ein Service-Ruf-System sind: Beyond.Host
-                    bietet eine unkomplizierte, intuitive Oberfläche
+                    da unser gesamter Datentransfer verschlüsselt über deutsche
+                    Server transportiert wird.
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
 
                   <p>
-                    das unser Fokus auf dem Gast und gleichzeitig auf den
-                    täglichen Aufgaben im Bankett und Tagungsgeschäft liegt
+                    das der Aufwand für Papier, Umschläge und doppeltes Porto
+                    (Anschreiben plus frankiertes Rückkuvert entfällt)
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    das mit einer intuitiven Bedienung die verschiedenen
-                    Service-Anfrage-Optionen vom Referenten gewählt werden, per
-                    Smartwatch an die Mitarbeiter übermittelt und von einem
-                    bestätigt werden.
+                    das nur eine Jahresgebühr entsteht, es entfallen keine
+                    versteckten Kosten
                   </p>
                 </li>
                 <li className="flex items-center mb-3">
                   <CheckIcon className="flex-none mr-2 w-7 text-secondary-500 " />
                   <p>
-                    das wir die wichtigen Bedürfnisse der Referenten bereits
-                    kennen
+                    das qualifizierte Mitarbeiter endlich wieder für
+                    qualifizierte Aufgaben eingesetzt werden können
                   </p>
                 </li>
               </ul>
@@ -695,10 +689,7 @@ export default function BeyondHost({ blok, page }) {
         </div>
       </div>
       <footer className="text-white bg-slate-900">
-        <div className="grid max-w-5xl grid-cols-1 gap-10 px-10 mx-auto md:gap-0 md:grid-cols-3 py-14">
-          <div>
-            <img src="/gworld-light.svg" className="w-3/5 md:w-3/4" />
-          </div>
+        <div className="grid max-w-5xl grid-cols-1 gap-10 px-10 mx-auto space-bet md:gap-0 md:grid-cols-2 py-14">
           <div className="flex flex-col">
             <p className="text-[1.25em] font-semibold pb-2">Informationen</p>
             <a
@@ -790,21 +781,21 @@ const casestudies = [
 
 const process = [
   {
-    title: "Analyse & Demo-Termin",
+    title: "Kennenlernen & Demo-Termin",
     points: [
-      "Jedes Hotel ist individuell. Wir prüfen Ihre Situation und finden die versteckten Ursachen, die Ihre Effizienz gerade drosseln.",
-      "Wir sehen auf Ihre komplexe Situation und identifizieren, an welchen Stellen Sie den größten Effekt in kurzer Zeit erzielen können.",
+      "Wir prüfen Ihre Situation und finden die versteckten Ursachen, die Ihre Effizienz gerade drosseln.",
+      "Wir sehen auf Ihre komplexe Situation und zeigen Ihnen, wie Sie Oscar Audit effektiv in kürzester Zeit einsetzen können.",
     ],
   },
   {
-    title: "Konzeption & Beratung",
+    title: "Einrichtung von Oscar bei Ihnen und Ihren Mandanten",
     points: [
-      "Auf Grundlage der Analyse erstellen wir einen klar strukturierten Handlungsplan mit dem Ziel, Ihren Service für Tagungen produktiver zu gestalten.",
-      "Bei der Erstellung unserer Strategie lassen wir unsere geballte Erfahrung mit einfließen, die wir in vielen Kundenprojekten gesammelt haben.",
+      "10-Mal effizientere Bestätigungsaktionen. Entlasten Sie Ihre Mandanten, sparen Sie Zeit, dokumentieren Sie besser.",
+      "oscar digitalisiert all diese Schritte und vereint Sie, den Wirtschaftsprüfer, Ihre Mandanten und deren Geschäftspartner (Kreditoren und Debitoren) auf einer Plattform.",
     ],
   },
   {
-    title: "Umsetzung & Training",
+    title: "Los gehts mit der Saldenbestätigung",
     points: [
       "Im Anschluss setzen wir die Strategie gemeinsam mit Ihnen um. Wir installieren die notwendige Hardware und schulen Ihre Mitarbeiter in dessen Umgang.",
       "Während des kompletten Prozesses können Sie sich sicher fühlen, weil wir diesen Weg bereits unzählige Male gegangen sind.",
