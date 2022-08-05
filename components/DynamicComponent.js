@@ -44,6 +44,7 @@ const VideoHero = dynamic(() => import("./VideoHero"));
 const HeroSignUp = dynamic(() => import("./VideoSignUpHero"));
 const WavyHero = dynamic(() => import("./WavyHero"));
 const BeyondHost = dynamic(() => import("./BeyondHost"));
+const Oscar = dynamic(() => import("./Oscar"));
 
 const Components = {
   heading: Heading,
@@ -86,6 +87,7 @@ const Components = {
   cpDmea: CPDmea,
   socamelInternorga: SocamelInternorga,
   beyondHost: BeyondHost,
+  oscar: Oscar,
 };
 
 const DynamicComponent = ({ blok, page }) => {

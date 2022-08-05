@@ -106,6 +106,16 @@ module.exports = {
           has: [{ type: "host", value: "beyondhost.gastronomy.world" }],
           destination: "/beyondhost",
         },
+        {
+          source: "/",
+          has: [{ type: "host", value: "oscar.mysolutionfinder.de" }],
+          destination: "/oscar",
+        },
+        {
+          source: "/thanks",
+          has: [{ type: "host", value: "oscar.mysolutionfinder.de" }],
+          destination: "/thanks/oscar",
+        },
       ],
     };
   },
