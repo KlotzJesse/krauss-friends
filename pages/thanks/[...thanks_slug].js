@@ -13,6 +13,7 @@ const goals = new Map([
   ["neukundengewinnung", "BG7BSHZU"],
   ["socamel", "MG2XORFL"],
   ["cloudprojekt", "TUTBP3L9"],
+  "BeyondHost",
 ]);
 
 const ThanksPage = (props) => {
