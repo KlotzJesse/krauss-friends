@@ -797,9 +797,9 @@ const process = [
   {
     title: "Los gehts mit der Saldenbestätigung",
     points: [
-      "Im Anschluss setzen wir die Strategie gemeinsam mit Ihnen um. Wir installieren die notwendige Hardware und schulen Ihre Mitarbeiter in dessen Umgang.",
-      "Während des kompletten Prozesses können Sie sich sicher fühlen, weil wir diesen Weg bereits unzählige Male gegangen sind.",
-      "Außerdem arbeiten wir maximal transparent und sprechen jeden Schritt mit Ihnen ab. So behalten Sie stets die volle Kontrolle.",
+      "schnelle Möglichkeit für die Debitoren und Kreditoren, die Salden digital zu bestätigen",
+      "Signifikante Effizienzsteigerung durch die Auswertungsmöglichkeiten aus oscar für die eigene Dokumentation der Prüfungshandlungen",
+      "einfache Bedienung durch den Benutzer",
     ],
   },
 ];
