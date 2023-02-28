@@ -255,7 +255,7 @@ export default function SocamelLP({ blok, page }) {
 
                         <div className="mt-6">
                           <form
-                            action="https://api.web3forms.com/submit"
+                            action="https://formsubmit.co/sandra.bruestle@gastronomy.world"
                             method="POST"
                             onSubmit={() => {
                               trackGoal("PBAUBJI8", 0);
@@ -264,18 +264,18 @@ export default function SocamelLP({ blok, page }) {
                           >
                             <input
                               type="hidden"
-                              name="redirect"
+                              name="_next"
                               value="https://socamel.gastronomy.world/thanks/socamel"
                             ></input>
                             <input
                               type="hidden"
-                              name="subject"
-                              value="Messekarte Altenpflege Nürnberg Anfrage (Socamel)"
+                              name="_subject"
+                              value="Messekarte Altenpflegemesse Nürnberg Anfrage (Socamel)"
                             ></input>
                             <input
                               type="hidden"
-                              name="access_key"
-                              value="0d8f0ac5-50e4-40a9-8eb3-a7b3306a3332"
+                              name="_captcha"
+                              value="false"
                             ></input>
                             <div>
                               <label htmlFor="name" className="sr-only">
