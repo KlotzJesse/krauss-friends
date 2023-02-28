@@ -252,7 +252,7 @@ export default function SocamelInternorga({ blok, page }) {
 
                         <div className="mt-6">
                           <form
-                            action="https://formsubmit.co/sandra.bruestle@gastronomy.world"
+                            action="https://formsubmit.co/sandra.bruestle@krauss-marketplace.com"
                             method="POST"
                             onSubmit={() => {
                               trackGoal("0CNLDECK", 0);
