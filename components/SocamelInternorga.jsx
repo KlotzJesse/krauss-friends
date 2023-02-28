@@ -214,7 +214,7 @@ export default function SocamelInternorga({ blok, page }) {
                       <h1 className="mt-4 text-lg font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-xl xl:text-wxl">
                         <span className="pr-5">Wann? </span>{" "}
                         <span className="text-secondary-400">
-                          30. April - 04. Mai 22 in Hamburg
+                          10. März - 14. März 23 in Hamburg
                         </span>
                       </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
@@ -252,7 +252,7 @@ export default function SocamelInternorga({ blok, page }) {
 
                         <div className="mt-6">
                           <form
-                            action="https://formsubmit.co/anfrage@krauss-gmbh.com"
+                            action="https://api.web3forms.com/submit"
                             method="POST"
                             onSubmit={() => {
                               trackGoal("0CNLDECK", 0);
@@ -261,18 +261,18 @@ export default function SocamelInternorga({ blok, page }) {
                           >
                             <input
                               type="hidden"
-                              name="_next"
+                              name="redirect"
                               value="https://socamel.gastronomy.world/thanks/socamel"
                             ></input>
                             <input
                               type="hidden"
-                              name="_subject"
+                              name="subject"
                               value="Messekarte Internorga Anfrage (Socamel)"
                             ></input>
                             <input
                               type="hidden"
-                              name="_captcha"
-                              value="false"
+                              name="access_key"
+                              value="0d8f0ac5-50e4-40a9-8eb3-a7b3306a3332"
                             ></input>
                             <div>
                               <label htmlFor="name" className="sr-only">

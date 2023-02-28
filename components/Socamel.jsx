@@ -211,13 +211,13 @@ export default function SocamelLP({ blok, page }) {
                           Kostenlose Messekarte für
                         </span>
                         <span className="pr-2 ml-4 text-sm">
-                          Altenpflege Messe Essen
+                          Altenpflege Messe Nürnberg
                         </span>
                       </div>
                       <h1 className="mt-4 text-lg font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-xl xl:text-wxl">
                         <span className="pr-5">Wann? </span>{" "}
                         <span className="text-secondary-400">
-                          26. - 28. April 22 in Essen
+                          25. - 27. April 23 in Nürnberg
                         </span>
                       </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
@@ -255,7 +255,7 @@ export default function SocamelLP({ blok, page }) {
 
                         <div className="mt-6">
                           <form
-                            action="https://formsubmit.co/anfrage@krauss-gmbh.com"
+                            action="https://api.web3forms.com/submit"
                             method="POST"
                             onSubmit={() => {
                               trackGoal("PBAUBJI8", 0);
@@ -264,18 +264,18 @@ export default function SocamelLP({ blok, page }) {
                           >
                             <input
                               type="hidden"
-                              name="_next"
+                              name="redirect"
                               value="https://socamel.gastronomy.world/thanks/socamel"
                             ></input>
                             <input
                               type="hidden"
-                              name="_subject"
-                              value="Messekarte Altenpflegemesse Essen Anfrage (Socamel)"
+                              name="subject"
+                              value="Messekarte Altenpflege Nürnberg Anfrage (Socamel)"
                             ></input>
                             <input
                               type="hidden"
-                              name="_captcha"
-                              value="false"
+                              name="access_key"
+                              value="0d8f0ac5-50e4-40a9-8eb3-a7b3306a3332"
                             ></input>
                             <div>
                               <label htmlFor="name" className="sr-only">
