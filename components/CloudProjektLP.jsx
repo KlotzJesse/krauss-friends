@@ -10,6 +10,7 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 import { trackGoal } from "fathom-client";
+import { useRouter } from "next/router";
 import { Fragment, useRef } from "react";
 
 const resources = [
@@ -41,6 +42,10 @@ export default function CloudProjektLP({ blok, page }) {
   };
 
   const header = useRef();
+
+  const router = useRouter();
+
+  const { id } = router.query;
 
   return (
     <div className="relative bg-gray-50 scroll-smooth">
@@ -211,13 +216,13 @@ export default function CloudProjektLP({ blok, page }) {
                           Kostenlose Messekarte für
                         </span>
                         <span className="pr-2 ml-4 text-sm">
-                          Altenpflege Messe Essen
+                          Altenpflege Messe Nürnberg
                         </span>
                       </div>
                       <h1 className="mt-4 text-lg font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-xl xl:text-wxl">
                         <span className="pr-5">Wann? </span>{" "}
                         <span className="text-secondary-400">
-                          26. - 28. April 22 in Essen
+                          25. - 27. April 23 in Nürnberg
                         </span>
                       </h1>
                       <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-4xl xl:text-5xl">
@@ -286,7 +291,7 @@ export default function CloudProjektLP({ blok, page }) {
 
                         <div className="mt-6">
                           <form
-                            action="https://formsubmit.co/anfrage@krauss-gmbh.com"
+                            action="https://formsubmit.co/sandra.bruestle@krauss-marketplace.com"
                             method="POST"
                             onSubmit={() => {
                               trackGoal("DLNILCAG", 0);
@@ -301,7 +306,17 @@ export default function CloudProjektLP({ blok, page }) {
                             <input
                               type="hidden"
                               name="_subject"
-                              value="Messekarte Altenpflegemesse Essen Anfrage (CloudProjekt)"
+                              value="Messekarte Altenpflegemesse Nürnberg Anfrage (CloudProjekt)"
+                            ></input>
+                            <input
+                              type="hidden"
+                              name="accountId"
+                              value={id}
+                            ></input>
+                            <input
+                              type="hidden"
+                              name="salesforceLink"
+                              value={`https://krauss.my.salesforce.com/${id}`}
                             ></input>
                             <input
                               type="hidden"
@@ -388,7 +403,7 @@ export default function CloudProjektLP({ blok, page }) {
                       </div>
                       <div className="px-4 py-6 border-t-2 border-gray-200 bg-gray-50 sm:px-10">
                         <p className="text-xs leading-5 text-gray-500">
-                          Mit dem absenden, aktzeptieren Sie die{" "}
+                          Mit dem absenden, akzeptieren Sie die{" "}
                           <a
                             href="https://www.gastronomy.world/j/privacy"
                             target="_blank"
@@ -397,7 +412,8 @@ export default function CloudProjektLP({ blok, page }) {
                           >
                             Datenschutzerklärung
                           </a>
-                          . Pro Unternehmen bis zu 2 Messekarten.
+                          . Pro Unternehmen bis zu 2 Messekarten. Nur solange
+                          der Vorrat reicht.
                         </p>
                       </div>
                     </div>
