@@ -20,7 +20,7 @@ const ExitIntent = ({ page, blok }) => {
     }, []);
   };
 
-  const openedTimes = 0;
+  var openedTimes = 0;
 
   const begForLife = () => {
     if (openedTimes < 1) {
