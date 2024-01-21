@@ -38,6 +38,11 @@ module.exports = {
         },
         {
           source: "/",
+          has: [{ type: "host", value: "www.krauss-friends.com" }],
+          destination: "/vertrieb-trainieren",
+        },
+        {
+          source: "/",
           has: [{ type: "host", value: "coach-ausbildung.krauss-training.de" }],
           destination: "/coach-ausbildung",
         },
