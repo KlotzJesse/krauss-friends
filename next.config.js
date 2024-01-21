@@ -33,6 +33,7 @@ module.exports = {
         },
         {
           source: "/",
+          has: [{ type: "host", value: "krauss-friends.com" }],
           destination: "/vertriebstraining",
         },
         {
