@@ -32,12 +32,12 @@ module.exports = {
           destination: "/neukundengewinnung",
         },
         {
-          source: "/:path*",
+          source: "/",
           has: [{ type: "host", value: "krauss-friends.com" }],
           destination: "/vertrieb-trainieren",
         },
         {
-          source: "/:path*",
+          source: "/",
           has: [{ type: "host", value: "www.krauss-friends.com" }],
           destination: "/vertrieb-trainieren",
         },
