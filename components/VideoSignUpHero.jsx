@@ -1,10 +1,10 @@
 import { Popover } from "@headlessui/react";
+import { openPopupWidget } from "@nandosang/react-calendly";
 import { createPopup } from "@typeform/embed";
 import cookieCutter from "cookie-cutter";
 import { trackGoal } from "fathom-client";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { openPopupWidget } from "react-calendly";
 
 const navigation = [];
 

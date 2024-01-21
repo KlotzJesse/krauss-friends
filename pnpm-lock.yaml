@@ -14,6 +14,9 @@ dependencies:
   '@heroicons/react':
     specifier: ^1.0.6
     version: 1.0.6(react@18.2.0)
+  '@nandosang/@nandosang/react-calendly':
+    specifier: ^2.0.2
+    version: 2.0.2(react-dom@18.2.0)(react@18.2.0)
   '@react_hooks/use-beforeleave':
     specifier: ^1.0.1
     version: 1.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -59,7 +62,7 @@ dependencies:
   react:
     specifier: 18.2.0
     version: 18.2.0
-  react-calendly:
+  @nandosang/react-calendly:
     specifier: 4.3.0
     version: 4.3.0(react-dom@18.2.0)(react@18.2.0)
   react-dom:
@@ -446,6 +449,17 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
+
+  /@nandosang/@nandosang/react-calendly@2.0.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ic7/SU3qH8WBssSp4xr84O3FCRuQ/PeGpNv3ohgdOyrSYVEMRr+stjCoFJEA3hkvySjmti3mgo82gu7bU/hYdQ==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /@next/env@14.1.0:
     resolution: {integrity: sha512-Py8zIo+02ht82brwwhTg36iogzFqGLPXlRGKQw5s+qP/kMNc4MAyDeEwBKDijk6zTIbegEgu8Qy7C1LboslQAw==}
@@ -3047,7 +3061,7 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
 
-  /react-calendly@4.3.0(react-dom@18.2.0)(react@18.2.0):
+  /@nandosang/react-calendly@4.3.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-JFZzYhyJBaoZDseB3UqzeOx1rbzCK24nr5pqH/6zJEh7CZ/pn5R49rkIJ0g5E7j5WQ3K7xBSgBD7WgM36v3gZw==}
     engines: {node: '>=8', npm: '>=5'}
     peerDependencies:

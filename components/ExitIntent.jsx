@@ -1,9 +1,9 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/solid";
+import { openPopupWidget } from "@nandosang/react-calendly";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React, { Fragment, useEffect, useState } from "react";
-import { openPopupWidget } from "react-calendly";
 
 const ExitIntent = ({ page, blok }) => {
   const useBeforeLeave = (onBefore) => {

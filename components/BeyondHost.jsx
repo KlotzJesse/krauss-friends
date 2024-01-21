@@ -9,10 +9,10 @@ import {
   PhoneIcon,
   XIcon,
 } from "@heroicons/react/outline";
+import { openPopupWidget } from "@nandosang/react-calendly";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import { Fragment, useRef } from "react";
-import { openPopupWidget } from "react-calendly";
 
 const resources = [
   {

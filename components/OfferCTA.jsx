@@ -1,7 +1,7 @@
+import { openPopupWidget } from "@nandosang/react-calendly";
 import { createPopup } from "@typeform/embed";
 import { trackGoal } from "fathom-client";
 import React from "react";
-import { openPopupWidget } from "react-calendly";
 
 const OfferCTA = ({ page }) => {
   const onClick = () => {
