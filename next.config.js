@@ -32,7 +32,7 @@ module.exports = {
           destination: "/neukundengewinnung",
         },
         {
-          source: "*",
+          source: "/",
           has: [{ type: "host", value: "krauss-friends.com" }],
           destination: "/vertrieb-trainieren",
         },
