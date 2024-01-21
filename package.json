@@ -10,7 +10,7 @@
   "dependencies": {
     "@builder.io/partytown": "^0.8.2",
     "@headlessui/react": "^1.7.18",
-    "@heroicons/react": "^2.1.1",
+    "@heroicons/react": "^1.0.6",
     "@nandosang/react-calendly": "^2.0.2",
     "@react_hooks/use-beforeleave": "^1.0.1",
     "@storyblok/react": "^3.0.8",
