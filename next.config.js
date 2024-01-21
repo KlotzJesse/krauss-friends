@@ -33,6 +33,10 @@ module.exports = {
         },
         {
           source: "/",
+          destination: "/vertriebstraining",
+        },
+        {
+          source: "/",
           has: [{ type: "host", value: "coach-ausbildung.krauss-training.de" }],
           destination: "/coach-ausbildung",
         },
