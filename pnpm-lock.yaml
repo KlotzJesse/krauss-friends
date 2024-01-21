@@ -12,9 +12,9 @@ dependencies:
     specifier: ^1.7.18
     version: 1.7.18(react-dom@18.2.0)(react@18.2.0)
   '@heroicons/react':
-    specifier: ^1.0.6
-    version: 1.0.6(react@18.2.0)
-  '@nandosang/@nandosang/react-calendly':
+    specifier: ^2.1.1
+    version: 2.1.1(react@18.2.0)
+  '@nandosang/react-calendly':
     specifier: ^2.0.2
     version: 2.0.2(react-dom@18.2.0)(react@18.2.0)
   '@react_hooks/use-beforeleave':
@@ -62,9 +62,6 @@ dependencies:
   react:
     specifier: 18.2.0
     version: 18.2.0
-  @nandosang/react-calendly:
-    specifier: 4.3.0
-    version: 4.3.0(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
@@ -198,8 +195,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@heroicons/react@1.0.6(react@18.2.0):
-    resolution: {integrity: sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==}
+  /@heroicons/react@2.1.1(react@18.2.0):
+    resolution: {integrity: sha512-JyyN9Lo66kirbCMuMMRPtJxtKJoIsXKS569ebHGGRKbl8s4CtUfLnyKJxteA+vIKySocO4s1SkTkGS4xtG/yEA==}
     peerDependencies:
       react: '>= 16'
     dependencies:
@@ -450,7 +447,7 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@nandosang/@nandosang/react-calendly@2.0.2(react-dom@18.2.0)(react@18.2.0):
+  /@nandosang/react-calendly@2.0.2(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ic7/SU3qH8WBssSp4xr84O3FCRuQ/PeGpNv3ohgdOyrSYVEMRr+stjCoFJEA3hkvySjmti3mgo82gu7bU/hYdQ==}
     engines: {node: '>=8', npm: '>=5'}
     peerDependencies:
@@ -3060,17 +3057,6 @@ packages:
 
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-
-  /@nandosang/react-calendly@4.3.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-JFZzYhyJBaoZDseB3UqzeOx1rbzCK24nr5pqH/6zJEh7CZ/pn5R49rkIJ0g5E7j5WQ3K7xBSgBD7WgM36v3gZw==}
-    engines: {node: '>=8', npm: '>=5'}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
 
   /react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
